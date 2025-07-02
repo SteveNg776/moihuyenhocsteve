@@ -607,15 +607,30 @@ export function getLunarDateByDayNumber(year: number, dayNumber: number): Date {
       throw new Error(`Số ngày âm lịch không hợp lệ: ${dayNumber}. Vui lòng nhập số từ 1 đến 384.`);
     }
     
-    // Start from lunar new year
-    const lunarYearStart = Lunar.fromYmd(year, 1, 1);
-    const solarStart = lunarYearStart.getSolar().toDate();
-    
-    // Add days to get the target date
-    const targetDate = new Date(solarStart);
-    targetDate.setDate(solarStart.getDate() + dayNumber - 1);
-    
-    return targetDate;
+    // Start from lunar new year - use the correct approach
+    try {
+      const lunar = Lunar.fromYmd(year, 1, 1);
+      const solar = lunar.getSolar();
+      
+      // Check if getSolar returns an object with toDate method
+      let solarStart: Date;
+      if (solar && typeof solar.toDate === 'function') {
+        solarStart = solar.toDate();
+      } else {
+        // Fallback: create date from solar properties
+        solarStart = new Date(solar.getYear(), solar.getMonth() - 1, solar.getDay());
+      }
+      
+      // Add days to get the target date
+      const targetDate = new Date(solarStart);
+      targetDate.setDate(solarStart.getDate() + dayNumber - 1);
+      
+      return targetDate;
+    } catch (lunarError) {
+      console.warn('Error with lunar calculation, using fallback:', lunarError);
+      // Fallback to solar calendar
+      return getDateByDayNumber(year, Math.min(dayNumber, 365));
+    }
   } catch (error) {
     console.error('Error calculating lunar date by day number:', error);
     // Fallback to solar calendar
@@ -632,15 +647,30 @@ export function getLunarDateByRemainingDays(year: number, remainingDays: number)
     // Get the actual lunar year length
     const lunarYearLength = getLunarYearDays(year);
     
-    // Get lunar year start
-    const lunarYearStart = Lunar.fromYmd(year, 1, 1);
-    const solarStart = lunarYearStart.getSolar().toDate();
-    
-    // Calculate target date
-    const targetDate = new Date(solarStart);
-    targetDate.setDate(solarStart.getDate() + lunarYearLength - remainingDays);
-    
-    return targetDate;
+    // Get lunar year start - use the correct approach
+    try {
+      const lunar = Lunar.fromYmd(year, 1, 1);
+      const solar = lunar.getSolar();
+      
+      // Check if getSolar returns an object with toDate method
+      let solarStart: Date;
+      if (solar && typeof solar.toDate === 'function') {
+        solarStart = solar.toDate();
+      } else {
+        // Fallback: create date from solar properties
+        solarStart = new Date(solar.getYear(), solar.getMonth() - 1, solar.getDay());
+      }
+      
+      // Calculate target date
+      const targetDate = new Date(solarStart);
+      targetDate.setDate(solarStart.getDate() + lunarYearLength - remainingDays);
+      
+      return targetDate;
+    } catch (lunarError) {
+      console.warn('Error with lunar calculation, using fallback:', lunarError);
+      // Fallback to solar calendar
+      return getDateByRemainingDays(year, Math.min(remainingDays, 365));
+    }
   } catch (error) {
     console.error('Error calculating lunar date by remaining days:', error);
     // Fallback to solar calendar
