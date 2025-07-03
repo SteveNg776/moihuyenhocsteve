@@ -31,7 +31,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section - Đã giảm khoảng đệm */}
-      <section className="relative py-16 px-4 sm:px-6 lg:px-8">
+      <section className="relative py-10 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto text-center max-w-4xl">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-800 mb-8 leading-tight">
             Khám Phá Trí Tuệ Cổ Đại
@@ -44,7 +44,7 @@ export default function HomePage() {
       </section>
       
       {/* Features Section - Đã giảm khoảng đệm */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-10 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto max-w-5xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {features.map((feature) => (
