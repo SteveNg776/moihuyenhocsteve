@@ -38,21 +38,16 @@ export default function HomePage() {
           </h1>
           
           <p className="text-xl sm:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Khám phá Kinh Dịch và Số Học thông qua các công cụ hiện đại
+            Khám Phá Kiến Thức "Out of the Box"
           </p>
-          
-          <Button size="lg" className="moonrise-button text-lg px-8 py-4 rounded-full">
-            Bắt Đầu Hành Trình
-            <ArrowRight className="w-5 h-5 ml-2" />
-          </Button>
         </div>
       </section>
-
+      
       {/* Features Section - Clean and Minimal */}
       <section className="py-24 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto max-w-5xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {features.map((feature, index) => (
+            {features.map((feature) => (
               <Card key={feature.title} className="moonrise-card group hover:scale-[1.02] transition-all duration-300 border-0 shadow-lg">
                 <CardHeader className="pb-6">
                   <div className="flex items-center space-x-4 mb-6">
@@ -78,22 +73,6 @@ export default function HomePage() {
               </Card>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Call to Action - Simplified */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8">
-        <div className="container mx-auto max-w-3xl text-center">
-          <h2 className="text-4xl font-bold text-gray-800 mb-6">
-            Sẵn Sàng Bắt Đầu?
-          </h2>
-          <p className="text-xl text-gray-600 mb-10 leading-relaxed">
-            Khám phá trí tuệ cổ đại thông qua các công cụ hiện đại và trực quan
-          </p>
-          <Button size="lg" className="moonrise-button text-lg px-10 py-4 rounded-full">
-            Bắt Đầu Sử Dụng
-            <ArrowRight className="w-5 h-5 ml-2" />
-          </Button>
         </div>
       </section>
     </div>
