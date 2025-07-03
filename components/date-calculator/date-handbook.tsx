@@ -5,9 +5,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription } from '@/components/ui/alert';
-import { Calendar, CalendarDays, Clock, TrendingUp, Sparkles, Star, AlertCircle, CheckCircle, Sun, Moon } from 'lucide-react';
+import { Calendar, CalendarDays, Clock, TrendingUp, Sparkles, Star, AlertCircle, CheckCircle, Sun, Moon, Leaf } from 'lucide-react';
 import { useLanguage } from '@/contexts/language-context';
 import { getDateInfo, formatDate, validateSolarDate, type DateInfo } from '@/lib/lunar-calendar-utils';
+import { getCurrentSolarTerm, formatSolarTermPeriod, SEASON_COLORS, SEASON_NAMES, type SolarTermPeriod } from '@/lib/solar-terms-data';
 import { NumerologyInsightDialog } from './numerology-insight-dialog';
 
 interface NumerologyInsight {
@@ -74,6 +75,15 @@ export function DateHandbook() {
         zodiacAnimal: 'Không xác định',
         constellation: 'Không xác định'
       } as DateInfo;
+    }
+  }, [currentDate]);
+
+  const currentSolarTerm: SolarTermPeriod | null = useMemo(() => {
+    try {
+      return getCurrentSolarTerm(currentDate);
+    } catch (error) {
+      console.error('Error getting current solar term:', error);
+      return null;
     }
   }, [currentDate]);
 
@@ -372,27 +382,90 @@ export function DateHandbook() {
               </div>
             </div>
 
-            {/* Festivals and Events */}
-            <div className="p-4 bg-amber-50 rounded-lg border border-amber-200">
-              <h4 className="font-semibold text-amber-700 mb-3">Lễ Hội & Sự Kiện</h4>
-              {dateInfo.festivals.length > 0 ? (
-                <div className="space-y-1">
-                  {dateInfo.festivals.slice(0, 2).map((festival, index) => (
-                    <div key={index} className="text-xs text-amber-600 font-medium">
-                      {festival.name}
-                    </div>
-                  ))}
-                  {dateInfo.festivals.length > 2 && (
-                    <div className="text-xs text-gray-500">
-                      +{dateInfo.festivals.length - 2} lễ hội khác
-                    </div>
-                  )}
+            {/* Solar Terms Information */}
+            <div className="p-4 bg-teal-50 rounded-lg border border-teal-200">
+              <h4 className="font-semibold text-teal-700 mb-3 flex items-center space-x-2">
+                <Leaf className="w-4 h-4" />
+                <span>Tiết Khí</span>
+              </h4>
+              {currentSolarTerm ? (
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="font-medium text-teal-600">{currentSolarTerm.solarTerm.name}</span>
+                    <Badge 
+                      variant="secondary" 
+                      className={`text-xs ${SEASON_COLORS[currentSolarTerm.solarTerm.season]}`}
+                    >
+                      {SEASON_NAMES[currentSolarTerm.solarTerm.season]}
+                    </Badge>
+                  </div>
+                  <div className="text-xs text-gray-600 mb-1">
+                    {currentSolarTerm.solarTerm.description}
+                  </div>
+                  <div className="text-xs text-gray-500">
+                    <strong>Thời gian:</strong><br />
+                    {formatSolarTermPeriod(currentSolarTerm)}
+                  </div>
                 </div>
               ) : (
-                <div className="text-xs text-gray-500">Không có lễ hội đặc biệt</div>
+                <div className="text-xs text-gray-500">Không xác định được tiết khí</div>
               )}
             </div>
           </div>
+        </CardContent>
+      </Card>
+
+      {/* Festivals and Events - Updated */}
+      <Card className="moonrise-card">
+        <CardHeader>
+          <CardTitle className="flex items-center space-x-2 text-amber-600">
+            <Calendar className="w-5 h-5" />
+            <span>Lễ Hội & Sự Kiện</span>
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          {dateInfo.festivals.length > 0 ? (
+            <div className="space-y-4">
+              {dateInfo.festivals.map((festival, index) => (
+                <div key={index} className="p-4 bg-gradient-to-r from-red-50 to-orange-50 rounded-lg border border-red-200">
+                  <div className="flex items-start justify-between mb-2">
+                    <h5 className="font-medium text-gray-800">{festival.name}</h5>
+                    <Badge 
+                      variant="secondary" 
+                      className="text-xs bg-red-100 text-red-700"
+                    >
+                      {festival.type === 'traditional' ? 'Truyền thống' : 
+                       festival.type === 'official' ? 'Chính thức' : 
+                       festival.type === 'international' ? 'Quốc tế' : 'Khác'}
+                    </Badge>
+                  </div>
+                  <p className="text-sm text-gray-600 leading-relaxed">{festival.description}</p>
+                  {festival.country && (
+                    <div className="mt-2">
+                      <Badge variant="outline" className="text-xs">
+                        {festival.country === 'VN' ? 'Việt Nam' : festival.country}
+                      </Badge>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-8 text-gray-500">
+              <Calendar className="w-12 h-12 mx-auto mb-4 opacity-50" />
+              <p>Không có lễ hội đặc biệt trong ngày này</p>
+              {currentSolarTerm && (
+                <div className="mt-4 p-3 bg-teal-50 rounded-lg border border-teal-200">
+                  <p className="text-sm text-teal-700">
+                    <strong>Tiết khí hiện tại:</strong> {currentSolarTerm.solarTerm.name}
+                  </p>
+                  <p className="text-xs text-teal-600 mt-1">
+                    {formatSolarTermPeriod(currentSolarTerm)}
+                  </p>
+                </div>
+              )}
+            </div>
+          )}
         </CardContent>
       </Card>
 
