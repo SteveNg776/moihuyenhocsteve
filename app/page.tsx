@@ -14,7 +14,7 @@ export default function HomePage() {
   const features = [
     {
       icon: BookOpen,
-      title: 'Kinh Dịch Oracle',
+      title: 'Kinh Dịch',
       description: 'Tham khảo Kinh Dịch cổ đại với trình tạo quẻ tương tác và giải thích toàn diện.',
       href: '/i-ching',
       color: 'text-blue-500'
@@ -34,15 +34,15 @@ export default function HomePage() {
       <section className="relative py-32 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto text-center max-w-4xl">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-800 mb-8 leading-tight">
-            Trí Tuệ Cổ Đại
+            Khám Phá Trí Tuệ Cổ Đại
           </h1>
           
           <p className="text-xl sm:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Khám phá Kinh Dịch và Thần Số Học thông qua các công cụ hiện đại
+            Khám phá Kinh Dịch và Số Học thông qua các công cụ hiện đại
           </p>
           
           <Button size="lg" className="moonrise-button text-lg px-8 py-4 rounded-full">
-            Bắt Đầu Khám Phá
+            Bắt Đầu Hành Trình
             <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
         </div>
@@ -91,7 +91,7 @@ export default function HomePage() {
             Khám phá trí tuệ cổ đại thông qua các công cụ hiện đại và trực quan
           </p>
           <Button size="lg" className="moonrise-button text-lg px-10 py-4 rounded-full">
-            Bắt Đầu Miễn Phí
+            Bắt Đầu Sử Dụng
             <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
         </div>
