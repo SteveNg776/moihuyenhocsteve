@@ -9,32 +9,10 @@ import { Calendar, CalendarDays, Clock, TrendingUp, Sparkles, Star, AlertCircle,
 import { useLanguage } from '@/contexts/language-context';
 import { getDateInfo, formatDate, validateSolarDate, type DateInfo } from '@/lib/lunar-calendar-utils';
 import { getCurrentSolarTerm, formatSolarTermPeriod, SEASON_COLORS, SEASON_NAMES, type SolarTermPeriod } from '@/lib/solar-terms-data';
-import { NumerologyInsightDialog } from './numerology-insight-dialog';
-
-interface NumerologyInsight {
-  numerologyMeaning: string;
-  historicalEvents: Array<{
-    year: number;
-    event: string;
-  }>;
-  energy: {
-    type: string;
-    description: string;
-    characteristics: string[];
-  };
-  suggestions: {
-    family: string;
-    couples: string;
-    individuals: string;
-  };
-}
 
 export function DateHandbook() {
   const { t } = useLanguage();
   const [currentDate, setCurrentDate] = useState(new Date());
-  const [isInsightDialogOpen, setIsInsightDialogOpen] = useState(false);
-  const [isFetchingInsight, setIsFetchingInsight] = useState(false);
-  const [insightData, setInsightData] = useState<NumerologyInsight | undefined>(undefined);
   const [dateError, setDateError] = useState<string | null>(null);
   const [conversionSuccess, setConversionSuccess] = useState<string | null>(null);
 
@@ -111,59 +89,6 @@ export function DateHandbook() {
     } catch (error) {
       setDateError('Định dạng ngày không hợp lệ. Vui lòng chọn ngày từ lịch.');
     }
-  };
-
-  const handleExploreInsight = async () => {
-    setIsFetchingInsight(true);
-    setIsInsightDialogOpen(true);
-    
-    // Simulate API call delay
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    // Mock data - in real implementation, this would come from Gemini API
-    const mockInsightData: NumerologyInsight = {
-      numerologyMeaning: `Ngày ${currentDate.getDate()}/${currentDate.getMonth() + 1}/${currentDate.getFullYear()} mang trong mình năng lượng của số ${currentDate.getDate()}. Trong thần số học, số này đại diện cho sự khởi đầu mới, sáng tạo và độc lập. Những người sinh vào ngày này thường có khả năng lãnh đạo tự nhiên và tinh thần tiên phong. Ngày này khuyến khích bạn bắt đầu những dự án mới, thể hiện tính cá nhân và theo đuổi những ước mơ của mình với sự tự tin và quyết tâm.`,
-      historicalEvents: [
-        {
-          year: 1976,
-          event: "Seychelles giành được độc lập từ Vương quốc Anh."
-        },
-        {
-          year: 1995,
-          event: "Tàu con thoi Atlantis của NASA ghép nối thành công với trạm vũ trụ Mir của Nga, mở ra kỷ nguyên hợp tác không gian quốc tế."
-        },
-        {
-          year: 1949,
-          event: "Nam Phi bắt đầu thực thi chế độ Apartheid."
-        },
-        {
-          year: 2007,
-          event: "Chiếc iPhone thế hệ đầu tiên được Apple bán ra, đánh dấu một bước ngoặt lớn trong ngành công nghiệp điện thoại di động."
-        },
-        {
-          year: 1966,
-          event: "Chiến tranh Việt Nam - Hoa Kỳ ném bom Bắc Việt Nam."
-        }
-      ],
-      energy: {
-        type: "Năng lượng Khởi đầu",
-        description: `Vì ngày ${currentDate.getDate()}/${currentDate.getMonth() + 1}/${currentDate.getFullYear()} là ${currentDate.toLocaleDateString('vi-VN', { weekday: 'long' })} và rơi vào mùa ${currentDate.getMonth() < 3 || currentDate.getMonth() > 10 ? 'đông' : currentDate.getMonth() < 6 ? 'xuân' : currentDate.getMonth() < 9 ? 'hè' : 'thu'}, đây là một ngày mang năng lượng đặc biệt.`,
-        characteristics: ["Sáng tạo", "Độc lập", "Lãnh đạo", "Tiên phong", "Tự tin", "Quyết đoán"]
-      },
-      suggestions: {
-        family: "Dành thời gian ở các khu du lịch ven biển như Nha Trang, Đà Nẵng hoặc Vũng Tàu. Tận hưởng không khí biển, tắm biển và thưởng thức hải sản tươi ngon.",
-        couples: "Tổ chức một buổi picnic lãng mạn ở công viên hoặc khu vườn, hoặc tham gia một lớp học nấu ăn cùng nhau để tạo thêm kỷ niệm đáng nhớ.",
-        individuals: "Tham gia một lớp học yoga hoặc thiền ngoài trời để thư giãn và tái tạo năng lượng. Hoặc đơn giản là đọc một cuốn sách hay trong một quán cà phê yên tĩnh."
-      }
-    };
-    
-    setInsightData(mockInsightData);
-    setIsFetchingInsight(false);
-  };
-
-  const handleCloseInsightDialog = () => {
-    setIsInsightDialogOpen(false);
-    setInsightData(undefined);
   };
 
   return (
@@ -414,94 +339,6 @@ export function DateHandbook() {
           </div>
         </CardContent>
       </Card>
-
-      {/* Festivals and Events - Updated */}
-      <Card className="moonrise-card">
-        <CardHeader>
-          <CardTitle className="flex items-center space-x-2 text-amber-600">
-            <Calendar className="w-5 h-5" />
-            <span>Lễ Hội & Sự Kiện</span>
-          </CardTitle>
-        </CardHeader>
-        <CardContent>
-          {dateInfo.festivals.length > 0 ? (
-            <div className="space-y-4">
-              {dateInfo.festivals.map((festival, index) => (
-                <div key={index} className="p-4 bg-gradient-to-r from-red-50 to-orange-50 rounded-lg border border-red-200">
-                  <div className="flex items-start justify-between mb-2">
-                    <h5 className="font-medium text-gray-800">{festival.name}</h5>
-                    <Badge 
-                      variant="secondary" 
-                      className="text-xs bg-red-100 text-red-700"
-                    >
-                      {festival.type === 'traditional' ? 'Truyền thống' : 
-                       festival.type === 'official' ? 'Chính thức' : 
-                       festival.type === 'international' ? 'Quốc tế' : 'Khác'}
-                    </Badge>
-                  </div>
-                  <p className="text-sm text-gray-600 leading-relaxed">{festival.description}</p>
-                  {festival.country && (
-                    <div className="mt-2">
-                      <Badge variant="outline" className="text-xs">
-                        {festival.country === 'VN' ? 'Việt Nam' : festival.country}
-                      </Badge>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-8 text-gray-500">
-              <Calendar className="w-12 h-12 mx-auto mb-4 opacity-50" />
-              <p>Không có lễ hội đặc biệt trong ngày này</p>
-              {currentSolarTerm && (
-                <div className="mt-4 p-3 bg-teal-50 rounded-lg border border-teal-200">
-                  <p className="text-sm text-teal-700">
-                    <strong>Tiết khí hiện tại:</strong> {currentSolarTerm.solarTerm.name}
-                  </p>
-                  <p className="text-xs text-teal-600 mt-1">
-                    {formatSolarTermPeriod(currentSolarTerm)}
-                  </p>
-                </div>
-              )}
-            </div>
-          )}
-        </CardContent>
-      </Card>
-
-      {/* Insight Exploration - Prominent CTA */}
-      <Card className="moonrise-card">
-        <CardContent className="p-6 text-center">
-          <div className="mb-4">
-            <Star className="w-8 h-8 text-blue-400 mx-auto mb-2" />
-            <h3 className="text-lg font-semibold text-gray-800 mb-2">
-              Khám phá ý nghĩa sâu sắc
-            </h3>
-            <p className="text-gray-600 text-sm">
-              Tìm hiểu thêm về thần số học và ý nghĩa tâm linh của ngày này
-            </p>
-          </div>
-          
-          <Button
-            onClick={handleExploreInsight}
-            className="moonrise-button"
-            size="lg"
-            disabled={!!dateError}
-          >
-            <Sparkles className="w-5 h-5 mr-2" />
-            Khám phá ngay
-          </Button>
-        </CardContent>
-      </Card>
-
-      {/* Numerology Insight Dialog */}
-      <NumerologyInsightDialog
-        isOpen={isInsightDialogOpen}
-        onClose={handleCloseInsightDialog}
-        isLoading={isFetchingInsight}
-        date={currentDate}
-        insightData={insightData}
-      />
     </div>
   );
 }
