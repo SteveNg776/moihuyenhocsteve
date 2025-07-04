@@ -1,4 +1,4 @@
-# Nghiên Cứu Huyền Bí - Mystic Studies
+# Nghiên Cứu Huyền Học
 
 Một ứng dụng web toàn diện để khám phá trí tuệ cổ đại và kiến thức bí truyền thông qua các công cụ tương tác hiện đại.
 

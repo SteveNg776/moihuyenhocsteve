@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { 
   BookOpen, 
   Coins, 
@@ -16,8 +17,9 @@ import {
 import { Hexagram, generateRandomHexagram, getHexagramByLines } from '@/lib/i-ching-data';
 import { HexagramDisplay } from '@/components/i-ching/hexagram-display';
 import { CoinToss } from '@/components/i-ching/coin-toss';
+import { DiBocTienTri } from '@/components/i-ching/di-boc-tien-tri';
 
-type ViewMode = 'intro' | 'coin-toss' | 'quick-reading' | 'hexagram';
+type ViewMode = 'intro' | 'coin-toss' | 'quick-reading' | 'di-boc' | 'hexagram';
 
 export default function IChing() {
   const [viewMode, setViewMode] = useState<ViewMode>('intro');
@@ -101,7 +103,7 @@ export default function IChing() {
             </Card>
 
             {/* Consultation Methods */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Card className="moonrise-card group hover:scale-105 transition-all duration-300 cursor-pointer"
                     onClick={() => setViewMode('coin-toss')}>
                 <CardHeader>
@@ -167,6 +169,41 @@ export default function IChing() {
                     <div className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
                       <span>Hoàn hảo cho hướng dẫn hàng ngày</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="mystical-card group hover:scale-105 transition-all duration-300 cursor-pointer"
+                    onClick={() => setViewMode('di-boc')}>
+                <CardHeader>
+                  <div className="flex items-center justify-between mb-4">
+                    <Sparkles className="w-8 h-8 text-mystical-gold animate-float" style={{ animationDelay: '0.4s' }} />
+                    <Badge variant="secondary" className="bg-mystical-gold/10 text-mystical-gold border-mystical-gold/30">
+                      Cổ Đại
+                    </Badge>
+                  </div>
+                  <CardTitle className="text-xl font-semibold text-gray-800 group-hover:text-mystical-gold transition-colors">
+                    Dị Bốc Tiên Tri
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-gray-600 mb-6">
+                    Phương pháp bói toán cổ đại với 512 quẻ tiên tri. 
+                    Sử dụng 8 cung Bát Quái để đưa ra lời tiên tri trực tiếp và chính xác.
+                  </CardDescription>
+                  <div className="space-y-2 text-sm text-gray-600">
+                    <div className="flex items-center space-x-2">
+                      <div className="w-2 h-2 bg-mystical-gold rounded-full"></div>
+                      <span>512 quẻ tiên tri cổ đại</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <div className="w-2 h-2 bg-mystical-gold rounded-full"></div>
+                      <span>Kết quả trực tiếp, rõ ràng</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <div className="w-2 h-2 bg-mystical-gold rounded-full"></div>
+                      <span>6 lĩnh vực chuyên biệt</span>
                     </div>
                   </div>
                 </CardContent>
@@ -259,6 +296,19 @@ export default function IChing() {
                 </Button>
               </CardContent>
             </Card>
+          </div>
+        )}
+
+        {viewMode === 'di-boc' && (
+          <div className="space-y-6">
+            <Button
+              onClick={resetReading}
+              variant="ghost"
+              className="hover:bg-blue-50"
+            >
+              ← Quay Lại Giới Thiệu
+            </Button>
+            <DiBocTienTri />
           </div>
         )}
 
