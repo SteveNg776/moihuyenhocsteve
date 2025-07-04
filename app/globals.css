@@ -297,81 +297,81 @@
 
 /* Calendar specific dark mode styles */
 .dark .bg-green-600 {
-  @apply bg-green-700;
+  background-color: #15803d; /* Tailwind's green-700 */
 }
 
 .dark .bg-green-500 {
-  @apply bg-green-600;
+  background-color: #16a34a; /* Tailwind's green-600 */
 }
 
 .dark .border-green-500 {
-  @apply border-green-600;
+  border-color: #16a34a; /* Tailwind's green-600 */
 }
 
 .dark .bg-yellow-100 {
-  @apply bg-yellow-900/30;
+  background-color: rgba(120, 53, 15, 0.3); /* Tailwind's yellow-900 with 30% opacity */
 }
 
 .dark .bg-blue-100 {
-  @apply bg-blue-900/30;
+  background-color: rgba(30, 58, 138, 0.3); /* Tailwind's blue-900 with 30% opacity */
 }
 
 .dark .bg-blue-50 {
-  @apply bg-blue-900/20;
+  background-color: rgba(30, 58, 138, 0.2); /* Tailwind's blue-900 with 20% opacity */
 }
 
 .dark .text-blue-600 {
-  @apply text-blue-400;
+  color: #60a5fa; /* Tailwind's blue-400 */
 }
 
 .dark .text-blue-700 {
-  @apply text-blue-300;
+  color: #93c5fd; /* Tailwind's blue-300 */
 }
 
 .dark .text-green-600 {
-  @apply text-green-400;
+  color: #4ade80; /* Tailwind's green-400 */
 }
 
 .dark .text-green-700 {
-  @apply text-green-300;
+  color: #86efac; /* Tailwind's green-300 */
 }
 
 .dark .text-purple-600 {
-  @apply text-purple-400;
+  color: #c084fc; /* Tailwind's purple-400 */
 }
 
 .dark .text-red-600 {
-  @apply text-red-400;
+  color: #f87171; /* Tailwind's red-400 */
 }
 
 .dark .text-orange-600 {
-  @apply text-orange-400;
+  color: #fb923c; /* Tailwind's orange-400 */
 }
 
 .dark .bg-red-50 {
-  @apply bg-red-900/20;
+  background-color: rgba(127, 29, 29, 0.2); /* Tailwind's red-900 with 20% opacity */
 }
 
 .dark .bg-green-50 {
-  @apply bg-green-900/20;
+  background-color: rgba(20, 83, 45, 0.2); /* Tailwind's green-900 with 20% opacity */
 }
 
 .dark .bg-purple-50 {
-  @apply bg-purple-900/20;
+  background-color: rgba(88, 28, 135, 0.2); /* Tailwind's purple-900 with 20% opacity */
 }
 
 .dark .border-blue-200 {
-  @apply border-blue-800;
+  border-color: #1e40af; /* Tailwind's blue-800 */
 }
 
 .dark .border-green-200 {
-  @apply border-green-800;
+  border-color: #166534; /* Tailwind's green-800 */
 }
 
 .dark .border-red-200 {
-  @apply border-red-800;
+  border-color: #991b1b; /* Tailwind's red-800 */
 }
 
 .dark .border-purple-200 {
-  @apply border-purple-800;
+  border-color: #6b21a8; /* Tailwind's purple-800 */
 }
