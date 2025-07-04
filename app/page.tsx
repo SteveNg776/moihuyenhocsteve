@@ -31,9 +31,9 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section - Đã giảm khoảng đệm */}
-      <section className="relative py-10 px-4 sm:px-6 lg:px-8">
+      <section className="relative py-8 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto text-center max-w-4xl">
-<h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-8 leading-tight">            Khám Phá Trí Tuệ Cổ Đại
+  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-8 leading-tight">            Khám Phá Trí Tuệ Cổ Đại
           </h1>
           
           <p className="text-xl sm:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
