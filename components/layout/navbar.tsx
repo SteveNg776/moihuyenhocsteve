@@ -31,17 +31,20 @@ export function Navbar() {
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            {navigationItems.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
-              >
-                {item.name}
-              </Link>
-            ))}
+          {/* Desktop Navigation - Căn giữa và tạo hiệu ứng nổi bật */}
+          <nav className="hidden md:flex items-center justify-center flex-1 mx-8">
+            <div className="flex items-center space-x-12">
+              {navigationItems.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="text-lg font-bold text-gray-800 hover:text-blue-600 transition-all duration-300 hover:scale-110 hover:drop-shadow-lg relative group"
+                >
+                  {item.name}
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 transition-all duration-300 group-hover:w-full"></span>
+                </Link>
+              ))}
+            </div>
           </nav>
 
           {/* Desktop Actions */}
@@ -73,13 +76,13 @@ export function Navbar() {
                   Menu điều hướng cho thiết bị di động
                 </SheetDescription>
               </SheetHeader>
-              <div className="flex flex-col space-y-4 mt-8">
+              <div className="flex flex-col space-y-6 mt-8">
                 {navigationItems.map((item) => (
                   <Link
                     key={item.name}
                     href={item.href}
                     onClick={() => setIsOpen(false)}
-                    className="text-lg font-medium text-gray-700 hover:text-blue-600 transition-colors py-2"
+                    className="text-xl font-bold text-gray-800 hover:text-blue-600 transition-all duration-300 py-3 border-b border-gray-200 hover:border-blue-300"
                   >
                     {item.name}
                   </Link>
