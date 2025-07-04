@@ -4,12 +4,11 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle, SheetDescription } from '@/components/ui/sheet';
-import { Menu, Moon, Sun } from 'lucide-react';
-import { useTheme } from 'next-themes';
+import { Menu } from 'lucide-react';
+import { ThemeToggle } from './theme-toggle';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const { theme, setTheme } = useTheme();
 
   const navigationItems = [
     { name: 'Trang Chủ', href: '/' },
@@ -18,7 +17,7 @@ export function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-white/20">
+    <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-md border-b border-border/20 transition-colors duration-300">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -26,7 +25,7 @@ export function Navbar() {
             <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
               <span className="text-white font-bold text-sm">∞</span>
             </div>
-            <span className="font-bold text-xl text-gray-800">
+            <span className="font-bold text-xl text-foreground">
               Nghiên Cứu Huyền Bí
             </span>
           </Link>
@@ -38,7 +37,7 @@ export function Navbar() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-lg font-bold text-gray-800 hover:text-blue-600 transition-all duration-300 hover:scale-110 hover:drop-shadow-lg relative group"
+                  className="text-lg font-bold text-foreground hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 hover:scale-110 hover:drop-shadow-lg relative group"
                 >
                   {item.name}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 transition-all duration-300 group-hover:w-full"></span>
@@ -49,47 +48,41 @@ export function Navbar() {
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-              className="hover:bg-blue-50"
-            >
-              <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-              <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-              <span className="sr-only">Chuyển đổi chế độ</span>
-            </Button>
+            <ThemeToggle />
           </div>
 
           {/* Mobile Navigation */}
-          <Sheet open={isOpen} onOpenChange={setIsOpen}>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="md:hidden">
-                <Menu className="h-6 w-6" />
-                <span className="sr-only">Mở menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] bg-white/95 backdrop-blur-lg">
-              <SheetHeader>
-                <SheetTitle className="sr-only">Menu di động</SheetTitle>
-                <SheetDescription className="sr-only">
-                  Menu điều hướng cho thiết bị di động
-                </SheetDescription>
-              </SheetHeader>
-              <div className="flex flex-col space-y-6 mt-8">
-                {navigationItems.map((item) => (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    onClick={() => setIsOpen(false)}
-                    className="text-xl font-bold text-gray-800 hover:text-blue-600 transition-all duration-300 py-3 border-b border-gray-200 hover:border-blue-300"
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-              </div>
-            </SheetContent>
-          </Sheet>
+          <div className="md:hidden flex items-center space-x-2">
+            <ThemeToggle />
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Menu className="h-6 w-6" />
+                  <span className="sr-only">Mở menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[300px] bg-background/95 backdrop-blur-lg">
+                <SheetHeader>
+                  <SheetTitle className="sr-only">Menu di động</SheetTitle>
+                  <SheetDescription className="sr-only">
+                    Menu điều hướng cho thiết bị di động
+                  </SheetDescription>
+                </SheetHeader>
+                <div className="flex flex-col space-y-6 mt-8">
+                  {navigationItems.map((item) => (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      onClick={() => setIsOpen(false)}
+                      className="text-xl font-bold text-foreground hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 py-3 border-b border-border hover:border-blue-300"
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </div>
     </header>

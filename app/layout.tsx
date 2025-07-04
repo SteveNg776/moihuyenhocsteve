@@ -31,9 +31,9 @@ export default function RootLayout({
       <body className={`${inter.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
-          enableSystem={false}
-          disableTransitionOnChange
+          defaultTheme="system"
+          enableSystem={true}
+          disableTransitionOnChange={false}
         >
           <LanguageProvider>
             <div className="relative min-h-screen flex flex-col cosmic-background">
