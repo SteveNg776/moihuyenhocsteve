@@ -11,402 +11,214 @@ export interface Holiday {
   activities?: string[];
 }
 
+// Comprehensive holidays data for Vietnam and USA
 export const HOLIDAYS_DATA: Holiday[] = [
-  // Vietnamese Official Holidays
-  {
-    id: 'new-year',
-    name: 'Tết Dương lịch',
-    date: { month: 1, day: 1 },
-    type: 'official',
-    description: 'Ngày đầu năm mới theo dương lịch, ngày nghỉ lễ chính thức của Việt Nam.',
-    isRecurring: true,
-    country: 'VN',
-    significance: 'high',
-    activities: ['Chúc tết', 'Tặng quà', 'Họp mặt gia đình']
-  },
+  // Vietnamese Traditional Holidays (Lunar Calendar)
   {
     id: 'tet-nguyen-dan',
     name: 'Tết Nguyên Đán',
     lunarDate: { month: 1, day: 1 },
-    type: 'official',
-    description: 'Tết cổ truyền của dân tộc Việt Nam, ngày lễ quan trọng nhất trong năm.',
-    isRecurring: true,
-    country: 'VN',
-    significance: 'high',
-    activities: ['Cúng tổ tiên', 'Lì xì', 'Thăm họ hàng', 'Ăn bánh chưng']
-  },
-  {
-    id: 'hung-kings-death',
-    name: 'Giỗ Tổ Hùng Vương',
-    lunarDate: { month: 3, day: 10 },
-    type: 'official',
-    description: 'Ngày giỗ các vua Hùng, tổ tiên của dân tộc Việt Nam.',
-    isRecurring: true,
-    country: 'VN',
-    significance: 'high',
-    activities: ['Cúng tổ tiên', 'Thăm đền Hùng', 'Tham gia lễ hội']
-  },
-  {
-    id: 'liberation-day',
-    name: 'Ngày Giải phóng miền Nam',
-    date: { month: 4, day: 30 },
-    type: 'official',
-    description: 'Ngày kỷ niệm chiến thắng 30/4/1975, thống nhất đất nước.',
-    isRecurring: true,
-    country: 'VN',
-    significance: 'high',
-    activities: ['Lễ kỷ niệm', 'Thăm di tích lịch sử']
-  },
-  {
-    id: 'labor-day',
-    name: 'Ngày Quốc tế Lao động',
-    date: { month: 5, day: 1 },
-    type: 'official',
-    description: 'Ngày Quốc tế Lao động, ngày nghỉ lễ chính thức.',
-    isRecurring: true,
-    country: 'VN',
-    significance: 'high',
-    activities: ['Nghỉ ngơi', 'Du lịch', 'Tham gia hoạt động cộng đồng']
-  },
-  {
-    id: 'national-day',
-    name: 'Quốc khánh Việt Nam',
-    date: { month: 9, day: 2 },
-    type: 'official',
-    description: 'Ngày Quốc khánh nước Cộng hòa Xã hội chủ nghĩa Việt Nam.',
-    isRecurring: true,
-    country: 'VN',
-    significance: 'high',
-    activities: ['Lễ diễu binh', 'Bắn pháo hoa', 'Hoạt động văn hóa']
-  },
-
-  // Traditional Vietnamese Holidays
-  {
-    id: 'tet-han-thuc',
-    name: 'Tết Hàn thực',
-    lunarDate: { month: 3, day: 3 },
     type: 'traditional',
-    description: 'Lễ hội truyền thống để tưởng nhớ tổ tiên, ăn bánh trôi bánh chay.',
-    isRecurring: true,
-    country: 'VN',
-    significance: 'medium',
-    activities: ['Ăn bánh trôi', 'Ăn bánh chay', 'Cúng tổ tiên']
-  },
-  {
-    id: 'tet-doan-ngo',
-    name: 'Tết Đoan Ngọ',
-    lunarDate: { month: 5, day: 5 },
-    type: 'traditional',
-    description: 'Tết Đoan Ngọ, ngày tránh dịch bệnh, ăn chè đậu đỏ và rượu nếp.',
-    isRecurring: true,
-    country: 'VN',
-    significance: 'medium',
-    activities: ['Ăn chè đậu đỏ', 'Uống rượu nếp', 'Tắm nước lá']
-  },
-  {
-    id: 'vu-lan',
-    name: 'Lễ Vu Lan',
-    lunarDate: { month: 7, day: 15 },
-    type: 'traditional',
-    description: 'Lễ Vu Lan báo hiếu, ngày tưởng nhớ cha mẹ và tổ tiên.',
+    description: 'Tết cổ truyền Việt Nam, ngày quan trọng nhất trong năm',
     isRecurring: true,
     country: 'VN',
     significance: 'high',
-    activities: ['Cúng cha mẹ', 'Thăm mộ', 'Làm từ thiện', 'Đeo hoa hồng']
-  },
-  {
-    id: 'tet-trung-thu',
-    name: 'Tết Trung Thu',
-    lunarDate: { month: 8, day: 15 },
-    type: 'traditional',
-    description: 'Tết Trung Thu, lễ hội của trẻ em với bánh trung thu và đèn lồng.',
-    isRecurring: true,
-    country: 'VN',
-    significance: 'high',
-    activities: ['Ăn bánh trung thu', 'Múa lân', 'Thả đèn lồng', 'Ngắm trăng']
-  },
-  {
-    id: 'tet-trung-nguyen',
-    name: 'Tết Trung Nguyên',
-    lunarDate: { month: 7, day: 15 },
-    type: 'traditional',
-    description: 'Tết Trung Nguyên, ngày cúng cô hồn và tế độ vong linh.',
-    isRecurring: true,
-    country: 'VN',
-    significance: 'medium',
-    activities: ['Cúng cô hồn', 'Thả đèn hoa đăng', 'Làm từ thiện']
+    activities: ['Thờ cúng tổ tiên', 'Đoàn viên gia đình', 'Lì xì', 'Chúc Tết']
   },
   {
     id: 'tet-nguyen-tieu',
     name: 'Tết Nguyên Tiêu',
     lunarDate: { month: 1, day: 15 },
     type: 'traditional',
-    description: 'Rằm tháng Giêng, đêm trăng tròn đầu tiên của năm mới.',
+    description: 'Rằm tháng Giêng, kết thúc Tết Nguyên Đán',
     isRecurring: true,
     country: 'VN',
-    significance: 'medium',
-    activities: ['Thả đèn lồng', 'Cúng Phật', 'Ăn chè']
+    significance: 'medium'
   },
   {
-    id: 'le-phat-dan',
-    name: 'Lễ Phật Đản',
-    lunarDate: { month: 4, day: 8 },
-    type: 'religious',
-    description: 'Ngày sinh của Đức Phật Thích Ca Mâu Ni.',
+    id: 'tet-han-thuc',
+    name: 'Tết Hàn Thực',
+    lunarDate: { month: 3, day: 3 },
+    type: 'traditional',
+    description: 'Tết cúng tổ tiên, ăn bánh trôi bánh chay',
+    isRecurring: true,
+    country: 'VN',
+    significance: 'medium'
+  },
+  {
+    id: 'tet-doan-ngo',
+    name: 'Tết Đoan Ngọ',
+    lunarDate: { month: 5, day: 5 },
+    type: 'traditional',
+    description: 'Tết diệt sâu bọ, ăn rượu nếp, trái cây',
+    isRecurring: true,
+    country: 'VN',
+    significance: 'medium'
+  },
+  {
+    id: 'tet-trung-nguyen',
+    name: 'Tết Trung Nguyên',
+    lunarDate: { month: 7, day: 15 },
+    type: 'traditional',
+    description: 'Lễ Vu Lan báo hiếu, cúng cô hồn',
+    isRecurring: true,
+    country: 'VN',
+    significance: 'high'
+  },
+  {
+    id: 'tet-trung-thu',
+    name: 'Tết Trung Thu',
+    lunarDate: { month: 8, day: 15 },
+    type: 'traditional',
+    description: 'Tết thiếu nhi, ngắm trăng, ăn bánh trung thu',
     isRecurring: true,
     country: 'VN',
     significance: 'high',
-    activities: ['Đi chùa', 'Cúng Phật', 'Làm từ thiện', 'Thả chim phóng sinh']
+    activities: ['Ngắm trăng', 'Ăn bánh trung thu', 'Múa lân', 'Đèn lồng']
+  },
+
+  // Vietnamese Official Holidays (Solar Calendar)
+  {
+    id: 'new-year-day',
+    name: 'Tết Dương Lịch',
+    date: { month: 1, day: 1 },
+    type: 'official',
+    description: 'Ngày đầu năm mới dương lịch',
+    isRecurring: true,
+    country: 'VN',
+    significance: 'medium'
+  },
+  {
+    id: 'vietnam-liberation-day',
+    name: 'Ngày Giải Phóng Miền Nam',
+    date: { month: 4, day: 30 },
+    type: 'official',
+    description: 'Ngày thống nhất đất nước (30/4/1975)',
+    isRecurring: true,
+    country: 'VN',
+    significance: 'high'
+  },
+  {
+    id: 'international-labor-day',
+    name: 'Ngày Quốc Tế Lao Động',
+    date: { month: 5, day: 1 },
+    type: 'official',
+    description: 'Ngày Quốc tế Lao động',
+    isRecurring: true,
+    country: 'VN',
+    significance: 'medium'
+  },
+  {
+    id: 'vietnam-independence-day',
+    name: 'Ngày Quốc Khánh',
+    date: { month: 9, day: 2 },
+    type: 'official',
+    description: 'Ngày Độc lập của Việt Nam (2/9/1945)',
+    isRecurring: true,
+    country: 'VN',
+    significance: 'high'
+  },
+  {
+    id: 'hung-kings-day',
+    name: 'Giỗ Tổ Hùng Vương',
+    lunarDate: { month: 3, day: 10 },
+    type: 'official',
+    description: 'Ngày giỗ Tổ Hùng Vương',
+    isRecurring: true,
+    country: 'VN',
+    significance: 'high'
+  },
+
+  // USA Major Holidays
+  {
+    id: 'usa-new-year',
+    name: 'New Year\'s Day (USA)',
+    date: { month: 1, day: 1 },
+    type: 'official',
+    description: 'Ngày đầu năm mới tại Hoa Kỳ',
+    isRecurring: true,
+    country: 'US',
+    significance: 'high'
+  },
+  {
+    id: 'usa-independence-day',
+    name: 'Independence Day (USA)',
+    date: { month: 7, day: 4 },
+    type: 'official',
+    description: 'Ngày Độc lập Hoa Kỳ (4/7/1776)',
+    isRecurring: true,
+    country: 'US',
+    significance: 'high'
+  },
+  {
+    id: 'usa-thanksgiving',
+    name: 'Thanksgiving (USA)',
+    date: { month: 11, day: 28 }, // Approximate - 4th Thursday of November
+    type: 'official',
+    description: 'Lễ Tạ ơn Hoa Kỳ',
+    isRecurring: true,
+    country: 'US',
+    significance: 'high'
+  },
+  {
+    id: 'usa-christmas',
+    name: 'Christmas (USA)',
+    date: { month: 12, day: 25 },
+    type: 'religious',
+    description: 'Lễ Giáng Sinh',
+    isRecurring: true,
+    country: 'US',
+    significance: 'high'
+  },
+  {
+    id: 'usa-memorial-day',
+    name: 'Memorial Day (USA)',
+    date: { month: 5, day: 27 }, // Approximate - last Monday of May
+    type: 'memorial',
+    description: 'Ngày tưởng niệm các anh hùng liệt sĩ Hoa Kỳ',
+    isRecurring: true,
+    country: 'US',
+    significance: 'high'
+  },
+  {
+    id: 'usa-labor-day',
+    name: 'Labor Day (USA)',
+    date: { month: 9, day: 2 }, // Approximate - first Monday of September
+    type: 'official',
+    description: 'Ngày Lao động Hoa Kỳ',
+    isRecurring: true,
+    country: 'US',
+    significance: 'medium'
   },
 
   // International Holidays
   {
-    id: 'womens-day',
-    name: 'Ngày Quốc tế Phụ nữ',
+    id: 'international-womens-day',
+    name: 'Ngày Quốc Tế Phụ Nữ',
     date: { month: 3, day: 8 },
     type: 'international',
-    description: 'Ngày Quốc tế Phụ nữ, tôn vinh vai trò và đóng góp của phụ nữ.',
+    description: 'Ngày Quốc tế Phụ nữ 8/3',
     isRecurring: true,
-    significance: 'high',
-    activities: ['Tặng hoa', 'Tổ chức sự kiện', 'Vinh danh phụ nữ']
-  },
-  {
-    id: 'childrens-day',
-    name: 'Ngày Quốc tế Thiếu nhi',
-    date: { month: 6, day: 1 },
-    type: 'international',
-    description: 'Ngày Quốc tế Thiếu nhi, bảo vệ quyền lợi trẻ em trên toàn thế giới.',
-    isRecurring: true,
-    significance: 'high',
-    activities: ['Tổ chức vui chơi cho trẻ', 'Tặng quà', 'Hoạt động giáo dục']
-  },
-  {
-    id: 'teachers-day-vn',
-    name: 'Ngày Nhà giáo Việt Nam',
-    date: { month: 11, day: 20 },
-    type: 'cultural',
-    description: 'Ngày Nhà giáo Việt Nam, tôn vinh các thầy cô giáo.',
-    isRecurring: true,
-    country: 'VN',
-    significance: 'high',
-    activities: ['Tặng hoa cho thầy cô', 'Tổ chức lễ kỷ niệm', 'Thăm thầy cô cũ']
-  },
-  {
-    id: 'vietnamese-womens-day',
-    name: 'Ngày Phụ nữ Việt Nam',
-    date: { month: 10, day: 20 },
-    type: 'cultural',
-    description: 'Ngày Phụ nữ Việt Nam, tôn vinh phụ nữ Việt Nam.',
-    isRecurring: true,
-    country: 'VN',
-    significance: 'high',
-    activities: ['Tặng hoa', 'Tổ chức tiệc', 'Vinh danh phụ nữ Việt']
+    significance: 'medium'
   },
   {
     id: 'valentines-day',
     name: 'Ngày Lễ Tình Nhân',
     date: { month: 2, day: 14 },
-    type: 'international',
-    description: 'Ngày Lễ Tình Nhân, ngày của tình yêu và lãng mạn.',
+    type: 'cultural',
+    description: 'Ngày Valentine',
     isRecurring: true,
-    significance: 'medium',
-    activities: ['Tặng hoa hồng', 'Hẹn hò', 'Tặng quà cho người yêu']
+    significance: 'medium'
   },
   {
-    id: 'mothers-day',
-    name: 'Ngày của Mẹ',
-    date: { month: 5, day: 12 }, // Second Sunday of May - using approximate date
+    id: 'international-childrens-day',
+    name: 'Ngày Quốc Tế Thiếu Nhi',
+    date: { month: 6, day: 1 },
     type: 'international',
-    description: 'Ngày của Mẹ, tôn vinh và tri ân các bà mẹ.',
-    isRecurring: true,
-    significance: 'high',
-    activities: ['Tặng hoa cho mẹ', 'Nấu ăn cho mẹ', 'Thăm mẹ']
-  },
-  {
-    id: 'fathers-day',
-    name: 'Ngày của Cha',
-    date: { month: 6, day: 16 }, // Third Sunday of June - using approximate date
-    type: 'international',
-    description: 'Ngày của Cha, tôn vinh và tri ân các người cha.',
-    isRecurring: true,
-    significance: 'high',
-    activities: ['Tặng quà cho cha', 'Đi chơi cùng cha', 'Thăm cha']
-  },
-
-  // Memorial and Historical Days
-  {
-    id: 'war-invalids-martyrs-day',
-    name: 'Ngày Thương binh Liệt sĩ',
-    date: { month: 7, day: 27 },
-    type: 'memorial',
-    description: 'Ngày tưởng nhớ các anh hùng liệt sĩ và thương binh.',
+    description: 'Ngày Quốc tế Thiếu nhi 1/6',
     isRecurring: true,
     country: 'VN',
-    significance: 'high',
-    activities: ['Thăm nghĩa trang', 'Dâng hương', 'Hoạt động từ thiện']
-  },
-  {
-    id: 'dien-bien-phu-victory',
-    name: 'Ngày chiến thắng Điện Biên Phủ',
-    date: { month: 5, day: 7 },
-    type: 'memorial',
-    description: 'Kỷ niệm chiến thắng Điện Biên Phủ năm 1954.',
-    isRecurring: true,
-    country: 'VN',
-    significance: 'high',
-    activities: ['Lễ kỷ niệm', 'Thăm di tích lịch sử']
-  },
-  {
-    id: 'ho-chi-minh-birthday',
-    name: 'Sinh nhật Chủ tịch Hồ Chí Minh',
-    date: { month: 5, day: 19 },
-    type: 'memorial',
-    description: 'Ngày sinh của Chủ tịch Hồ Chí Minh.',
-    isRecurring: true,
-    country: 'VN',
-    significance: 'high',
-    activities: ['Lễ kỷ niệm', 'Thăm lăng Bác', 'Hoạt động thiện nguyện']
-  },
-
-  // Cultural and Seasonal Events
-  {
-    id: 'spring-equinox',
-    name: 'Xuân phân',
-    date: { month: 3, day: 20 },
-    type: 'cultural',
-    description: 'Ngày xuân phân, đánh dấu sự chuyển mùa từ đông sang xuân.',
-    isRecurring: true,
-    significance: 'low',
-    activities: ['Ngắm hoa', 'Dã ngoại', 'Trồng cây']
-  },
-  {
-    id: 'summer-solstice',
-    name: 'Hạ chí',
-    date: { month: 6, day: 21 },
-    type: 'cultural',
-    description: 'Ngày hạ chí, ngày dài nhất trong năm.',
-    isRecurring: true,
-    significance: 'low',
-    activities: ['Hoạt động ngoài trời', 'Tắm biển', 'Picnic']
-  },
-  {
-    id: 'autumn-equinox',
-    name: 'Thu phân',
-    date: { month: 9, day: 23 },
-    type: 'cultural',
-    description: 'Ngày thu phân, đánh dấu sự chuyển mùa từ hè sang thu.',
-    isRecurring: true,
-    significance: 'low',
-    activities: ['Ngắm lá vàng', 'Thu hoạch', 'Chuẩn bị mùa đông']
-  },
-  {
-    id: 'winter-solstice',
-    name: 'Đông chí',
-    date: { month: 12, day: 22 },
-    type: 'cultural',
-    description: 'Ngày đông chí, ngày ngắn nhất trong năm.',
-    isRecurring: true,
-    significance: 'medium',
-    activities: ['Ăn chè đậu đỏ', 'Quây quần gia đình', 'Chuẩn bị Tết']
-  },
-
-  // Modern Vietnamese Cultural Days
-  {
-    id: 'family-day-vn',
-    name: 'Ngày Gia đình Việt Nam',
-    date: { month: 6, day: 28 },
-    type: 'cultural',
-    description: 'Ngày Gia đình Việt Nam, tôn vinh giá trị gia đình.',
-    isRecurring: true,
-    country: 'VN',
-    significance: 'medium',
-    activities: ['Họp mặt gia đình', 'Chụp ảnh gia đình', 'Hoạt động cùng nhau']
-  },
-  {
-    id: 'elderly-day-vn',
-    name: 'Ngày Người cao tuổi Việt Nam',
-    date: { month: 10, day: 1 },
-    type: 'cultural',
-    description: 'Ngày Người cao tuổi Việt Nam, tôn vinh người già.',
-    isRecurring: true,
-    country: 'VN',
-    significance: 'medium',
-    activities: ['Thăm ông bà', 'Tặng quà', 'Chăm sóc người già']
-  },
-  {
-    id: 'book-day-vn',
-    name: 'Ngày Sách Việt Nam',
-    date: { month: 4, day: 21 },
-    type: 'cultural',
-    description: 'Ngày Sách Việt Nam, khuyến khích việc đọc sách.',
-    isRecurring: true,
-    country: 'VN',
-    significance: 'medium',
-    activities: ['Đọc sách', 'Mua sách', 'Tặng sách']
-  },
-
-  // Environmental and Health Days
-  {
-    id: 'earth-day',
-    name: 'Ngày Trái Đất',
-    date: { month: 4, day: 22 },
-    type: 'international',
-    description: 'Ngày Trái Đất, nâng cao ý thức bảo vệ môi trường.',
-    isRecurring: true,
-    significance: 'medium',
-    activities: ['Trồng cây', 'Dọn dẹp môi trường', 'Tuyên truyền bảo vệ môi trường']
-  },
-  {
-    id: 'world-health-day',
-    name: 'Ngày Y tế Thế giới',
-    date: { month: 4, day: 7 },
-    type: 'international',
-    description: 'Ngày Y tế Thế giới, nâng cao ý thức về sức khỏe.',
-    isRecurring: true,
-    significance: 'medium',
-    activities: ['Khám sức khỏe', 'Tập thể dục', 'Tuyên truyền sức khỏe']
-  },
-  {
-    id: 'world-tourism-day',
-    name: 'Ngày Du lịch Thế giới',
-    date: { month: 9, day: 27 },
-    type: 'international',
-    description: 'Ngày Du lịch Thế giới, thúc đẩy phát triển du lịch bền vững.',
-    isRecurring: true,
-    significance: 'medium',
-    activities: ['Du lịch', 'Khám phá văn hóa', 'Tuyên truyền du lịch bền vững']
-  },
-  {
-    id: 'world-peace-day',
-    name: 'Ngày Hòa bình Thế giới',
-    date: { month: 9, day: 21 },
-    type: 'international',
-    description: 'Ngày Hòa bình Thế giới, kêu gọi hòa bình và chấm dứt xung đột.',
-    isRecurring: true,
-    significance: 'medium',
-    activities: ['Hoạt động hòa bình', 'Cầu nguyện', 'Tuyên truyền hòa bình']
-  },
-
-  // Technology and Innovation Days
-  {
-    id: 'internet-day',
-    name: 'Ngày Internet An toàn',
-    date: { month: 2, day: 11 },
-    type: 'international',
-    description: 'Ngày Internet An toàn, nâng cao ý thức sử dụng internet an toàn.',
-    isRecurring: true,
-    significance: 'low',
-    activities: ['Học về an toàn mạng', 'Cập nhật bảo mật', 'Giáo dục trẻ em']
-  },
-  {
-    id: 'world-radio-day',
-    name: 'Ngày Phát thanh Thế giới',
-    date: { month: 2, day: 13 },
-    type: 'international',
-    description: 'Ngày Phát thanh Thế giới, tôn vinh vai trò của đài phát thanh.',
-    isRecurring: true,
-    significance: 'low',
-    activities: ['Nghe radio', 'Tìm hiểu lịch sử phát thanh']
+    significance: 'medium'
   }
 ];
 
@@ -415,17 +227,12 @@ export function getHolidaysForDate(date: Date): Holiday[] {
   const day = date.getDate();
   
   // Get solar calendar holidays
-  const solarHolidays = HOLIDAYS_DATA.filter(holiday => 
-    holiday.date && 
-    holiday.date.month === month && 
-    holiday.date.day === day
-  );
-
-  // For lunar holidays, we would need to convert lunar to solar for the specific year
-  // This is a simplified version - in practice, you'd use the lunar calendar conversion
-  const lunarHolidays: Holiday[] = [];
+  const solarHolidays = HOLIDAYS_DATA.filter(holiday => {
+    if (!holiday.date) return false;
+    return holiday.date.month === month && holiday.date.day === day;
+  });
   
-  return [...solarHolidays, ...lunarHolidays];
+  return solarHolidays;
 }
 
 export function getHolidaysByType(type: Holiday['type']): Holiday[] {
@@ -433,10 +240,15 @@ export function getHolidaysByType(type: Holiday['type']): Holiday[] {
 }
 
 export function getHolidaysByMonth(month: number): Holiday[] {
-  return HOLIDAYS_DATA.filter(holiday => 
-    (holiday.date && holiday.date.month === month) ||
-    (holiday.lunarDate && holiday.lunarDate.month === month)
-  );
+  return HOLIDAYS_DATA.filter(holiday => {
+    if (holiday.date) {
+      return holiday.date.month === month;
+    }
+    if (holiday.lunarDate) {
+      return holiday.lunarDate.month === month;
+    }
+    return false;
+  });
 }
 
 export function getHolidaysBySignificance(significance: Holiday['significance']): Holiday[] {
@@ -449,30 +261,32 @@ export function getHolidaysByCountry(country: string): Holiday[] {
 
 export function searchHolidays(query: string): Holiday[] {
   const lowercaseQuery = query.toLowerCase();
-  return HOLIDAYS_DATA.filter(holiday =>
+  return HOLIDAYS_DATA.filter(holiday => 
     holiday.name.toLowerCase().includes(lowercaseQuery) ||
-    holiday.description.toLowerCase().includes(lowercaseQuery) ||
-    (holiday.activities && holiday.activities.some(activity => 
-      activity.toLowerCase().includes(lowercaseQuery)
-    ))
+    holiday.description.toLowerCase().includes(lowercaseQuery)
   );
 }
 
 export function getUpcomingHolidays(fromDate: Date, limit: number = 10): Holiday[] {
-  const currentMonth = fromDate.getMonth() + 1;
-  const currentDay = fromDate.getDate();
+  const upcoming: Array<Holiday & { nextDate: Date; daysUntil: number }> = [];
   
-  const upcoming = HOLIDAYS_DATA
-    .filter(holiday => holiday.date) // Only solar calendar holidays for now
-    .map(holiday => ({
-      ...holiday,
-      daysUntil: calculateDaysUntil(fromDate, holiday.date!)
-    }))
-    .filter(holiday => holiday.daysUntil >= 0)
+  HOLIDAYS_DATA.forEach(holiday => {
+    if (holiday.date) {
+      const daysUntil = calculateDaysUntil(fromDate, holiday.date);
+      if (daysUntil >= 0) {
+        const currentYear = fromDate.getFullYear();
+        const nextDate = new Date(currentYear, holiday.date.month - 1, holiday.date.day);
+        if (nextDate < fromDate) {
+          nextDate.setFullYear(currentYear + 1);
+        }
+        upcoming.push({ ...holiday, nextDate, daysUntil });
+      }
+    }
+  });
+  
+  return upcoming
     .sort((a, b) => a.daysUntil - b.daysUntil)
     .slice(0, limit);
-    
-  return upcoming;
 }
 
 function calculateDaysUntil(fromDate: Date, holidayDate: { month: number; day: number }): number {
@@ -521,23 +335,27 @@ export const HOLIDAY_SIGNIFICANCE_NAMES = {
 // Helper function to get holiday statistics
 export function getHolidayStats() {
   const total = HOLIDAYS_DATA.length;
-  const byType = Object.keys(HOLIDAY_TYPE_NAMES).reduce((acc, type) => {
-    acc[type] = getHolidaysByType(type as Holiday['type']).length;
+  const byType = HOLIDAYS_DATA.reduce((acc, holiday) => {
+    acc[holiday.type] = (acc[holiday.type] || 0) + 1;
     return acc;
   }, {} as Record<string, number>);
   
-  const bySignificance = Object.keys(HOLIDAY_SIGNIFICANCE_NAMES).reduce((acc, significance) => {
-    acc[significance] = getHolidaysBySignificance(significance as Holiday['significance']).length;
+  const bySignificance = HOLIDAYS_DATA.reduce((acc, holiday) => {
+    if (holiday.significance) {
+      acc[holiday.significance] = (acc[holiday.significance] || 0) + 1;
+    }
     return acc;
   }, {} as Record<string, number>);
   
-  const vietnameseHolidays = getHolidaysByCountry('VN').length;
+  const vietnameseHolidays = HOLIDAYS_DATA.filter(h => h.country === 'VN').length;
+  const usHolidays = HOLIDAYS_DATA.filter(h => h.country === 'US').length;
   
   return {
     total,
     byType,
     bySignificance,
     vietnameseHolidays,
-    internationalHolidays: total - vietnameseHolidays
+    usHolidays,
+    internationalHolidays: total - vietnameseHolidays - usHolidays
   };
 }

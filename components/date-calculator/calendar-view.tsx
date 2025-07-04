@@ -95,7 +95,7 @@ export function CalendarView() {
       const lunarDay = lunarInfo.lunarDateDetailed.day;
       const lunarMonth = lunarInfo.lunarDateDetailed.month;
       
-      // Hiển thị "ngày/tháng" nếu là ngày mùng 1, chỉ hiển thị ngày nếu không phải
+      // Show lunar day number for better readability
       if (lunarDay === 1) {
         return `${lunarDay}/${lunarMonth}`;
       }
@@ -117,7 +117,7 @@ export function CalendarView() {
   const getHolidayDisplayText = (holidays: Holiday[]): string => {
     if (holidays.length === 0) return '';
     const firstHoliday = holidays[0];
-    return firstHoliday.name.length > 12 ? firstHoliday.name.substring(0, 12) + '...' : firstHoliday.name;
+    return firstHoliday.name.length > 10 ? firstHoliday.name.substring(0, 10) + '...' : firstHoliday.name;
   };
 
   const getHolidayTooltip = (holidays: Holiday[]): string => {
@@ -146,7 +146,7 @@ export function CalendarView() {
   };
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4">
       {/* Error Alert */}
       {calendarError && (
         <Alert variant="destructive">
@@ -157,7 +157,7 @@ export function CalendarView() {
 
       {/* Calendar Card */}
       <Card className="moonrise-card">
-        <CardHeader>
+        <CardHeader className="pb-3">
           <div className="flex items-center justify-between">
             <CardTitle className="flex items-center space-x-2 text-blue-600">
               <Calendar className="w-5 h-5" />
@@ -166,7 +166,7 @@ export function CalendarView() {
             
             <div className="flex items-center space-x-2">
               <Select value={currentMonth.toString()} onValueChange={(value) => setCurrentMonth(parseInt(value))}>
-                <SelectTrigger className="w-32 bg-white/50 border-white/20">
+                <SelectTrigger className="w-28 bg-white/50 border-white/20">
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
@@ -179,7 +179,7 @@ export function CalendarView() {
               </Select>
               
               <Select value={currentYear.toString()} onValueChange={(value) => setCurrentYear(parseInt(value))}>
-                <SelectTrigger className="w-24 bg-white/50 border-white/20">
+                <SelectTrigger className="w-20 bg-white/50 border-white/20">
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
@@ -217,9 +217,9 @@ export function CalendarView() {
           </div>
         </CardHeader>
         
-        <CardContent>
+        <CardContent className="pt-0">
           <div className="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm">
-            {/* Day Headers - Style similar to 24h.com.vn */}
+            {/* Day Headers */}
             <div className="grid grid-cols-7 bg-green-600">
               {dayNames.map((day, index) => (
                 <div key={day} className={`text-center text-sm font-bold py-3 px-2 text-white border-r border-green-500 last:border-r-0 ${
@@ -259,10 +259,9 @@ export function CalendarView() {
                           title={getHolidayTooltip(festivals)}
                         >
                           <div className="flex flex-col h-full justify-between">
-                            {/* Top section: Solar date and lunar date */}
-                            <div>
-                              {/* Solar date */}
-                              <div className={`text-lg font-bold mb-1 ${
+                            {/* Top section: Solar date */}
+                            <div className="flex justify-between items-start">
+                              <div className={`text-lg font-bold ${
                                 !isCurrentMonthDate ? 'text-gray-400' : 
                                 isWeekendDate ? 'text-red-600' : 
                                 'text-gray-800'
@@ -270,31 +269,31 @@ export function CalendarView() {
                                 {date.getDate()}
                               </div>
                               
-                              {/* Lunar date */}
-                              {isCurrentMonthDate && lunarDay && (
-                                <div className="text-xs text-green-600 font-medium">
-                                  {lunarDay}
-                                </div>
+                              {/* Today indicator */}
+                              {isTodayDate && (
+                                <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                              )}
+                              
+                              {/* Selected indicator */}
+                              {isSelectedDate && (
+                                <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                               )}
                             </div>
+                            
+                            {/* Middle section: Lunar date */}
+                            {isCurrentMonthDate && lunarDay && (
+                              <div className="text-xs text-green-600 font-medium bg-green-50 px-1 py-0.5 rounded text-center">
+                                {lunarDay}
+                              </div>
+                            )}
                             
                             {/* Bottom section: Festival/Holiday */}
                             {hasFestival && isCurrentMonthDate && (
                               <div className="mt-1">
-                                <div className="text-xs text-red-600 font-medium leading-tight">
+                                <div className="text-xs text-red-600 font-medium leading-tight bg-red-50 px-1 py-0.5 rounded">
                                   {getHolidayDisplayText(festivals)}
                                 </div>
                               </div>
-                            )}
-                            
-                            {/* Today indicator */}
-                            {isTodayDate && (
-                              <div className="absolute top-1 right-1 w-2 h-2 bg-yellow-500 rounded-full"></div>
-                            )}
-                            
-                            {/* Selected indicator */}
-                            {isSelectedDate && (
-                              <div className="absolute top-1 left-1 w-2 h-2 bg-blue-500 rounded-full"></div>
                             )}
                           </div>
                         </button>
@@ -316,13 +315,13 @@ export function CalendarView() {
       {/* Selected Date Information */}
       {selectedDate && (
         <Card className="moonrise-card">
-          <CardHeader>
+          <CardHeader className="pb-3">
             <CardTitle className="flex items-center space-x-2 text-purple-600">
               <Info className="w-5 h-5" />
               <span>Thông Tin Ngày Đã Chọn</span>
             </CardTitle>
           </CardHeader>
-          <CardContent>
+          <CardContent className="pt-0">
             <div className="space-y-4">
               {/* Date Information */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -337,6 +336,9 @@ export function CalendarView() {
                 <div className="p-4 bg-green-50 rounded-lg border border-green-200">
                   <h4 className="font-semibold text-green-700 mb-2">Âm Lịch</h4>
                   <p className="text-green-600 text-lg font-medium">{getLunarDateInfo(selectedDate).lunarDate}</p>
+                  <p className="text-sm text-gray-600 mt-1">
+                    Tháng {getLunarDateInfo(selectedDate).lunarDateDetailed.monthName}
+                  </p>
                 </div>
               </div>
 
@@ -360,7 +362,7 @@ export function CalendarView() {
                         {holiday.country && (
                           <div className="mt-2">
                             <Badge variant="outline" className="text-xs">
-                              {holiday.country === 'VN' ? 'Việt Nam' : holiday.country}
+                              {holiday.country === 'VN' ? 'Việt Nam' : holiday.country === 'US' ? 'Hoa Kỳ' : holiday.country}
                             </Badge>
                           </div>
                         )}
@@ -374,13 +376,13 @@ export function CalendarView() {
         </Card>
       )}
 
-      {/* Legend */}
+      {/* Enhanced Legend */}
       <Card className="moonrise-card">
         <CardContent className="p-4">
           <h4 className="font-semibold text-gray-700 mb-3">Chú Thích</h4>
-          <div className="space-y-4">
-            {/* Basic indicators */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+            <div className="space-y-2">
+              <h5 className="font-medium text-gray-600">Ngày đặc biệt</h5>
               <div className="flex items-center space-x-2">
                 <div className="w-4 h-4 bg-yellow-100 rounded flex items-center justify-center relative">
                   <div className="w-1 h-1 bg-yellow-500 rounded-full absolute top-0.5 right-0.5"></div>
@@ -393,36 +395,33 @@ export function CalendarView() {
                 </div>
                 <span>Ngày đã chọn</span>
               </div>
+            </div>
+            
+            <div className="space-y-2">
+              <h5 className="font-medium text-gray-600">Loại ngày</h5>
               <div className="flex items-center space-x-2">
                 <span className="text-red-600 font-bold">●</span>
                 <span>Ngày cuối tuần</span>
               </div>
               <div className="flex items-center space-x-2">
-                <span className="text-green-600 font-bold text-xs">15</span>
+                <div className="text-xs text-green-600 font-medium bg-green-50 px-1 py-0.5 rounded">15</div>
                 <span>Ngày âm lịch</span>
               </div>
             </div>
-
-            {/* Holiday type indicators */}
-            <div className="pt-3 border-t border-gray-200">
-              <h5 className="font-medium text-gray-700 mb-2">Loại Ngày Lễ:</h5>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 text-sm">
-                <div className="flex items-center space-x-2">
-                  <div className="w-4 h-4 bg-white border-2 border-red-500 rounded"></div>
-                  <span>Lễ chính thức</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-4 h-4 bg-white border-2 border-green-500 rounded"></div>
-                  <span>Lễ truyền thống</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-4 h-4 bg-white border-2 border-blue-500 rounded"></div>
-                  <span>Lễ quốc tế</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-4 h-4 bg-white border-2 border-purple-500 rounded"></div>
-                  <span>Sự kiện văn hóa</span>
-                </div>
+            
+            <div className="space-y-2">
+              <h5 className="font-medium text-gray-600">Ngày lễ</h5>
+              <div className="flex items-center space-x-2">
+                <div className="w-4 h-4 border-2 border-red-500 rounded"></div>
+                <span>Lễ chính thức</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-4 h-4 border-2 border-green-500 rounded"></div>
+                <span>Lễ truyền thống</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-4 h-4 border-2 border-blue-500 rounded"></div>
+                <span>Lễ quốc tế</span>
               </div>
             </div>
           </div>
