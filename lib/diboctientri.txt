@@ -1,0 +1,108 @@
+<hr/>
+</div>
+<div class="content">	
+	<div class="body-content">
+    <h1>DỊ BỐC TIÊN TRI</h1>
+	
+	<p><strong><a href="https://dich.kabala.vn/di-boc-tien-tri/">Dị Bốc Ti&ecirc;n Tri</a></strong>&nbsp;hay gọi đầy đủ l&agrave;&nbsp;<strong>Ti&ecirc;n thi&ecirc;n Diệt số - Dị Bốc Ti&ecirc;n Tri</strong>&nbsp;l&agrave; một cuốn s&aacute;ch cổ của ti&ecirc;n sinh Thiệu Khang Tiết ghi lại c&aacute;c chi&ecirc;m nghiệm của quẻ Kinh Dịch đối với c&aacute;c sự việc cần hỏi.</p>
+	<p>Ch&uacute;ng ta cũng biết, luận giải quẻ dịch l&agrave; c&ocirc;ng việc kh&oacute; khăn, ph&uacute;c tạp, đ&ograve;i hỏi nhiều thời gian nghi&ecirc;n cứu v&agrave; am hiểu s&acirc;u về Dịch học. Đối với những người kh&ocirc;ng c&oacute; thời gian t&igrave;m hiểu Dịch học, việc luận giải một quẻ dịch để thu thập th&ocirc;ng tin đang cần hỏi l&agrave; việc hết sức kh&oacute; khăn. V&igrave; vậy Ti&ecirc;n sinh Thiệu Khang Tiết đ&atilde; đ&uacute;c kết lại một c&aacute;ch ngắn gọn, trực tiếp nhất kết quả của c&aacute;c sự việc cần chi&ecirc;m bốc trong cuốn s&aacute;ch Ti&ecirc;n thi&ecirc;n Diệt số - Dị Bốc Ti&ecirc;n Tri v&agrave; truyền lại cho đời sau.</p>
+	<p>Cuốn s&aacute;ch n&agrave;y được &Ocirc;ng&nbsp;<strong>Nguyễn Khắc H&agrave;i</strong>&nbsp;dịch v&agrave; bi&ecirc;n soạn lại. Tr&iacute;ch lời &Ocirc;ng Nguyễn Khắc H&agrave;i: "Từ xưa đến nay, c&aacute;c loại s&aacute;ch xuất bản về m&ocirc;n b&oacute;i khoa bằng Việt Ngữ, chưa c&oacute; vị n&agrave;o soạn ra quyển Ti&ecirc;n thi&ecirc;n Diệt số - Dị Bốc Ti&ecirc;n Tri của &Ocirc;ng Thiệu Khang Tiết ti&ecirc;n sanh. Vậy nay t&ocirc;i đ&atilde; c&oacute; kinh nghiệm 40 năm rồi, t&ocirc;i thấy quyển Ti&ecirc;n thi&ecirc;n Diệt số - Dị Bốc Ti&ecirc;n Tri n&agrave;y cầu ứng như thần, như h&igrave;nh với b&oacute;ng, nhứt nhứt đều đ&uacute;ng theo sự thắc mắc của người đi cầu b&oacute;i. Về c&aacute;c m&ocirc;n quẻ kh&ocirc;ng giải đ&aacute;p đ&uacute;ng sự thắc mắc của người đi cầu b&oacute;i, hỏi một đ&agrave;ng, đ&aacute;p một nẻo. Th&iacute; dụ, người coi hỏi c&ocirc;ng danh, coi c&oacute; thăng chức kh&ocirc;ng th&igrave; quẻ n&oacute;i &uacute;p mở: th&aacute;ng hai c&oacute; t&agrave;i, th&aacute;ng ba ph&ograve;ng bệnh tật. Như vậy kh&ocirc;ng ăn thua v&agrave;o đ&acirc;u hết. V&igrave; lẽ ấy, nay t&ocirc;i đ&atilde; qu&aacute; 80 tuổi, phải r&aacute;ng dịch cuốn Ti&ecirc;n thi&ecirc;n Diệt số - Dị Bốc Ti&ecirc;n Tri n&agrave;y t&igrave;m c&aacute;ch xếp đặt cho r&otilde; r&agrave;ng cho người muốn xem mau hiểu. Th&iacute; dụ hỏi cầu t&agrave;i th&igrave; quẻ trả lời c&oacute; t&agrave;i hay kh&ocirc;ng, hỏi thi cử trả lời đậu hay rớt, trực tiếp như vậy kh&ocirc;ng n&oacute;i mỉa mai, &uacute;p mở"</p>
+	<hr/>
+	
+	<form method="post" action="">
+    <fieldset class="vung-nhap">
+        <legend>Gieo Quẻ</legend>
+        <h2>TIÊN THIÊN DỊCH SỐ</h2>
+        <p class="alt text-center"><em>Bạn vui lòng chọn cách lấy quẻ ở bên dưới, sau đó nhấn nút Gieo Quẻ</em></p>
+        <div class="nhap_thongtin text-center">
+            <div class="row-input clearfix">
+                <label for="txtDuKien">Dữ kiện:</label>
+                <input name="txtDuKien" type="text" id="txtDuKien" placeholder="Mã số quẻ">
+                <select name="ddlKieuXem" id="ddlKieuXem">
+                    <option selected="selected" value="1">Số ngẫu nhiên hệ thống sinh quẻ</option>
+                    <option value="2">Dựa vào số bạn nhập vào</option>
+                </select>
+            </div>
+            <div class="row-input clearfix">
+                <label for="ddlChuDeHoi">Chủ đề hỏi:</label>
+                <select name="ddlChuDeHoi" id="ddlChuDeHoi">
+							<option selected="selected" value="0">-- Chọn loại câu hỏi --</option>
+							<option value="116,267,374,445,553,638,782,821">Mạng vận (mạng đời sống)</option>
+							<option value="113,268,372,441,556,637,784,825">Đọc thơ (đọc sách)</option>
+							<option value="112,261,376,447,554,635,783,828">Tấn học (đi học)</option>
+							<option value="118,262,371,446,557,634,785,823">Khoa cử (thi cử)</option>
+							<option value="111,266,377,444,555,633,788,822">Tinh vũ (mưa tạnh)</option>
+							<option value="114,265,373,448,552,631,786,827">Thủ thảo (đòi nợ)</option>
+							<option value="115,263,378,442,551,636,787,824">Chiêu tế (cưới rể)</option>
+							<option value="117,264,375,443,558,632,781,826">Thỉnh y (rước thầy thuốc)</option>
+							<option value="122,211,366,477,544,655,733,888">Hội sự (nhóm hội)</option>
+							<option value="123,218,362,471,546,657,734,885">Mưu sự (mưu chước)</option>
+							<option value="125,213,368,472,541,656,737,884">Mãi ốc (mua nhà)</option>
+							<option value="121,216,367,474,545,653,738,882">Di cư (đổi chổ ở việc làm)</option>
+							<option value="126,217,364,475,543,658,732,881">Phân gia (chia gia tài)</option>
+							<option value="128,212,361,476,547,654,735,883">Thiên hoa (đau trái giống)</option>
+							<option value="124,215,363,478,542,651,736,887">Phụ bệnh (cha đau)</option>
+							<option value="127,214,365,473,548,652,731,886">Bệnh chứng (đau, bệnh)</option>
+							<option value="134,285,323,418,562,671,746,857">Khai tiệm (khai trương)</option>
+							<option value="131,286,327,414,565,673,748,852">Cầu tài (kiếm lời)</option>
+							<option value="133,288,322,411,566,677,744,855">Mãi súc (mua súc vật)</option>
+							<option value="137,284,325,413,568,672,741,856">Phần quýnh (coi mả mồ)</option>
+							<option value="135,283,328,412,561,676,747,854">Hồi hương (trở về xứ sở)</option>
+							<option value="132,281,326,417,564,675,743,858">Tá tài (cho vay mượn tiền)</option>
+							<option value="136,287,324,415,563,678,742,851">Phóng trướng (cho vay)</option>
+							<option value="138,282,321,416,567,674,745,853">Đổ bác (cờ bạc)</option>
+							<option value="147,254,335,483,528,612,761,876">Nhập nhái (cưới vợ ở quê vợ)</option>
+							<option value="143,258,332,481,526,617,764,875">Cầu tử (cầu con)</option>
+							<option value="144,255,333,488,522,611,766,877">Xuất hành (người đi)</option>
+							<option value="142,251,336,487,524,615,763,878">Tầm quán (tìm quê quán)</option>
+							<option value="141,256,337,484,525,613,768,872">Thu thâu (mùa gặt lúa)</option>
+							<option value="145,253,338,482,521,616,767,874">Thủ ngư (đi bắt cá)</option>
+							<option value="146,257,334,485,523,618,762,871">Dạ mộng (ngủ chiêm bao)</option>
+							<option value="148,252,331,486,527,614,765,873">Khẩu thiệt (rầy rà với người)</option>
+							<option value="156,237,384,425,513,668,772,841">Sanh ý (việc buôn bán)</option>
+							<option value="151,236,387,424,515,663,778,842">Thác hoá (khai cửa hàng)</option>
+							<option value="155,233,388,422,511,666,777,844">Khơi tạo (khởi công làm)</option>
+							<option value="153,238,382,421,516,667,774,845">Xuân tàm (để tầm)</option>
+							<option value="157,234,385,423,518,662,771,846">Văn bằng (giấy tờ cấp bằng)</option>
+							<option value="152,231,386,427,514,665,773,848">Kiến quới (thăm người)</option>
+							<option value="154,235,383,428,512,661,776,847">Giải lương (phát lương)</option>
+							<option value="158,232,381,426,517,664,775,843,">Tố trạng (bị kiện kêu nài)</option>
+							<option value="163,278,342,451,536,687,724,815">Nạp giám (làm công chức)</option>
+							<option value="161,276,347,454,535,683,728,812">Thăng thiên (cấp bực có lên không)</option>
+							<option value="164,275,343,458,532,681,726,817">Hoà sự (cầu hoà)</option>
+							<option value="167,274,345,453,538,682,721,816">Giao việc (mua bán)</option>
+							<option value="165,273,348,452,531,686,727,814">Hôn nhơn (cưới vợ)</option>
+							<option value="168,272,341,456,537,684,725,813">Thú thiếp (cưới vợ lẻ)</option>
+							<option value="166,277,344,455,533,688,722,811">Lục giáp (chuyển bụng đẻ)</option>
+							<option value="162,271,346,457,534,685,723,818">Tầm nhơn (kiếm người)</option>
+							<option value="172,241,356,437,584,625,713,868">Gia tín (biết tin nhà)</option>
+							<option value="176,247,354,435,583,628,712,861">Cầu quan (muốn làm quan)</option>
+							<option value="175,243,358,432,581,626,717,864">Trí hóa (trữ hàng hóa)</option>
+							<option value="174,245,353,438,582,621,716,867">Cáo trạng (kiện người ta)</option>
+							<option value="173,248,352,431,586,627,714,865">Nộp lại (làm lính, công chức)</option>
+							<option value="171,246,357,434,585,623,718,862">Điền sản (đất vườn)</option>
+							<option value="178,242,351,436,587,624,715,863">Thảo bộc (bắt người ở trốn)</option>
+							<option value="177,244,355,433,588,622,711,866">Căn quan (đi tùy tùng với quan)</option>
+							<option value="182,221,316,467,574,645,753,838">Gia trạch (cuộc nhà)</option>
+							<option value="181,226,317,464,575,643,758,832">Thọ ngươn (sống chết)</option>
+							<option value="185,223,318,462,571,646,757,834">Tẩu thất (người trốn)</option>
+							<option value="184,225,313,468,572,641,756,837">Thất vật (mất đồ)</option>
+							<option value="183,228,312,461,576,647,754,835">Hiệp lỏa (hùng hiệp mua bán)</option>
+							<option value="186,227,314,465,573,648,752,831">Hành nhơn (người đi)</option>
+							<option value="188,222,311,466,577,644,755,833">Giải giao (giải tội)</option>
+							<option value="187,224,315,463,578,642,751,836">Thủ nghệ (làm nghề)</option>
+
+						</select>
+					</div>
+				</div>
+				<div class="vung-nutbam text-center">
+					<input type="submit" name="btLayQue" value="GIEO QUẺ" id="btLayQue" class="btn btn-success">
+				</div>
+			</fieldset>
+		</form>
+		
+		
+	
+	<hr/>
+	<p class="text-center">Dị Bốc Ti&ecirc;n Tri c&oacute; tổng cộng 512 quẻ. Các bảng tra quẻ Dị Bốc Tiên Tri:</p>
+	
