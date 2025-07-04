@@ -97,9 +97,6 @@ const config: Config = {
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
       },
-      transitionProperty: {
-        'colors': 'color, background-color, border-color, text-decoration-color, fill, stroke',
-      },
     },
   },
   plugins: [require('tailwindcss-animate')],
