@@ -10,12 +10,15 @@ import {
   DropdownMenuSeparator,
   DropdownMenuLabel
 } from '@/components/ui/dropdown-menu';
-import { Sun, Moon, Clock, Monitor } from 'lucide-react';
+import { Sun, Moon, Clock } from 'lucide-react';
 import { useAutoTheme } from '@/hooks/use-auto-theme';
 
 export function ThemeToggle() {
   const { theme, setManualTheme, setAutoTheme, isAuto } = useAutoTheme();
   const [isOpen, setIsOpen] = useState(false);
+
+  // Fallback to 'light' if theme is undefined during hydration
+  const currentTheme = theme || 'light';
 
   const getCurrentTime = () => {
     return new Date().toLocaleTimeString('vi-VN', { 
@@ -28,7 +31,7 @@ export function ThemeToggle() {
     if (isAuto) {
       return <Clock className="h-5 w-5" />;
     }
-    return theme === 'dark' ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />;
+    return currentTheme === 'dark' ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />;
   };
 
   const getAutoModeStatus = () => {
@@ -88,7 +91,7 @@ export function ThemeToggle() {
               Luôn sử dụng giao diện sáng
             </span>
           </div>
-          {!isAuto && theme === 'light' && <span className="ml-auto text-blue-600">✓</span>}
+          {!isAuto && currentTheme === 'light' && <span className="ml-auto text-blue-600">✓</span>}
         </DropdownMenuItem>
         
         <DropdownMenuItem 
@@ -105,7 +108,7 @@ export function ThemeToggle() {
               Luôn sử dụng giao diện tối
             </span>
           </div>
-          {!isAuto && theme === 'dark' && <span className="ml-auto text-blue-600">✓</span>}
+          {!isAuto && currentTheme === 'dark' && <span className="ml-auto text-blue-600">✓</span>}
         </DropdownMenuItem>
         
         <DropdownMenuSeparator />
