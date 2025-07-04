@@ -210,7 +210,17 @@ function lunarToSolarForYear(year: number, lunarMonth: number, lunarDay: number)
   try {
     const lunar = Lunar.fromYmd(year, lunarMonth, lunarDay);
     const solar = lunar.getSolar();
-    return solar.toDate();
+    
+    // Check if getSolar returns an object with toDate method
+    if (solar && typeof solar.toDate === 'function') {
+      return solar.toDate();
+    } else if (solar && typeof solar.getYear === 'function' && typeof solar.getMonth === 'function' && typeof solar.getDay === 'function') {
+      // Fallback: create date from solar properties
+      return new Date(solar.getYear(), solar.getMonth() - 1, solar.getDay());
+    } else {
+      console.warn('Solar object does not have expected methods');
+      return null;
+    }
   } catch (error) {
     console.error('Error converting lunar to solar:', error);
     return null;
@@ -616,9 +626,11 @@ export function getLunarDateByDayNumber(year: number, dayNumber: number): Date {
       let solarStart: Date;
       if (solar && typeof solar.toDate === 'function') {
         solarStart = solar.toDate();
-      } else {
+      } else if (solar && typeof solar.getYear === 'function' && typeof solar.getMonth === 'function' && typeof solar.getDay === 'function') {
         // Fallback: create date from solar properties
         solarStart = new Date(solar.getYear(), solar.getMonth() - 1, solar.getDay());
+      } else {
+        throw new Error('Unable to get solar date from lunar');
       }
       
       // Add days to get the target date
@@ -656,9 +668,11 @@ export function getLunarDateByRemainingDays(year: number, remainingDays: number)
       let solarStart: Date;
       if (solar && typeof solar.toDate === 'function') {
         solarStart = solar.toDate();
-      } else {
+      } else if (solar && typeof solar.getYear === 'function' && typeof solar.getMonth === 'function' && typeof solar.getDay === 'function') {
         // Fallback: create date from solar properties
         solarStart = new Date(solar.getYear(), solar.getMonth() - 1, solar.getDay());
+      } else {
+        throw new Error('Unable to get solar date from lunar');
       }
       
       // Calculate target date
@@ -756,7 +770,16 @@ export function lunarToSolar(lunarYear: number, lunarMonth: number, lunarDay: nu
       lunar.setLeap(true);
     }
     const solar = lunar.getSolar();
-    return solar.toDate();
+    
+    // Check if getSolar returns an object with toDate method
+    if (solar && typeof solar.toDate === 'function') {
+      return solar.toDate();
+    } else if (solar && typeof solar.getYear === 'function' && typeof solar.getMonth === 'function' && typeof solar.getDay === 'function') {
+      // Fallback: create date from solar properties
+      return new Date(solar.getYear(), solar.getMonth() - 1, solar.getDay());
+    } else {
+      throw new Error('Unable to convert lunar to solar date');
+    }
   } catch (error) {
     console.error('Error converting lunar to solar:', error);
     throw new Error('Không thể chuyển đổi ngày âm lịch sang dương lịch. Vui lòng kiểm tra lại thông tin âm lịch.');
