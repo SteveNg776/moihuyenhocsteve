@@ -15,7 +15,9 @@ import {
   AlertCircle, 
   CheckCircle,
   BookOpen,
-  Hash
+  Hash,
+  ChevronDown,
+  ChevronUp
 } from 'lucide-react';
 
 // Định nghĩa đầy đủ các chủ đề từ file text với 8 cung Bát Quái
@@ -101,16 +103,48 @@ const TOPICS = {
   'thunghe': { name: 'Thủ nghệ (làm nghề)', table: 'khon', values: [187,224,315,463,578,642,751,836] }
 };
 
-// Nhóm chủ đề theo 8 cung
+// Nhóm chủ đề theo 8 cung với thông tin chi tiết
 const TOPIC_GROUPS = {
-  'Cung Càn': ['mangvan', 'doctho', 'tanhoc', 'khocu', 'tinhvu', 'thuthao', 'chieute', 'thinhy'],
-  'Cung Đoài': ['hoissu', 'muusu', 'maioc', 'dicu', 'phangia', 'thienhoa', 'phubenh', 'benhchung'],
-  'Cung Ly': ['khaitiem', 'cautai', 'maisuc', 'phanquynh', 'hoihuong', 'tatai', 'phongtruong', 'dobac'],
-  'Cung Chấn': ['nhapnhai', 'cautu', 'xuathanh', 'tamquan', 'thuthau', 'thungu', 'damong', 'khauthiet'],
-  'Cung Tốn': ['sanhy', 'thachoa', 'khoitao', 'xuantam', 'vanbang', 'kienquoi', 'giailuong', 'totrang'],
-  'Cung Khảm': ['napgiam', 'thangthien', 'hoasu', 'giaoviec', 'honnhan', 'thuthiep', 'lucgiap', 'tamnhon'],
-  'Cung Cấn': ['giatin', 'cauquan', 'trihoa', 'caotrang', 'noplai', 'diensan', 'thaoboc', 'canquan'],
-  'Cung Khôn': ['giatrach', 'thonguon', 'tauthuat', 'thatvat', 'hieploa', 'hanhnhon', 'giaigiao', 'thunghe']
+  'Cung Càn': {
+    topics: ['mangvan', 'doctho', 'tanhoc', 'khocu', 'tinhvu', 'thuthao', 'chieute', 'thinhy'],
+    description: 'Về học tập, tri thức, sức khỏe và phát triển bản thân',
+    color: 'bg-blue-50 border-blue-200 text-blue-800'
+  },
+  'Cung Đoài': {
+    topics: ['hoissu', 'muusu', 'maioc', 'dicu', 'phangia', 'thienhoa', 'phubenh', 'benhchung'],
+    description: 'Về xã hội, gia đình, sức khỏe và các mối quan hệ',
+    color: 'bg-purple-50 border-purple-200 text-purple-800'
+  },
+  'Cung Ly': {
+    topics: ['khaitiem', 'cautai', 'maisuc', 'phanquynh', 'hoihuong', 'tatai', 'phongtruong', 'dobac'],
+    description: 'Về tài chính, kinh doanh và các hoạt động thương mại',
+    color: 'bg-red-50 border-red-200 text-red-800'
+  },
+  'Cung Chấn': {
+    topics: ['nhapnhai', 'cautu', 'xuathanh', 'tamquan', 'thuthau', 'thungu', 'damong', 'khauthiet'],
+    description: 'Về hôn nhân, gia đình, di chuyển và các hoạt động nông nghiệp',
+    color: 'bg-green-50 border-green-200 text-green-800'
+  },
+  'Cung Tốn': {
+    topics: ['sanhy', 'thachoa', 'khoitao', 'xuantam', 'vanbang', 'kienquoi', 'giailuong', 'totrang'],
+    description: 'Về kinh doanh, công việc, giấy tờ và các giao dịch',
+    color: 'bg-teal-50 border-teal-200 text-teal-800'
+  },
+  'Cung Khảm': {
+    topics: ['napgiam', 'thangthien', 'hoasu', 'giaoviec', 'honnhan', 'thuthiep', 'lucgiap', 'tamnhon'],
+    description: 'Về công danh, hôn nhân, tìm kiếm và các mối quan hệ',
+    color: 'bg-indigo-50 border-indigo-200 text-indigo-800'
+  },
+  'Cung Cấn': {
+    topics: ['giatin', 'cauquan', 'trihoa', 'caotrang', 'noplai', 'diensan', 'thaoboc', 'canquan'],
+    description: 'Về tin tức, quan lộ, tài sản và các vấn đề pháp lý',
+    color: 'bg-amber-50 border-amber-200 text-amber-800'
+  },
+  'Cung Khôn': {
+    topics: ['giatrach', 'thonguon', 'tauthuat', 'thatvat', 'hieploa', 'hanhnhon', 'giaigiao', 'thunghe'],
+    description: 'Về gia đạo, sức khỏe, mất mát và các nghề thủ công',
+    color: 'bg-orange-50 border-orange-200 text-orange-800'
+  }
 };
 
 // Bảng tra cứu Bát Quái
@@ -217,6 +251,18 @@ export function DiBocTienTri() {
   const [result, setResult] = useState<DiBocResult | null>(null);
   const [error, setError] = useState<string>('');
   const [isGenerating, setIsGenerating] = useState(false);
+  const [expandedGroups, setExpandedGroups] = useState<Set<string>>(new Set());
+
+  // Toggle expanded state for topic groups
+  const toggleGroup = (groupName: string) => {
+    const newExpanded = new Set(expandedGroups);
+    if (newExpanded.has(groupName)) {
+      newExpanded.delete(groupName);
+    } else {
+      newExpanded.add(groupName);
+    }
+    setExpandedGroups(newExpanded);
+  };
 
   // Validate input số
   const validateNumber = (num: string): boolean => {
@@ -365,12 +411,12 @@ export function DiBocTienTri() {
                 <SelectValue placeholder="-- Chọn loại câu hỏi --" />
               </SelectTrigger>
               <SelectContent className="max-h-[300px]">
-                {Object.entries(TOPIC_GROUPS).map(([groupName, topicKeys]) => (
+                {Object.entries(TOPIC_GROUPS).map(([groupName, groupData]) => (
                   <div key={groupName}>
                     <div className="px-2 py-1 text-sm font-semibold text-mystical-gold bg-mystical-gold/5 sticky top-0">
                       {groupName}
                     </div>
-                    {topicKeys.map((topicKey) => (
+                    {groupData.topics.map((topicKey) => (
                       <SelectItem key={topicKey} value={topicKey} className="pl-4">
                         {TOPICS[topicKey as keyof typeof TOPICS].name}
                       </SelectItem>
@@ -568,16 +614,43 @@ export function DiBocTienTri() {
             </div>
           </div>
 
-          {/* Topic Groups Summary */}
+          {/* Topic Groups Summary with Detailed Information */}
           <div className="mt-6">
-            <h4 className="font-semibold text-mystical-gold mb-3">64 Chủ Đề Theo 8 Cung</h4>
+            <h4 className="font-semibold text-mystical-gold mb-3">64 Chủ Đề Theo 8 Cung Chi Tiết</h4>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
-              {Object.entries(TOPIC_GROUPS).map(([groupName, topicKeys]) => (
-                <div key={groupName} className="p-3 bg-mystical-gold/5 rounded border border-mystical-gold/20">
-                  <div className="font-semibold text-mystical-gold mb-2">{groupName}</div>
-                  <div className="text-muted-foreground">
-                    {topicKeys.length} chủ đề
-                  </div>
+              {Object.entries(TOPIC_GROUPS).map(([groupName, groupData]) => (
+                <div key={groupName} className={`p-3 rounded border ${groupData.color}`}>
+                  <button
+                    onClick={() => toggleGroup(groupName)}
+                    className="w-full text-left"
+                  >
+                    <div className="flex items-center justify-between mb-2">
+                      <div className="font-semibold">{groupName}</div>
+                      {expandedGroups.has(groupName) ? (
+                        <ChevronUp className="w-4 h-4" />
+                      ) : (
+                        <ChevronDown className="w-4 h-4" />
+                      )}
+                    </div>
+                    <div className="text-xs opacity-75 mb-2">
+                      {groupData.description}
+                    </div>
+                    <div className="text-xs opacity-60">
+                      {groupData.topics.length} chủ đề
+                    </div>
+                  </button>
+                  
+                  {expandedGroups.has(groupName) && (
+                    <div className="mt-3 pt-3 border-t border-current/20">
+                      <div className="space-y-1">
+                        {groupData.topics.map((topicKey) => (
+                          <div key={topicKey} className="text-xs opacity-75 leading-relaxed">
+                            • {TOPICS[topicKey as keyof typeof TOPICS].name}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
