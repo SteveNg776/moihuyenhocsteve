@@ -18,14 +18,99 @@ import {
   Hash
 } from 'lucide-react';
 
-// Định nghĩa các chủ đề và bảng tra cứu 8 cung
+// Định nghĩa đầy đủ các chủ đề từ file text với 8 cung Bát Quái
 const TOPICS = {
-  'mangvan': { name: 'Mạng Vận', table: 'can', values: [116,267,374,445,553,638,782,821] },
-  'khocu': { name: 'Khoa Cử', table: 'can', values: [118,262,371,446,557,634,785,823] },
-  'cautai': { name: 'Cầu Tài', table: 'ly', values: [131,286,327,414,565,673,748,852] },
-  'honnhan': { name: 'Hôn Nhân', table: 'kham', values: [165,273,348,452,531,686,727,814] },
-  'congdanh': { name: 'Công Danh', table: 'can', values: [161,276,347,454,535,683,728,812] },
-  'giadao': { name: 'Gia Đạo', table: 'khon', values: [182,221,316,467,574,645,753,838] }
+  // Cung Càn
+  'mangvan': { name: 'Mạng vận (mạng đời sống)', table: 'can', values: [116,267,374,445,553,638,782,821] },
+  'doctho': { name: 'Đọc thơ (đọc sách)', table: 'can', values: [113,268,372,441,556,637,784,825] },
+  'tanhoc': { name: 'Tấn học (đi học)', table: 'can', values: [112,261,376,447,554,635,783,828] },
+  'khocu': { name: 'Khoa cử (thi cử)', table: 'can', values: [118,262,371,446,557,634,785,823] },
+  'tinhvu': { name: 'Tinh vũ (mưa tạnh)', table: 'can', values: [111,266,377,444,555,633,788,822] },
+  'thuthao': { name: 'Thủ thảo (đòi nợ)', table: 'can', values: [114,265,373,448,552,631,786,827] },
+  'chieute': { name: 'Chiêu tế (cưới rể)', table: 'can', values: [115,263,378,442,551,636,787,824] },
+  'thinhy': { name: 'Thỉnh y (rước thầy thuốc)', table: 'can', values: [117,264,375,443,558,632,781,826] },
+
+  // Cung Đoài
+  'hoissu': { name: 'Hội sự (nhóm hội)', table: 'doai', values: [122,211,366,477,544,655,733,888] },
+  'muusu': { name: 'Mưu sự (mưu chước)', table: 'doai', values: [123,218,362,471,546,657,734,885] },
+  'maioc': { name: 'Mãi ốc (mua nhà)', table: 'doai', values: [125,213,368,472,541,656,737,884] },
+  'dicu': { name: 'Di cư (đổi chổ ở việc làm)', table: 'doai', values: [121,216,367,474,545,653,738,882] },
+  'phangia': { name: 'Phân gia (chia gia tài)', table: 'doai', values: [126,217,364,475,543,658,732,881] },
+  'thienhoa': { name: 'Thiên hoa (đau trái giống)', table: 'doai', values: [128,212,361,476,547,654,735,883] },
+  'phubenh': { name: 'Phụ bệnh (cha đau)', table: 'doai', values: [124,215,363,478,542,651,736,887] },
+  'benhchung': { name: 'Bệnh chứng (đau, bệnh)', table: 'doai', values: [127,214,365,473,548,652,731,886] },
+
+  // Cung Ly
+  'khaitiem': { name: 'Khai tiệm (khai trương)', table: 'ly', values: [134,285,323,418,562,671,746,857] },
+  'cautai': { name: 'Cầu tài (kiếm lời)', table: 'ly', values: [131,286,327,414,565,673,748,852] },
+  'maisuc': { name: 'Mãi súc (mua súc vật)', table: 'ly', values: [133,288,322,411,566,677,744,855] },
+  'phanquynh': { name: 'Phần quýnh (coi mả mồ)', table: 'ly', values: [137,284,325,413,568,672,741,856] },
+  'hoihuong': { name: 'Hồi hương (trở về xứ sở)', table: 'ly', values: [135,283,328,412,561,676,747,854] },
+  'tatai': { name: 'Tá tài (cho vay mượn tiền)', table: 'ly', values: [132,281,326,417,564,675,743,858] },
+  'phongtruong': { name: 'Phóng trướng (cho vay)', table: 'ly', values: [136,287,324,415,563,678,742,851] },
+  'dobac': { name: 'Đổ bác (cờ bạc)', table: 'ly', values: [138,282,321,416,567,674,745,853] },
+
+  // Cung Chấn
+  'nhapnhai': { name: 'Nhập nhái (cưới vợ ở quê vợ)', table: 'chan', values: [147,254,335,483,528,612,761,876] },
+  'cautu': { name: 'Cầu tử (cầu con)', table: 'chan', values: [143,258,332,481,526,617,764,875] },
+  'xuathanh': { name: 'Xuất hành (người đi)', table: 'chan', values: [144,255,333,488,522,611,766,877] },
+  'tamquan': { name: 'Tầm quán (tìm quê quán)', table: 'chan', values: [142,251,336,487,524,615,763,878] },
+  'thuthau': { name: 'Thu thâu (mùa gặt lúa)', table: 'chan', values: [141,256,337,484,525,613,768,872] },
+  'thungu': { name: 'Thủ ngư (đi bắt cá)', table: 'chan', values: [145,253,338,482,521,616,767,874] },
+  'damong': { name: 'Dạ mộng (ngủ chiêm bao)', table: 'chan', values: [146,257,334,485,523,618,762,871] },
+  'khauthiet': { name: 'Khẩu thiệt (rầy rà với người)', table: 'chan', values: [148,252,331,486,527,614,765,873] },
+
+  // Cung Tốn
+  'sanhy': { name: 'Sanh ý (việc buôn bán)', table: 'ton', values: [156,237,384,425,513,668,772,841] },
+  'thachoa': { name: 'Thác hoá (khai cửa hàng)', table: 'ton', values: [151,236,387,424,515,663,778,842] },
+  'khoitao': { name: 'Khơi tạo (khởi công làm)', table: 'ton', values: [155,233,388,422,511,666,777,844] },
+  'xuantam': { name: 'Xuân tàm (để tầm)', table: 'ton', values: [153,238,382,421,516,667,774,845] },
+  'vanbang': { name: 'Văn bằng (giấy tờ cấp bằng)', table: 'ton', values: [157,234,385,423,518,662,771,846] },
+  'kienquoi': { name: 'Kiến quới (thăm người)', table: 'ton', values: [152,231,386,427,514,665,773,848] },
+  'giailuong': { name: 'Giải lương (phát lương)', table: 'ton', values: [154,235,383,428,512,661,776,847] },
+  'totrang': { name: 'Tố trạng (bị kiện kêu nài)', table: 'ton', values: [158,232,381,426,517,664,775,843] },
+
+  // Cung Khảm
+  'napgiam': { name: 'Nạp giám (làm công chức)', table: 'kham', values: [163,278,342,451,536,687,724,815] },
+  'thangthien': { name: 'Thăng thiên (cấp bực có lên không)', table: 'kham', values: [161,276,347,454,535,683,728,812] },
+  'hoasu': { name: 'Hoà sự (cầu hoà)', table: 'kham', values: [164,275,343,458,532,681,726,817] },
+  'giaoviec': { name: 'Giao việc (mua bán)', table: 'kham', values: [167,274,345,453,538,682,721,816] },
+  'honnhan': { name: 'Hôn nhơn (cưới vợ)', table: 'kham', values: [165,273,348,452,531,686,727,814] },
+  'thuthiep': { name: 'Thú thiếp (cưới vợ lẻ)', table: 'kham', values: [168,272,341,456,537,684,725,813] },
+  'lucgiap': { name: 'Lục giáp (chuyển bụng đẻ)', table: 'kham', values: [166,277,344,455,533,688,722,811] },
+  'tamnhon': { name: 'Tầm nhơn (kiếm người)', table: 'kham', values: [162,271,346,457,534,685,723,818] },
+
+  // Cung Cấn
+  'giatin': { name: 'Gia tín (biết tin nhà)', table: 'can2', values: [172,241,356,437,584,625,713,868] },
+  'cauquan': { name: 'Cầu quan (muốn làm quan)', table: 'can2', values: [176,247,354,435,583,628,712,861] },
+  'trihoa': { name: 'Trí hóa (trữ hàng hóa)', table: 'can2', values: [175,243,358,432,581,626,717,864] },
+  'caotrang': { name: 'Cáo trạng (kiện người ta)', table: 'can2', values: [174,245,353,438,582,621,716,867] },
+  'noplai': { name: 'Nộp lại (làm lính, công chức)', table: 'can2', values: [173,248,352,431,586,627,714,865] },
+  'diensan': { name: 'Điền sản (đất vườn)', table: 'can2', values: [171,246,357,434,585,623,718,862] },
+  'thaoboc': { name: 'Thảo bộc (bắt người ở trốn)', table: 'can2', values: [178,242,351,436,587,624,715,863] },
+  'canquan': { name: 'Căn quan (đi tùy tùng với quan)', table: 'can2', values: [177,244,355,433,588,622,711,866] },
+
+  // Cung Khôn
+  'giatrach': { name: 'Gia trạch (cuộc nhà)', table: 'khon', values: [182,221,316,467,574,645,753,838] },
+  'thonguon': { name: 'Thọ ngươn (sống chết)', table: 'khon', values: [181,226,317,464,575,643,758,832] },
+  'tauthuat': { name: 'Tẩu thất (người trốn)', table: 'khon', values: [185,223,318,462,571,646,757,834] },
+  'thatvat': { name: 'Thất vật (mất đồ)', table: 'khon', values: [184,225,313,468,572,641,756,837] },
+  'hieploa': { name: 'Hiệp lỏa (hùng hiệp mua bán)', table: 'khon', values: [183,228,312,461,576,647,754,835] },
+  'hanhnhon': { name: 'Hành nhơn (người đi)', table: 'khon', values: [186,227,314,465,573,648,752,831] },
+  'giaigiao': { name: 'Giải giao (giải tội)', table: 'khon', values: [188,222,311,466,577,644,755,833] },
+  'thunghe': { name: 'Thủ nghệ (làm nghề)', table: 'khon', values: [187,224,315,463,578,642,751,836] }
+};
+
+// Nhóm chủ đề theo 8 cung
+const TOPIC_GROUPS = {
+  'Cung Càn': ['mangvan', 'doctho', 'tanhoc', 'khocu', 'tinhvu', 'thuthao', 'chieute', 'thinhy'],
+  'Cung Đoài': ['hoissu', 'muusu', 'maioc', 'dicu', 'phangia', 'thienhoa', 'phubenh', 'benhchung'],
+  'Cung Ly': ['khaitiem', 'cautai', 'maisuc', 'phanquynh', 'hoihuong', 'tatai', 'phongtruong', 'dobac'],
+  'Cung Chấn': ['nhapnhai', 'cautu', 'xuathanh', 'tamquan', 'thuthau', 'thungu', 'damong', 'khauthiet'],
+  'Cung Tốn': ['sanhy', 'thachoa', 'khoitao', 'xuantam', 'vanbang', 'kienquoi', 'giailuong', 'totrang'],
+  'Cung Khảm': ['napgiam', 'thangthien', 'hoasu', 'giaoviec', 'honnhan', 'thuthiep', 'lucgiap', 'tamnhon'],
+  'Cung Cấn': ['giatin', 'cauquan', 'trihoa', 'caotrang', 'noplai', 'diensan', 'thaoboc', 'canquan'],
+  'Cung Khôn': ['giatrach', 'thonguon', 'tauthuat', 'thatvat', 'hieploa', 'hanhnhon', 'giaigiao', 'thunghe']
 };
 
 // Bảng tra cứu Bát Quái
@@ -34,14 +119,87 @@ const BAGUA_NAMES = {
   5: 'Tốn', 6: 'Khảm', 7: 'Cấn', 8: 'Khôn'
 };
 
-// Kết quả giải thích mẫu
+// Kết quả giải thích mẫu theo từng lĩnh vực
 const SAMPLE_INTERPRETATIONS = {
+  // Cung Càn - Về học tập, tri thức, sức khỏe
   'mangvan': 'cho thấy vận mệnh đang trong giai đoạn chuyển biến tích cực. Đây là thời điểm thuận lợi để phát triển bản thân và nắm bắt cơ hội.',
+  'doctho': 'báo hiệu việc học tập và nghiên cứu sẽ có kết quả tốt. Trí tuệ được khai sáng, kiến thức được mở rộng.',
+  'tanhoc': 'thể hiện con đường học vấn thuận lợi. Sự chăm chỉ và kiên trì sẽ mang lại thành công trong học tập.',
   'khocu': 'báo hiệu kết quả thi cử khả quan. Sự chăm chỉ và kiên trì sẽ được đền đáp xứng đáng.',
+  'tinhvu': 'dự báo thời tiết thuận lợi. Mưa thuận gió hòa, có lợi cho mọi hoạt động.',
+  'thuthao': 'cho thấy việc đòi nợ sẽ có kết quả. Cần kiên nhẫn và có phương pháp phù hợp.',
+  'chieute': 'thể hiện việc cưới hỏi thuận lợi. Đây là thời điểm tốt để tổ chức hôn lễ.',
+  'thinhy': 'báo hiệu sức khỏe được cải thiện. Việc tìm kiếm thầy thuốc giỏi sẽ có kết quả tích cực.',
+
+  // Cung Đoài - Về xã hội, gia đình, sức khỏe
+  'hoissu': 'cho thấy các hoạt động nhóm sẽ thành công. Sự hợp tác và đoàn kết mang lại hiệu quả cao.',
+  'muusu': 'thể hiện kế hoạch và mưu toan sẽ thành công. Cần suy nghĩ kỹ lưỡng và hành động khôn ngoan.',
+  'maioc': 'báo hiệu việc mua nhà đất thuận lợi. Đây là thời điểm tốt để đầu tư bất động sản.',
+  'dicu': 'cho thấy việc chuyển chỗ ở hoặc công việc sẽ thuận lợi. Thay đổi mang lại cơ hội mới.',
+  'phangia': 'thể hiện việc chia tài sản gia đình sẽ công bằng và hòa thuận.',
+  'thienhoa': 'cảnh báo về sức khỏe con cái. Cần chú ý chăm sóc và theo dõi sức khỏe gia đình.',
+  'phubenh': 'cho biết tình hình sức khỏe cha mẹ. Cần quan tâm và chăm sóc người thân.',
+  'benhchung': 'thể hiện tình trạng bệnh tật sẽ được cải thiện. Việc điều trị sẽ có hiệu quả.',
+
+  // Cung Ly - Về tài chính, kinh doanh
+  'khaitiem': 'báo hiệu việc khai trương kinh doanh sẽ thành công. Đây là thời điểm thuận lợi để khởi nghiệp.',
   'cautai': 'thể hiện tài lộc đang dần cải thiện. Cần kiên nhẫn và có kế hoạch tài chính hợp lý.',
+  'maisuc': 'cho thấy việc mua bán súc vật sẽ có lợi nhuận. Đầu tư chăn nuôi sẽ mang lại hiệu quả.',
+  'phanquynh': 'thể hiện việc chọn mộ phần và phong thủy sẽ thuận lợi cho gia đình.',
+  'hoihuong': 'báo hiệu việc trở về quê hương sẽ thuận lợi. Đây là thời điểm tốt để về thăm gia đình.',
+  'tatai': 'cho thấy việc cho vay mượn tiền sẽ có kết quả tốt. Cần cân nhắc kỹ lưỡng trước khi quyết định.',
+  'phongtruong': 'thể hiện hoạt động cho vay sẽ mang lại lợi nhuận. Cần quản lý rủi ro một cách khôn ngoan.',
+  'dobac': 'cảnh báo về cờ bạc và đầu cơ. Nên tránh xa các hoạt động may rủi để bảo toàn tài sản.',
+
+  // Cung Chấn - Về hôn nhân, gia đình, di chuyển
+  'nhapnhai': 'báo hiệu việc cưới vợ ở rể sẽ thuận lợi. Hôn nhân sẽ hạnh phúc và bền vững.',
+  'cautu': 'cho thấy việc cầu con sẽ có kết quả tốt. Gia đình sẽ được bổ sung thành viên mới.',
+  'xuathanh': 'thể hiện việc đi xa sẽ thuận lợi và an toàn. Chuyến đi sẽ mang lại nhiều may mắn.',
+  'tamquan': 'báo hiệu việc tìm kiếm quê quán tổ tiên sẽ có kết quả. Nguồn gốc gia đình sẽ được làm rõ.',
+  'thuthau': 'cho thấy mùa màng sẽ bội thu. Công việc nông nghiệp sẽ mang lại hiệu quả cao.',
+  'thungu': 'thể hiện việc đánh bắt cá sẽ có kết quả tốt. Hoạt động thủy sản sẽ thuận lợi.',
+  'damong': 'giải thích ý nghĩa giấc mơ. Những điềm báo trong mơ sẽ có ý nghĩa tích cực.',
+  'khauthiet': 'cảnh báo về tranh cãi và xung đột. Cần kiềm chế lời nói để tránh rắc rối.',
+
+  // Cung Tốn - Về kinh doanh, công việc, giấy tờ
+  'sanhy': 'báo hiệu việc kinh doanh buôn bán sẽ phát đạt. Đây là thời điểm tốt để mở rộng hoạt động.',
+  'thachoa': 'cho thấy việc giao dịch hàng hóa sẽ thuận lợi. Các thương vụ sẽ mang lại lợi nhuận.',
+  'khoitao': 'thể hiện việc khởi công xây dựng sẽ thuận lợi. Dự án sẽ hoàn thành đúng tiến độ.',
+  'xuantam': 'báo hiệu việc nuôi tơ tằm sẽ có kết quả tốt. Hoạt động chăn nuôi sẽ mang lại lợi nhuận.',
+  'vanbang': 'cho thấy việc xin cấp giấy tờ bằng cấp sẽ thuận lợi. Thủ tục hành chính sẽ được giải quyết nhanh chóng.',
+  'kienquoi': 'thể hiện việc thăm hỏi người thân sẽ có ý nghĩa tốt. Mối quan hệ sẽ được củng cố.',
+  'giailuong': 'báo hiệu việc nhận lương thưởng sẽ đúng hạn. Thu nhập sẽ được cải thiện.',
+  'totrang': 'cảnh báo về kiện tụng và tranh chấp pháp lý. Cần cẩn trọng trong các giao dịch.',
+
+  // Cung Khảm - Về công danh, hôn nhân, tìm kiếm
+  'napgiam': 'cho thấy việc làm công chức sẽ thuận lợi. Cơ hội nghề nghiệp trong khu vực nhà nước sẽ mở ra.',
+  'thangthien': 'báo hiệu sự thăng tiến trong công việc. Chức vụ và địa vị sẽ được nâng cao.',
+  'hoasu': 'thể hiện việc hòa giải và thương lượng sẽ thành công. Mâu thuẫn sẽ được giải quyết.',
+  'giaoviec': 'cho thấy các giao dịch mua bán sẽ thuận lợi. Kinh doanh sẽ phát triển tốt.',
   'honnhan': 'dự báo tình duyên thuận lợi. Đây là thời điểm tốt để củng cố mối quan hệ hoặc tìm kiếm tình yêu đích thực.',
-  'congdanh': 'cho thấy sự nghiệp đang trên đà phát triển. Cần duy trì sự chuyên nghiệp và tích cực trong công việc.',
-  'giadao': 'thể hiện gia đình hòa thuận, hạnh phúc. Các mối quan hệ trong gia đình sẽ ngày càng bền chặt.'
+  'thuthiep': 'thể hiện việc cưới vợ lẻ hoặc có thêm mối quan hệ sẽ cần cân nhắc kỹ lưỡng.',
+  'lucgiap': 'báo hiệu việc sinh nở sẽ thuận lợi. Mẹ tròn con vuông, gia đình thêm hạnh phúc.',
+  'tamnhon': 'cho thấy việc tìm kiếm người thân hoặc bạn bè sẽ có kết quả. Những người xa cách sẽ được đoàn tụ.',
+
+  // Cung Cấn - Về tin tức, quan lộ, tài sản
+  'giatin': 'báo hiệu sẽ nhận được tin tức tốt từ gia đình. Những thông tin quan trọng sẽ được biết đến.',
+  'cauquan': 'cho thấy việc cầu quan cầu chức sẽ có kết quả. Cơ hội thăng tiến sẽ xuất hiện.',
+  'trihoa': 'thể hiện việc tích trữ hàng hóa sẽ có lợi. Đầu tư dài hạn sẽ mang lại hiệu quả.',
+  'caotrang': 'báo hiệu việc kiện cáo sẽ có kết quả thuận lợi. Công lý sẽ được thực thi.',
+  'noplai': 'cho thấy việc làm lính hoặc công chức sẽ thuận lợi. Nghề nghiệp ổn định sẽ được tìm thấy.',
+  'diensan': 'thể hiện việc mua bán đất đai sẽ có lợi. Bất động sản sẽ tăng giá.',
+  'thaoboc': 'báo hiệu việc truy tìm người trốn sẽ có kết quả. Những điều ẩn giấu sẽ được phát hiện.',
+  'canquan': 'cho thấy việc theo quan làm việc sẽ thuận lợi. Cơ hội nghề nghiệp tốt sẽ xuất hiện.',
+
+  // Cung Khôn - Về gia đạo, sức khỏe, mất mát
+  'giatrach': 'thể hiện gia đình hòa thuận, hạnh phúc. Các mối quan hệ trong gia đình sẽ ngày càng bền chặt.',
+  'thonguon': 'cho biết về tuổi thọ và sức khỏe. Cần chú ý chăm sóc sức khỏe để có cuộc sống lâu dài.',
+  'tauthuat': 'cảnh báo về việc trốn chạy hoặc lánh mặt. Cần đối diện với vấn đề thay vì trốn tránh.',
+  'thatvat': 'thể hiện việc tìm lại đồ vật thất lạc. Những thứ đã mất có thể sẽ được tìm thấy.',
+  'hieploa': 'cảnh báo về các giao dịch mua bán có thể gặp rủi ro. Cần cẩn trọng khi kinh doanh.',
+  'hanhnhon': 'cho thấy việc đi xa của người thân sẽ bình an. Chuyến đi sẽ thuận lợi và may mắn.',
+  'giaigiao': 'báo hiệu việc giải quyết tội lỗi sẽ có kết quả tốt. Công lý sẽ được thực thi.',
+  'thunghe': 'thể hiện việc làm nghề thủ công sẽ phát đạt. Kỹ năng chuyên môn sẽ mang lại thu nhập ổn định.'
 };
 
 interface DiBocResult {
@@ -171,7 +329,7 @@ export function DiBocTienTri() {
             <p className="text-sm text-muted-foreground leading-relaxed">
               <strong>Dị Bốc Tiên Tri</strong> là một cuốn sách cổ của tiên sinh Thiệu Khang Tiết, 
               ghi lại các chiêm nghiệm của quẻ Kinh Dịch đối với các sự việc cần hỏi. 
-              Đây là phương pháp bói toán trực tiếp, cho kết quả rõ ràng và chính xác.
+              Đây là phương pháp bói toán trực tiếp, cho kết quả rõ ràng và chính xác với 64 chủ đề khác nhau.
             </p>
           </div>
         </CardContent>
@@ -185,7 +343,7 @@ export function DiBocTienTri() {
             <span>Gieo Quẻ Tiên Tri</span>
           </CardTitle>
           <CardDescription>
-            Chọn chủ đề và phương pháp để nhận lời tiên tri từ 8 cung Bát Quái
+            Chọn chủ đề từ 64 lĩnh vực và phương pháp để nhận lời tiên tri từ 8 cung Bát Quái
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-6">
@@ -200,17 +358,24 @@ export function DiBocTienTri() {
           {/* Topic Selection */}
           <div className="space-y-2">
             <Label htmlFor="topic-select" className="text-mystical-gold font-medium">
-              Chọn chủ đề cần hỏi bói
+              Chọn chủ đề cần hỏi bói (64 lĩnh vực)
             </Label>
             <Select value={selectedTopic} onValueChange={setSelectedTopic}>
               <SelectTrigger className="bg-white/50 border-mystical-gold/30 focus:border-mystical-gold">
                 <SelectValue placeholder="-- Chọn loại câu hỏi --" />
               </SelectTrigger>
-              <SelectContent>
-                {Object.entries(TOPICS).map(([key, topic]) => (
-                  <SelectItem key={key} value={key}>
-                    {topic.name}
-                  </SelectItem>
+              <SelectContent className="max-h-[300px]">
+                {Object.entries(TOPIC_GROUPS).map(([groupName, topicKeys]) => (
+                  <div key={groupName}>
+                    <div className="px-2 py-1 text-sm font-semibold text-mystical-gold bg-mystical-gold/5 sticky top-0">
+                      {groupName}
+                    </div>
+                    {topicKeys.map((topicKey) => (
+                      <SelectItem key={topicKey} value={topicKey} className="pl-4">
+                        {TOPICS[topicKey as keyof typeof TOPICS].name}
+                      </SelectItem>
+                    ))}
+                  </div>
                 ))}
               </SelectContent>
             </Select>
@@ -383,10 +548,10 @@ export function DiBocTienTri() {
             <div>
               <h4 className="font-semibold text-mystical-gold mb-2">Cách Thức Hoạt Động</h4>
               <ul className="text-sm text-muted-foreground space-y-1">
-                <li>• Chọn chủ đề cần hỏi bói từ 6 lĩnh vực chính</li>
+                <li>• Chọn chủ đề cần hỏi bói từ 64 lĩnh vực được phân chia theo 8 cung</li>
                 <li>• Lựa chọn số ngẫu nhiên hoặc tự nhập số từ 1-8</li>
-                <li>• Hệ thống sẽ tra cứu trong 8 bảng cung Bát Quái</li>
-                <li>• Nhận kết quả với số quẻ và lời giải thích</li>
+                <li>• Hệ thống sẽ tra cứu trong bảng cung Bát Quái tương ứng</li>
+                <li>• Nhận kết quả với số quẻ và lời giải thích chi tiết</li>
               </ul>
             </div>
             
@@ -400,6 +565,21 @@ export function DiBocTienTri() {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+
+          {/* Topic Groups Summary */}
+          <div className="mt-6">
+            <h4 className="font-semibold text-mystical-gold mb-3">64 Chủ Đề Theo 8 Cung</h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+              {Object.entries(TOPIC_GROUPS).map(([groupName, topicKeys]) => (
+                <div key={groupName} className="p-3 bg-mystical-gold/5 rounded border border-mystical-gold/20">
+                  <div className="font-semibold text-mystical-gold mb-2">{groupName}</div>
+                  <div className="text-muted-foreground">
+                    {topicKeys.length} chủ đề
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </CardContent>
