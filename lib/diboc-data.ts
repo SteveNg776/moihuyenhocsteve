@@ -11,8 +11,12 @@ export interface Diboc {
 // The JSON data is on the 'default' property of the imported module.
 const dibocData: Diboc[] = (data as any).default;
 
-export const getDibocById = (id: string): Diboc | undefined => {
-  // Ensure dibocData is an array before searching.
+/**
+ * Retrieves a prediction by its ID. Renamed from getDibocById to match component usage.
+ * @param id The ID of the prediction to retrieve.
+ * @returns A Diboc object or undefined if not found.
+ */
+export const getPredictionById = (id: string): Diboc | undefined => {
   if (!Array.isArray(dibocData)) {
     return undefined;
   }
