@@ -17,12 +17,10 @@ import {
   CheckCircle,
   BookOpen,
   Hash,
-  ChevronDown,
-  ChevronUp,
   FileText,
   Lightbulb
 } from 'lucide-react';
-import { getPredictionById, hasPrediction, getPredictionStats, type DibocPrediction } from '@/lib/diboc-data';
+import { getPredictionById, getPredictionStats, type DibocPrediction } from '@/lib/diboc-data';
 
 // Định nghĩa đầy đủ các chủ đề từ file text với 8 cung Bát Quái
 const TOPICS = {
@@ -173,22 +171,9 @@ export function DiBocTienTri() {
   const [result, setResult] = useState<DiBocResult | null>(null);
   const [error, setError] = useState<string>('');
   const [isGenerating, setIsGenerating] = useState(false);
-  const [expandedGroups, setExpandedGroups] = useState<Set<string>>(new Set());
-  const [showStats, setShowStats] = useState(false);
 
   // Get prediction statistics
   const predictionStats = getPredictionStats();
-
-  // Toggle expanded state for topic groups
-  const toggleGroup = (groupName: string) => {
-    const newExpanded = new Set(expandedGroups);
-    if (newExpanded.has(groupName)) {
-      newExpanded.delete(groupName);
-    } else {
-      newExpanded.add(groupName);
-    }
-    setExpandedGroups(newExpanded);
-  };
 
   // Validate input số
   const validateNumber = (num: string): boolean => {
@@ -318,44 +303,10 @@ export function DiBocTienTri() {
             </p>
             
             {/* Data Statistics */}
-            <div className="mt-4 flex items-center justify-between">
-              <div className="flex items-center space-x-2 text-xs text-muted-foreground">
-                <FileText className="w-4 h-4" />
-                <span>Dữ liệu: {predictionStats.total} quẻ tiên tri hợp lệ</span>
-              </div>
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={() => setShowStats(!showStats)}
-                className="text-xs"
-              >
-                {showStats ? 'Ẩn' : 'Hiện'} thống kê
-                {showStats ? <ChevronUp className="w-3 h-3 ml-1" /> : <ChevronDown className="w-3 h-3 ml-1" />}
-              </Button>
+            <div className="mt-4 flex items-center space-x-2 text-xs text-muted-foreground">
+              <FileText className="w-4 h-4" />
+              <span>Dữ liệu: {predictionStats.total} quẻ tiên tri hợp lệ</span>
             </div>
-            
-            {showStats && (
-              <div className="mt-3 p-3 bg-white/50 rounded border border-mystical-gold/10">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs">
-                  <div className="text-center">
-                    <div className="font-semibold text-mystical-gold">{predictionStats.total}</div>
-                    <div className="text-muted-foreground">Quẻ hợp lệ</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="font-semibold text-mystical-gold">{predictionStats.totalInFile}</div>
-                    <div className="text-muted-foreground">Tổng trong file</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="font-semibold text-mystical-gold">{predictionStats.validPercentage}%</div>
-                    <div className="text-muted-foreground">Tỷ lệ hợp lệ</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="font-semibold text-mystical-gold">512</div>
-                    <div className="text-muted-foreground">Quẻ truyền thống</div>
-                  </div>
-                </div>
-              </div>
-            )}
           </div>
         </CardContent>
       </Card>
@@ -645,41 +596,27 @@ export function DiBocTienTri() {
 
           {/* Topic Groups Summary with Detailed Information */}
           <div className="mt-6">
-            <h4 className="font-semibold text-mystical-gold mb-3">64 Chủ Đề Theo 8 Cung Chi Tiết</h4>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+            <h4 className="font-semibold text-mystical-gold mb-4 text-lg">64 Chủ Đề Theo 8 Cung Chi Tiết</h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {Object.entries(TOPIC_GROUPS).map(([groupName, groupData]) => (
-                <div key={groupName} className={`p-3 rounded border ${groupData.color}`}>
-                  <button
-                    onClick={() => toggleGroup(groupName)}
-                    className="w-full text-left"
-                  >
-                    <div className="flex items-center justify-between mb-2">
-                      <div className="font-semibold">{groupName}</div>
-                      {expandedGroups.has(groupName) ? (
-                        <ChevronUp className="w-4 h-4" />
-                      ) : (
-                        <ChevronDown className="w-4 h-4" />
-                      )}
-                    </div>
-                    <div className="text-xs opacity-75 mb-2">
+                <div key={groupName} className={`p-4 rounded-lg border ${groupData.color}`}>
+                  <div className="mb-3">
+                    <div className="font-bold text-base mb-2">{groupName}</div>
+                    <div className="text-sm opacity-80 mb-3 leading-relaxed">
                       {groupData.description}
                     </div>
-                    <div className="text-xs opacity-60">
+                    <div className="text-xs opacity-70 font-medium">
                       {groupData.topics.length} chủ đề
                     </div>
-                  </button>
+                  </div>
 
-                  {expandedGroups.has(groupName) && (
-                    <div className="mt-3 pt-3 border-t border-current/20">
-                      <div className="space-y-1">
-                        {groupData.topics.map((topicKey) => (
-                          <div key={topicKey} className="text-xs opacity-75 leading-relaxed">
-                            • {TOPICS[topicKey as keyof typeof TOPICS].name}
-                          </div>
-                        ))}
+                  <div className="space-y-2">
+                    {groupData.topics.map((topicKey) => (
+                      <div key={topicKey} className="text-sm leading-relaxed p-2 bg-white/50 rounded border border-current/20">
+                        • {TOPICS[topicKey as keyof typeof TOPICS].name}
                       </div>
-                    </div>
-                  )}
+                    ))}
+                  </div>
                 </div>
               ))}
             </div>
