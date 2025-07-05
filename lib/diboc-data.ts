@@ -2,10 +2,9 @@ import * as data from './data111-888.json';
 
 export interface Diboc {
   id: string;
-  name: string;
-  description: string;
-  meaning: string;
-  details: string;
+  title: string;
+  original: string;
+  interpretation: string;
 }
 
 // The JSON data is on the 'default' property of the imported module.
