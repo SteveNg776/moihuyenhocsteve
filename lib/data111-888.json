@@ -2,15 +2,449 @@
   {
     "id": "111",
     "name": "CÀN",
-    "title": "Thiên võ vấn tình thiên tất võ",
-    "original": "Thiên võ vấn tình thiên tất võ\nThiên tình vẫn võ chủ thiên tình\nNhược yếu võ vụ khang Hợi Tý\nTình đa võ thiểu số phân minh.",
-    "interpretation": "Trời mưa hỏi tạnh trời ắt mưa,\nTrời tạnh hỏi mưa trời ắt tạnh,\nNếu muốn mưa dầm coi Hợi, Tý\nTạnh nhiều mưa ít, rõ ràng phân"
+    "description": "Thiên",
+    "meaning": "Trời",
+    "details": "Kiên cường, mạnh mẽ, sáng tạo, chủ động, lãnh đạo, cha, vua, đầu."
   },
   {
     "id": "112",
-    "name": "LÝ (Trạch Thiên)",
-    "title": "Tấn học chiếm ly lý quái hàm",
-    "original": "Tấn học chiếm ly lý quái hàm\nVăn thơ Quan quỉ lưỡng tương giao\nTài danh nhị tự thành vi tiến\nĐịnh chủ tha niên đạt cẩm phiêu.",
-    "interpretation": "Ngươi học tới mà gặp quẻ nầy,\nHào văn, hào quỉ gặp đi đôi\nDanh một tài hai thành kết cuộc,\nRõ ràng năm tới chiếm ngao đầu."
+    "name": "THIÊN TRẠCH LÝ",
+    "description": "Càn trên Đoài dưới",
+    "meaning": "Dẫm, Lễ",
+    "details": "Đi theo, thực hành, lễ độ, quy tắc, cẩn trọng, nguy hiểm."
   },
+  {
+    "id": "113",
+    "name": "THIÊN HỎA ĐỒNG NHÂN",
+    "description": "Càn trên Ly dưới",
+    "meaning": "Cùng người",
+    "details": "Hòa đồng, hợp tác, công bằng, không thiên vị, thành công."
+  },
+  {
+    "id": "114",
+    "name": "THIÊN LÔI VÔ VỌNG",
+    "description": "Càn trên Chấn dưới",
+    "meaning": "Không càn bậy",
+    "details": "Chân thật, tự nhiên, không giả dối, tai họa bất ngờ nếu làm sai."
+  },
+  {
+    "id": "115",
+    "name": "THIÊN PHONG CẤU",
+    "description": "Càn trên Tốn dưới",
+    "meaning": "Gặp gỡ",
+    "details": "Gặp gỡ bất ngờ, nữ mạnh mẽ, không nên kết hôn, cẩn thận."
+  },
+  {
+    "id": "116",
+    "name": "THIÊN THỦY TỤNG",
+    "description": "Càn trên Khảm dưới",
+    "meaning": "Kiện tụng",
+    "details": "Tranh chấp, kiện cáo, không hòa hợp, nên dừng lại, nguy hiểm."
+  },
+  {
+    "id": "117",
+    "name": "THIÊN SƠN ĐỘN",
+    "description": "Càn trên Cấn dưới",
+    "meaning": "Trốn, lui",
+    "details": "Trốn tránh, ẩn dật, lui về, tiểu nhân mạnh, quân tử lui."
+  },
+  {
+    "id": "118",
+    "name": "THIÊN ĐỊA BĨ",
+    "description": "Càn trên Khôn dưới",
+    "meaning": "Bế tắc",
+    "details": "Không thông, bế tắc, tiểu nhân đắc thế, quân tử gian nan."
+  },
+  {
+    "id": "221",
+    "name": "TRẠCH THIÊN QUẢI",
+    "description": "Đoài trên Càn dưới",
+    "meaning": "Quyết đoán",
+    "details": "Quyết liệt, loại bỏ, công khai, nguy hiểm, cần cẩn trọng."
+  },
+  {
+    "id": "222",
+    "name": "ĐOÀI",
+    "description": "Trạch",
+    "meaning": "Ao, Đầm",
+    "details": "Vui vẻ, duyệt, thuyết, thiếu nữ, miệng, phá hoại, nô tỳ."
+  },
+  {
+    "id": "223",
+    "name": "TRẠCH HỎA CÁCH",
+    "description": "Đoài trên Ly dưới",
+    "meaning": "Cải cách",
+    "details": "Thay đổi, cải cách, cách mạng, bỏ cũ theo mới, thành công."
+  },
+  {
+    "id": "224",
+    "name": "TRẠCH LÔI TÙY",
+    "description": "Đoài trên Chấn dưới",
+    "meaning": "Tùy theo",
+    "details": "Đi theo, tùy thời, linh hoạt, không cố chấp, tốt."
+  },
+  {
+    "id": "225",
+    "name": "TRẠCH PHONG ĐẠI QUÁ",
+    "description": "Đoài trên Tốn dưới",
+    "meaning": "Lỗi lớn",
+    "details": "Quá mức, gánh nặng, cột yếu, nguy hiểm, cần hành động phi thường."
+  },
+  {
+    "id": "226",
+    "name": "TRẠCH THỦY KHỐN",
+    "description": "Đoài trên Khảm dưới",
+    "meaning": "Cùng khốn",
+    "details": "Khó khăn, gian nan, bị vây hãm, cần kiên nhẫn, giữ vững chí khí."
+  },
+  {
+    "id": "227",
+    "name": "TRẠCH SƠN HÀM",
+    "description": "Đoài trên Cấn dưới",
+    "meaning": "Cảm ứng",
+    "details": "Tác động qua lại, cảm xúc, tình yêu, hôn nhân, tốt."
+  },
+  {
+    "id": "228",
+    "name": "TRẠCH ĐỊA TỤY",
+    "description": "Đoài trên Khôn dưới",
+    "meaning": "Tụ tập",
+    "details": "Gom lại, tập hợp, quần chúng, vua, cần người lãnh đạo."
+  },
+  {
+    "id": "331",
+    "name": "HỎA THIÊN ĐẠI HỮU",
+    "description": "Ly trên Càn dưới",
+    "meaning": "Sở hữu lớn",
+    "details": "Giàu có, thịnh vượng, khiêm tốn, được trời giúp, tốt."
+  },
+  {
+    "id": "332",
+    "name": "HỎA TRẠCH KHUÊ",
+    "description": "Ly trên Đoài dưới",
+    "meaning": "Trái lìa",
+    "details": "Chia lìa, bất đồng, đối lập, nên tìm điểm chung trong dị biệt."
+  },
+  {
+    "id": "333",
+    "name": "LY",
+    "description": "Hỏa",
+    "meaning": "Lửa",
+    "details": "Sáng, đẹp, văn minh, trung nữ, mắt, tim, lệ thuộc, khô."
+  },
+  {
+    "id": "334",
+    "name": "HỎA LÔI PHỆ HẠP",
+    "description": "Ly trên Chấn dưới",
+    "meaning": "Cắn hợp",
+    "details": "Trừng phạt, hình pháp, vượt qua trở ngại, cần cứng rắn."
+  },
+  {
+    "id": "335",
+    "name": "HỎA PHONG ĐỈNH",
+    "description": "Ly trên Tốn dưới",
+    "meaning": "Cái đỉnh",
+    "details": "Nuôi dưỡng, trọng dụng người tài, vững chắc, tốt."
+  },
+  {
+    "id": "336",
+    "name": "HỎA THỦY VỊ TẾ",
+    "description": "Ly trên Khảm dưới",
+    "meaning": "Chưa xong",
+    "details": "Chưa hoàn thành, còn hy vọng, cần cẩn thận, không đúng vị trí."
+  },
+  {
+    "id": "337",
+    "name": "HỎA SƠN LỮ",
+    "description": "Ly trên Cấn dưới",
+    "meaning": "Lữ khách",
+    "details": "Ở trọ, xa nhà, cô độc, không ổn định, cần khiêm tốn."
+  },
+  {
+    "id": "338",
+    "name": "HỎA ĐỊA TẤN",
+    "description": "Ly trên Khôn dưới",
+    "meaning": "Tiến lên",
+    "details": "Tiến bộ, phát triển, được ban thưởng, vua hiền, tốt."
+  },
+  {
+    "id": "441",
+    "name": "LÔI THIÊN ĐẠI TRÁNG",
+    "description": "Chấn trên Càn dưới",
+    "meaning": "Rất mạnh",
+    "details": "Thịnh đại, mạnh mẽ, không nên lạm dụng sức mạnh, cẩn thận."
+  },
+  {
+    "id": "442",
+    "name": "LÔI TRẠCH QUY MUỘI",
+    "description": "Chấn trên Đoài dưới",
+    "meaning": "Em gái về nhà chồng",
+    "details": "Không chính đáng, không bền lâu, xấu, ham muốn xác thịt."
+  },
+  {
+    "id": "443",
+    "name": "LÔI HỎA PHONG",
+    "description": "Chấn trên Ly dưới",
+    "meaning": "Phong thịnh",
+    "details": "Lớn mạnh, sung túc, cần lo xa, không nên kiêu ngạo."
+  },
+  {
+    "id": "444",
+    "name": "CHẤN",
+    "description": "Lôi",
+    "meaning": "Sấm",
+    "details": "Động, phấn khởi, trưởng nam, chân, sợ hãi, giận dữ."
+  },
+  {
+    "id": "445",
+    "name": "LÔI PHONG HẰNG",
+    "description": "Chấn trên Tốn dưới",
+    "meaning": "Lâu dài",
+    "details": "Bền vững, vợ chồng, đạo thường, kiên trì, tốt."
+  },
+  {
+    "id": "446",
+    "name": "LÔI THỦY GIẢI",
+    "description": "Chấn trên Khảm dưới",
+    "meaning": "Cởi tháo",
+    "details": "Tan khó khăn, tha thứ, hành động nhanh, tốt."
+  },
+  {
+    "id": "447",
+    "name": "LÔI SƠN TIỂU QUÁ",
+    "description": "Chấn trên Cấn dưới",
+    "meaning": "Lỗi nhỏ",
+    "details": "Hơi quá, nên làm việc nhỏ, không nên làm việc lớn, khiêm tốn."
+  },
+  {
+    "id": "448",
+    "name": "LÔI ĐỊA DỰ",
+    "description": "Chấn trên Khôn dưới",
+    "meaning": "Vui vẻ, dự bị",
+    "details": "Sẵn sàng, vui sướng, lập hầu, hành sư, cần phòng bị."
+  },
+  {
+    "id": "551",
+    "name": "PHONG THIÊN TIỂU SÚC",
+    "description": "Tốn trên Càn dưới",
+    "meaning": "Ngăn nhỏ",
+    "details": "Ngưng tụ nhỏ, tích lũy ít, chờ thời, có mây chưa mưa."
+  },
+  {
+    "id": "552",
+    "name": "PHONG TRẠCH TRUNG PHU",
+    "description": "Tốn trên Đoài dưới",
+    "meaning": "Tin ở trong",
+    "details": "Thành tín, tin tưởng, cảm hóa, vượt sông lớn, tốt."
+  },
+  {
+    "id": "553",
+    "name": "PHONG HỎA GIA NHÂN",
+    "description": "Tốn trên Ly dưới",
+    "meaning": "Người nhà",
+    "details": "Gia đình, phụ nữ chính đạo, trong nhà, tốt."
+  },
+  {
+    "id": "554",
+    "name": "PHONG LÔI ÍCH",
+    "description": "Tốn trên Chấn dưới",
+    "meaning": "Thêm lên",
+    "details": "Lợi ích, tăng tiến, hy sinh trên để giúp dưới, tốt."
+  },
+  {
+    "id": "555",
+    "name": "TỐN",
+    "description": "Phong",
+    "meaning": "Gió",
+    "details": "Vào, thuận, trưởng nữ, đùi, không quyết đoán, lợi lộc."
+  },
+  {
+    "id": "556",
+    "name": "PHONG THỦY HOÁN",
+    "description": "Tốn trên Khảm dưới",
+    "meaning": "Tan đi",
+    "details": "Ly tán, chia rẽ, cần tập hợp lại lòng người, tốt."
+  },
+  {
+    "id": "557",
+    "name": "PHONG SƠN TIỆM",
+    "description": "Tốn trên Cấn dưới",
+    "meaning": "Tiến dần",
+    "details": "Tuần tự, từ từ, phụ nữ về nhà chồng, tốt."
+  },
+  {
+    "id": "558",
+    "name": "PHONG ĐỊA QUAN",
+    "description": "Tốn trên Khôn dưới",
+    "meaning": "Xem xét",
+    "details": "Quan sát, xem xét, được dân chúng noi theo, ảnh hưởng."
+  },
+  {
+    "id": "661",
+    "name": "THỦY THIÊN NHU",
+    "description": "Khảm trên Càn dưới",
+    "meaning": "Chờ đợi",
+    "details": "Chờ thời, không vội vàng, nguy hiểm phía trước, ăn uống."
+  },
+  {
+    "id": "662",
+    "name": "THỦY TRẠCH TIẾT",
+    "description": "Khảm trên Đoài dưới",
+    "meaning": "Tiết chế",
+    "details": "Điều độ, chừng mực, không quá đáng, tốt."
+  },
+  {
+    "id": "663",
+    "name": "THỦY HỎA KÝ TẾ",
+    "description": "Khảm trên Ly dưới",
+    "meaning": "Đã xong",
+    "details": "Hoàn thành, ổn định, cần giữ gìn, phòng ngừa suy thoái."
+  },
+  {
+    "id": "664",
+    "name": "THỦY LÔI TRUÂN",
+    "description": "Khảm trên Chấn dưới",
+    "meaning": "Gian nan",
+    "details": "Khởi đầu khó khăn, cần kiên trì, không nên vội tiến."
+  },
+  {
+    "id": "665",
+    "name": "THỦY PHONG TỈNH",
+    "description": "Khảm trên Tốn dưới",
+    "meaning": "Cái giếng",
+    "details": "Nuôi dưỡng, không thay đổi, công đức, dân làng hưởng lợi."
+  },
+  {
+    "id": "666",
+    "name": "KHẢM",
+    "description": "Thủy",
+    "meaning": "Nước",
+    "details": "Hiểm trở, hãm, trung nam, tai, thận, lo lắng, bệnh tật."
+  },
+  {
+    "id": "667",
+    "name": "THỦY SƠN KIỂN",
+    "description": "Khảm trên Cấn dưới",
+    "meaning": "Nghiêng, khó",
+    "details": "Gian nan, trở ngại, nên dừng lại, tìm người giúp."
+  },
+  {
+    "id": "668",
+    "name": "THỦY ĐỊA SƯ",
+    "description": "Khảm trên Khôn dưới",
+    "meaning": "Quân đội",
+    "details": "Chiến tranh, đám đông, cần người lãnh đạo có kinh nghiệm."
+  },
+  {
+    "id": "771",
+    "name": "SƠN THIÊN ĐẠI SÚC",
+    "description": "Cấn trên Càn dưới",
+    "meaning": "Ngăn lớn",
+    "details": "Tích lũy lớn, nuôi dưỡng hiền tài, tốt."
+  },
+  {
+    "id": "772",
+    "name": "SƠN TRẠCH TỔN",
+    "description": "Cấn trên Đoài dưới",
+    "meaning": "Bớt đi",
+    "details": "Hy sinh dưới để giúp trên, thành thật, tốt."
+  },
+  {
+    "id": "773",
+    "name": "SƠN HỎA BÍ",
+    "description": "Cấn trên Ly dưới",
+    "meaning": "Trang sức",
+    "details": "Trang trí, làm đẹp, văn minh, không thực chất, việc nhỏ thì tốt."
+  },
+  {
+    "id": "774",
+    "name": "SƠN LÔI DI",
+    "description": "Cấn trên Chấn dưới",
+    "meaning": "Nuôi nấng",
+    "details": "Dưỡng dục, cẩn thận lời nói và ăn uống, tự lực."
+  },
+  {
+    "id": "775",
+    "name": "SƠN PHONG CỔ",
+    "description": "Cấn trên Tốn dưới",
+    "meaning": "Việc xằng bậy",
+    "details": "Sửa chữa sai lầm, mục nát, cần can đảm và nỗ lực."
+  },
+  {
+    "id": "776",
+    "name": "SƠN THỦY MÔNG",
+    "description": "Cấn trên Khảm dưới",
+    "meaning": "Tối tăm, non",
+    "details": "Mờ mịt, cần khai sáng, giáo dục, không hỏi nhiều lần."
+  },
+  {
+    "id": "777",
+    "name": "CẤN",
+    "description": "Sơn",
+    "meaning": "Núi",
+    "details": "Ngừng, chỉ, thiếu nam, tay, lưng, tĩnh, không tiến."
+  },
+  {
+    "id": "778",
+    "name": "SƠN ĐỊA BÁC",
+    "description": "Cấn trên Khôn dưới",
+    "meaning": "Lột, rụng",
+    "details": "Suy thoái, tiểu nhân mạnh, quân tử nên ẩn mình, không nên hành động."
+  },
+  {
+    "id": "881",
+    "name": "ĐỊA THIÊN THÁI",
+    "description": "Khôn trên Càn dưới",
+    "meaning": "Thông thuận",
+    "details": "Hòa hợp, thông suốt, tiểu nhân đi, quân tử đến, tốt."
+  },
+  {
+    "id": "882",
+    "name": "ĐỊA TRẠCH LÂM",
+    "description": "Khôn trên Đoài dưới",
+    "meaning": "Tới, cai trị",
+    "details": "Giám sát, cai quản, lớn mạnh, tốt, nhưng cần lo xa."
+  },
+  {
+    "id": "883",
+    "name": "ĐỊA HỎA MINH DI",
+    "description": "Khôn trên Ly dưới",
+    "meaning": "Sáng bị thương",
+    "details": "Tối tăm, gian nan, bị hại, cần che giấu sự sáng suốt."
+  },
+  {
+    "id": "884",
+    "name": "ĐỊA LÔI PHỤC",
+    "description": "Khôn trên Chấn dưới",
+    "meaning": "Trở lại",
+    "details": "Quay về, dương khí trở lại, tốt, chu kỳ mới bắt đầu."
+  },
+  {
+    "id": "885",
+    "name": "ĐỊA PHONG THĂNG",
+    "description": "Khôn trên Tốn dưới",
+    "meaning": "Lên",
+    "details": "Tiến lên, thăng tiến, cần có người giúp đỡ, tốt."
+  },
+  {
+    "id": "886",
+    "name": "ĐỊA THỦY SƯ",
+    "description": "Khôn trên Khảm dưới",
+    "meaning": "Quân đội",
+    "details": "Trùng với 668, có thể có lỗi dữ liệu."
+  },
+  {
+    "id": "887",
+    "name": "ĐỊA SƠN KHIÊM",
+    "description": "Khôn trên Cấn dưới",
+    "meaning": "Khiêm tốn",
+    "details": "Nhún nhường, khiêm tốn, được lợi, tốt."
+  },
+  {
+    "id": "888",
+    "name": "KHÔN",
+    "description": "Địa",
+    "meaning": "Đất",
+    "details": "Nhu thuận, chứa đựng, mẹ, bụng, trâu, số đông, thụ động."
+  }
 ]
