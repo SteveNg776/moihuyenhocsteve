@@ -1,9 +1,8 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Badge } from '@/components/ui/badge';
@@ -18,7 +17,9 @@ import {
   BookOpen,
   Hash,
   FileText,
-  Lightbulb
+  Lightbulb,
+  Search,
+  X
 } from 'lucide-react';
 import { getPredictionById, getPredictionStats, type DibocPrediction } from '@/lib/diboc-data';
 
@@ -164,16 +165,153 @@ interface DiBocResult {
   hasValidPrediction: boolean;
 }
 
+interface SearchResult {
+  key: string;
+  name: string;
+  group: string;
+}
+
 export function DiBocTienTri() {
   const [selectedTopic, setSelectedTopic] = useState<string>('');
+  const [searchQuery, setSearchQuery] = useState<string>('');
+  const [searchResults, setSearchResults] = useState<SearchResult[]>([]);
+  const [showResults, setShowResults] = useState<boolean>(false);
+  const [selectedIndex, setSelectedIndex] = useState<number>(-1);
   const [numberMethod, setNumberMethod] = useState<'random' | 'manual'>('random');
   const [manualNumber, setManualNumber] = useState<string>('');
   const [result, setResult] = useState<DiBocResult | null>(null);
   const [error, setError] = useState<string>('');
   const [isGenerating, setIsGenerating] = useState(false);
 
+  const searchInputRef = useRef<HTMLInputElement>(null);
+  const resultsRef = useRef<HTMLDivElement>(null);
+
   // Get prediction statistics
   const predictionStats = getPredictionStats();
+
+  // Search function
+  const searchTopics = (query: string): SearchResult[] => {
+    if (!query.trim()) return [];
+
+    const normalizedQuery = query.toLowerCase().trim();
+    const results: SearchResult[] = [];
+
+    // Find group for each topic
+    const topicToGroup: { [key: string]: string } = {};
+    Object.entries(TOPIC_GROUPS).forEach(([groupName, groupData]) => {
+      groupData.topics.forEach(topicKey => {
+        topicToGroup[topicKey] = groupName;
+      });
+    });
+
+    // Search through all topics
+    Object.entries(TOPICS).forEach(([key, topic]) => {
+      const topicName = topic.name.toLowerCase();
+      if (topicName.includes(normalizedQuery)) {
+        results.push({
+          key,
+          name: topic.name,
+          group: topicToGroup[key] || 'Không xác định'
+        });
+      }
+    });
+
+    // Sort by relevance (exact matches first, then partial matches)
+    results.sort((a, b) => {
+      const aExact = a.name.toLowerCase().startsWith(normalizedQuery);
+      const bExact = b.name.toLowerCase().startsWith(normalizedQuery);
+      
+      if (aExact && !bExact) return -1;
+      if (!aExact && bExact) return 1;
+      
+      return a.name.localeCompare(b.name);
+    });
+
+    return results.slice(0, 5); // Limit to 5 results
+  };
+
+  // Handle search input change
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const query = e.target.value;
+    setSearchQuery(query);
+    
+    if (query.trim()) {
+      const results = searchTopics(query);
+      setSearchResults(results);
+      setShowResults(true);
+      setSelectedIndex(-1);
+    } else {
+      setSearchResults([]);
+      setShowResults(false);
+      setSelectedTopic('');
+    }
+  };
+
+  // Handle result selection
+  const handleResultSelect = (result: SearchResult) => {
+    setSelectedTopic(result.key);
+    setSearchQuery(result.name);
+    setShowResults(false);
+    setSelectedIndex(-1);
+  };
+
+  // Handle keyboard navigation
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (!showResults || searchResults.length === 0) return;
+
+    switch (e.key) {
+      case 'ArrowDown':
+        e.preventDefault();
+        setSelectedIndex(prev => 
+          prev < searchResults.length - 1 ? prev + 1 : 0
+        );
+        break;
+      case 'ArrowUp':
+        e.preventDefault();
+        setSelectedIndex(prev => 
+          prev > 0 ? prev - 1 : searchResults.length - 1
+        );
+        break;
+      case 'Enter':
+        e.preventDefault();
+        if (selectedIndex >= 0 && selectedIndex < searchResults.length) {
+          handleResultSelect(searchResults[selectedIndex]);
+        }
+        break;
+      case 'Escape':
+        setShowResults(false);
+        setSelectedIndex(-1);
+        break;
+    }
+  };
+
+  // Clear search
+  const clearSearch = () => {
+    setSearchQuery('');
+    setSelectedTopic('');
+    setSearchResults([]);
+    setShowResults(false);
+    setSelectedIndex(-1);
+    searchInputRef.current?.focus();
+  };
+
+  // Click outside to close results
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        resultsRef.current && 
+        !resultsRef.current.contains(event.target as Node) &&
+        searchInputRef.current &&
+        !searchInputRef.current.contains(event.target as Node)
+      ) {
+        setShowResults(false);
+        setSelectedIndex(-1);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   // Validate input số
   const validateNumber = (num: string): boolean => {
@@ -277,8 +415,12 @@ export function DiBocTienTri() {
     setResult(null);
     setError('');
     setSelectedTopic('');
+    setSearchQuery('');
     setManualNumber('');
     setNumberMethod('random');
+    setSearchResults([]);
+    setShowResults(false);
+    setSelectedIndex(-1);
   };
 
   return (
@@ -319,7 +461,7 @@ export function DiBocTienTri() {
             <span>Gieo Quẻ Tiên Tri</span>
           </CardTitle>
           <CardDescription>
-            Chọn chủ đề từ 64 lĩnh vực và phương pháp để nhận lời tiên tri từ 8 cung Bát Quái
+            Tìm kiếm và chọn chủ đề từ 64 lĩnh vực, sau đó chọn phương pháp để nhận lời tiên tri từ 8 cung Bát Quái
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-6">
@@ -331,30 +473,79 @@ export function DiBocTienTri() {
             </Alert>
           )}
 
-          {/* Topic Selection */}
+          {/* Topic Search */}
           <div className="space-y-2">
-            <Label htmlFor="topic-select" className="text-mystical-gold font-medium">
-              Chọn chủ đề cần hỏi bói (64 lĩnh vực)
+            <Label htmlFor="topic-search" className="text-mystical-gold font-medium">
+              Tìm kiếm chủ đề cần hỏi bói (64 lĩnh vực)
             </Label>
-            <Select value={selectedTopic} onValueChange={setSelectedTopic}>
-              <SelectTrigger className="bg-white/50 border-mystical-gold/30 focus:border-mystical-gold">
-                <SelectValue placeholder="-- Chọn loại câu hỏi --" />
-              </SelectTrigger>
-              <SelectContent className="max-h-[300px]">
-                {Object.entries(TOPIC_GROUPS).map(([groupName, groupData]) => (
-                  <div key={groupName}>
-                    <div className="px-2 py-1 text-sm font-semibold text-mystical-gold bg-mystical-gold/5 sticky top-0">
-                      {groupName}
-                    </div>
-                    {groupData.topics.map((topicKey) => (
-                      <SelectItem key={topicKey} value={topicKey} className="pl-4">
-                        {TOPICS[topicKey as keyof typeof TOPICS].name}
-                      </SelectItem>
-                    ))}
-                  </div>
-                ))}
-              </SelectContent>
-            </Select>
+            <div className="relative">
+              <div className="relative">
+                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
+                <Input
+                  ref={searchInputRef}
+                  id="topic-search"
+                  type="text"
+                  value={searchQuery}
+                  onChange={handleSearchChange}
+                  onKeyDown={handleKeyDown}
+                  onFocus={() => {
+                    if (searchResults.length > 0) {
+                      setShowResults(true);
+                    }
+                  }}
+                  placeholder="Nhập để tìm kiếm chủ đề..."
+                  className="pl-10 pr-10 bg-white/50 border-mystical-gold/30 focus:border-mystical-gold"
+                />
+                {searchQuery && (
+                  <button
+                    onClick={clearSearch}
+                    className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors"
+                  >
+                    <X className="w-4 h-4" />
+                  </button>
+                )}
+              </div>
+
+              {/* Search Results */}
+              {showResults && searchResults.length > 0 && (
+                <div 
+                  ref={resultsRef}
+                  className="absolute top-full left-0 right-0 z-50 mt-1 bg-white border border-mystical-gold/30 rounded-lg shadow-lg max-h-60 overflow-y-auto"
+                >
+                  {searchResults.map((result, index) => (
+                    <button
+                      key={result.key}
+                      onClick={() => handleResultSelect(result)}
+                      className={`w-full text-left px-4 py-3 hover:bg-mystical-gold/10 transition-colors border-b border-gray-100 last:border-b-0 ${
+                        index === selectedIndex ? 'bg-mystical-gold/10' : ''
+                      }`}
+                    >
+                      <div className="font-medium text-gray-800">{result.name}</div>
+                      <div className="text-xs text-gray-500 mt-1">{result.group}</div>
+                    </button>
+                  ))}
+                </div>
+              )}
+
+              {/* No results message */}
+              {showResults && searchQuery && searchResults.length === 0 && (
+                <div className="absolute top-full left-0 right-0 z-50 mt-1 bg-white border border-mystical-gold/30 rounded-lg shadow-lg p-4 text-center text-gray-500">
+                  Không tìm thấy chủ đề phù hợp
+                </div>
+              )}
+            </div>
+
+            {/* Selected topic display */}
+            {selectedTopic && (
+              <div className="mt-2 p-3 bg-mystical-gold/5 rounded-lg border border-mystical-gold/20">
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-4 h-4 text-green-600" />
+                  <span className="text-sm font-medium text-mystical-gold">
+                    Đã chọn: {TOPICS[selectedTopic as keyof typeof TOPICS]?.name}
+                  </span>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Number Method Selection */}
@@ -574,10 +765,20 @@ export function DiBocTienTri() {
             <div>
               <h4 className="font-semibold text-mystical-gold mb-2">Cách Thức Hoạt Động</h4>
               <ul className="text-sm text-muted-foreground space-y-1">
-                <li>• Chọn chủ đề cần hỏi bói từ 64 lĩnh vực được phân chia theo 8 cung</li>
+                <li>• Tìm kiếm chủ đề cần hỏi bói từ 64 lĩnh vực được phân chia theo 8 cung</li>
                 <li>• Lựa chọn số ngẫu nhiên hoặc tự nhập số từ 1-8</li>
                 <li>• Hệ thống sẽ tra cứu trong bảng cung Bát Quái tương ứng</li>
                 <li>• Nhận kết quả với số quẻ và lời tiên tri chi tiết từ dữ liệu cổ điển</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-semibold text-mystical-gold mb-2">Tính Năng Tìm Kiếm</h4>
+              <ul className="text-sm text-muted-foreground space-y-1">
+                <li>• Gõ từ khóa để tìm kiếm chủ đề phù hợp</li>
+                <li>• Hỗ trợ tìm kiếm không phân biệt chữ hoa/thường</li>
+                <li>• Điều hướng bằng phím mũi tên và Enter</li>
+                <li>• Hiển thị tối đa 5 kết quả phù hợp nhất</li>
               </ul>
             </div>
 
