@@ -18,3 +18,16 @@ export const getDibocById = (id: string): Diboc | undefined => {
   }
   return dibocData.find((item) => item.id === id);
 };
+
+/**
+ * Calculates prediction statistics.
+ * @returns An object containing the total number of predictions.
+ */
+export const getPredictionStats = () => {
+  if (!Array.isArray(dibocData)) {
+    return { total: 0 };
+  }
+  return {
+    total: dibocData.length,
+  };
+};
