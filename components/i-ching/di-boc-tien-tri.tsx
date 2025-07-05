@@ -1,14 +1,14 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Separator } from '@/components/ui/separator';
+import { ScrollArea } from '@/components/ui/scroll-area';
 import { 
   Sparkles, 
   Dices, 
@@ -16,9 +16,12 @@ import {
   CheckCircle,
   BookOpen,
   Hash,
-  ChevronDown,
-  ChevronUp
+  FileText,
+  Lightbulb,
+  Search,
+  X
 } from 'lucide-react';
+import { getPredictionById, getPredictionStats, type DibocPrediction } from '@/lib/diboc-data';
 
 // Định nghĩa đầy đủ các chủ đề từ file text với 8 cung Bát Quái
 const TOPICS = {
@@ -153,116 +156,162 @@ const BAGUA_NAMES = {
   5: 'Tốn', 6: 'Khảm', 7: 'Cấn', 8: 'Khôn'
 };
 
-// Kết quả giải thích mẫu theo từng lĩnh vực
-const SAMPLE_INTERPRETATIONS = {
-  // Cung Càn - Về học tập, tri thức, sức khỏe
-  'mangvan': 'cho thấy vận mệnh đang trong giai đoạn chuyển biến tích cực. Đây là thời điểm thuận lợi để phát triển bản thân và nắm bắt cơ hội.',
-  'doctho': 'báo hiệu việc học tập và nghiên cứu sẽ có kết quả tốt. Trí tuệ được khai sáng, kiến thức được mở rộng.',
-  'tanhoc': 'thể hiện con đường học vấn thuận lợi. Sự chăm chỉ và kiên trì sẽ mang lại thành công trong học tập.',
-  'khocu': 'báo hiệu kết quả thi cử khả quan. Sự chăm chỉ và kiên trì sẽ được đền đáp xứng đáng.',
-  'tinhvu': 'dự báo thời tiết thuận lợi. Mưa thuận gió hòa, có lợi cho mọi hoạt động.',
-  'thuthao': 'cho thấy việc đòi nợ sẽ có kết quả. Cần kiên nhẫn và có phương pháp phù hợp.',
-  'chieute': 'thể hiện việc cưới hỏi thuận lợi. Đây là thời điểm tốt để tổ chức hôn lễ.',
-  'thinhy': 'báo hiệu sức khỏe được cải thiện. Việc tìm kiếm thầy thuốc giỏi sẽ có kết quả tích cực.',
-
-  // Cung Đoài - Về xã hội, gia đình, sức khỏe
-  'hoissu': 'cho thấy các hoạt động nhóm sẽ thành công. Sự hợp tác và đoàn kết mang lại hiệu quả cao.',
-  'muusu': 'thể hiện kế hoạch và mưu toan sẽ thành công. Cần suy nghĩ kỹ lưỡng và hành động khôn ngoan.',
-  'maioc': 'báo hiệu việc mua nhà đất thuận lợi. Đây là thời điểm tốt để đầu tư bất động sản.',
-  'dicu': 'cho thấy việc chuyển chỗ ở hoặc công việc sẽ thuận lợi. Thay đổi mang lại cơ hội mới.',
-  'phangia': 'thể hiện việc chia tài sản gia đình sẽ công bằng và hòa thuận.',
-  'thienhoa': 'cảnh báo về sức khỏe con cái. Cần chú ý chăm sóc và theo dõi sức khỏe gia đình.',
-  'phubenh': 'cho biết tình hình sức khỏe cha mẹ. Cần quan tâm và chăm sóc người thân.',
-  'benhchung': 'thể hiện tình trạng bệnh tật sẽ được cải thiện. Việc điều trị sẽ có hiệu quả.',
-
-  // Cung Ly - Về tài chính, kinh doanh
-  'khaitiem': 'báo hiệu việc khai trương kinh doanh sẽ thành công. Đây là thời điểm thuận lợi để khởi nghiệp.',
-  'cautai': 'thể hiện tài lộc đang dần cải thiện. Cần kiên nhẫn và có kế hoạch tài chính hợp lý.',
-  'maisuc': 'cho thấy việc mua bán súc vật sẽ có lợi nhuận. Đầu tư chăn nuôi sẽ mang lại hiệu quả.',
-  'phanquynh': 'thể hiện việc chọn mộ phần và phong thủy sẽ thuận lợi cho gia đình.',
-  'hoihuong': 'báo hiệu việc trở về quê hương sẽ thuận lợi. Đây là thời điểm tốt để về thăm gia đình.',
-  'tatai': 'cho thấy việc cho vay mượn tiền sẽ có kết quả tốt. Cần cân nhắc kỹ lưỡng trước khi quyết định.',
-  'phongtruong': 'thể hiện hoạt động cho vay sẽ mang lại lợi nhuận. Cần quản lý rủi ro một cách khôn ngoan.',
-  'dobac': 'cảnh báo về cờ bạc và đầu cơ. Nên tránh xa các hoạt động may rủi để bảo toàn tài sản.',
-
-  // Cung Chấn - Về hôn nhân, gia đình, di chuyển
-  'nhapnhai': 'báo hiệu việc cưới vợ ở rể sẽ thuận lợi. Hôn nhân sẽ hạnh phúc và bền vững.',
-  'cautu': 'cho thấy việc cầu con sẽ có kết quả tốt. Gia đình sẽ được bổ sung thành viên mới.',
-  'xuathanh': 'thể hiện việc đi xa sẽ thuận lợi và an toàn. Chuyến đi sẽ mang lại nhiều may mắn.',
-  'tamquan': 'báo hiệu việc tìm kiếm quê quán tổ tiên sẽ có kết quả. Nguồn gốc gia đình sẽ được làm rõ.',
-  'thuthau': 'cho thấy mùa màng sẽ bội thu. Công việc nông nghiệp sẽ mang lại hiệu quả cao.',
-  'thungu': 'thể hiện việc đánh bắt cá sẽ có kết quả tốt. Hoạt động thủy sản sẽ thuận lợi.',
-  'damong': 'giải thích ý nghĩa giấc mơ. Những điềm báo trong mơ sẽ có ý nghĩa tích cực.',
-  'khauthiet': 'cảnh báo về tranh cãi và xung đột. Cần kiềm chế lời nói để tránh rắc rối.',
-
-  // Cung Tốn - Về kinh doanh, công việc, giấy tờ
-  'sanhy': 'báo hiệu việc kinh doanh buôn bán sẽ phát đạt. Đây là thời điểm tốt để mở rộng hoạt động.',
-  'thachoa': 'cho thấy việc giao dịch hàng hóa sẽ thuận lợi. Các thương vụ sẽ mang lại lợi nhuận.',
-  'khoitao': 'thể hiện việc khởi công xây dựng sẽ thuận lợi. Dự án sẽ hoàn thành đúng tiến độ.',
-  'xuantam': 'báo hiệu việc nuôi tơ tằm sẽ có kết quả tốt. Hoạt động chăn nuôi sẽ mang lại lợi nhuận.',
-  'vanbang': 'cho thấy việc xin cấp giấy tờ bằng cấp sẽ thuận lợi. Thủ tục hành chính sẽ được giải quyết nhanh chóng.',
-  'kienquoi': 'thể hiện việc thăm hỏi người thân sẽ có ý nghĩa tốt. Mối quan hệ sẽ được củng cố.',
-  'giailuong': 'báo hiệu việc nhận lương thưởng sẽ đúng hạn. Thu nhập sẽ được cải thiện.',
-  'totrang': 'cảnh báo về kiện tụng và tranh chấp pháp lý. Cần cẩn trọng trong các giao dịch.',
-
-  // Cung Khảm - Về công danh, hôn nhân, tìm kiếm
-  'napgiam': 'cho thấy việc làm công chức sẽ thuận lợi. Cơ hội nghề nghiệp trong khu vực nhà nước sẽ mở ra.',
-  'thangthien': 'báo hiệu sự thăng tiến trong công việc. Chức vụ và địa vị sẽ được nâng cao.',
-  'hoasu': 'thể hiện việc hòa giải và thương lượng sẽ thành công. Mâu thuẫn sẽ được giải quyết.',
-  'giaoviec': 'cho thấy các giao dịch mua bán sẽ thuận lợi. Kinh doanh sẽ phát triển tốt.',
-  'honnhan': 'dự báo tình duyên thuận lợi. Đây là thời điểm tốt để củng cố mối quan hệ hoặc tìm kiếm tình yêu đích thực.',
-  'thuthiep': 'thể hiện việc cưới vợ lẻ hoặc có thêm mối quan hệ sẽ cần cân nhắc kỹ lưỡng.',
-  'lucgiap': 'báo hiệu việc sinh nở sẽ thuận lợi. Mẹ tròn con vuông, gia đình thêm hạnh phúc.',
-  'tamnhon': 'cho thấy việc tìm kiếm người thân hoặc bạn bè sẽ có kết quả. Những người xa cách sẽ được đoàn tụ.',
-
-  // Cung Cấn - Về tin tức, quan lộ, tài sản
-  'giatin': 'báo hiệu sẽ nhận được tin tức tốt từ gia đình. Những thông tin quan trọng sẽ được biết đến.',
-  'cauquan': 'cho thấy việc cầu quan cầu chức sẽ có kết quả. Cơ hội thăng tiến sẽ xuất hiện.',
-  'trihoa': 'thể hiện việc tích trữ hàng hóa sẽ có lợi. Đầu tư dài hạn sẽ mang lại hiệu quả.',
-  'caotrang': 'báo hiệu việc kiện cáo sẽ có kết quả thuận lợi. Công lý sẽ được thực thi.',
-  'noplai': 'cho thấy việc làm lính hoặc công chức sẽ thuận lợi. Nghề nghiệp ổn định sẽ được tìm thấy.',
-  'diensan': 'thể hiện việc mua bán đất đai sẽ có lợi. Bất động sản sẽ tăng giá.',
-  'thaoboc': 'báo hiệu việc truy tìm người trốn sẽ có kết quả. Những điều ẩn giấu sẽ được phát hiện.',
-  'canquan': 'cho thấy việc theo quan làm việc sẽ thuận lợi. Cơ hội nghề nghiệp tốt sẽ xuất hiện.',
-
-  // Cung Khôn - Về gia đạo, sức khỏe, mất mát
-  'giatrach': 'thể hiện gia đình hòa thuận, hạnh phúc. Các mối quan hệ trong gia đình sẽ ngày càng bền chặt.',
-  'thonguon': 'cho biết về tuổi thọ và sức khỏe. Cần chú ý chăm sóc sức khỏe để có cuộc sống lâu dài.',
-  'tauthuat': 'cảnh báo về việc trốn chạy hoặc lánh mặt. Cần đối diện với vấn đề thay vì trốn tránh.',
-  'thatvat': 'thể hiện việc tìm lại đồ vật thất lạc. Những thứ đã mất có thể sẽ được tìm thấy.',
-  'hieploa': 'cảnh báo về các giao dịch mua bán có thể gặp rủi ro. Cần cẩn trọng khi kinh doanh.',
-  'hanhnhon': 'cho thấy việc đi xa của người thân sẽ bình an. Chuyến đi sẽ thuận lợi và may mắn.',
-  'giaigiao': 'báo hiệu việc giải quyết tội lỗi sẽ có kết quả tốt. Công lý sẽ được thực thi.',
-  'thunghe': 'thể hiện việc làm nghề thủ công sẽ phát đạt. Kỹ năng chuyên môn sẽ mang lại thu nhập ổn định.'
-};
-
 interface DiBocResult {
   topic: string;
   number: number;
   hexagramNumber: string;
   hexagramName: string;
-  interpretation: string;
+  prediction: DibocPrediction | null;
+  hasValidPrediction: boolean;
+}
+
+interface SearchResult {
+  key: string;
+  name: string;
+  group: string;
 }
 
 export function DiBocTienTri() {
   const [selectedTopic, setSelectedTopic] = useState<string>('');
+  const [searchQuery, setSearchQuery] = useState<string>('');
+  const [searchResults, setSearchResults] = useState<SearchResult[]>([]);
+  const [showResults, setShowResults] = useState<boolean>(false);
+  const [selectedIndex, setSelectedIndex] = useState<number>(-1);
   const [numberMethod, setNumberMethod] = useState<'random' | 'manual'>('random');
   const [manualNumber, setManualNumber] = useState<string>('');
   const [result, setResult] = useState<DiBocResult | null>(null);
   const [error, setError] = useState<string>('');
   const [isGenerating, setIsGenerating] = useState(false);
-  const [expandedGroups, setExpandedGroups] = useState<Set<string>>(new Set());
 
-  // Toggle expanded state for topic groups
-  const toggleGroup = (groupName: string) => {
-    const newExpanded = new Set(expandedGroups);
-    if (newExpanded.has(groupName)) {
-      newExpanded.delete(groupName);
-    } else {
-      newExpanded.add(groupName);
-    }
-    setExpandedGroups(newExpanded);
+  const searchInputRef = useRef<HTMLInputElement>(null);
+  const resultsRef = useRef<HTMLDivElement>(null);
+
+  // Get prediction statistics
+  const predictionStats = getPredictionStats();
+
+  // Search function
+  const searchTopics = (query: string): SearchResult[] => {
+    if (!query.trim()) return [];
+
+    const normalizedQuery = query.toLowerCase().trim();
+    const results: SearchResult[] = [];
+
+    // Find group for each topic
+    const topicToGroup: { [key: string]: string } = {};
+    Object.entries(TOPIC_GROUPS).forEach(([groupName, groupData]) => {
+      groupData.topics.forEach(topicKey => {
+        topicToGroup[topicKey] = groupName;
+      });
+    });
+
+    // Search through all topics
+    Object.entries(TOPICS).forEach(([key, topic]) => {
+      const topicName = topic.name.toLowerCase();
+      if (topicName.includes(normalizedQuery)) {
+        results.push({
+          key,
+          name: topic.name,
+          group: topicToGroup[key] || 'Không xác định'
+        });
+      }
+    });
+
+    // Sort by relevance (exact matches first, then partial matches)
+    results.sort((a, b) => {
+      const aExact = a.name.toLowerCase().startsWith(normalizedQuery);
+      const bExact = b.name.toLowerCase().startsWith(normalizedQuery);
+      
+      if (aExact && !bExact) return -1;
+      if (!aExact && bExact) return 1;
+      
+      return a.name.localeCompare(b.name);
+    });
+
+    return results.slice(0, 5); // Limit to 5 results
   };
+
+  // Handle search input change
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const query = e.target.value;
+    setSearchQuery(query);
+    
+    if (query.trim()) {
+      const results = searchTopics(query);
+      setSearchResults(results);
+      setShowResults(true);
+      setSelectedIndex(-1);
+    } else {
+      setSearchResults([]);
+      setShowResults(false);
+      setSelectedTopic('');
+    }
+  };
+
+  // Handle result selection
+  const handleResultSelect = (result: SearchResult) => {
+    setSelectedTopic(result.key);
+    setSearchQuery(result.name);
+    setShowResults(false);
+    setSelectedIndex(-1);
+  };
+
+  // Handle keyboard navigation
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (!showResults || searchResults.length === 0) return;
+
+    switch (e.key) {
+      case 'ArrowDown':
+        e.preventDefault();
+        setSelectedIndex(prev => 
+          prev < searchResults.length - 1 ? prev + 1 : 0
+        );
+        break;
+      case 'ArrowUp':
+        e.preventDefault();
+        setSelectedIndex(prev => 
+          prev > 0 ? prev - 1 : searchResults.length - 1
+        );
+        break;
+      case 'Enter':
+        e.preventDefault();
+        if (selectedIndex >= 0 && selectedIndex < searchResults.length) {
+          handleResultSelect(searchResults[selectedIndex]);
+        }
+        break;
+      case 'Escape':
+        setShowResults(false);
+        setSelectedIndex(-1);
+        break;
+    }
+  };
+
+  // Clear search
+  const clearSearch = () => {
+    setSearchQuery('');
+    setSelectedTopic('');
+    setSearchResults([]);
+    setShowResults(false);
+    setSelectedIndex(-1);
+    searchInputRef.current?.focus();
+  };
+
+  // Click outside to close results
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        resultsRef.current && 
+        !resultsRef.current.contains(event.target as Node) &&
+        searchInputRef.current &&
+        !searchInputRef.current.contains(event.target as Node)
+      ) {
+        setShowResults(false);
+        setSelectedIndex(-1);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   // Validate input số
   const validateNumber = (num: string): boolean => {
@@ -329,14 +378,27 @@ export function DiBocTienTri() {
       // Tính toán kết quả
       const { hexagramNumber, hexagramName } = calculateHexagram(selectedTopic, finalNumber);
       const topicName = TOPICS[selectedTopic as keyof typeof TOPICS].name;
-      const interpretation = SAMPLE_INTERPRETATIONS[selectedTopic as keyof typeof SAMPLE_INTERPRETATIONS];
+      
+      // Lấy dữ liệu tiên tri từ JSON
+      const prediction = getPredictionById(hexagramNumber);
+      const hasValidPrediction = prediction !== null;
+
+      console.log('Debug info:', {
+        selectedTopic,
+        finalNumber,
+        hexagramNumber,
+        hexagramName,
+        prediction,
+        hasValidPrediction
+      });
 
       const newResult: DiBocResult = {
         topic: topicName,
         number: finalNumber,
         hexagramNumber,
         hexagramName,
-        interpretation: `Kết quả gieo quẻ ${hexagramNumber} trong lĩnh vực ${topicName}: Quẻ ${hexagramName} ${interpretation}`
+        prediction,
+        hasValidPrediction
       };
 
       setResult(newResult);
@@ -353,8 +415,12 @@ export function DiBocTienTri() {
     setResult(null);
     setError('');
     setSelectedTopic('');
+    setSearchQuery('');
     setManualNumber('');
     setNumberMethod('random');
+    setSearchResults([]);
+    setShowResults(false);
+    setSelectedIndex(-1);
   };
 
   return (
@@ -377,6 +443,12 @@ export function DiBocTienTri() {
               ghi lại các chiêm nghiệm của quẻ Kinh Dịch đối với các sự việc cần hỏi. 
               Đây là phương pháp bói toán trực tiếp, cho kết quả rõ ràng và chính xác với 64 chủ đề khác nhau.
             </p>
+            
+            {/* Data Statistics */}
+            <div className="mt-4 flex items-center space-x-2 text-xs text-muted-foreground">
+              <FileText className="w-4 h-4" />
+              <span>Dữ liệu: {predictionStats.total} quẻ tiên tri hợp lệ</span>
+            </div>
           </div>
         </CardContent>
       </Card>
@@ -389,7 +461,7 @@ export function DiBocTienTri() {
             <span>Gieo Quẻ Tiên Tri</span>
           </CardTitle>
           <CardDescription>
-            Chọn chủ đề từ 64 lĩnh vực và phương pháp để nhận lời tiên tri từ 8 cung Bát Quái
+            Tìm kiếm và chọn chủ đề từ 64 lĩnh vực, sau đó chọn phương pháp để nhận lời tiên tri từ 8 cung Bát Quái
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-6">
@@ -401,30 +473,79 @@ export function DiBocTienTri() {
             </Alert>
           )}
 
-          {/* Topic Selection */}
+          {/* Topic Search */}
           <div className="space-y-2">
-            <Label htmlFor="topic-select" className="text-mystical-gold font-medium">
-              Chọn chủ đề cần hỏi bói (64 lĩnh vực)
+            <Label htmlFor="topic-search" className="text-mystical-gold font-medium">
+              Tìm kiếm chủ đề cần hỏi bói (64 lĩnh vực)
             </Label>
-            <Select value={selectedTopic} onValueChange={setSelectedTopic}>
-              <SelectTrigger className="bg-white/50 border-mystical-gold/30 focus:border-mystical-gold">
-                <SelectValue placeholder="-- Chọn loại câu hỏi --" />
-              </SelectTrigger>
-              <SelectContent className="max-h-[300px]">
-                {Object.entries(TOPIC_GROUPS).map(([groupName, groupData]) => (
-                  <div key={groupName}>
-                    <div className="px-2 py-1 text-sm font-semibold text-mystical-gold bg-mystical-gold/5 sticky top-0">
-                      {groupName}
-                    </div>
-                    {groupData.topics.map((topicKey) => (
-                      <SelectItem key={topicKey} value={topicKey} className="pl-4">
-                        {TOPICS[topicKey as keyof typeof TOPICS].name}
-                      </SelectItem>
-                    ))}
-                  </div>
-                ))}
-              </SelectContent>
-            </Select>
+            <div className="relative">
+              <div className="relative">
+                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
+                <Input
+                  ref={searchInputRef}
+                  id="topic-search"
+                  type="text"
+                  value={searchQuery}
+                  onChange={handleSearchChange}
+                  onKeyDown={handleKeyDown}
+                  onFocus={() => {
+                    if (searchResults.length > 0) {
+                      setShowResults(true);
+                    }
+                  }}
+                  placeholder="Nhập để tìm kiếm chủ đề..."
+                  className="pl-10 pr-10 bg-white/50 border-mystical-gold/30 focus:border-mystical-gold"
+                />
+                {searchQuery && (
+                  <button
+                    onClick={clearSearch}
+                    className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors"
+                  >
+                    <X className="w-4 h-4" />
+                  </button>
+                )}
+              </div>
+
+              {/* Search Results */}
+              {showResults && searchResults.length > 0 && (
+                <div 
+                  ref={resultsRef}
+                  className="absolute top-full left-0 right-0 z-50 mt-1 bg-white border border-mystical-gold/30 rounded-lg shadow-lg max-h-60 overflow-y-auto"
+                >
+                  {searchResults.map((result, index) => (
+                    <button
+                      key={result.key}
+                      onClick={() => handleResultSelect(result)}
+                      className={`w-full text-left px-4 py-3 hover:bg-mystical-gold/10 transition-colors border-b border-gray-100 last:border-b-0 ${
+                        index === selectedIndex ? 'bg-mystical-gold/10' : ''
+                      }`}
+                    >
+                      <div className="font-medium text-gray-800">{result.name}</div>
+                      <div className="text-xs text-gray-500 mt-1">{result.group}</div>
+                    </button>
+                  ))}
+                </div>
+              )}
+
+              {/* No results message */}
+              {showResults && searchQuery && searchResults.length === 0 && (
+                <div className="absolute top-full left-0 right-0 z-50 mt-1 bg-white border border-mystical-gold/30 rounded-lg shadow-lg p-4 text-center text-gray-500">
+                  Không tìm thấy chủ đề phù hợp
+                </div>
+              )}
+            </div>
+
+            {/* Selected topic display */}
+            {selectedTopic && (
+              <div className="mt-2 p-3 bg-mystical-gold/5 rounded-lg border border-mystical-gold/20">
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-4 h-4 text-green-600" />
+                  <span className="text-sm font-medium text-mystical-gold">
+                    Đã chọn: {TOPICS[selectedTopic as keyof typeof TOPICS]?.name}
+                  </span>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Number Method Selection */}
@@ -534,10 +655,15 @@ export function DiBocTienTri() {
                 <Badge variant="outline" className="border-mystical-gold/30">
                   Số {result.number}
                 </Badge>
+                {result.hasValidPrediction && (
+                  <Badge variant="secondary" className="bg-green-100 text-green-800">
+                    Có dữ liệu tiên tri
+                  </Badge>
+                )}
               </div>
             </div>
           </CardHeader>
-          <CardContent className="space-y-4">
+          <CardContent className="space-y-6">
             {/* Hexagram Info */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="p-4 bg-mystical-gold/5 rounded-lg border border-mystical-gold/20">
@@ -563,21 +689,66 @@ export function DiBocTienTri() {
 
             <Separator className="bg-mystical-gold/20" />
 
-            {/* Interpretation */}
-            <div className="p-6 bg-gradient-to-br from-mystical-gold/5 to-yellow-50 rounded-lg border border-mystical-gold/20">
-              <h4 className="font-semibold text-mystical-gold mb-3 flex items-center space-x-2">
-                <Sparkles className="w-4 h-4" />
-                <span>Lời Tiên Tri</span>
-              </h4>
-              <p className="text-muted-foreground leading-relaxed text-lg">
-                {result.interpretation}
-              </p>
-            </div>
+            {/* Prediction Content */}
+            {result.hasValidPrediction && result.prediction ? (
+              <div className="space-y-4">
+                {/* Tên quẻ từ JSON */}
+                <div className="p-4 bg-gradient-to-br from-mystical-gold/5 to-yellow-50 rounded-lg border border-mystical-gold/20">
+                  <h4 className="font-semibold text-mystical-gold mb-2 flex items-center space-x-2">
+                    <Sparkles className="w-4 h-4" />
+                    <span>Tên Quẻ</span>
+                  </h4>
+                  <p className="text-mystical-dark-purple font-medium text-lg">
+                    {result.prediction.name}
+                  </p>
+                </div>
+
+                {/* Lời quẻ gốc */}
+                <div className="p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg border border-blue-200">
+                  <h4 className="font-semibold text-blue-700 mb-3 flex items-center space-x-2">
+                    <FileText className="w-4 h-4" />
+                    <span>Lời Quẻ</span>
+                  </h4>
+                  <ScrollArea className="max-h-32">
+                    <p className="text-blue-800 leading-relaxed whitespace-pre-wrap">
+                      {result.prediction.meaning}
+                    </p>
+                  </ScrollArea>
+                </div>
+
+                {/* Dịch nghĩa */}
+                <div className="p-4 bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg border border-green-200">
+                  <h4 className="font-semibold text-green-700 mb-3 flex items-center space-x-2">
+                    <Lightbulb className="w-4 h-4" />
+                    <span>Dịch Nghĩa</span>
+                  </h4>
+                  <ScrollArea className="max-h-40">
+                    <p className="text-green-800 leading-relaxed whitespace-pre-wrap">
+                      {result.prediction.details}
+                    </p>
+                  </ScrollArea>
+                </div>
+              </div>
+            ) : (
+              <div className="p-6 bg-gray-50 rounded-lg border border-gray-200 text-center">
+                <AlertCircle className="w-8 h-8 text-gray-400 mx-auto mb-3" />
+                <h4 className="font-semibold text-gray-600 mb-2">Không có dữ liệu tiên tri</h4>
+                <p className="text-gray-500 text-sm">
+                  Số quẻ {result.hexagramNumber} chưa có dữ liệu tiên tri trong hệ thống. 
+                  Vui lòng thử gieo quẻ khác hoặc liên hệ để cập nhật dữ liệu.
+                </p>
+              </div>
+            )}
 
             {/* Additional Info */}
             <div className="text-center text-sm text-muted-foreground">
               <p>
                 Kết quả dựa trên phương pháp Dị Bốc Tiên Tri của tiên sinh Thiệu Khang Tiết
+                {result.hasValidPrediction && (
+                  <span className="block mt-1 text-green-600">
+                    ✓ Dữ liệu tiên tri được truy xuất từ kho dữ liệu cổ điển
+                  </span>
+                )}
               </p>
             </div>
           </CardContent>
@@ -594,13 +765,23 @@ export function DiBocTienTri() {
             <div>
               <h4 className="font-semibold text-mystical-gold mb-2">Cách Thức Hoạt Động</h4>
               <ul className="text-sm text-muted-foreground space-y-1">
-                <li>• Chọn chủ đề cần hỏi bói từ 64 lĩnh vực được phân chia theo 8 cung</li>
+                <li>• Tìm kiếm chủ đề cần hỏi bói từ 64 lĩnh vực được phân chia theo 8 cung</li>
                 <li>• Lựa chọn số ngẫu nhiên hoặc tự nhập số từ 1-8</li>
                 <li>• Hệ thống sẽ tra cứu trong bảng cung Bát Quái tương ứng</li>
-                <li>• Nhận kết quả với số quẻ và lời giải thích chi tiết</li>
+                <li>• Nhận kết quả với số quẻ và lời tiên tri chi tiết từ dữ liệu cổ điển</li>
               </ul>
             </div>
-            
+
+            <div>
+              <h4 className="font-semibold text-mystical-gold mb-2">Tính Năng Tìm Kiếm</h4>
+              <ul className="text-sm text-muted-foreground space-y-1">
+                <li>• Gõ từ khóa để tìm kiếm chủ đề phù hợp</li>
+                <li>• Hỗ trợ tìm kiếm không phân biệt chữ hoa/thường</li>
+                <li>• Điều hướng bằng phím mũi tên và Enter</li>
+                <li>• Hiển thị tối đa 5 kết quả phù hợp nhất</li>
+              </ul>
+            </div>
+
             <div>
               <h4 className="font-semibold text-mystical-gold mb-2">8 Cung Bát Quái</h4>
               <div className="grid grid-cols-4 gap-2 text-xs">
@@ -616,41 +797,27 @@ export function DiBocTienTri() {
 
           {/* Topic Groups Summary with Detailed Information */}
           <div className="mt-6">
-            <h4 className="font-semibold text-mystical-gold mb-3">64 Chủ Đề Theo 8 Cung Chi Tiết</h4>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+            <h4 className="font-semibold text-mystical-gold mb-4 text-lg">64 Chủ Đề Theo 8 Cung Chi Tiết</h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {Object.entries(TOPIC_GROUPS).map(([groupName, groupData]) => (
-                <div key={groupName} className={`p-3 rounded border ${groupData.color}`}>
-                  <button
-                    onClick={() => toggleGroup(groupName)}
-                    className="w-full text-left"
-                  >
-                    <div className="flex items-center justify-between mb-2">
-                      <div className="font-semibold">{groupName}</div>
-                      {expandedGroups.has(groupName) ? (
-                        <ChevronUp className="w-4 h-4" />
-                      ) : (
-                        <ChevronDown className="w-4 h-4" />
-                      )}
-                    </div>
-                    <div className="text-xs opacity-75 mb-2">
+                <div key={groupName} className={`p-4 rounded-lg border ${groupData.color}`}>
+                  <div className="mb-3">
+                    <div className="font-bold text-base mb-2">{groupName}</div>
+                    <div className="text-sm opacity-80 mb-3 leading-relaxed">
                       {groupData.description}
                     </div>
-                    <div className="text-xs opacity-60">
+                    <div className="text-xs opacity-70 font-medium">
                       {groupData.topics.length} chủ đề
                     </div>
-                  </button>
-                  
-                  {expandedGroups.has(groupName) && (
-                    <div className="mt-3 pt-3 border-t border-current/20">
-                      <div className="space-y-1">
-                        {groupData.topics.map((topicKey) => (
-                          <div key={topicKey} className="text-xs opacity-75 leading-relaxed">
-                            • {TOPICS[topicKey as keyof typeof TOPICS].name}
-                          </div>
-                        ))}
+                  </div>
+
+                  <div className="space-y-2">
+                    {groupData.topics.map((topicKey) => (
+                      <div key={topicKey} className="text-sm leading-relaxed p-2 bg-white/50 rounded border border-current/20">
+                        • {TOPICS[topicKey as keyof typeof TOPICS].name}
                       </div>
-                    </div>
-                  )}
+                    ))}
+                  </div>
                 </div>
               ))}
             </div>
