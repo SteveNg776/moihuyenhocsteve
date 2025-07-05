@@ -1,187 +1,105 @@
-"use client";
-
-import React from 'react';
 import { Hexagram } from '@/lib/i-ching-data';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { ScrollArea } from '@/components/ui/scroll-area';
+import { Separator } from '@/components/ui/separator';
 
 interface HexagramDisplayProps {
-  hexagram: Hexagram;
-  changingLines?: number[];
+  lines: number[];
+  hexagram: Hexagram | null;
+  changingHexagram?: Hexagram | null;
+  changedLines?: number[];
 }
 
-export function HexagramDisplay({ hexagram, changingLines = [] }: HexagramDisplayProps) {
-  const renderHexagramLines = () => {
-    return (
-      <div className="flex flex-col items-center space-y-2 p-6">
-        {hexagram.lines.map((isYang, index) => {
-          const lineNumber = 6 - index; // Lines are numbered from bottom to top
-          const isChanging = changingLines.includes(lineNumber);
-          
-          return (
-            <div
-              key={index}
-              className={`relative w-16 h-2 ${
-                isChanging ? 'animate-pulse' : ''
-              }`}
-            >
-              {isYang ? (
-                // Yang line (solid)
-                <div className={`w-full h-full rounded ${
-                  isChanging 
-                    ? 'bg-gradient-to-r from-mystical-gold to-yellow-500' 
-                    : 'bg-mystical-gold'
-                }`} />
-              ) : (
-                // Yin line (broken)
-                <div className="flex space-x-2">
-                  <div className={`w-6 h-full rounded ${
-                    isChanging 
-                      ? 'bg-gradient-to-r from-mystical-gold to-yellow-500' 
-                      : 'bg-mystical-gold'
-                  }`} />
-                  <div className={`w-6 h-full rounded ${
-                    isChanging 
-                      ? 'bg-gradient-to-r from-mystical-gold to-yellow-500' 
-                      : 'bg-mystical-gold'
-                  }`} />
-                </div>
-              )}
-              {isChanging && (
-                <div className="absolute -right-8 top-0 text-mystical-gold text-sm font-bold">
-                  {lineNumber}
-                </div>
-              )}
-            </div>
-          );
-        })}
-      </div>
-    );
-  };
+// Helper components for rendering lines (SolidLine, BrokenLine, etc.)
+const Line = ({ isChanging }: { isChanging: boolean }) => (
+  <div className={`h-1 w-full ${isChanging ? 'bg-red-500' : 'bg-foreground'}`} />
+);
+
+const ChangingLine = () => (
+  <div className="relative h-1 w-full bg-foreground">
+    <div className="absolute left-1/2 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 transform rounded-full border-2 border-red-500 bg-background" />
+  </div>
+);
+
+const SolidLine = ({ isChanging }: { isChanging: boolean }) => (
+  <div className="p-1">
+    {isChanging ? <ChangingLine /> : <Line isChanging={false} />}
+  </div>
+);
+
+const BrokenLine = ({ isChanging }: { isChanging: boolean }) => (
+  <div className="flex items-center justify-center gap-4 p-1">
+    <div className={`h-1 w-2/5 ${isChanging ? 'bg-red-500' : 'bg-foreground'}`} />
+    <div className={`h-1 w-2/5 ${isChanging ? 'bg-red-500' : 'bg-foreground'}`} />
+  </div>
+);
+
+const renderLine = (lineValue: number, isChanging: boolean) => {
+  const isYang = lineValue % 2 !== 0; // 7, 9 are Yang
+  const isChangingLine = lineValue === 6 || lineValue === 9;
+  if (isYang) {
+    return <SolidLine isChanging={isChanging && isChangingLine} />;
+  }
+  return <BrokenLine isChanging={isChanging && isChangingLine} />;
+};
+
+
+export const HexagramDisplay = ({
+  lines,
+  hexagram,
+  changingHexagram,
+  changedLines = [],
+}: HexagramDisplayProps) => {
+  if (!hexagram) {
+    return null;
+  }
 
   return (
-    <Card className="mystical-card">
-      <CardHeader className="text-center">
-        <div className="flex items-center justify-center space-x-4 mb-4">
-          <div className="text-4xl font-mystical">{hexagram.symbol}</div>
+    <Card className="w-full overflow-hidden rounded-2xl bg-card shadow-lg border">
+      <CardHeader className="bg-muted/30 p-4 md:p-6">
+        <div className="flex items-start justify-between gap-4">
           <div>
-            <CardTitle className="text-2xl font-mystical text-mystical-gold">
-              {hexagram.name}
+            <CardTitle className="text-2xl font-bold text-primary">
+              {`Quẻ ${hexagram.name} (${hexagram.description})`}
             </CardTitle>
-            <CardDescription className="text-lg text-muted-foreground">
-              {hexagram.chineseName}
-            </CardDescription>
+            <p className="text-md text-muted-foreground mt-1">
+              {/* This is a more descriptive title */}
+              {hexagram.description.includes('trên') ? hexagram.description : `${hexagram.description} trên ${hexagram.description} dưới`}
+            </p>
           </div>
-        </div>
-        
-        <div className="flex flex-wrap justify-center gap-2 mb-4">
-          {hexagram.keywords.map((keyword) => (
-            <Badge key={keyword} variant="secondary" className="bg-mystical-gold/10 text-mystical-gold">
-              {keyword}
-            </Badge>
-          ))}
+          <Badge variant="secondary" className="text-lg font-semibold shrink-0">
+            {hexagram.id}
+          </Badge>
         </div>
       </CardHeader>
-
-      <CardContent>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          {/* Hexagram Lines */}
-          <div className="flex justify-center">
-            <Card className="bg-background/50 backdrop-blur-sm">
-              <CardHeader>
-                <CardTitle className="text-center text-mystical-gold">Vạch Quẻ</CardTitle>
-              </CardHeader>
-              <CardContent>
-                {renderHexagramLines()}
-                {changingLines.length > 0 && (
-                  <p className="text-center text-sm text-muted-foreground mt-4">
-                    Vạch thay đổi: {changingLines.join(', ')}
-                  </p>
-                )}
-              </CardContent>
-            </Card>
+      <CardContent className="p-4 md:p-6">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+          <div className="flex flex-col items-center justify-center space-y-4 rounded-lg bg-muted/30 p-4">
+              <div className="font-semibold text-center">Quẻ Gốc</div>
+              <div className="w-24 space-y-2">
+                {lines.slice().reverse().map((line, index) => (
+                  <div key={index}>
+                    {renderLine(line, changedLines.includes(5 - index))}
+                  </div>
+                ))}
+              </div>
           </div>
 
-          {/* Interpretation */}
-          <div>
-            <Tabs defaultValue="meaning" className="w-full">
-              <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4">
-                <TabsTrigger value="meaning">Ý Nghĩa</TabsTrigger>
-                <TabsTrigger value="advice">Lời Khuyên</TabsTrigger>
-                <TabsTrigger value="relationships">Tình Yêu</TabsTrigger>
-                <TabsTrigger value="career">Sự Nghiệp</TabsTrigger>
-              </TabsList>
-              
-              <TabsContent value="meaning" className="mt-4">
-                <ScrollArea className="h-[300px] w-full">
-                  <div className="space-y-4">
-                    <div>
-                      <h4 className="font-semibold text-mystical-gold mb-2">Ý Nghĩa Cốt Lõi</h4>
-                      <p className="text-muted-foreground">{hexagram.meaning}</p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-mystical-gold mb-2">Giải Thích</h4>
-                      <p className="text-muted-foreground">{hexagram.interpretation}</p>
-                    </div>
-                  </div>
-                </ScrollArea>
-              </TabsContent>
-              
-              <TabsContent value="advice" className="mt-4">
-                <ScrollArea className="h-[300px] w-full">
-                  <div>
-                    <h4 className="font-semibold text-mystical-gold mb-2">Hướng Dẫn</h4>
-                    <p className="text-muted-foreground">{hexagram.advice}</p>
-                  </div>
-                </ScrollArea>
-              </TabsContent>
-              
-              <TabsContent value="relationships" className="mt-4">
-                <ScrollArea className="h-[300px] w-full">
-                  <div>
-                    <h4 className="font-semibold text-mystical-gold mb-2">Tình Yêu & Các Mối Quan Hệ</h4>
-                    <p className="text-muted-foreground">{hexagram.relationships}</p>
-                  </div>
-                </ScrollArea>
-              </TabsContent>
-              
-              <TabsContent value="career" className="mt-4">
-                <ScrollArea className="h-[300px] w-full">
-                  <div className="space-y-4">
-                    <div>
-                      <h4 className="font-semibold text-mystical-gold mb-2">Sự Nghiệp & Công Việc</h4>
-                      <p className="text-muted-foreground">{hexagram.career}</p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-mystical-gold mb-2">Sức Khỏe & Thể Chất</h4>
-                      <p className="text-muted-foreground">{hexagram.health}</p>
-                    </div>
-                  </div>
-                </ScrollArea>
-              </TabsContent>
-            </Tabs>
-          </div>
-        </div>
+          <div className="md:col-span-2">
+            <div className="space-y-4">
+              <div className="rounded-lg bg-muted/30 p-4">
+                <h3 className="font-semibold text-lg text-muted-foreground">Lời Quẻ</h3>
+                <p className="mt-2 whitespace-pre-wrap text-card-foreground">{hexagram.meaning}</p>
+              </div>
 
-        {/* Changing Lines Interpretation */}
-        {changingLines.length > 0 && (
-          <div className="mt-6 p-4 bg-mystical-gold/5 rounded-lg border border-mystical-gold/20">
-            <h4 className="font-semibold text-mystical-gold mb-3">Giải Thích Vạch Thay Đổi</h4>
-            <div className="space-y-2">
-              {changingLines.map((lineNumber) => (
-                <div key={lineNumber} className="text-sm">
-                  <span className="font-medium text-mystical-gold">Vạch {lineNumber}:</span>
-                  <span className="text-muted-foreground ml-2">
-                    {hexagram.changingLines[lineNumber] || 'Không có giải thích cụ thể.'}
-                  </span>
-                </div>
-              ))}
+              <div className="rounded-lg bg-muted/30 p-4">
+                <h3 className="font-semibold text-lg text-muted-foreground">Dịch Nghĩa</h3>
+                <p className="mt-2 whitespace-pre-wrap text-card-foreground">{hexagram.details}</p>
+              </div>
             </div>
           </div>
-        )}
+        </div>
       </CardContent>
     </Card>
   );
-}
+};
