@@ -2,449 +2,2842 @@
   {
     "id": "111",
     "name": "CÀN",
-    "description": "Thiên",
-    "meaning": "Trời",
-    "details": "Sơ Cửu: Rồng còn ẩn náu, chưa nên hành động.\nCửu Nhị: Rồng xuất hiện ở ruộng, gặp đại nhân thì lợi.\nCửu Tam: Người quân tử suốt ngày chăm chỉ, tối đến vẫn lo nghĩ, tuy nguy nhưng không có lỗi.\nCửu Tứ: Hoặc nhảy ở vực sâu, không có lỗi.\nCửu Ngũ: Rồng bay trên trời, gặp đại nhân thì lợi.\nThượng Cửu: Rồng kiêu ngạo, sẽ có hối hận.\nDụng Cửu: Thấy bầy rồng không đầu, tốt.\nÝ nghĩa: Quẻ này chủ về sự khởi đầu, sáng tạo, sức mạnh và sự kiên định. Người bói được quẻ này nên hành động mạnh mẽ, quyết đoán nhưng cũng cần cẩn trọng, không nên kiêu ngạo. Công danh sự nghiệp có cơ hội thăng tiến lớn. Tình duyên tốt đẹp, có thể gặp được người như ý. Sức khỏe dồi dào."
+    "description": "Thiên võ vấn tình thiên tất võ",
+    "meaning": "Thiên võ vấn tình thiên tất võ\nThiên tình vẫn võ chủ thiên tình\nNhược yếu võ vụ khang Hợi Tý\nTình đa võ thiểu số phân minh.",
+    "details": "Trời mưa hỏi tạnh trời ắt mưa,\nTrời tạnh hỏi mưa trời ắt tạnh,\nNếu muốn mưa dầm coi Hợi, Tý\nTạnh nhiều mưa ít, rõ ràng phân"
   },
   {
     "id": "112",
-    "name": "THIÊN TRẠCH LÝ",
-    "description": "Càn trên Đoài dưới",
-    "meaning": "Dẫm, Lễ",
-    "details": "Đi theo, thực hành, lễ độ, quy tắc, cẩn trọng, nguy hiểm."
+    "name": "LÝ (Trạch Thiên)",
+    "description": "Tấn học chiếm ly lý quái hàm",
+    "meaning": "Tấn học chiếm ly lý quái hàm\nVăn thơ Quan quỉ lưỡng tương giao\nTài danh nhị tự thành vi tiến\nĐịnh chủ tha niên đạt cẩm phiêu.",
+    "details": "Ngươi học tới mà gặp quẻ nầy,\nHào văn, hào quỉ gặp đi đôi\nDanh một tài hai thành kết cuộc,\nRõ ràng năm tới chiếm ngao đầu."
   },
   {
     "id": "113",
-    "name": "THIÊN HỎA ĐỒNG NHÂN",
-    "description": "Càn trên Ly dưới",
-    "meaning": "Cùng người",
-    "details": "Hòa đồng, hợp tác, công bằng, không thiên vị, thành công."
+    "name": "ĐỒNG – NHÂN (Thiên Hỏa)",
+    "description": "Quỷ hào trì thế quái tương đồng",
+    "meaning": "Quỷ hào trì thế quái tương đồng\nHựu hứa đọc thơ vọng tấn thân\nTùng thử công danh chung khả vọng\nTu tri nhập bạn hữu hồng danh.",
+    "details": "Hào quan ủng hộ quẻ nên danh\nHọc hành tấn bộ, muôn việc thành\nDanh toại, công thành tua hy vọng\nThầy lành, bạn tốt trổ hồng danh."
   },
   {
     "id": "114",
-    "name": "THIÊN LÔI VÔ VỌNG",
-    "description": "Càn trên Chấn dưới",
-    "meaning": "Không càn bậy",
-    "details": "Chân thật, tự nhiên, không giả dối, tai họa bất ngờ nếu làm sai."
+    "name": "VÔ VỌNG (Thiên Lôi)",
+    "description": "Cầu vật cầu Tài tiên giác nan",
+    "meaning": "Cầu vật cầu Tài tiên giác nan,\nHào trung tàu tận thủy tương biên,\nThu, Đông thủ thảo vô tài vật,\nHạ quý, Xuân thời bất nại phiền.",
+    "details": "Cầu Tài, cầu vật trước khó khăn\nRút hết tiền hào, tài mới có\nThu Đông tìm kiếm tiền đâu có?\nCuối Hạ, Xuân tàn mới rảnh rang."
   },
   {
     "id": "115",
-    "name": "THIÊN PHONG CẤU",
-    "description": "Càn trên Tốn dưới",
-    "meaning": "Gặp gỡ",
-    "details": "Gặp gỡ bất ngờ, nữ mạnh mẽ, không nên kết hôn, cẩn thận."
+    "name": "CẤU (Thiên Phong)",
+    "description": "Chiêu tế dị thành lai vấn bốc",
+    "meaning": "Chiêu tế dị thành lai vấn bốc,\nThì trì hảo sự da phản phú\nỨng lai sanh thế đắc thành toàn,\nPhúc lộc ưu nhiên duyên phận tú.",
+    "details": "Kén rể chưa xong đến hỏi han,\nViệc đời phản phúc khó lo toan.\nPhận duyên rắc rối người thay đổi,\nPhước Lộc xum vầy mới vẻ vang"
   },
   {
     "id": "116",
-    "name": "THIÊN THỦY TỤNG",
-    "description": "Càn trên Khảm dưới",
-    "meaning": "Kiện tụng",
-    "details": "Tranh chấp, kiện cáo, không hòa hợp, nên dừng lại, nguy hiểm."
+    "name": "TỤNG (Thiên thủy)",
+    "description": "Vãng lai Mạng Vận cố phi nhi",
+    "meaning": "Vãng lai Mạng Vận cố phi nhi\nNhân vượng, Tài hưng tụ thủ thi\nPhát phúc hưng gia đa toại ý\nQuới nhân tương ngộ hữu pho tri",
+    "details": "Mừng cho Mạng Vận gặp trăng tròn,\nNgười vui của đống chất nên non\nPhát phước gặp thời nhiều toại ý\nQuới nhân ủng hộ nước nhà còn."
   },
   {
     "id": "117",
-    "name": "THIÊN SƠN ĐỘN",
-    "description": "Càn trên Cấn dưới",
-    "meaning": "Trốn, lui",
-    "details": "Trốn tránh, ẩn dật, lui về, tiểu nhân mạnh, quân tử lui."
+    "name": "ĐỘN (Thiên Sơn)",
+    "description": "Trúng hữu danh lương y quốc thủ",
+    "meaning": "Trúng hữu danh lương y quốc thủ\nIm im dị khiến thối tai ưu\nNhược phùng ứng vị lai sanh thế\nDần, Thân chỉ nhựt cứu tinh lâm.",
+    "details": "Dẫu cho thầy giỏi với danh\nCũng chẳng ra gì với bệnh ni\nTai khỏi, nạn qua may kẻ cứu\nDần, Thân tuần nhựt (10 ngày) khỏi tai nguy."
   },
   {
     "id": "118",
-    "name": "THIÊN ĐỊA BĨ",
-    "description": "Càn trên Khôn dưới",
-    "meaning": "Bế tắc",
-    "details": "Không thông, bế tắc, tiểu nhân đắc thế, quân tử gian nan."
+    "name": "BĨ (Thiên Địa)",
+    "description": "Văn thơ Quan Quỉ vấn lan đình",
+    "meaning": "Văn thơ Quan Quỉ vấn lan đình\nHứa yến giai tàn kiến lợi danh,\nThủy thượng lưu niên đa hưu tiển\nKim niên khoa cử chỉ bình bình.",
+    "details": "Lan đình Quan Quỉ với văn thơ,\nDanh Lợi lôi thôi phải đợi chờ\nThi cử năm nay chưa chắc đậu\nNăm tới may ra mới có đường."
+  },
+  {
+    "id": "121",
+    "name": "QUẢI (Trạch thiên)",
+    "description": "Di cư đáng hứa toại nhân tâm",
+    "meaning": "Di cư đáng hứa toại nhân tâm\nPhúc tinh cường lợi hữu lộc thâm\nNhược vấn đông nam tài thiên vượng\nGia thành nghiệp tựu lạc thanh bình.",
+    "details": "Dời nhà vui vẻ phỉ lòng người\nPhước đức gây nên cuộc tốt tươi\nMuốn biết hướng nào tài lợi phát,\nĐông nam gia nghiệp được vui cười"
+  },
+  {
+    "id": "122",
+    "name": "ĐOÀI",
+    "description": "Nghĩa khí tương đầu sự khả chàn",
+    "meaning": "Nghĩa khí tương đầu sự khả chàn\nQuan nghiêm hội chủng vô thành sự\nNhược tại Thu Đông phương khả vọng\nNhư phùng Xuân Hạ, sự long đong.",
+    "details": "Nhóm khách linh đình việc chẳng xong\nY tuy thấy hiệp nhưng chưa được\nThu Đông sắp đến nên hy vọng,\nBằng gặp Hạ, Xuân việc long đong."
+  },
+  {
+    "id": "123",
+    "name": "CÁCH (Trạch Hỏa)",
+    "description": "Quỉ bào tri thế phước thành tường",
+    "meaning": "Quỉ bào tri thế phước thành tường\nMưu sự chiếm chỉ bá sự đương\nXuân Quí Đông thời phương khả tự\nHạ Thu chiếm thử bất tương đương.",
+    "details": "Hào phước, Hào Tài rõ rạng thay\nMưu sự khen thay gặp quẻ nầy\nĐông tàn, Xuân lụn nên khởi việc\nHạ Thu thời chớ chẳng xong rày"
+  },
+  {
+    "id": "124",
+    "name": "TÙY (Trạch Lôi)",
+    "description": "Tài lai sanh Quỉ bịnh nan y",
+    "meaning": "Tài lai sanh Quỉ bịnh nan y\nPhụ mẫu gia tinh yến hộ trì\nTúc nguyện như kim hườn ứng xảo\nNhứt tuần, bán nguyệt tái bình luân",
+    "details": "Cha mẹ binh căn rất khó thay,\nỐm đau lại gặp quẻ không may\nVái van thề thốt mau hườn trả,\nNửa trăng sắp tới mới yêu rày."
+  },
+  {
+    "id": "125",
+    "name": "ĐẠI QUÁ (Trạch Phong)",
+    "description": "Ứng lai sanh thế sự nghi thành",
+    "meaning": "Ứng lai sanh thế sự nghi thành,\nMãi ốc chiếm chi hứa xứng tâm\nPhú quí vinh hoa từng thủ đắc\nGia thành, nghiệp tựu vĩnh khương ninh",
+    "details": "Mua nhà bói gặp quẻ yên lòng\nTính toán làm ăn việc, việc xong\nPhú quí vinh hoa ngày, ngày tới\nLập nên gia nghiệp phỉ lòng mong"
+  },
+  {
+    "id": "126",
+    "name": "KHỔN (Trạch Thủy)",
+    "description": "Phân gia, quân kiếm dục bốc nghi",
+    "meaning": "Phân gia, quân kiếm dục bốc nghi\nQuản giao nhựt hận bất sai trì\nXuân Thu tài vượng vô phiền não\nDụng ý di chung tòng tắc nghi",
+    "details": "Chia của, chia nhà muốn hỏi thăm\nKhuyên đó ráng chờ đừng nản chí\nXuân Thu tài vượng chẳng sai lầm\nXin chàng nhẫn nhịn chớ sanh tâm"
+  },
+  {
+    "id": "127",
+    "name": "HÀM (Trạch Sơn)",
+    "description": "Quá chiếm tật bệnh số vô phần",
+    "meaning": "Quá chiếm tật bệnh số vô phần\nPhước đức thiên tỉnh lưỡng tự cường\nHợi Tý Canh Tân toàn vũ hảo\nNgũ hành hữu cứu thọ miên trường",
+    "details": "Bệnh đau mà gặp quẻ này đây\nPhước đức gây nên mới được rày\nHợi Tý Canh Tân lành bệnh nọ\nQuới nhơn ủng hộ khỏi tai bay"
+  },
+  {
+    "id": "128",
+    "name": "TÙY (Trạch Lôi)",
+    "description": "Anh nhi đắc hỉ số vô phần",
+    "meaning": "Anh nhi đắc hỉ số vô phần\nPhước đức lâm hào vị tất ưu\nPhục dược đẳng khang quá Mùi Ngọ\nHiệp gia hoan hỉ bá thành kỳ.",
+    "details": "Cháu con đau ốm chẳng nên lo\nPhúc đức tai qua mới khiến cho,\nThuốc men săn sóc khỏi Mùi Ngọ\nCả nhà vui vẻ hết buồn lo."
+  },
+  {
+    "id": "131",
+    "name": "ĐẠI HỮU (Hoả Thiên)",
+    "description": "Cầu Tài nghi hưỡn bất nghi cấp",
+    "meaning": "Cầu Tài nghi hưỡn bất nghi cấp\nVô thời việc thiểu định vô đa.\nGiáp Ất, Mẹo Dần phương hữu vọng\nQuái hào chủ định đáng vô ngoa.",
+    "details": "Cầu Tài chậm rãi không nên gấp\nGiúp đỡ qua loa chứ chẳng nhiều\nGiáp Ất, Mẹo Dần có hy vọng\nGiúp xài chút đỉnh chẳng bao nhiêu."
+  },
+  {
+    "id": "132",
+    "name": "KHUÊ (Hoả Trạch)",
+    "description": "Tài ngân tá thủ vấn thần minh",
+    "meaning": "Tài ngân tá thủ vấn thần minh\nThác báo cầu chi việc khả thần\nHợi Tý Canh Tân tài phát động\nMục tiêu bất toại mạc sanh sanh",
+    "details": "Vay hỏi bạc tiền đến hỏi thần\nMách cho đó phải cố hay cầm\nHợi Tý, Canh Tân tài mới có\nKhuyên chang gắn dạ chớ sanh sân."
+  },
+  {
+    "id": "133",
+    "name": "LY",
+    "description": "Dục chiếm mãi súc tối vì lương",
+    "meaning": "Dục chiếm mãi súc tối vì lương\nThế ứng tương vượng bá sự sương\nSố định mãi lai quân ý hiệp\nNgưu đa sanh tức mã lư cường.",
+    "details": "Muốn mua lục súc rất nên hay\nTrăm việc gây nên rất tốt thay\nBán buôn giá cả người vừa ý\nBò trâu heo ngựa đẻ nên bầy"
+  },
+  {
+    "id": "134",
+    "name": "PHỆ HẠP (Hoả Lôi)",
+    "description": "Khai tiệm chiếm chi chủ đại tài",
+    "meaning": "Khai tiệm chiếm chi chủ đại tài,\nThế tài trì thế đoán vô quai\nXuân Thu Hạ quý tài đa tức\nĐông quý bình bình thiên hứa quai.",
+    "details": "Khai tiệm ngày nay chủ đắc tài\nBán buôn nườm nượp thật không sai\nXuân, Thu, Hạ chí lời mười vốn\nĐông đến sắp lên lợi một hai."
+  },
+  {
+    "id": "135",
+    "name": "ĐỈNH (Hoả Phong)",
+    "description": "Hồi hương chiếm thử chủ bình an",
+    "meaning": "Hồi hương chiếm thử chủ bình an,\nPhước đức tài nguyên lưỡng tự toàn\nBạn lữ định số phùng quới khách\nLộ đồ tránh giác đất tâm khoan.",
+    "details": "Thăm nhà, về xứ chủ bình an,\nTài phước đôi bên được lưỡng toàn\nAnh em bầu bạn đều quí khách\nLộ đồ yên ổn được thanh nhàn"
+  },
+  {
+    "id": "136",
+    "name": "VỊ TẾ (Hỏa Thủy)",
+    "description": "Tứ quái chiếm lai phóng trường nghi",
+    "meaning": "Tứ quái chiếm lai phóng trường nghi,\nQuản giao nhựt thu bất khai tri,\nHạ – Thu đắc ý vô phiền não,\nDụng ý di chi bất tất nghi.",
+    "details": "Cho vay đặt nợ gặp quẻ này,\nVốn lời trả đủ chẳng sai chầy\nThu Hạ vừa lòng không buồn thảm\nMặc tình tính toán chớ hồ nghi."
+  },
+  {
+    "id": "137",
+    "name": "LỮ (Hỏa Sơn)",
+    "description": "Mộ phần long mạch bất vi gia",
+    "meaning": "Mộ phần long mạch bất vi gia,\nĐựng chủ vô tình bất tất khoa\nTả hữu, hữu can hườn hữu phá\nBiệt tầm Càn Tốn đắc vinh hoa.",
+    "details": "Mộ phần đoán chắc chẳng nhầm phương\nLãnh noãn nhân tình ấy sự thường\nTả hữu có hầm cùng mươn rạch\nAnh em thân thuộc ít yêu đương"
+  },
+  {
+    "id": "138",
+    "name": "TẤN (Hỏa Địa)",
+    "description": "Đổ bác cầu mưu tiên cư nan",
+    "meaning": "Đổ bác cầu mưu tiên cư nan\nBổn cung tài tận thủy thương hoàng\nThu Đông khiêm thắng vô tài lợi\nXuân Hạ hoàn lao bất nại phiền.",
+    "details": "Đấu kê đổ bát rất khó thay,\nPhương bổn (tuổi) mạng hướng không may\nThu Đông ăn ít mà thua đậm,\nXuân Hạ năng lo giữ vốn rày."
+  },
+  {
+    "id": "141",
+    "name": "ĐẠI TRÁNG (Lôi Thiên)",
+    "description": "Tài lai ứng hữu thành vị",
+    "meaning": "Tài lai ứng hữu thành vị\nChưng tác điều hoà thập bội tăng\nBạn thấy mễ tràng thiên ý hảo\nNhứt sanh thâu thâu thăng lưỡng niên sinh.",
+    "details": "Ruộng vườn thâu góp lợi mười phần\nHuê lợi điều hòa nhựt nhựt tăng\nPhúc đức ông bà, trời giúp vận\nCủa tiền dư để tiếng vang rân."
+  },
+  {
+    "id": "142",
+    "name": "QUI MUỘI (Lôi Trạch)",
+    "description": "Tử tôn vô vị hướng văn thơ",
+    "meaning": "Tử tôn vô vị hướng văn thơ,\nXa nại bàn nhơn ban thị phi\nHữu quán bị nhơn tầm đạt khứ\nCuồng đổ lao lực phi môn trì",
+    "details": "Cửa nhà quán xá chúng giựt rồi\nBàn nhơn bàn kế đáng thương ôi.\nCháu con lưu lạc thân lữ thứ\nUổng công gầy dựng bấy lâu thôi."
+  },
+  {
+    "id": "143",
+    "name": "PHONG (Lôi Hỏa)",
+    "description": "Tứ lâm phước vị tử tôn minh",
+    "meaning": "Tứ lâm phước vị tử tôn minh\nCầu tử chiếm chi hứa toại tâm\nNhược thị xảo niên hình khắc hóa\nKiêm niên bất cứu sản kỳ lâm",
+    "details": "Cầu con mà gặp quẻ này đây\nĐông đúc cháu con kết lũ bầy.\nCon thảo cháu hiền thông suốt cả\nTu nhân tích đức giữ lòng ngay"
+  },
+  {
+    "id": "144",
+    "name": "CHẤN",
+    "description": "Xuất hành chiếm thử khủng phi nghi",
+    "meaning": "Xuất hành chiếm thử khủng phi nghi\nHuynh đệ lâm môn hữu thị phi.\nThế ứng phùng xuân đa cách trở\nBất nghi yếu động thả trì trì.",
+    "details": "Đi đứng đề phòng chớ ỷ khôn\nKẻ gian rình đón kế bên trong\nRối ben trắc trở trên đường lộ (khi đi đứng)\nNhẫn nại đợi thời chớ bôn chôn."
+  },
+  {
+    "id": "145",
+    "name": "HẰNG (Lôi Phong)",
+    "description": "Hữu ngư chiếm chi toại tâm hoài",
+    "meaning": "Hữu ngư chiếm chi toại tâm hoài,\nThượng lưu đáo đắt uống quân hoài.\nChuyên tâm chi phí quân tu đắt\nTung hoành trương dóng đăng câu đài.",
+    "details": "Mừng cho danh lợi toại tâm tình\nRọ đáy lưới rùng thảy thảy xinh\nChí quyết chuyên cầu ngươi ráng giữ\nTung hoành sâu cạn được an ninh."
+  },
+  {
+    "id": "146",
+    "name": "GIẢI (Lôi Thủy)",
+    "description": "Quân phùng dạ mộng bất tương nghi",
+    "meaning": "Quân phùng dạ mộng bất tương nghi,\nDanh lợi muôn tâm sự bất tề.\nGia đạo nhơn đinh tiêm kinh khủng\nThời lai liên đảo mộng hồn kỳ.",
+    "details": "Chiêm bao mộng mị rất nên nghi\nDanh lợi tại ngươi quá nghĩ suy\nGia đạo bất hòa tôi tớ ruổi\nBằng không gia chủ ắt lâm nguy"
+  },
+  {
+    "id": "147",
+    "name": "TIỂU QUÁ (Lôi Sơn)",
+    "description": "Quân hào tùy thế dị hoà hai",
+    "meaning": "Quân hào tùy thế dị hoà hai\nNhập nhái cầu hôn mạc vọng di\nChỉ bảo hồi đầu tìm biệt kế\nMiến giao biệt hậu hữu bi ai.",
+    "details": "Khuyên người chớ tính việc tình si\nNợ duyên trắc trở chẳng được chỉ\nXin đó hồi đầu tầm sang kế\nBằng không ắt phải lụy ai bi."
+  },
+  {
+    "id": "148",
+    "name": "DỰ (Lôi Địa)",
+    "description": "Thị phi khẩu thiệt sự đa đoan",
+    "meaning": "Thị phi khẩu thiệt sự đa đoan\nThế ngoại phùng tài sự bất an.\nPhàm sự phiến quân nhiên nhất kháng\nPhượng bảo thối hậu tâm lương khang",
+    "details": "Phải quấy rầy ra chẳng ích chi\nNín đi thì ngặt nhịn coi kỳ\nPhàm việc khuyên người lui đôi bước\nPhước nhà thêm rạng chẳng ai khi."
+  },
+  {
+    "id": "151",
+    "name": "TIỂU SÚC (Phong Thiên)",
+    "description": "Quân kiếm, thác quá nhứt thời nan",
+    "meaning": "Quân kiếm, thác quá nhứt thời nan\nPhản phúc duyên ai không giản hoài\nTỵ Ngọ Mùi lâm tài khả thác\nQuá kỳ hựu khủng hữu khuyên nhai.",
+    "details": "Lúc nầy sang sến hàng hóa không may\nPhản phúc gay go rắc rối thay\nTỵ Ngọ Mùi tuần thì mới đặng\nQuá kỳ ắt gặp việc tai bay."
+  },
+  {
+    "id": "152",
+    "name": "TRUNG PHÚ (Phong Trạch)",
+    "description": "Quan chiếm kiến quới sự nhi hà",
+    "meaning": "Quan chiếm kiến quới sự nhi hà\nNhứt kiến ứng tri nhi khí đa\nDanh lợi trùng trùng chung hữu vọng\nTiên thiên thần số bất sai ngoa.",
+    "details": "Người muốn yết quan việc ra sao\nQuan yêu chiếu cố tốt biết bao.\nDanh lợi chập chồng đầy hy vọng,\nNghe ta ắt được chẳng sai nào."
+  },
+  {
+    "id": "153",
+    "name": "GIA NHÂN (Phong Hoả)",
+    "description": "Quái chiếm hỉ sự lưỡng trùng tài",
+    "meaning": "Quái chiếm hỉ sự lưỡng trùng tài\nPhước đức linh tâm ứng thượng lai\nNhược vấn Xuân tàm hưu hoài lự\nThập phần tài hỉ xứng tâm hoài.",
+    "details": "Quẻ chiếm được 2 hào tài,\nHai vì sao phước đức đến lại cho\nNếu hỏi về tầm tơ đừng buồn chi\nMười phần tiền của vui mừng lòng dạ"
+  },
+  {
+    "id": "154",
+    "name": "ÍCH (Phong Lôi)",
+    "description": "Thâu giải tiền lương chủ thái bình",
+    "meaning": "Thâu giải tiền lương chủ thái bình\nLực hào vô quỉ một hư kinh\nThượng hạ quới nhơn đa đắc lực\nHườn quan đắc lộc chuyển gia đình",
+    "details": "Thâu tiền, lúa nộp được bình an\nSáu hào không Qui không lo sợ\nDưới trên quới nhơn hằng giúp sức\nViệc xong tròn phận được lợi, tài."
+  },
+  {
+    "id": "155",
+    "name": "TỔN (Sơn Trạch)",
+    "description": "Số chiếm khởi công hứa quân vi",
+    "meaning": "Số chiếm khởi công hứa quân vi\nNhựt kiến thời lương vạn sự nghi\nKhởi hậu tài nguyên hườn hứa thăng\nNhậm quan khởi tác bất tu nghi",
+    "details": "Khởi công mà gặp quẻ nầy\nNgày tốt giờ lành muôn việc tốt\nCông khởi tiền vô lời thắng số\nTùy ý mình toan chớ hồ nghi."
+  },
+  {
+    "id": "156",
+    "name": "HOÁN (Phong Thủy)",
+    "description": "Phước đức tỉnh cường hỉ khi lâm",
+    "meaning": "Phước đức tỉnh cường hỉ khi lâm\nSanh ý chỉ trung bá sự nghi\nĐương độ quới nhơn ưng khả thác\nTừng kiêm danh lợi bất bôn trì.",
+    "details": "Vì sao Phước-Đức có tin vui\nTính toan mua bán đều được tốt\nQuới nhơn giúp đỡ giao cho việc,\nLợi danh tự đến khỏi (mất) công đi."
+  },
+  {
+    "id": "157",
+    "name": "TIỆM (Phong Sơn)",
+    "description": "Văn thơ trùng kiến lãnh văn thơ",
+    "meaning": "Văn thơ trùng kiến lãnh văn thơ\nPhản phúc kỳ trung thật khả nghi.\nTị Ngọ Mùi lâm chung khả vọng,\nQuá kỳ hữu chủng hữu trầm trì.",
+    "details": "Thư từ, tờ giấy lãnh luôn luôn\nPhản phúc bên trong thật đáng nghi\nĐến Tị Ngọ Mùi mới mong hy vọng\nQuá kỳ hạn đó việc trầm trề."
+  },
+  {
+    "id": "158",
+    "name": "QUAN (Phong Địa)",
+    "description": "Tố biện chiếm chi hứa toại tình",
+    "meaning": "Tố biện chiếm chi hứa toại tình\nVăn thơ Quan Quỉ lưỡng phân minh\nHướng vượng hữu lý vô tài phiệt\nNhựt hậu phương tri quái như trầm.",
+    "details": "Kiện thưa chiếm được quẻ nầy tốt\nĐơn từ, quan xử đều rành rẽ\nĐến ngày phâm xử mình được kiện\nNgày sau được việc biết quẻ linh"
+  },
+  {
+    "id": "161",
+    "name": "NHU (Thủy Thiên)",
+    "description": "Tài hào lai ứng khả sanh quan",
+    "meaning": "Tài hào lai ứng khả sanh quan\nSĩ hoạn chiếm chi tất chu quan\nThu Hạ Kiền Thiên tin tức đáo\nNhơn tinh mưu cáng lưỡng chu toàn.",
+    "details": "Hào tài sanh ứng tới hào quan\nHọc trò chiếm được quẻ nầy ắt làm quan\nThu Hạ hai mùa tin tức đến\nNhơn tình giúp mình mình phải tính."
+  },
+  {
+    "id": "162",
+    "name": "TIẾT (Thủy Trạch)",
+    "description": "Trở tiết trùng trùng quái vị an",
+    "meaning": "Trở tiết trùng trùng quái vị an\nTầm nhơn chiếm thử cung nan can\nThế ứng khác nào, ứng khắc thối\nChỉ nghi phỏng sát khả tâm khoan.",
+    "details": "Nhiều việc trắc trở, quả chưa an\nTìm người muốn gặp e khó gặp\nTa khắc người, người lại khắc ta\nCoi chừng, han hỏi mới nhẹ lo."
+  },
+  {
+    "id": "163",
+    "name": "KÝ TẾ (Thủy Hỏa)",
+    "description": "Nạp giám chiếm chỉ bách tử tôn",
+    "meaning": "Nạp giám chiếm chỉ bách tử tôn\nVăn thơ quan quỉ lưỡng tinh minh\nSanh hoành sĩ lộ hà tư lự\nĐịnh chủ tài vật lưỡng xứng tâm",
+    "details": "Xin sở, nghề văn hại cháu con\nVăn thơ, Quan Quỉ sao tỏ rạng\nĐường quan tỏ rõ khỏi cần lo\nBạc tiền của cải vừa bụng lắm."
+  },
+  {
+    "id": "164",
+    "name": "TRUÂN (Thủy Lôi)",
+    "description": "Văn thơ Quan Quỉ lưỡng tương xâm",
+    "meaning": "Văn thơ Quan Quỉ lưỡng tương xâm\nHòa sự ưng tri bất thuận tình\nHữu sự định nhiên phản phúc khứ\nChi tu chẩn nại miễn hư kinh",
+    "details": "Hào văn thơ Quan Quỉ 2 hào xâm nhau\nMưu sự hiệp hòa không thành được\nDầu có gượng ép sau phản phúc\nKhuyên nên nhịn nhục khỏi lo âu,"
+  },
+  {
+    "id": "165",
+    "name": "TỈNH (Thủy Phong)",
+    "description": "Cầu hôn chiếm chi thập phần nghi",
+    "meaning": "Cầu hôn chiếm chi thập phần nghi\nQuan Quỉ, Thê Tài lưỡng kiến chỉ\nTiện hỉ mưu nhơn đa trợ lực\nĐịnh số cử án đắc tề mi",
+    "details": "Cưới gả quẻ nầy mười phần tốt\nHai hào Vợ Chồng đều tỏ rạng\nMừng được nhiều người ra sức giúp\nDâu hiền, rễ thảo chắc trong tay."
+  },
+  {
+    "id": "166",
+    "name": "KHẢM",
+    "description": "Dựng dục cầu chiếm hiểm giữ bình",
+    "meaning": "Dựng dục cầu chiếm hiểm giữ bình\nLàm thì lược lược hữu hư kính\nCanh Tân Mẹo Dậu trường sanh nhựt\nSanh sản tuy hung bất tổn thân.",
+    "details": "Chửa nghén chiếm quẻ nầy coi có yên?\nLúc chuyển bụng có ít việc kinh hoàng sơ sơ\nCanh Tân Mẹo Dậu ngày trường sanh (Nếu nhằm ngày ấy)\nSanh sản dẫu hung cũng chẳng sao (Gặp mấy ngày trên)."
+  },
+  {
+    "id": "167",
+    "name": "KIỂN (Thủy Sơn)",
+    "description": "Bán buôn đổi chát được quẻ ni",
+    "meaning": "Bán buôn đổi chát được quẻ ni\nỨng lai sanh thế hữu phò trì\nTuy nhiên tài lợi bình bình ổn\nTính thiệt thành giao một thị phi",
+    "details": "Bán buôn thương mãi gặp quẻ nầy\nNgười ngoài xúm xít giúp đỡ ta\nTuy nhiên tài lợi chưa mấy thạnh\nNgười ta giao kết ắt chắc được."
+  },
+  {
+    "id": "168",
+    "name": "TỶ (Thủy Địa)",
+    "description": "Quái chiếm thú thiếp vấn nhơn duyên",
+    "meaning": "Quái chiếm thú thiếp vấn nhơn duyên\nThê tàu bất biện sự triển diện\nKế vấn chiều biến bất thị duyên\nKiến uổng đồ lạc mạc lưu luyến.",
+    "details": "Quẻ này hỏi việc cưới vợ hai?\nHào vợ không có trong quẻ\nKhông phải nhơn duyên nên núp lén\nQua đường rồi bỏ chẳng nên lưu."
+  },
+  {
+    "id": "171",
+    "name": "ĐẠI SÚC (Sơn Thiên)",
+    "description": "Tậu điền chiếm thử bất vi an",
+    "meaning": "Tậu điền chiếm thử bất vi an\nSai trọng lương đa mạc vọng cang\nHựu kiến Quỉ hào lâm thế vị\nYếu phòng phản phúc khủng đa ban.",
+    "details": "Sắm đất mua vườn không đặng khá\nTổn tiền, xuất lúa hại nhiều công\nLại gặp Quỉ Hào lâm bổn mạng\nĐề phòng phản phúc rất đa đoan."
+  },
+  {
+    "id": "172",
+    "name": "TỔN (Sơn Trạch)",
+    "description": "Gia tín lai thời ứng Ngọ đương",
+    "meaning": "Gia tín lai thời ứng Ngọ đương\nLục thâu cốt nhục hỉ an khương\nKhuyến quân cấp chỉnh qui gia kế\nMiễn đắc gia trung vọng nhãn xuyên.",
+    "details": "Thơ tín, tin nhà đến lúc trưa (Ngọ)\nMừng cho thân quyến được bình an\nKhuyên người nên trở lại nhà sớm\nĐể khỏi người nhà luống đợi trông."
+  },
+  {
+    "id": "173",
+    "name": "BÍ (Sơn Hỏa)",
+    "description": "Nạp lại công danh nghỉ châm chước",
+    "meaning": "Nạp lại công danh nghỉ châm chước\nVăn thơ vô vị uổng lao thần\nMạc hềm thử quái đa chuân cưu\nChỉ khủng đa thời phản bị xâm",
+    "details": "Quan lại công danh chậm trễ thay\nVăn chương vô vị uổng công rày\nBuồn sao quở phạt rầy rà mãi\nPhải giữ mình luôn kẻo có ngày (mất chức)."
+  },
+  {
+    "id": "174",
+    "name": "DI",
+    "description": "Quân chiếm cáo trạng quái phùng Quan",
+    "meaning": "Quân chiếm cáo trạng quái phùng Quan\nTài vượn sanh quan phước lộc toàn\nĐông Hạ oai quyền đa đắc lực\nCủa tiền, vui vẻ được hoà hai.",
+    "details": "Vô đơn kiện cáo quẻ gặp Quan\nTài vượng sanh quan phúc lộc toàn\nĐông hạ oai quyền nhiều hiệu lực\nCủa tiền vui vẻ được hoà hai."
+  },
+  {
+    "id": "175",
+    "name": "CỔ (Sơn Phong)",
+    "description": "Kiêm nhơn mãi mãi vấn thần linh",
+    "meaning": "Kiêm nhơn mãi mãi vấn thần linh\nĐịnh mưu cần thi đắc toại tâm\nĐương đạo quới nhơn giai hữu trợ\nThử thành đoan tích hữu thâu thành.",
+    "details": "Tính đi buôn bán hỏi thần linh\nMưu định việc ni ắt toại tâm\nĐi đường ắt gặp nhiều người giúp\nBuôn chuyến nầy đi ắt đạt thành."
+  },
+  {
+    "id": "176",
+    "name": "MÔNG (Sơn Thủy)",
+    "description": "Cầu quan chiếm thử quái vi cao",
+    "meaning": "Cầu quan chiếm thử quái vi cao\nTài vượng sanh quan phước lộc đa\nThu lịnh Đông thời đắc hảo khuyết\nPhu vinh thê quí lạc thao thao",
+    "details": "Cầu quan gặp được quẻ nầy tốt\nTài vượng sanh quan phước lộc nhiều\nThu Đông mùa ấy có chỗ tốt\nChồng sang, vợ quí vui biết bao."
+  },
+  {
+    "id": "177",
+    "name": "CẤN",
+    "description": "Quân chiếm ý dục tấn nha môn",
+    "meaning": "Quân chiếm ý dục tấn nha môn\nPhước đức tinh lâm bá sự hanh\nThu Hạ Đông thời đa ích lợi\nXuân Giáng thiểu toại mạc sanh sân",
+    "details": "Y muốn nhà ngươi tính đầu quân\nPhước đức chiếu tinh trâm sự tốt\nThu Hạ Đông sang nhiều lợi ích\nXuân đến cần nên phải giữ mình."
+  },
+  {
+    "id": "178",
+    "name": "BÁC (Sơn Địa)",
+    "description": "Quân nhơn thảo bộc lai vấn bốc",
+    "meaning": "Quân nhơn thảo bộc lai vấn bốc\nPhước đức tinh lâm sự sự hanh\nTuy thị nhãn tiên đa cách trở\nTrì trì phương hứa khả giao thành.",
+    "details": "Quẻ ứng nhà ngươi muốn hỏi thuê (người ở)\nHay sao phước đức mọi sự tốt\nTuy rằng trước mặt nhiều trở ngại\nChậm chậm rồi đây việc ắt thành."
+  },
+  {
+    "id": "181",
+    "name": "THÁI (Địa Thiên)",
+    "description": "Quái bốc trị quân vẫn thọ niên",
+    "meaning": "Quái bốc trị quân vẫn thọ niên\nSanh lai y lộc vị vi lam\nTuy tri sanh tử vinh khổ sự\nBác bác gia tam mộng cửu tuyền.",
+    "details": "Quẻ nầy muốn hỏi về sức khỏe\nTừ hồi có gia đình tới giờ chưa thiếu kém\nDẫu biết sống thác vinh nhục là khó hiểu.\nTám tám (88) tuổi thấy sự sống chết."
+  },
+  {
+    "id": "182",
+    "name": "LÂM (Địa Trạch)",
+    "description": "Gia trạch trùng trùng kiến thị phi",
+    "meaning": "Gia trạch trùng trùng kiến thị phi\nPhá tài tật bệnh hữu ta vi\nTối hỉ hữu thần đa trở lực,\nHạ Thu Đông qui đắc tương nghi.",
+    "details": "Việc nhà dồn dập chuyện thị phi\nTốn tiền, bệnh tật nhiều hay ít.\nNhưng mừng cho đó đưới quới nhân giúp,\nĐến Hạ Thu Đông mới tốt cho."
+  },
+  {
+    "id": "183",
+    "name": "MINH DI (Địa Hỏa)",
+    "description": "Nhựt nguyệt đồng phùng quái tối linh",
+    "meaning": "Nhựt nguyệt đồng phùng quái tối linh\nQuân kiêm hiệp lõa thậm thi vi.\nLục hào yên tịnh thân tâm vượng\nBất tất đa nghi thinh thị phi.",
+    "details": "Ngày tháng quẻ nầy rất tốt thay\nChung tiền, đậu vốn mua bán tốt\nSáu hào yên tịnh thân tâm vững\nĐừng có nghe ai tiếng thị phi."
+  },
+  {
+    "id": "184",
+    "name": "PHỤC (Địa Lôi)",
+    "description": "Ứng lai trì thế phước thần thương",
+    "meaning": "Ứng lai trì thế phước thần thương\nThất vật chiếm chỉ uống sự đương\nNội ngoại lưỡng nhơn phản phúc khứ\nKhuyến quân khá xả mạc tư lương.",
+    "details": "Nhà mình sao để người khác trọ\nMất vật chịu đành kiếm mất công\nNội, ngoại trong ngoài lấy của mất\nKhuyên người nên bỏ chớ nên buồn."
+  },
+  {
+    "id": "185",
+    "name": "THĂNG (Địa Phong)",
+    "description": "Thế cao ứng hạ trùng trùng kiến",
+    "meaning": "Thế cao ứng hạ trùng trùng kiến\nTẩu thất chúng ta đắc chuyển đầu\nQuí Hợi Tý Nhâm chung hữu tín\nHà tu cấp trước khứ truy tầm.",
+    "details": "Ta người danh giá nó dưới tay\nNó trốn đi rồi cũng đáo lai\nQuí Hợi Tý Nhâm tin sẽ đến\nKhỏi phải tìm chỉ nó sẽ về."
+  },
+  {
+    "id": "186",
+    "name": "SƯ (Địa Thủy)",
+    "description": "Quân vẫn hành nhân hà nhứt chi",
+    "meaning": "Quân vẫn hành nhân hà nhứt chi\nỨng vị lâm môn âm tin trì\nCanh Tân Tị Ngọ giao lâm nhựt\nKhả vọng nhơn tài lưỡng kiến nghi.",
+    "details": "Quẻ hỏi người đi bao giờ về\nƯng hào đến cửa tin tức trễ\nCanh Tân Tị Ngọ ngày ấy đến\nChừng đó người đi, đem tiền bạc về."
+  },
+  {
+    "id": "187",
+    "name": "KHIÊM (Địa Sơn)",
+    "description": "Thủ nghệ cầu tài thử quái kỳ",
+    "meaning": "Thủ nghệ cầu tài thử quái kỳ\nTử tôn trì thế sự châu tri\nThu Đông tài lộc đa toại ý\nCánh Ngộ cao nhơn bá sự nghi",
+    "details": "Cầu tài, công nghệ được quẻ ni\nTử tôn, trì thế việc đều tốt\nThu Đông vốn, lời đều vừa ý\nGặp người trên trước giúp sức mi."
+  },
+  {
+    "id": "188",
+    "name": "KHÔN",
+    "description": "Giải nhơn tu kỵ hữu hư kinh",
+    "meaning": "Giải nhơn tu kỵ hữu hư kinh\nPhi lực lao tâm bất đắc minh\nGiao nạp đản kiến tâm thỉ phóng\nNhược bất tiểu tâm hữu thương hình.",
+    "details": "Nạp giải tội nhơn có sự kinh\nPhí sức nhọc lòng tâm chẳng ổn\nĐến chừng giao lãnh mới kể chắc\nNếu không phòng bị chắc bị hình."
+  },
+  {
+    "id": "211",
+    "name": "ĐOÀI",
+    "description": "Hội sự chiếm chỉ quái tối nghi",
+    "meaning": "Hội sự chiếm chỉ quái tối nghi\nBằng hữu trùng trùng đệ huynh tề\nTác tốc khứ yên bảo toàn mỹ\nCanh Tân, Tân Dậu đắc toàn tài.",
+    "details": "Việc nhóm họp đây được quẻ nầy\nAnh em bạn hữu nhiều kẻ đến\nViệc tính cứ làm càng gặp tốt\nCanh Thân, Tân Dậu được toàn tài."
+  },
+  {
+    "id": "212",
+    "name": "LÝ (Trạch Thiên)",
+    "description": "Tử tôn hỉ chỉ hà tu lự",
+    "meaning": "Tử tôn hỉ chỉ hà tu lự\nBất tất ưu nghi khả vấn y\nHổ đầu xà vĩ tài tỉnh thối\nĐãi giao tiết khi bịnh tài vi.",
+    "details": "Cháu con vui vẻ đừng lo sợ\nKhỏi phải hoài nghi hỏi lương y\nĐầu hùm đuôi rắn thì bệnh thối\nQua khỏi tiết khí thì bịnh mạnh."
+  },
+  {
+    "id": "213",
+    "name": "ĐỒNG NHÂN (Thiên Trạch)",
+    "description": "Tài bất sanh tế quái vị an",
+    "meaning": "Tài bất sanh tế quái vị an\nQuân chiếm mại ốc mạng tâm hoan\nTrung nhơn đa dục nan thành tựu\nXả khứ bất như biệt lộ khan",
+    "details": "Hào tài không sanh quẻ không tốt\nNhư chiếm mua bán, đừng lật đật mừng\nNhiều người muốn lắm, việc khó nên\nBỏ đi kiếm chỗ khác đừng tiếc."
+  },
+  {
+    "id": "214",
+    "name": "VÔ VỌNG (Thiên Lôi)",
+    "description": "Chiếm bịnh tâm thần mạng phạm chi",
+    "meaning": "Chiếm bịnh tâm thần mạng phạm chi\nNgũ hành hữu cứu miếng ưu nghi\nThời phụng mẹo, dậu tai tinh thối.\nTác phước kỳ thần mạo đãi trì.",
+    "details": "Chiếm bịnh gặp quẻ nầy không tốt\nNhờ có sao ngũ hành cứu khổ lo rầu\nGặp ngày Mẹo, Dậu bịnh bớt\nVan vái thì cúng đừng để vậy."
+  },
+  {
+    "id": "215",
+    "name": "CẤU (Thiên Phong)",
+    "description": "Phụ mẫu vô đoan tật bịnh chiếm",
+    "meaning": "Phụ mẫu vô đoan tật bịnh chiếm\nQuái trung tài động quỉ quan liền\nTý, Mùi chiếm bốc vô ứng sự\nMạc hảo tâm đầu khổ quảy khiên.",
+    "details": "Cha mẹ đau ốm đâu mà coi\nSự thật là bề trong có hao tiền, và việc quan ràn buộc\nThuở giờ kỵ Tý, Mùi coi bói không linh nghiệm\nLo lắng tính toán chi sự khó cho mình vậy."
+  },
+  {
+    "id": "216",
+    "name": "TỤNG (Thiên Thủy)",
+    "description": "Quái vẫn di cư tác toại tân",
+    "meaning": "Quái vẫn di cư tác toại tân\nTùng kiêm tài vật tự nhiên tăng\nMục tiễn khẩu thiệt tua phòng bị\nDi quá phương an thiết mạc đình",
+    "details": "Quẻ nầy hỏi dời chỗ ở, được vừa bụng lắm\nTừ đây sắp tới tiền của cứ thêm\nTrước mắt có rầy rà phải coi chừng\nDời chỗ ở rồi mới yên"
+  },
+  {
+    "id": "217",
+    "name": "ĐỘN (Thiên Sơn)",
+    "description": "Phân gia, quân kiếm dục bốc nghi",
+    "meaning": "Phân gia, quân kiếm dục bốc nghi\nQuản giao nhựt hận bất sai trì\nXuân Thu tài vượng vô phiền não\nDụng ý di chung tòng tắc nghi",
+    "details": "Chia của, chia nhà muốn hỏi thăm\nKhuyên đó ráng chờ đừng nản chí\nXuân Thu tài vượng chẳng sai lầm\nXin chàng nhẫn nhịn chớ sanh tâm"
+  },
+  {
+    "id": "218",
+    "name": "BỈ (Thiên Địa)",
+    "description": "Tài hào trì thế tấn thế tài",
+    "meaning": "Tài hào trì thế tấn thế tài\nMưu sự vô phương mạng mạng lai\nTối hỷ tinh thần ứng tại ý\nTrách ngộ cao nhơn bá sự nghi",
+    "details": "Hào tài ở tại thế nên được việc tiền của\nTín việc không được chậm chậm chút\nNhờ có quới nhơn ủng hộ\nNgoài lại có nhiều người giỏi giúp mình."
   },
   {
     "id": "221",
-    "name": "TRẠCH THIÊN QUẢI",
-    "description": "Đoài trên Càn dưới",
-    "meaning": "Quyết đoán",
-    "details": "Quyết liệt, loại bỏ, công khai, nguy hiểm, cần cẩn trọng."
+    "name": "QUYẾT (Trạch Thiên)",
+    "description": "Tử tôn trì thế phước thần cường",
+    "meaning": "Tử tôn trì thế phước thần cường\nGia trạch chiếm chi đại kiết xương\nThu quí đông thời tài chánh vượng\nHạ xuân khẩu thiệt khá thu phong",
+    "details": "Hào tử tôn tại thế nên phước thần mạnh\nCoi gia đạo gặp quẻ nầy tốt lắm\nCuối thu qua mùa đông thời có tài\nMùa hạ, xuân bị lời ăn tiếng nói phải giữ."
   },
   {
     "id": "222",
     "name": "ĐOÀI",
-    "description": "Trạch",
-    "meaning": "Ao, Đầm",
-    "details": "Vui vẻ, duyệt, thuyết, thiếu nữ, miệng, phá hoại, nô tỳ."
+    "description": "Giải nhơn bất khả bất để phòng",
+    "meaning": "Giải nhơn bất khả bất để phòng\nẨn khi thương tài khủng bất an\nHạnh đắc quới nhơn đa trợ lực\nTuy nhiên lao khổ bất thương tàn",
+    "details": "Giải tội chớ nên hờ hõng\nBị trúng thương gió tốn tiền chút\nNhờ quí nhơn giúp đỡ\nTuy thấy có cực khổ không đến đỗi gì."
   },
   {
     "id": "223",
-    "name": "TRẠCH HỎA CÁCH",
-    "description": "Đoài trên Ly dưới",
-    "meaning": "Cải cách",
-    "details": "Thay đổi, cải cách, cách mạng, bỏ cũ theo mới, thành công."
+    "name": "CÁCH (Trạch Hỏa)",
+    "description": "Tẩu thất gia nhơn tại bắc phương",
+    "meaning": "Tẩu thất gia nhơn tại bắc phương\nDụng tâm phỏng sát bất tu mang\nThu đông chiếm thử tầm nan mịt\nXuân hạ giao lâm định phản hương",
+    "details": "Người đi trốn hay lạc đó tại hướng bắc\nMình để ý dò xét đừng bôn chôn bể việc\nMùa thu hay đông bói quẻ nầy khó kiếm chút\nQua xuân hạ gặp quẻ nầy thì nó về."
   },
   {
     "id": "224",
-    "name": "TRẠCH LÔI TÙY",
-    "description": "Đoài trên Chấn dưới",
-    "meaning": "Tùy theo",
-    "details": "Đi theo, tùy thời, linh hoạt, không cố chấp, tốt."
+    "name": "TÙY (Trạch Lôi)",
+    "description": "Thế ứng tương sanh vô bất toại",
+    "meaning": "Thế ứng tương sanh vô bất toại\nDuy lợi trung ích số an bài\nHuống hồm thủ nghệ đa tinh xảo\nLao tâm, lao lực sự khả vi",
+    "details": "Mình với người được tương sanh vừa ý lắm\nViệc thì khá, có lợi, số bình yên\nLại sợ vì mình là người thợ khéo\nChịu cực chút thì được việc"
   },
   {
     "id": "225",
-    "name": "TRẠCH PHONG ĐẠI QUÁ",
-    "description": "Đoài trên Tốn dưới",
-    "meaning": "Lỗi lớn",
-    "details": "Quá mức, gánh nặng, cột yếu, nguy hiểm, cần hành động phi thường."
+    "name": "ĐẠI QUÁ (Trạch Phong)",
+    "description": "Tiền tài thất khước bất tu ưu",
+    "meaning": "Tiền tài thất khước bất tu ưu\nNgoại nội toàn chỉ khả huổn cầu\nCanh Ngọ, Dần, Thân Hợi kiến diện\nTặc nhơn trị phạm thất cơ mưu",
+    "details": "Tiền của có thất lạc chẳng nên rầu\nNó còn giấu hưỡn hưỡn kiếm\nNgày canh Ngọ, Dần, Thân hợi thì gặp mặt\nCủa nấy trộm cướp lấy nhưng bại lộ"
   },
   {
     "id": "226",
-    "name": "TRẠCH THỦY KHỐN",
-    "description": "Đoài trên Khảm dưới",
-    "meaning": "Cùng khốn",
-    "details": "Khó khăn, gian nan, bị vây hãm, cần kiên nhẫn, giữ vững chí khí."
+    "name": "KHỔN (Trạch Thủy)",
+    "description": "Quân lai vấn thọ thị như hà",
+    "meaning": "Quân lai vấn thọ thị như hà\nHữu khủng quan ám khứ vĩ đa\nKiêm tuế dục phòng trạch choàng vận\nThọ ngươn bác bác mộng nam kha",
+    "details": "Ông đến hỏi sức khỏe ra sao\nÔng sợ tuổi cao tác lớn rồi\nÔng coi chừng trợt té, hoặc cây rớt, đánh lầm\nTuổi ông sống 88 tuổi."
   },
   {
     "id": "227",
-    "name": "TRẠCH SƠN HÀM",
-    "description": "Đoài trên Cấn dưới",
-    "meaning": "Cảm ứng",
-    "details": "Tác động qua lại, cảm xúc, tình yêu, hôn nhân, tốt."
+    "name": "HÀM (Trạch Sơn)",
+    "description": "Ứng lai sanh thế tại tâm hoài",
+    "meaning": "Ứng lai sanh thế tại tâm hoài\nQuân vấn hành nhơn bất vực lai\nSửu, mùi, canh ngọ phương hữu tín\nNhơn tài lưỡng kiến quái an bài",
+    "details": "Người ta sanh lại mình thì khỏe lắm\nÔng hỏi người đi sao chưa về\nSửu, mùi, canh ngọ có tin về\nChừng đó người về lại có tiền, quẻ an bài"
   },
   {
     "id": "228",
-    "name": "TRẠCH ĐỊA TỤY",
-    "description": "Đoài trên Khôn dưới",
-    "meaning": "Tụ tập",
-    "details": "Gom lại, tập hợp, quần chúng, vua, cần người lãnh đạo."
+    "name": "TÙY (Trạch Địa)",
+    "description": "Chiếm thử tài hào bất thậm giao",
+    "meaning": "Chiếm thử tài hào bất thậm giao\nGiữ nhơn hiệp lõa nan khoa\nTương lai định hữu tranh đoan khởi\nĐơn thân biệt đố cầm thương hoa.",
+    "details": "Quẻ nầy coi tài không tốt\nMình tính hùng hập với người không nên khen\nNgày sau còn tranh giành nhau\nLàm một mình mình tốt như gấm thêm hoa."
+  },
+  {
+    "id": "231",
+    "name": "ĐẠI HỮU (Hỏa Thiên)",
+    "description": "Kiến quới hườn tu khổ thác nhơn",
+    "meaning": "Kiến quới hườn tu khổ thác nhơn\nQuỉ hào lâm ẩn yếu lao tâm\nỨng lai sanh thế tha sanh ngã\nBất tất ưu nghi hứa toại tâm",
+    "details": "Ra mắt quan lớn khó lắm đa\nÔng quan nầy nghiêm khó lắm phải nhọc lòng\nNhờ hào ứng sanh thế, là ông sanh lại mình\nĐừng buồn lo gì hết việc đó được."
+  },
+  {
+    "id": "232",
+    "name": "KHUÊ (Hỏa Trạch)",
+    "description": "Tố trạng chiếm chi hứa toại tâm",
+    "meaning": "Tố trạng chiếm chi hứa toại tâm\nTử tôn trì thế phước thần lâm\nĐãi giao tuất nhựt hềm dẫn ngọ\nMiễn tội trừ hình hảo thoát thân",
+    "details": "Hầu kiện thì được\nNhờ hào tử tôn ở thế, có phước thần đến\nĐợi chờ ngày tuất kỵ ngày dẫn ngọ\nĐược tha tội thoát thân"
+  },
+  {
+    "id": "233",
+    "name": "LY",
+    "description": "Quân nhơn khởi tác lai vấn bốc",
+    "meaning": "Quân nhơn khởi tác lai vấn bốc\nThu trụ giá lương hữu kiến túc\nQuân nhơn khởi tác chiếm chi quái\nSố ngộ kê minh nhận quân giá\nSát tai tam hướng tu trì tị\nToại nhứt ngôn văn vị quân chút\nKhủng phòng tam sát hữu triền miên\nTuy nhiên hành thời thả mật uổng",
+    "details": "Ông muốn hỏi về việc khởi công\nCất nhà có vì sao tốt\nNgười muốn khởi công gặp quẻ nầy\nQuẻ nầy gặp gà gáy (dậu) ông làm mới được\nPhải tránh 3 hướng sát\nLời căn dặn đây là cần thiết\nPhải ngừa hướng tam sát có lôi thôi sảy ra\nRán làm ta không nói gạt"
+  },
+  {
+    "id": "234",
+    "name": "PHỆ HẠP (Hỏa Lôi)",
+    "description": "Thê tài trì thế chủ sanh quan",
+    "meaning": "Thê tài trì thế chủ sanh quan\nChiếm lãnh văn tin khả an\nHợi, tý, sửu gia phương khả đắc\nQuới nhơn đương đạo ngộ thiên duyên",
+    "details": "Hào thê tài ở thế, nên sanh hào quan\nQuẻ nầy văn bằng đó được lắm\nNgày hợi, tý, sửu đến đây được tin\nNhờ quới nhơn đỡ đầu gặp phước trời."
+  },
+  {
+    "id": "235",
+    "name": "ĐỈNH (Hỏa Phong)",
+    "description": "Quỉ hào trì thế sự nan hài",
+    "meaning": "Quỉ hào trì thế sự nan hài\nThâu giải tiền lương sự bất giai\nNhược bất tiểu tâm tin cẩn thận\nĐịnh chủ hình hao hưởng tương gia",
+    "details": "Hào quan quỉ trì thế việc nầy khó rồi\nThâu nộp tiền lúa gặp việc không tốt\nNếu bằng không dè dặt và cẩn thận\nChạy không khỏi tội lại còn bị xuất của nhà"
+  },
+  {
+    "id": "236",
+    "name": "VỊ TẾ (Hỏa Thủy)",
+    "description": "Thê tài vượng tướng khả sanh quan",
+    "meaning": "Thê tài vượng tướng khả sanh quan\nThoát hoá cầu tài việc hứa an\nHợi, Tý, Sửu lâm giao việc hảo\nQuới nhơn tương trợ đắc châu toàn",
+    "details": "Hào thê tài vượng sanh hào quan\nSang sến hàng hoá, cầu tiền đều tốt\nChờ hợi, tý, sửu đến việc giao mới tốt\nGặp quới nhơn giúp đỡ được tốt hết"
+  },
+  {
+    "id": "237",
+    "name": "LỮ (Hỏa Sơn)",
+    "description": "Sanh ý chiếm chi thuận nhơn tình",
+    "meaning": "Sanh ý chiếm chi thuận nhơn tình\nLai nhơn bất dụng khổ ưu tâm\nChỉ nghi cẩn thận gia châm chước\nXuất nhập kinh dinh nhậm quân hành",
+    "details": "Mua bán gặp quẻ nầy được vừa lòng\nNgươi đến mình hoặc mình đến người đừng cần lo\nPhải cẩn thận và châm chước\nRa vô tính toán gì cũng đặng hết"
+  },
+  {
+    "id": "238",
+    "name": "TẤN (Hỏa Địa)",
+    "description": "Mẹo mộc thê tài chiếm đại giai",
+    "meaning": "Mẹo mộc thê tài chiếm đại giai\nXuân tầm hữu ích định vô sai\nCánh liên ngoại quái lai tương trợ\nTri lợi trùng trùng khả kham khoa",
+    "details": "Hào tài thuộc mộc quẻ tốt lắm\nViệc tơ tằm có ích lắm định không trật\nLại gặp ngoại quái giúp mình nữa\nLợi đến về tơ nầy trùng trùng nhiều lắm."
+  },[
+  {
+    "id": "111",
+    "name": "CÀN",
+    "description": "Thiên võ vấn tình thiên tất võ",
+    "meaning": "Thiên võ vấn tình thiên tất võ\nThiên tình vẫn võ chủ thiên tình\nNhược yếu võ vụ khang Hợi Tý\nTình đa võ thiểu số phân minh.",
+    "details": "Trời mưa hỏi tạnh trời ắt mưa,\nTrời tạnh hỏi mưa trời ắt tạnh,\nNếu muốn mưa dầm coi Hợi, Tý\nTạnh nhiều mưa ít, rõ ràng phân"
+  },
+  {
+    "id": "112",
+    "name": "LÝ (Trạch Thiên)",
+    "description": "Tấn học chiếm ly lý quái hàm",
+    "meaning": "Tấn học chiếm ly lý quái hàm\nVăn thơ Quan quỉ lưỡng tương giao\nTài danh nhị tự thành vi tiến\nĐịnh chủ tha niên đạt cẩm phiêu.",
+    "details": "Ngươi học tới mà gặp quẻ nầy,\nHào văn, hào quỉ gặp đi đôi\nDanh một tài hai thành kết cuộc,\nRõ ràng năm tới chiếm ngao đầu."
+  },
+  {
+    "id": "113",
+    "name": "ĐỒNG – NHÂN (Thiên Hỏa)",
+    "description": "Quỷ hào trì thế quái tương đồng",
+    "meaning": "Quỷ hào trì thế quái tương đồng\nHựu hứa đọc thơ vọng tấn thân\nTùng thử công danh chung khả vọng\nTu tri nhập bạn hữu hồng danh.",
+    "details": "Hào quan ủng hộ quẻ nên danh\nHọc hành tấn bộ, muôn việc thành\nDanh toại, công thành tua hy vọng\nThầy lành, bạn tốt trổ hồng danh."
+  },
+  {
+    "id": "114",
+    "name": "VÔ VỌNG (Thiên Lôi)",
+    "description": "Cầu vật cầu Tài tiên giác nan",
+    "meaning": "Cầu vật cầu Tài tiên giác nan,\nHào trung tàu tận thủy tương biên,\nThu, Đông thủ thảo vô tài vật,\nHạ quý, Xuân thời bất nại phiền.",
+    "details": "Cầu Tài, cầu vật trước khó khăn\nRút hết tiền hào, tài mới có\nThu Đông tìm kiếm tiền đâu có?\nCuối Hạ, Xuân tàn mới rảnh rang."
+  },
+  {
+    "id": "115",
+    "name": "CẤU (Thiên Phong)",
+    "description": "Chiêu tế dị thành lai vấn bốc",
+    "meaning": "Chiêu tế dị thành lai vấn bốc,\nThì trì hảo sự da phản phú\nỨng lai sanh thế đắc thành toàn,\nPhúc lộc ưu nhiên duyên phận tú.",
+    "details": "Kén rể chưa xong đến hỏi han,\nViệc đời phản phúc khó lo toan.\nPhận duyên rắc rối người thay đổi,\nPhước Lộc xum vầy mới vẻ vang"
+  },
+  {
+    "id": "116",
+    "name": "TỤNG (Thiên thủy)",
+    "description": "Vãng lai Mạng Vận cố phi nhi",
+    "meaning": "Vãng lai Mạng Vận cố phi nhi\nNhân vượng, Tài hưng tụ thủ thi\nPhát phúc hưng gia đa toại ý\nQuới nhân tương ngộ hữu pho tri",
+    "details": "Mừng cho Mạng Vận gặp trăng tròn,\nNgười vui của đống chất nên non\nPhát phước gặp thời nhiều toại ý\nQuới nhân ủng hộ nước nhà còn."
+  },
+  {
+    "id": "117",
+    "name": "ĐỘN (Thiên Sơn)",
+    "description": "Trúng hữu danh lương y quốc thủ",
+    "meaning": "Trúng hữu danh lương y quốc thủ\nIm im dị khiến thối tai ưu\nNhược phùng ứng vị lai sanh thế\nDần, Thân chỉ nhựt cứu tinh lâm.",
+    "details": "Dẫu cho thầy giỏi với danh\nCũng chẳng ra gì với bệnh ni\nTai khỏi, nạn qua may kẻ cứu\nDần, Thân tuần nhựt (10 ngày) khỏi tai nguy."
+  },
+  {
+    "id": "118",
+    "name": "BĨ (Thiên Địa)",
+    "description": "Văn thơ Quan Quỉ vấn lan đình",
+    "meaning": "Văn thơ Quan Quỉ vấn lan đình\nHứa yến giai tàn kiến lợi danh,\nThủy thượng lưu niên đa hưu tiển\nKim niên khoa cử chỉ bình bình.",
+    "details": "Lan đình Quan Quỉ với văn thơ,\nDanh Lợi lôi thôi phải đợi chờ\nThi cử năm nay chưa chắc đậu\nNăm tới may ra mới có đường."
+  },
+  {
+    "id": "121",
+    "name": "QUẢI (Trạch thiên)",
+    "description": "Di cư đáng hứa toại nhân tâm",
+    "meaning": "Di cư đáng hứa toại nhân tâm\nPhúc tinh cường lợi hữu lộc thâm\nNhược vấn đông nam tài thiên vượng\nGia thành nghiệp tựu lạc thanh bình.",
+    "details": "Dời nhà vui vẻ phỉ lòng người\nPhước đức gây nên cuộc tốt tươi\nMuốn biết hướng nào tài lợi phát,\nĐông nam gia nghiệp được vui cười"
+  },
+  {
+    "id": "122",
+    "name": "ĐOÀI",
+    "description": "Nghĩa khí tương đầu sự khả chàn",
+    "meaning": "Nghĩa khí tương đầu sự khả chàn\nQuan nghiêm hội chủng vô thành sự\nNhược tại Thu Đông phương khả vọng\nNhư phùng Xuân Hạ, sự long đong.",
+    "details": "Nhóm khách linh đình việc chẳng xong\nY tuy thấy hiệp nhưng chưa được\nThu Đông sắp đến nên hy vọng,\nBằng gặp Hạ, Xuân việc long đong."
+  },
+  {
+    "id": "123",
+    "name": "CÁCH (Trạch Hỏa)",
+    "description": "Quỉ bào tri thế phước thành tường",
+    "meaning": "Quỉ bào tri thế phước thành tường\nMưu sự chiếm chỉ bá sự đương\nXuân Quí Đông thời phương khả tự\nHạ Thu chiếm thử bất tương đương.",
+    "details": "Hào phước, Hào Tài rõ rạng thay\nMưu sự khen thay gặp quẻ nầy\nĐông tàn, Xuân lụn nên khởi việc\nHạ Thu thời chớ chẳng xong rày"
+  },
+  {
+    "id": "124",
+    "name": "TÙY (Trạch Lôi)",
+    "description": "Tài lai sanh Quỉ bịnh nan y",
+    "meaning": "Tài lai sanh Quỉ bịnh nan y\nPhụ mẫu gia tinh yến hộ trì\nTúc nguyện như kim hườn ứng xảo\nNhứt tuần, bán nguyệt tái bình luân",
+    "details": "Cha mẹ binh căn rất khó thay,\nỐm đau lại gặp quẻ không may\nVái van thề thốt mau hườn trả,\nNửa trăng sắp tới mới yêu rày."
+  },
+  {
+    "id": "125",
+    "name": "ĐẠI QUÁ (Trạch Phong)",
+    "description": "Ứng lai sanh thế sự nghi thành",
+    "meaning": "Ứng lai sanh thế sự nghi thành,\nMãi ốc chiếm chi hứa xứng tâm\nPhú quí vinh hoa từng thủ đắc\nGia thành, nghiệp tựu vĩnh khương ninh",
+    "details": "Mua nhà bói gặp quẻ yên lòng\nTính toán làm ăn việc, việc xong\nPhú quí vinh hoa ngày, ngày tới\nLập nên gia nghiệp phỉ lòng mong"
+  },
+  {
+    "id": "126",
+    "name": "KHỔN (Trạch Thủy)",
+    "description": "Phân gia, quân kiếm dục bốc nghi",
+    "meaning": "Phân gia, quân kiếm dục bốc nghi\nQuản giao nhựt hận bất sai trì\nXuân Thu tài vượng vô phiền não\nDụng ý di chung tòng tắc nghi",
+    "details": "Chia của, chia nhà muốn hỏi thăm\nKhuyên đó ráng chờ đừng nản chí\nXuân Thu tài vượng chẳng sai lầm\nXin chàng nhẫn nhịn chớ sanh tâm"
+  },
+  {
+    "id": "127",
+    "name": "HÀM (Trạch Sơn)",
+    "description": "Quá chiếm tật bệnh số vô phần",
+    "meaning": "Quá chiếm tật bệnh số vô phần\nPhước đức thiên tỉnh lưỡng tự cường\nHợi Tý Canh Tân toàn vũ hảo\nNgũ hành hữu cứu thọ miên trường",
+    "details": "Bệnh đau mà gặp quẻ này đây\nPhước đức gây nên mới được rày\nHợi Tý Canh Tân lành bệnh nọ\nQuới nhơn ủng hộ khỏi tai bay"
+  },
+  {
+    "id": "128",
+    "name": "TÙY (Trạch Lôi)",
+    "description": "Anh nhi đắc hỉ số vô phần",
+    "meaning": "Anh nhi đắc hỉ số vô phần\nPhước đức lâm hào vị tất ưu\nPhục dược đẳng khang quá Mùi Ngọ\nHiệp gia hoan hỉ bá thành kỳ.",
+    "details": "Cháu con đau ốm chẳng nên lo\nPhúc đức tai qua mới khiến cho,\nThuốc men săn sóc khỏi Mùi Ngọ\nCả nhà vui vẻ hết buồn lo."
+  },
+  {
+    "id": "131",
+    "name": "ĐẠI HỮU (Hoả Thiên)",
+    "description": "Cầu Tài nghi hưỡn bất nghi cấp",
+    "meaning": "Cầu Tài nghi hưỡn bất nghi cấp\nVô thời việc thiểu định vô đa.\nGiáp Ất, Mẹo Dần phương hữu vọng\nQuái hào chủ định đáng vô ngoa.",
+    "details": "Cầu Tài chậm rãi không nên gấp\nGiúp đỡ qua loa chứ chẳng nhiều\nGiáp Ất, Mẹo Dần có hy vọng\nGiúp xài chút đỉnh chẳng bao nhiêu."
+  },
+  {
+    "id": "132",
+    "name": "KHUÊ (Hoả Trạch)",
+    "description": "Tài ngân tá thủ vấn thần minh",
+    "meaning": "Tài ngân tá thủ vấn thần minh\nThác báo cầu chi việc khả thần\nHợi Tý Canh Tân tài phát động\nMục tiêu bất toại mạc sanh sanh",
+    "details": "Vay hỏi bạc tiền đến hỏi thần\nMách cho đó phải cố hay cầm\nHợi Tý, Canh Tân tài mới có\nKhuyên chang gắn dạ chớ sanh sân."
+  },
+  {
+    "id": "133",
+    "name": "LY",
+    "description": "Dục chiếm mãi súc tối vì lương",
+    "meaning": "Dục chiếm mãi súc tối vì lương\nThế ứng tương vượng bá sự sương\nSố định mãi lai quân ý hiệp\nNgưu đa sanh tức mã lư cường.",
+    "details": "Muốn mua lục súc rất nên hay\nTrăm việc gây nên rất tốt thay\nBán buôn giá cả người vừa ý\nBò trâu heo ngựa đẻ nên bầy"
+  },
+  {
+    "id": "134",
+    "name": "PHỆ HẠP (Hoả Lôi)",
+    "description": "Khai tiệm chiếm chi chủ đại tài",
+    "meaning": "Khai tiệm chiếm chi chủ đại tài,\nThế tài trì thế đoán vô quai\nXuân Thu Hạ quý tài đa tức\nĐông quý bình bình thiên hứa quai.",
+    "details": "Khai tiệm ngày nay chủ đắc tài\nBán buôn nườm nượp thật không sai\nXuân, Thu, Hạ chí lời mười vốn\nĐông đến sắp lên lợi một hai."
+  },
+  {
+    "id": "135",
+    "name": "ĐỈNH (Hoả Phong)",
+    "description": "Hồi hương chiếm thử chủ bình an",
+    "meaning": "Hồi hương chiếm thử chủ bình an,\nPhước đức tài nguyên lưỡng tự toàn\nBạn lữ định số phùng quới khách\nLộ đồ tránh giác đất tâm khoan.",
+    "details": "Thăm nhà, về xứ chủ bình an,\nTài phước đôi bên được lưỡng toàn\nAnh em bầu bạn đều quí khách\nLộ đồ yên ổn được thanh nhàn"
+  },
+  {
+    "id": "136",
+    "name": "VỊ TẾ (Hỏa Thủy)",
+    "description": "Tứ quái chiếm lai phóng trường nghi",
+    "meaning": "Tứ quái chiếm lai phóng trường nghi,\nQuản giao nhựt thu bất khai tri,\nHạ – Thu đắc ý vô phiền não,\nDụng ý di chi bất tất nghi.",
+    "details": "Cho vay đặt nợ gặp quẻ này,\nVốn lời trả đủ chẳng sai chầy\nThu Hạ vừa lòng không buồn thảm\nMặc tình tính toán chớ hồ nghi."
+  },
+  {
+    "id": "137",
+    "name": "LỮ (Hỏa Sơn)",
+    "description": "Mộ phần long mạch bất vi gia",
+    "meaning": "Mộ phần long mạch bất vi gia,\nĐựng chủ vô tình bất tất khoa\nTả hữu, hữu can hườn hữu phá\nBiệt tầm Càn Tốn đắc vinh hoa.",
+    "details": "Mộ phần đoán chắc chẳng nhầm phương\nLãnh noãn nhân tình ấy sự thường\nTả hữu có hầm cùng mươn rạch\nAnh em thân thuộc ít yêu đương"
+  },
+  {
+    "id": "138",
+    "name": "TẤN (Hỏa Địa)",
+    "description": "Đổ bác cầu mưu tiên cư nan",
+    "meaning": "Đổ bác cầu mưu tiên cư nan\nBổn cung tài tận thủy thương hoàng\nThu Đông khiêm thắng vô tài lợi\nXuân Hạ hoàn lao bất nại phiền.",
+    "details": "Đấu kê đổ bát rất khó thay,\nPhương bổn (tuổi) mạng hướng không may\nThu Đông ăn ít mà thua đậm,\nXuân Hạ năng lo giữ vốn rày."
+  },
+  {
+    "id": "141",
+    "name": "ĐẠI TRÁNG (Lôi Thiên)",
+    "description": "Tài lai ứng hữu thành vị",
+    "meaning": "Tài lai ứng hữu thành vị\nChưng tác điều hoà thập bội tăng\nBạn thấy mễ tràng thiên ý hảo\nNhứt sanh thâu thâu thăng lưỡng niên sinh.",
+    "details": "Ruộng vườn thâu góp lợi mười phần\nHuê lợi điều hòa nhựt nhựt tăng\nPhúc đức ông bà, trời giúp vận\nCủa tiền dư để tiếng vang rân."
+  },
+  {
+    "id": "142",
+    "name": "QUI MUỘI (Lôi Trạch)",
+    "description": "Tử tôn vô vị hướng văn thơ",
+    "meaning": "Tử tôn vô vị hướng văn thơ,\nXa nại bàn nhơn ban thị phi\nHữu quán bị nhơn tầm đạt khứ\nCuồng đổ lao lực phi môn trì",
+    "details": "Cửa nhà quán xá chúng giựt rồi\nBàn nhơn bàn kế đáng thương ôi.\nCháu con lưu lạc thân lữ thứ\nUổng công gầy dựng bấy lâu thôi."
+  },
+  {
+    "id": "143",
+    "name": "PHONG (Lôi Hỏa)",
+    "description": "Tứ lâm phước vị tử tôn minh",
+    "meaning": "Tứ lâm phước vị tử tôn minh\nCầu tử chiếm chi hứa toại tâm\nNhược thị xảo niên hình khắc hóa\nKiêm niên bất cứu sản kỳ lâm",
+    "details": "Cầu con mà gặp quẻ này đây\nĐông đúc cháu con kết lũ bầy.\nCon thảo cháu hiền thông suốt cả\nTu nhân tích đức giữ lòng ngay"
+  },
+  {
+    "id": "144",
+    "name": "CHẤN",
+    "description": "Xuất hành chiếm thử khủng phi nghi",
+    "meaning": "Xuất hành chiếm thử khủng phi nghi\nHuynh đệ lâm môn hữu thị phi.\nThế ứng phùng xuân đa cách trở\nBất nghi yếu động thả trì trì.",
+    "details": "Đi đứng đề phòng chớ ỷ khôn\nKẻ gian rình đón kế bên trong\nRối ben trắc trở trên đường lộ (khi đi đứng)\nNhẫn nại đợi thời chớ bôn chôn."
+  },
+  {
+    "id": "145",
+    "name": "HẰNG (Lôi Phong)",
+    "description": "Hữu ngư chiếm chi toại tâm hoài",
+    "meaning": "Hữu ngư chiếm chi toại tâm hoài,\nThượng lưu đáo đắt uống quân hoài.\nChuyên tâm chi phí quân tu đắt\nTung hoành trương dóng đăng câu đài.",
+    "details": "Mừng cho danh lợi toại tâm tình\nRọ đáy lưới rùng thảy thảy xinh\nChí quyết chuyên cầu ngươi ráng giữ\nTung hoành sâu cạn được an ninh."
+  },
+  {
+    "id": "146",
+    "name": "GIẢI (Lôi Thủy)",
+    "description": "Quân phùng dạ mộng bất tương nghi",
+    "meaning": "Quân phùng dạ mộng bất tương nghi,\nDanh lợi muôn tâm sự bất tề.\nGia đạo nhơn đinh tiêm kinh khủng\nThời lai liên đảo mộng hồn kỳ.",
+    "details": "Chiêm bao mộng mị rất nên nghi\nDanh lợi tại ngươi quá nghĩ suy\nGia đạo bất hòa tôi tớ ruổi\nBằng không gia chủ ắt lâm nguy"
+  },
+  {
+    "id": "147",
+    "name": "TIỂU QUÁ (Lôi Sơn)",
+    "description": "Quân hào tùy thế dị hoà hai",
+    "meaning": "Quân hào tùy thế dị hoà hai\nNhập nhái cầu hôn mạc vọng di\nChỉ bảo hồi đầu tìm biệt kế\nMiến giao biệt hậu hữu bi ai.",
+    "details": "Khuyên người chớ tính việc tình si\nNợ duyên trắc trở chẳng được chỉ\nXin đó hồi đầu tầm sang kế\nBằng không ắt phải lụy ai bi."
+  },
+  {
+    "id": "148",
+    "name": "DỰ (Lôi Địa)",
+    "description": "Thị phi khẩu thiệt sự đa đoan",
+    "meaning": "Thị phi khẩu thiệt sự đa đoan\nThế ngoại phùng tài sự bất an.\nPhàm sự phiến quân nhiên nhất kháng\nPhượng bảo thối hậu tâm lương khang",
+    "details": "Phải quấy rầy ra chẳng ích chi\nNín đi thì ngặt nhịn coi kỳ\nPhàm việc khuyên người lui đôi bước\nPhước nhà thêm rạng chẳng ai khi."
+  },
+  {
+    "id": "151",
+    "name": "TIỂU SÚC (Phong Thiên)",
+    "description": "Quân kiếm, thác quá nhứt thời nan",
+    "meaning": "Quân kiếm, thác quá nhứt thời nan\nPhản phúc duyên ai không giản hoài\nTỵ Ngọ Mùi lâm tài khả thác\nQuá kỳ hựu khủng hữu khuyên nhai.",
+    "details": "Lúc nầy sang sến hàng hóa không may\nPhản phúc gay go rắc rối thay\nTỵ Ngọ Mùi tuần thì mới đặng\nQuá kỳ ắt gặp việc tai bay."
+  },
+  {
+    "id": "152",
+    "name": "TRUNG PHÚ (Phong Trạch)",
+    "description": "Quan chiếm kiến quới sự nhi hà",
+    "meaning": "Quan chiếm kiến quới sự nhi hà\nNhứt kiến ứng tri nhi khí đa\nDanh lợi trùng trùng chung hữu vọng\nTiên thiên thần số bất sai ngoa.",
+    "details": "Người muốn yết quan việc ra sao\nQuan yêu chiếu cố tốt biết bao.\nDanh lợi chập chồng đầy hy vọng,\nNghe ta ắt được chẳng sai nào."
+  },
+  {
+    "id": "153",
+    "name": "GIA NHÂN (Phong Hoả)",
+    "description": "Quái chiếm hỉ sự lưỡng trùng tài",
+    "meaning": "Quái chiếm hỉ sự lưỡng trùng tài\nPhước đức linh tâm ứng thượng lai\nNhược vấn Xuân tàm hưu hoài lự\nThập phần tài hỉ xứng tâm hoài.",
+    "details": "Quẻ chiếm được 2 hào tài,\nHai vì sao phước đức đến lại cho\nNếu hỏi về tầm tơ đừng buồn chi\nMười phần tiền của vui mừng lòng dạ"
+  },
+  {
+    "id": "154",
+    "name": "ÍCH (Phong Lôi)",
+    "description": "Thâu giải tiền lương chủ thái bình",
+    "meaning": "Thâu giải tiền lương chủ thái bình\nLực hào vô quỉ một hư kinh\nThượng hạ quới nhơn đa đắc lực\nHườn quan đắc lộc chuyển gia đình",
+    "details": "Thâu tiền, lúa nộp được bình an\nSáu hào không Qui không lo sợ\nDưới trên quới nhơn hằng giúp sức\nViệc xong tròn phận được lợi, tài."
+  },
+  {
+    "id": "155",
+    "name": "TỔN (Sơn Trạch)",
+    "description": "Số chiếm khởi công hứa quân vi",
+    "meaning": "Số chiếm khởi công hứa quân vi\nNhựt kiến thời lương vạn sự nghi\nKhởi hậu tài nguyên hườn hứa thăng\nNhậm quan khởi tác bất tu nghi",
+    "details": "Khởi công mà gặp quẻ nầy\nNgày tốt giờ lành muôn việc tốt\nCông khởi tiền vô lời thắng số\nTùy ý mình toan chớ hồ nghi."
+  },
+  {
+    "id": "156",
+    "name": "HOÁN (Phong Thủy)",
+    "description": "Phước đức tỉnh cường hỉ khi lâm",
+    "meaning": "Phước đức tỉnh cường hỉ khi lâm\nSanh ý chỉ trung bá sự nghi\nĐương độ quới nhơn ưng khả thác\nTừng kiêm danh lợi bất bôn trì.",
+    "details": "Vì sao Phước-Đức có tin vui\nTính toan mua bán đều được tốt\nQuới nhơn giúp đỡ giao cho việc,\nLợi danh tự đến khỏi (mất) công đi."
+  },
+  {
+    "id": "157",
+    "name": "TIỆM (Phong Sơn)",
+    "description": "Văn thơ trùng kiến lãnh văn thơ",
+    "meaning": "Văn thơ trùng kiến lãnh văn thơ\nPhản phúc kỳ trung thật khả nghi.\nTị Ngọ Mùi lâm chung khả vọng,\nQuá kỳ hữu chủng hữu trầm trì.",
+    "details": "Thư từ, tờ giấy lãnh luôn luôn\nPhản phúc bên trong thật đáng nghi\nĐến Tị Ngọ Mùi mới mong hy vọng\nQuá kỳ hạn đó việc trầm trề."
+  },
+  {
+    "id": "158",
+    "name": "QUAN (Phong Địa)",
+    "description": "Tố biện chiếm chi hứa toại tình",
+    "meaning": "Tố biện chiếm chi hứa toại tình\nVăn thơ Quan Quỉ lưỡng phân minh\nHướng vượng hữu lý vô tài phiệt\nNhựt hậu phương tri quái như trầm.",
+    "details": "Kiện thưa chiếm được quẻ nầy tốt\nĐơn từ, quan xử đều rành rẽ\nĐến ngày phâm xử mình được kiện\nNgày sau được việc biết quẻ linh"
+  },
+  {
+    "id": "161",
+    "name": "NHU (Thủy Thiên)",
+    "description": "Tài hào lai ứng khả sanh quan",
+    "meaning": "Tài hào lai ứng khả sanh quan\nSĩ hoạn chiếm chi tất chu quan\nThu Hạ Kiền Thiên tin tức đáo\nNhơn tinh mưu cáng lưỡng chu toàn.",
+    "details": "Hào tài sanh ứng tới hào quan\nHọc trò chiếm được quẻ nầy ắt làm quan\nThu Hạ hai mùa tin tức đến\nNhơn tình giúp mình mình phải tính."
+  },
+  {
+    "id": "162",
+    "name": "TIẾT (Thủy Trạch)",
+    "description": "Trở tiết trùng trùng quái vị an",
+    "meaning": "Trở tiết trùng trùng quái vị an\nTầm nhơn chiếm thử cung nan can\nThế ứng khác nào, ứng khắc thối\nChỉ nghi phỏng sát khả tâm khoan.",
+    "details": "Nhiều việc trắc trở, quả chưa an\nTìm người muốn gặp e khó gặp\nTa khắc người, người lại khắc ta\nCoi chừng, han hỏi mới nhẹ lo."
+  },
+  {
+    "id": "163",
+    "name": "KÝ TẾ (Thủy Hỏa)",
+    "description": "Nạp giám chiếm chỉ bách tử tôn",
+    "meaning": "Nạp giám chiếm chỉ bách tử tôn\nVăn thơ quan quỉ lưỡng tinh minh\nSanh hoành sĩ lộ hà tư lự\nĐịnh chủ tài vật lưỡng xứng tâm",
+    "details": "Xin sở, nghề văn hại cháu con\nVăn thơ, Quan Quỉ sao tỏ rạng\nĐường quan tỏ rõ khỏi cần lo\nBạc tiền của cải vừa bụng lắm."
+  },
+  {
+    "id": "164",
+    "name": "TRUÂN (Thủy Lôi)",
+    "description": "Văn thơ Quan Quỉ lưỡng tương xâm",
+    "meaning": "Văn thơ Quan Quỉ lưỡng tương xâm\nHòa sự ưng tri bất thuận tình\nHữu sự định nhiên phản phúc khứ\nChi tu chẩn nại miễn hư kinh",
+    "details": "Hào văn thơ Quan Quỉ 2 hào xâm nhau\nMưu sự hiệp hòa không thành được\nDầu có gượng ép sau phản phúc\nKhuyên nên nhịn nhục khỏi lo âu,"
+  },
+  {
+    "id": "165",
+    "name": "TỈNH (Thủy Phong)",
+    "description": "Cầu hôn chiếm chi thập phần nghi",
+    "meaning": "Cầu hôn chiếm chi thập phần nghi\nQuan Quỉ, Thê Tài lưỡng kiến chỉ\nTiện hỉ mưu nhơn đa trợ lực\nĐịnh số cử án đắc tề mi",
+    "details": "Cưới gả quẻ nầy mười phần tốt\nHai hào Vợ Chồng đều tỏ rạng\nMừng được nhiều người ra sức giúp\nDâu hiền, rễ thảo chắc trong tay."
+  },
+  {
+    "id": "166",
+    "name": "KHẢM",
+    "description": "Dựng dục cầu chiếm hiểm giữ bình",
+    "meaning": "Dựng dục cầu chiếm hiểm giữ bình\nLàm thì lược lược hữu hư kính\nCanh Tân Mẹo Dậu trường sanh nhựt\nSanh sản tuy hung bất tổn thân.",
+    "details": "Chửa nghén chiếm quẻ nầy coi có yên?\nLúc chuyển bụng có ít việc kinh hoàng sơ sơ\nCanh Tân Mẹo Dậu ngày trường sanh (Nếu nhằm ngày ấy)\nSanh sản dẫu hung cũng chẳng sao (Gặp mấy ngày trên)."
+  },
+  {
+    "id": "167",
+    "name": "KIỂN (Thủy Sơn)",
+    "description": "Bán buôn đổi chát được quẻ ni",
+    "meaning": "Bán buôn đổi chát được quẻ ni\nỨng lai sanh thế hữu phò trì\nTuy nhiên tài lợi bình bình ổn\nTính thiệt thành giao một thị phi",
+    "details": "Bán buôn thương mãi gặp quẻ nầy\nNgười ngoài xúm xít giúp đỡ ta\nTuy nhiên tài lợi chưa mấy thạnh\nNgười ta giao kết ắt chắc được."
+  },
+  {
+    "id": "168",
+    "name": "TỶ (Thủy Địa)",
+    "description": "Quái chiếm thú thiếp vấn nhơn duyên",
+    "meaning": "Quái chiếm thú thiếp vấn nhơn duyên\nThê tàu bất biện sự triển diện\nKế vấn chiều biến bất thị duyên\nKiến uổng đồ lạc mạc lưu luyến.",
+    "details": "Quẻ này hỏi việc cưới vợ hai?\nHào vợ không có trong quẻ\nKhông phải nhơn duyên nên núp lén\nQua đường rồi bỏ chẳng nên lưu."
+  },
+  {
+    "id": "171",
+    "name": "ĐẠI SÚC (Sơn Thiên)",
+    "description": "Tậu điền chiếm thử bất vi an",
+    "meaning": "Tậu điền chiếm thử bất vi an\nSai trọng lương đa mạc vọng cang\nHựu kiến Quỉ hào lâm thế vị\nYếu phòng phản phúc khủng đa ban.",
+    "details": "Sắm đất mua vườn không đặng khá\nTổn tiền, xuất lúa hại nhiều công\nLại gặp Quỉ Hào lâm bổn mạng\nĐề phòng phản phúc rất đa đoan."
+  },
+  {
+    "id": "172",
+    "name": "TỔN (Sơn Trạch)",
+    "description": "Gia tín lai thời ứng Ngọ đương",
+    "meaning": "Gia tín lai thời ứng Ngọ đương\nLục thâu cốt nhục hỉ an khương\nKhuyến quân cấp chỉnh qui gia kế\nMiễn đắc gia trung vọng nhãn xuyên.",
+    "details": "Thơ tín, tin nhà đến lúc trưa (Ngọ)\nMừng cho thân quyến được bình an\nKhuyên người nên trở lại nhà sớm\nĐể khỏi người nhà luống đợi trông."
+  },
+  {
+    "id": "173",
+    "name": "BÍ (Sơn Hỏa)",
+    "description": "Nạp lại công danh nghỉ châm chước",
+    "meaning": "Nạp lại công danh nghỉ châm chước\nVăn thơ vô vị uổng lao thần\nMạc hềm thử quái đa chuân cưu\nChỉ khủng đa thời phản bị xâm",
+    "details": "Quan lại công danh chậm trễ thay\nVăn chương vô vị uổng công rày\nBuồn sao quở phạt rầy rà mãi\nPhải giữ mình luôn kẻo có ngày (mất chức)."
+  },
+  {
+    "id": "174",
+    "name": "DI",
+    "description": "Quân chiếm cáo trạng quái phùng Quan",
+    "meaning": "Quân chiếm cáo trạng quái phùng Quan\nTài vượn sanh quan phước lộc toàn\nĐông Hạ oai quyền đa đắc lực\nCủa tiền, vui vẻ được hoà hai.",
+    "details": "Vô đơn kiện cáo quẻ gặp Quan\nTài vượng sanh quan phúc lộc toàn\nĐông hạ oai quyền nhiều hiệu lực\nCủa tiền vui vẻ được hoà hai."
+  },
+  {
+    "id": "175",
+    "name": "CỔ (Sơn Phong)",
+    "description": "Kiêm nhơn mãi mãi vấn thần linh",
+    "meaning": "Kiêm nhơn mãi mãi vấn thần linh\nĐịnh mưu cần thi đắc toại tâm\nĐương đạo quới nhơn giai hữu trợ\nThử thành đoan tích hữu thâu thành.",
+    "details": "Tính đi buôn bán hỏi thần linh\nMưu định việc ni ắt toại tâm\nĐi đường ắt gặp nhiều người giúp\nBuôn chuyến nầy đi ắt đạt thành."
+  },
+  {
+    "id": "176",
+    "name": "MÔNG (Sơn Thủy)",
+    "description": "Cầu quan chiếm thử quái vi cao",
+    "meaning": "Cầu quan chiếm thử quái vi cao\nTài vượng sanh quan phước lộc đa\nThu lịnh Đông thời đắc hảo khuyết\nPhu vinh thê quí lạc thao thao",
+    "details": "Cầu quan gặp được quẻ nầy tốt\nTài vượng sanh quan phước lộc nhiều\nThu Đông mùa ấy có chỗ tốt\nChồng sang, vợ quí vui biết bao."
+  },
+  {
+    "id": "177",
+    "name": "CẤN",
+    "description": "Quân chiếm ý dục tấn nha môn",
+    "meaning": "Quân chiếm ý dục tấn nha môn\nPhước đức tinh lâm bá sự hanh\nThu Hạ Đông thời đa ích lợi\nXuân Giáng thiểu toại mạc sanh sân",
+    "details": "Y muốn nhà ngươi tính đầu quân\nPhước đức chiếu tinh trâm sự tốt\nThu Hạ Đông sang nhiều lợi ích\nXuân đến cần nên phải giữ mình."
+  },
+  {
+    "id": "178",
+    "name": "BÁC (Sơn Địa)",
+    "description": "Quân nhơn thảo bộc lai vấn bốc",
+    "meaning": "Quân nhơn thảo bộc lai vấn bốc\nPhước đức tinh lâm sự sự hanh\nTuy thị nhãn tiên đa cách trở\nTrì trì phương hứa khả giao thành.",
+    "details": "Quẻ ứng nhà ngươi muốn hỏi thuê (người ở)\nHay sao phước đức mọi sự tốt\nTuy rằng trước mặt nhiều trở ngại\nChậm chậm rồi đây việc ắt thành."
+  },
+  {
+    "id": "181",
+    "name": "THÁI (Địa Thiên)",
+    "description": "Quái bốc trị quân vẫn thọ niên",
+    "meaning": "Quái bốc trị quân vẫn thọ niên\nSanh lai y lộc vị vi lam\nTuy tri sanh tử vinh khổ sự\nBác bác gia tam mộng cửu tuyền.",
+    "details": "Quẻ nầy muốn hỏi về sức khỏe\nTừ hồi có gia đình tới giờ chưa thiếu kém\nDẫu biết sống thác vinh nhục là khó hiểu.\nTám tám (88) tuổi thấy sự sống chết."
+  },
+  {
+    "id": "182",
+    "name": "LÂM (Địa Trạch)",
+    "description": "Gia trạch trùng trùng kiến thị phi",
+    "meaning": "Gia trạch trùng trùng kiến thị phi\nPhá tài tật bệnh hữu ta vi\nTối hỉ hữu thần đa trở lực,\nHạ Thu Đông qui đắc tương nghi.",
+    "details": "Việc nhà dồn dập chuyện thị phi\nTốn tiền, bệnh tật nhiều hay ít.\nNhưng mừng cho đó đưới quới nhân giúp,\nĐến Hạ Thu Đông mới tốt cho."
+  },
+  {
+    "id": "183",
+    "name": "MINH DI (Địa Hỏa)",
+    "description": "Nhựt nguyệt đồng phùng quái tối linh",
+    "meaning": "Nhựt nguyệt đồng phùng quái tối linh\nQuân kiêm hiệp lõa thậm thi vi.\nLục hào yên tịnh thân tâm vượng\nBất tất đa nghi thinh thị phi.",
+    "details": "Ngày tháng quẻ nầy rất tốt thay\nChung tiền, đậu vốn mua bán tốt\nSáu hào yên tịnh thân tâm vững\nĐừng có nghe ai tiếng thị phi."
+  },
+  {
+    "id": "184",
+    "name": "PHỤC (Địa Lôi)",
+    "description": "Ứng lai trì thế phước thần thương",
+    "meaning": "Ứng lai trì thế phước thần thương\nThất vật chiếm chỉ uống sự đương\nNội ngoại lưỡng nhơn phản phúc khứ\nKhuyến quân khá xả mạc tư lương.",
+    "details": "Nhà mình sao để người khác trọ\nMất vật chịu đành kiếm mất công\nNội, ngoại trong ngoài lấy của mất\nKhuyên người nên bỏ chớ nên buồn."
+  },
+  {
+    "id": "185",
+    "name": "THĂNG (Địa Phong)",
+    "description": "Thế cao ứng hạ trùng trùng kiến",
+    "meaning": "Thế cao ứng hạ trùng trùng kiến\nTẩu thất chúng ta đắc chuyển đầu\nQuí Hợi Tý Nhâm chung hữu tín\nHà tu cấp trước khứ truy tầm.",
+    "details": "Ta người danh giá nó dưới tay\nNó trốn đi rồi cũng đáo lai\nQuí Hợi Tý Nhâm tin sẽ đến\nKhỏi phải tìm chỉ nó sẽ về."
+  },
+  {
+    "id": "186",
+    "name": "SƯ (Địa Thủy)",
+    "description": "Quân vẫn hành nhân hà nhứt chi",
+    "meaning": "Quân vẫn hành nhân hà nhứt chi\nỨng vị lâm môn âm tin trì\nCanh Tân Tị Ngọ giao lâm nhựt\nKhả vọng nhơn tài lưỡng kiến nghi.",
+    "details": "Quẻ hỏi người đi bao giờ về\nƯng hào đến cửa tin tức trễ\nCanh Tân Tị Ngọ ngày ấy đến\nChừng đó người đi, đem tiền bạc về."
+  },
+  {
+    "id": "187",
+    "name": "KHIÊM (Địa Sơn)",
+    "description": "Thủ nghệ cầu tài thử quái kỳ",
+    "meaning": "Thủ nghệ cầu tài thử quái kỳ\nTử tôn trì thế sự châu tri\nThu Đông tài lộc đa toại ý\nCánh Ngộ cao nhơn bá sự nghi",
+    "details": "Cầu tài, công nghệ được quẻ ni\nTử tôn, trì thế việc đều tốt\nThu Đông vốn, lời đều vừa ý\nGặp người trên trước giúp sức mi."
+  },
+  {
+    "id": "188",
+    "name": "KHÔN",
+    "description": "Giải nhơn tu kỵ hữu hư kinh",
+    "meaning": "Giải nhơn tu kỵ hữu hư kinh\nPhi lực lao tâm bất đắc minh\nGiao nạp đản kiến tâm thỉ phóng\nNhược bất tiểu tâm hữu thương hình.",
+    "details": "Nạp giải tội nhơn có sự kinh\nPhí sức nhọc lòng tâm chẳng ổn\nĐến chừng giao lãnh mới kể chắc\nNếu không phòng bị chắc bị hình."
+  },
+  {
+    "id": "211",
+    "name": "ĐOÀI",
+    "description": "Hội sự chiếm chỉ quái tối nghi",
+    "meaning": "Hội sự chiếm chỉ quái tối nghi\nBằng hữu trùng trùng đệ huynh tề\nTác tốc khứ yên bảo toàn mỹ\nCanh Tân, Tân Dậu đắc toàn tài.",
+    "details": "Việc nhóm họp đây được quẻ nầy\nAnh em bạn hữu nhiều kẻ đến\nViệc tính cứ làm càng gặp tốt\nCanh Thân, Tân Dậu được toàn tài."
+  },
+  {
+    "id": "212",
+    "name": "LÝ (Trạch Thiên)",
+    "description": "Tử tôn hỉ chỉ hà tu lự",
+    "meaning": "Tử tôn hỉ chỉ hà tu lự\nBất tất ưu nghi khả vấn y\nHổ đầu xà vĩ tài tỉnh thối\nĐãi giao tiết khi bịnh tài vi.",
+    "details": "Cháu con vui vẻ đừng lo sợ\nKhỏi phải hoài nghi hỏi lương y\nĐầu hùm đuôi rắn thì bệnh thối\nQua khỏi tiết khí thì bịnh mạnh."
+  },
+  {
+    "id": "213",
+    "name": "ĐỒNG NHÂN (Thiên Trạch)",
+    "description": "Tài bất sanh tế quái vị an",
+    "meaning": "Tài bất sanh tế quái vị an\nQuân chiếm mại ốc mạng tâm hoan\nTrung nhơn đa dục nan thành tựu\nXả khứ bất như biệt lộ khan",
+    "details": "Hào tài không sanh quẻ không tốt\nNhư chiếm mua bán, đừng lật đật mừng\nNhiều người muốn lắm, việc khó nên\nBỏ đi kiếm chỗ khác đừng tiếc."
+  },
+  {
+    "id": "214",
+    "name": "VÔ VỌNG (Thiên Lôi)",
+    "description": "Chiếm bịnh tâm thần mạng phạm chi",
+    "meaning": "Chiếm bịnh tâm thần mạng phạm chi\nNgũ hành hữu cứu miếng ưu nghi\nThời phụng mẹo, dậu tai tinh thối.\nTác phước kỳ thần mạo đãi trì.",
+    "details": "Chiếm bịnh gặp quẻ nầy không tốt\nNhờ có sao ngũ hành cứu khổ lo rầu\nGặp ngày Mẹo, Dậu bịnh bớt\nVan vái thì cúng đừng để vậy."
+  },
+  {
+    "id": "215",
+    "name": "CẤU (Thiên Phong)",
+    "description": "Phụ mẫu vô đoan tật bịnh chiếm",
+    "meaning": "Phụ mẫu vô đoan tật bịnh chiếm\nQuái trung tài động quỉ quan liền\nTý, Mùi chiếm bốc vô ứng sự\nMạc hảo tâm đầu khổ quảy khiên.",
+    "details": "Cha mẹ đau ốm đâu mà coi\nSự thật là bề trong có hao tiền, và việc quan ràn buộc\nThuở giờ kỵ Tý, Mùi coi bói không linh nghiệm\nLo lắng tính toán chi sự khó cho mình vậy."
+  },
+  {
+    "id": "216",
+    "name": "TỤNG (Thiên Thủy)",
+    "description": "Quái vẫn di cư tác toại tân",
+    "meaning": "Quái vẫn di cư tác toại tân\nTùng kiêm tài vật tự nhiên tăng\nMục tiễn khẩu thiệt tua phòng bị\nDi quá phương an thiết mạc đình",
+    "details": "Quẻ nầy hỏi dời chỗ ở, được vừa bụng lắm\nTừ đây sắp tới tiền của cứ thêm\nTrước mắt có rầy rà phải coi chừng\nDời chỗ ở rồi mới yên"
+  },
+  {
+    "id": "217",
+    "name": "ĐỘN (Thiên Sơn)",
+    "description": "Phân gia, quân kiếm dục bốc nghi",
+    "meaning": "Phân gia, quân kiếm dục bốc nghi\nQuản giao nhựt hận bất sai trì\nXuân Thu tài vượng vô phiền não\nDụng ý di chung tòng tắc nghi",
+    "details": "Chia của, chia nhà muốn hỏi thăm\nKhuyên đó ráng chờ đừng nản chí\nXuân Thu tài vượng chẳng sai lầm\nXin chàng nhẫn nhịn chớ sanh tâm"
+  },
+  {
+    "id": "218",
+    "name": "BỈ (Thiên Địa)",
+    "description": "Tài hào trì thế tấn thế tài",
+    "meaning": "Tài hào trì thế tấn thế tài\nMưu sự vô phương mạng mạng lai\nTối hỷ tinh thần ứng tại ý\nTrách ngộ cao nhơn bá sự nghi",
+    "details": "Hào tài ở tại thế nên được việc tiền của\nTín việc không được chậm chậm chút\nNhờ có quới nhơn ủng hộ\nNgoài lại có nhiều người giỏi giúp mình."
+  },
+  {
+    "id": "221",
+    "name": "QUYẾT (Trạch Thiên)",
+    "description": "Tử tôn trì thế phước thần cường",
+    "meaning": "Tử tôn trì thế phước thần cường\nGia trạch chiếm chi đại kiết xương\nThu quí đông thời tài chánh vượng\nHạ xuân khẩu thiệt khá thu phong",
+    "details": "Hào tử tôn tại thế nên phước thần mạnh\nCoi gia đạo gặp quẻ nầy tốt lắm\nCuối thu qua mùa đông thời có tài\nMùa hạ, xuân bị lời ăn tiếng nói phải giữ."
+  },
+  {
+    "id": "222",
+    "name": "ĐOÀI",
+    "description": "Giải nhơn bất khả bất để phòng",
+    "meaning": "Giải nhơn bất khả bất để phòng\nẨn khi thương tài khủng bất an\nHạnh đắc quới nhơn đa trợ lực\nTuy nhiên lao khổ bất thương tàn",
+    "details": "Giải tội chớ nên hờ hõng\nBị trúng thương gió tốn tiền chút\nNhờ quí nhơn giúp đỡ\nTuy thấy có cực khổ không đến đỗi gì."
+  },
+  {
+    "id": "223",
+    "name": "CÁCH (Trạch Hỏa)",
+    "description": "Tẩu thất gia nhơn tại bắc phương",
+    "meaning": "Tẩu thất gia nhơn tại bắc phương\nDụng tâm phỏng sát bất tu mang\nThu đông chiếm thử tầm nan mịt\nXuân hạ giao lâm định phản hương",
+    "details": "Người đi trốn hay lạc đó tại hướng bắc\nMình để ý dò xét đừng bôn chôn bể việc\nMùa thu hay đông bói quẻ nầy khó kiếm chút\nQua xuân hạ gặp quẻ nầy thì nó về."
+  },
+  {
+    "id": "224",
+    "name": "TÙY (Trạch Lôi)",
+    "description": "Thế ứng tương sanh vô bất toại",
+    "meaning": "Thế ứng tương sanh vô bất toại\nDuy lợi trung ích số an bài\nHuống hồm thủ nghệ đa tinh xảo\nLao tâm, lao lực sự khả vi",
+    "details": "Mình với người được tương sanh vừa ý lắm\nViệc thì khá, có lợi, số bình yên\nLại sợ vì mình là người thợ khéo\nChịu cực chút thì được việc"
+  },
+  {
+    "id": "225",
+    "name": "ĐẠI QUÁ (Trạch Phong)",
+    "description": "Tiền tài thất khước bất tu ưu",
+    "meaning": "Tiền tài thất khước bất tu ưu\nNgoại nội toàn chỉ khả huổn cầu\nCanh Ngọ, Dần, Thân Hợi kiến diện\nTặc nhơn trị phạm thất cơ mưu",
+    "details": "Tiền của có thất lạc chẳng nên rầu\nNó còn giấu hưỡn hưỡn kiếm\nNgày canh Ngọ, Dần, Thân hợi thì gặp mặt\nCủa nấy trộm cướp lấy nhưng bại lộ"
+  },
+  {
+    "id": "226",
+    "name": "KHỔN (Trạch Thủy)",
+    "description": "Quân lai vấn thọ thị như hà",
+    "meaning": "Quân lai vấn thọ thị như hà\nHữu khủng quan ám khứ vĩ đa\nKiêm tuế dục phòng trạch choàng vận\nThọ ngươn bác bác mộng nam kha",
+    "details": "Ông đến hỏi sức khỏe ra sao\nÔng sợ tuổi cao tác lớn rồi\nÔng coi chừng trợt té, hoặc cây rớt, đánh lầm\nTuổi ông sống 88 tuổi."
+  },
+  {
+    "id": "227",
+    "name": "HÀM (Trạch Sơn)",
+    "description": "Ứng lai sanh thế tại tâm hoài",
+    "meaning": "Ứng lai sanh thế tại tâm hoài\nQuân vấn hành nhơn bất vực lai\nSửu, mùi, canh ngọ phương hữu tín\nNhơn tài lưỡng kiến quái an bài",
+    "details": "Người ta sanh lại mình thì khỏe lắm\nÔng hỏi người đi sao chưa về\nSửu, mùi, canh ngọ có tin về\nChừng đó người về lại có tiền, quẻ an bài"
+  },
+  {
+    "id": "228",
+    "name": "TÙY (Trạch Địa)",
+    "description": "Chiếm thử tài hào bất thậm giao",
+    "meaning": "Chiếm thử tài hào bất thậm giao\nGiữ nhơn hiệp lõa nan khoa\nTương lai định hữu tranh đoan khởi\nĐơn thân biệt đố cầm thương hoa.",
+    "details": "Quẻ nầy coi tài không tốt\nMình tính hùng hập với người không nên khen\nNgày sau còn tranh giành nhau\nLàm một mình mình tốt như gấm thêm hoa."
+  },
+  {
+    "id": "231",
+    "name": "ĐẠI HỮU (Hỏa Thiên)",
+    "description": "Kiến quới hườn tu khổ thác nhơn",
+    "meaning": "Kiến quới hườn tu khổ thác nhơn\nQuỉ hào lâm ẩn yếu lao tâm\nỨng lai sanh thế tha sanh ngã\nBất tất ưu nghi hứa toại tâm",
+    "details": "Ra mắt quan lớn khó lắm đa\nÔng quan nầy nghiêm khó lắm phải nhọc lòng\nNhờ hào ứng sanh thế, là ông sanh lại mình\nĐừng buồn lo gì hết việc đó được."
+  },
+  {
+    "id": "232",
+    "name": "KHUÊ (Hỏa Trạch)",
+    "description": "Tố trạng chiếm chi hứa toại tâm",
+    "meaning": "Tố trạng chiếm chi hứa toại tâm\nTử tôn trì thế phước thần lâm\nĐãi giao tuất nhựt hềm dẫn ngọ\nMiễn tội trừ hình hảo thoát thân",
+    "details": "Hầu kiện thì được\nNhờ hào tử tôn ở thế, có phước thần đến\nĐợi chờ ngày tuất kỵ ngày dẫn ngọ\nĐược tha tội thoát thân"
+  },
+  {
+    "id": "233",
+    "name": "LY",
+    "description": "Quân nhơn khởi tác lai vấn bốc",
+    "meaning": "Quân nhơn khởi tác lai vấn bốc\nThu trụ giá lương hữu kiến túc\nQuân nhơn khởi tác chiếm chi quái\nSố ngộ kê minh nhận quân giá\nSát tai tam hướng tu trì tị\nToại nhứt ngôn văn vị quân chút\nKhủng phòng tam sát hữu triền miên\nTuy nhiên hành thời thả mật uổng",
+    "details": "Ông muốn hỏi về việc khởi công\nCất nhà có vì sao tốt\nNgười muốn khởi công gặp quẻ nầy\nQuẻ nầy gặp gà gáy (dậu) ông làm mới được\nPhải tránh 3 hướng sát\nLời căn dặn đây là cần thiết\nPhải ngừa hướng tam sát có lôi thôi sảy ra\nRán làm ta không nói gạt"
+  },
+  {
+    "id": "234",
+    "name": "PHỆ HẠP (Hỏa Lôi)",
+    "description": "Thê tài trì thế chủ sanh quan",
+    "meaning": "Thê tài trì thế chủ sanh quan\nChiếm lãnh văn tin khả an\nHợi, tý, sửu gia phương khả đắc\nQuới nhơn đương đạo ngộ thiên duyên",
+    "details": "Hào thê tài ở thế, nên sanh hào quan\nQuẻ nầy văn bằng đó được lắm\nNgày hợi, tý, sửu đến đây được tin\nNhờ quới nhơn đỡ đầu gặp phước trời."
+  },
+  {
+    "id": "235",
+    "name": "ĐỈNH (Hỏa Phong)",
+    "description": "Quỉ hào trì thế sự nan hài",
+    "meaning": "Quỉ hào trì thế sự nan hài\nThâu giải tiền lương sự bất giai\nNhược bất tiểu tâm tin cẩn thận\nĐịnh chủ hình hao hưởng tương gia",
+    "details": "Hào quan quỉ trì thế việc nầy khó rồi\nThâu nộp tiền lúa gặp việc không tốt\nNếu bằng không dè dặt và cẩn thận\nChạy không khỏi tội lại còn bị xuất của nhà"
+  },
+  {
+    "id": "236",
+    "name": "VỊ TẾ (Hỏa Thủy)",
+    "description": "Thê tài vượng tướng khả sanh quan",
+    "meaning": "Thê tài vượng tướng khả sanh quan\nThoát hoá cầu tài việc hứa an\nHợi, Tý, Sửu lâm giao việc hảo\nQuới nhơn tương trợ đắc châu toàn",
+    "details": "Hào thê tài vượng sanh hào quan\nSang sến hàng hoá, cầu tiền đều tốt\nChờ hợi, tý, sửu đến việc giao mới tốt\nGặp quới nhơn giúp đỡ được tốt hết"
+  },
+  {
+    "id": "237",
+    "name": "LỮ (Hỏa Sơn)",
+    "description": "Sanh ý chiếm chi thuận nhơn tình",
+    "meaning": "Sanh ý chiếm chi thuận nhơn tình\nLai nhơn bất dụng khổ ưu tâm\nChỉ nghi cẩn thận gia châm chước\nXuất nhập kinh dinh nhậm quân hành",
+    "details": "Mua bán gặp quẻ nầy được vừa lòng\nNgươi đến mình hoặc mình đến người đừng cần lo\nPhải cẩn thận và châm chước\nRa vô tính toán gì cũng đặng hết"
+  },
+  {
+    "id": "238",
+    "name": "TẤN (Hỏa Địa)",
+    "description": "Mẹo mộc thê tài chiếm đại giai",
+    "meaning": "Mẹo mộc thê tài chiếm đại giai\nXuân tầm hữu ích định vô sai\nCánh liên ngoại quái lai tương trợ\nTri lợi trùng trùng khả kham khoa",
+    "details": "Hào tài thuộc mộc quẻ tốt lắm\nViệc tơ tằm có ích lắm định không trật\nLại gặp ngoại quái giúp mình nữa\nLợi đến về tơ nầy trùng trùng nhiều lắm."
+  },{
+    "id": "241",
+    "name": "ĐẠI TRÁNG (Lôi Thiên)",
+    "description": "Vấn ni trùng trùng vị khiến lai",
+    "meaning": "Vấn ni trùng trùng vị khiến lai\nYên phùng tý, ngọ nhứt âm nha\nGia trung vạn sự giai yên ổn\nBất tất ưu nghi khả phóng hoài.",
+    "details": "Hổm rày hỏi hoài sao tin tức chưa về\nQua ngày tý, ngọ có tin về\nTrong nhà tất cả bình an\nChẳng nên buồn lo sợ chuyện chi."
+  },
+  {
+    "id": "242",
+    "name": "QUI MUỘI (Lôi Trạch)",
+    "description": "Qui muội chí quái tử tôn cường",
+    "meaning": "Qui muội chí quái tử tôn cường\nNải bộc chiếm chi sự bất lương\nMai đắc chung tu phòng khẩu thiệt\nHườn tu tử tế tái thương lương",
+    "details": "Quẻ qui muội nầy tử tôn mạnh lắm\nTốt việc nào chớ mướn tôi tớ không tốt\nDầu mướn rồi coi chừng việc rầy rà\nPhải rán tính toán cho kỹ."
+  },
+  {
+    "id": "243",
+    "name": "PHONG (Lôi Hỏa)",
+    "description": "Thế vị phùng quan ứng chỉ sanh",
+    "meaning": "Thế vị phùng quan ứng chỉ sanh\nQuân chiếm trối hóa đắc như tâm\nCông bình xuất nhập liêm đắc lợi\nTương trợ ứng giao hữu quới nhơn .",
+    "details": "Bào thế gặp quan, ứng sanh tốt lắm\nNgười coi quẻ sắm đồ thì được\nNhưng ra vô cho công bình thì thêm lợi\nThuần có quới nhơn giúp đỡ."
+  },
+  {
+    "id": "244",
+    "name": "CHẤN",
+    "description": "Bác thuần chỉ quái vấn ngận quan",
+    "meaning": "Bác thuần chỉ quái vấn ngận quan\nTài quỉ phùng xung sự bất an\nMạc vấn biệt minh vận lợi hảo\nChỉ nghi thủ cựu khả tâm hoan.",
+    "details": "Xin đi lính tình nguyện gặp kẻ bác thuần\nHào tài quỉ xung, việc không yên\nChớ hỏi tính phương kế khác làm ăn\nGiữ theo nghề cũ mới an vui"
+  },
+  {
+    "id": "245",
+    "name": "HẰNG (Lôi Phong)",
+    "description": "Cáo trạng thế vong hưu sanh quan",
+    "meaning": "Cáo trạng thế vong hưu sanh quan\nQuân vẫn quan ty lý, thế toàn\nCánh đắc quới nhơn giai trợ lực\nThu, Đông vu giác đắc xuyên quyền",
+    "details": "Vô đơn gặp hào thế sanh hào quan\nNgười hỏi thì lý, thế cái nào cũng thắng\nLại đặng quới nhơn giúp sức nữa\nQua thu đông kiện đắc lý"
+  },
+  {
+    "id": "246",
+    "name": "GIẢI (Lôi Thủy)",
+    "description": "Trời điền ngộ thử quái vì cáo",
+    "meaning": "Trời điền ngộ thử quái vì cáo\nTrung chính tương phùng đính chủ giao\nLộc vị phước thần đa kiện vượng\nHựu chủ trì tinh khả tương đầu.",
+    "details": "Sắm vườn đất quẻ nầy hay lắm\nGặp người giao hảo với mình tốt\nNhờ hai vị phước lộc cứng cỏi lắm\nLời ăn nói đến tứ tâm đầu ý hiệp."
+  },
+  {
+    "id": "247",
+    "name": "TIỂU QUÁ (Lôi Sơn)",
+    "description": "Quỉ hào trì thế khả cầu quan",
+    "meaning": "Quỉ hào trì thế khả cầu quan\nBá lý thiên đình đắc toại duyên\nKinh tế kỳ tài nhơn giá trọng\nQuân kiến thời địa tánh danh cao",
+    "details": "Cầu quan gặp quỉ hào trì thế tốt lắm\nĐường xa cách mấy cũng được hết\nBực kỳ tài kinh tế danh giá cao (quan lớn)\nNgày sau danh tiếng lừng lẫy."
+  },
+  {
+    "id": "248",
+    "name": "DỰ (Lôi Địa)",
+    "description": "Nạp lại công danh đa phí lợi",
+    "meaning": "Nạp lại công danh đa phí lợi\nTất chu châm chước tái nam tư\nQuỉ hào trì thế nan thành tựu\nBất đắc hưỡn phòng hữu thị phi",
+    "details": "Xin chỗ làm nghề vỏ, đường công danh tốn hao\nPhải tính đi tính lại đôi ba lần\nHào quỉ trì thế việc khó nên\nViệc không đặng lại sinh ra thị phi"
+  },
+  {
+    "id": "251",
+    "name": "TIỂU SÚC (Phong Thiên)",
+    "description": "Vị nhơn tầm quán khữ tầm nhơn",
+    "meaning": "Vị nhơn tầm quán khữ tầm nhơn\nHuynh đệ tương tranh hữu đoạt tranh\nNhược vẫn biệt hương du khả tựu\nTây nam phương trượng thậm nan thành",
+    "details": "Kiếm nhà chổ ở và người quen\nVì anh em cãi cọ sanh giành giựt\nỞ đây không đặng phải đi ở khác làng mới được\nPhải tránh hướng tây nam mới được."
+  },
+  {
+    "id": "252",
+    "name": "TRUNG PHÙ (Phong Trạch)",
+    "description": "Thị phi khẩu thiệt bất tu tranh",
+    "meaning": "Thị phi khẩu thiệt bất tu tranh\nPhước đức thần cường bảo thái bình\nTự hữu quới nhơn lai yến tan\nNhậm hữu bảo hoạ tổng vô bằng",
+    "details": "Rầy rà giành phải quấy làm chi\nNhờ phước đức thần mạnh mẽ mới bình yên\nCó người biết điều rầy la giải tán\nChớ không ai nói tử tế gì được."
+  },
+  {
+    "id": "253",
+    "name": "GIA NHÂN (Phong Hỏa)",
+    "description": "Quân vấn thủ ngư nhân quân tâm",
+    "meaning": "Quân vấn thủ ngư nhân quân tâm\nNghịch thủy hành chu tẩu thượng phong\nAn tâm ổn thủ Nam phương lợi\nCông thành nghiệp tụ tài lợi sanh",
+    "details": "Ngươi hỏi giang thủy lợi được lắm\nGhe đi nước ngược, nhờ gió xuôi\nYên lòng giữ tài lợi ở hướng Nam\nCông nên nghiệp tới sanh tài lợi"
+  },
+  {
+    "id": "254",
+    "name": "ÍCH (Phong Lôi)",
+    "description": "Nhập ngao cầu hôn yêu châm chước",
+    "meaning": "Nhập ngao cầu hôn yêu châm chước\nQuỉ hào trì thế uống laok công\nTrùng trùng cách trở tài tao kip\nChỉ khả hồi đầu biệt xứ tầm",
+    "details": "Muốn cầu hôn phải, làm rể phải liệu định\nQuỉ hào ở thế nhọc lòng uổng công\nDồn dập việc cách trở của tiền bị lườn (lừa)\nThôi bỏ chổ đó đi chỗ khác"
+  },
+  {
+    "id": "255",
+    "name": "TỔN (Sơn Trạch)",
+    "description": "Xuất hành chiếm thử bất tu nghi",
+    "meaning": "Xuất hành chiếm thử bất tu nghi\nThế vị cao hề ứng vị đê\nThế ứng khắc hào vô cách trở\nTrùng trùng tài hỉ tại tâm cơ,",
+    "details": "Quẻ xuất hành gập đây khỏi nghi ngại\nMình thì cao, người thì thấp\nHào thế khắc hào ứng cứ việc đi\nDồn dập tiền bạc vui vẻ khoái chí lắm."
+  },
+  {
+    "id": "256",
+    "name": "HOÁN (Phong Thủy)",
+    "description": "Tuế tình sanh vũ bảo niên thành",
+    "meaning": "Tuế tình sanh vũ bảo niên thành\nQuân vấn thu thâu quyết xứng tâm\nNgũ cốc phong đăng vô hao chiếc\nHậu lai phương hứa toại quân tâm",
+    "details": "Năm nay trời lạnh sanh mưa là năm ruộng trúng\nNgười hỏi việc thâu góp chắc là vừa bụng\nLúa thóc năm giống trúng không hao\nGóp rồi đều đủ ưng bụng lắm"
+  },
+  {
+    "id": "257",
+    "name": "TIỆM (Phong Sơn)",
+    "description": "Dạ mộng khê khiên tổng bất tường",
+    "meaning": "Dạ mộng khê khiên tổng bất tường\nTu phòng hữu sự khỏi tiêu tường\nTâm tư cẩn thận kỳ thần trợ\nPhàm sự nhiêu nhơn đắc cửu trường",
+    "details": "Nằm chiêm bao hồi hộp điểm không lành\nCẩn thận có việc rầy rà khởi bên hè\nTính cho kỹ rồi làm sẽ có thần giúp đỡ\nViệc gì phải dễ dãi tha thứ mới được lâu dài."
+  },
+  {
+    "id": "258",
+    "name": "QUAN (Phong Địa)",
+    "description": "Quái chiếm cầu tử hứa như tâm",
+    "meaning": "Quái chiếm cầu tử hứa như tâm\nPhước đức trùng trùng tử vi sanh\nSố hào tiên thiên ứng bất mầu\nTìn niên, Ngọ tuế sản kỳ lâu.",
+    "details": "Quẻ coi cầu con được vừa lòng\nPhước đức cầu con dễ sanh\nQuẻ tốt nói trước không sao đâu\nSanh con tuổi Thìn hay tuổi Ngọ tốt lắm"
+  },
+  {
+    "id": "261",
+    "name": "NHU (Thủy Thiên)",
+    "description": "Quan hào sanh thế hão cầu danh",
+    "meaning": "Quan hào sanh thế hão cầu danh\nNhập học chiếm chi hứa toại tâm\nSách luận kinh thơ gia miễn lệ\nĐịnh giao khoa cử hảo thành danh",
+    "details": "Hào quan sanh hào thế tốt lắm\nNhập học quẻ nầy tốt\nHọc hành rán gắng sức\nThi chắc đậu lắm."
+  },
+  {
+    "id": "262",
+    "name": "TIẾT (Thủy Trạch)",
+    "description": "Tài khắc văn thơ nan thượng bản",
+    "meaning": "Tài khắc văn thơ nan thượng bản\nTử tôn thái vượng hựu thương quan\nMẫu kỷ nhị khoa đoan khả vọng\nKiêm niên khoa cử thoả tâm khoan.",
+    "details": "Hào tài phá hào văn thơ khó đăng tên\nHào tử tôn vượng khắc hào quan\nThi kỳ mẫu và kỷ có hy vọng\nCòn cuộc thi năm nay thôi đừng tính."
+  },
+  {
+    "id": "263",
+    "name": "KÝ TẾ (Thủy Hỏa)",
+    "description": "Quái chiếm chiêu tế tối vì lương",
+    "meaning": "Quái chiếm chiêu tế tối vì lương\nTài hỉ trùng trùng phước lộc cường\nPhu phụ hoài đa phước thọ\nHưng gia lập nghiệp hảo trình tường.",
+    "details": "Quẻ chọn rể tốt\nTiền của dồi dào phước lộc mạnh\nVợ chồng ăn ở hoà thuận\nNhà cửa cơ nghiệp con cháu dựng nên đông đủ."
+  },
+  {
+    "id": "264",
+    "name": "TRUÂN (Thủy Lôi)",
+    "description": "Y bằng phước đức khả phò thân",
+    "meaning": "Y bằng phước đức khả phò thân\nPhước đức lai phò được bất linh\nPhục được vô duyên đa khổ sở\nTái phùng Biển Thước giả nan sanh.",
+    "details": "Nghề thuốc nhờ phước đức đỡ cho bệnh\nPhước không đến uống thuốc không hay\nUống thuốc mà không đoan nhiều trắc trở\nDẫu gặp Biển Thước cũng sống không nổi."
+  },
+  {
+    "id": "265",
+    "name": "TỈNH (Thủy Phong)",
+    "description": "Thu thảo tư tài thử quái linh",
+    "meaning": "Thu thảo tư tài thử quái linh\nThát trung cầu thủ sự tham thành\nTuy thị ngoạt tiền đa cách trở\nTrì trì phương hứa hữu giai âm",
+    "details": "Đòi tiền bạc quẻ nầy tốt\nDẫu người thiếu nợ khó mấy cũng đòi được\nTháng trước dầu rỗi ren\nChậm chậm có tin lành về."
+  },
+  {
+    "id": "266",
+    "name": "KHẢM",
+    "description": "Nhược vân thiên tỉnh thiên tất tỉnh",
+    "meaning": "Nhược vân thiên tỉnh thiên tất tỉnh\nNhược vân hạ vũ, vũ lâm ly\nKhảm phùng nhâm quí hợi âm vũ\nYếu tình đản khán tuất, thân canh",
+    "details": "Nếu hỏi trời tạnh thì trời tạnh\nNếu hỏi mưa, mưa dầm dề\nKhảm gặp nhâm quí mưa, hợi (càn) mưa dữ lắm\nMuốn lặn coi tuất, thân, canh."
+  },
+  {
+    "id": "267",
+    "name": "KIỂN (Thủy Sơn)",
+    "description": "Mạng vận hà tu vấn đoản trường",
+    "meaning": "Mạng vận hà tu vấn đoản trường\nHỉ quân vận mạng mạc tương thương\nTuy nhiên tảo vận đa thành bại\nThời chí ưng chỉ phước thọ trường.",
+    "details": "Mạng vân hỏi vắn dài hay dở chi\nMừng người vận mạng không lo tín\nMặc dầu sớm gặp nhiều việc thành bại\nThời đến rõ biết phước sống lâu."
+  },
+  {
+    "id": "268",
+    "name": "TỶ (Thủy Địa)",
+    "description": "Kinh luân sự nghiệp thánh hiền thơ",
+    "meaning": "Kinh luân sự nghiệp thánh hiền thơ\nĐọc thơ sự nghiệp khả kham đồ\nQuan văn thế vị văn tinh vượng\nTuyên nhập khoa danh vảng đế ban",
+    "details": "Rèn học đông đúc sách vở thánh hiền\nSự nghiệp văn chương người khá lắm\nHào quan chủ động, có văn tinh đọc sách hay\nĐược tuyển đến chầu vua."
+  },
+  {
+    "id": "271",
+    "name": "ĐẠI SÚC (Sơn Thiên)",
+    "description": "Quỉ hào trì thế vị vi kỳ",
+    "meaning": "Quỉ hào trì thế vị vi kỳ\nDục khứ tầm nhơn yều kiến cơ\nMạc nhược đãi tha lại tự tựu\nTứ thất thập ngoạt khả tương kỳ.",
+    "details": "Hào quỉ trì thế không lạ gì\nMuốn tầm người phải có mánh lới\nThôi chỉ bằng chờ nó trở về\nTháng tư, tháng 7, tháng 10 sau cũng về."
+  },
+  {
+    "id": "272",
+    "name": "TỔN (Sơn Trạch)",
+    "description": "Kiêm quán thú thiếp lai vấn bốc",
+    "meaning": "Kiêm quán thú thiếp lai vấn bốc\nNội ngoại quỉ hào yếu phản phúc\nMạc nhược tu tùng tiền khứ tầm\nHậu sản hiển năng đa tấn phước.",
+    "details": "Ông muốn tầm quẻ cưới vợ bé\nTrong ngoài thế nào cũng phản không khỏi\nChi bằng dùng người trước còn hơn\nSau sanh con làm ăn khá."
+  },
+  {
+    "id": "273",
+    "name": "BÍ (Sơn Hỏa)",
+    "description": "Quỉ hào trì thế vấn đa đoan",
+    "meaning": "Quỉ hào trì thế vấn đa đoan\nQuân vẫn cầu hôn khước bất an\nCánh thả mai nhơn đa bất lực\nNhứt ban thiết xuất lưỡng tam ban.",
+    "details": "Hào quỉ chủ động rối đa đoan\nNhà ngươi hỏi việc đôi bạn, không nên\nLại thêm mai nhơn bất lực\nMối nầy nói chưa xong,2,3 đám chực hôm đó"
+  },
+  {
+    "id": "274",
+    "name": "DI (Sơn Lôi)",
+    "description": "Tài hào trì thế tất cao cường",
+    "meaning": "Tài hào trì thế tất cao cường\nMua bán hàng dạo chiếm chỉ quái thậm lương\nMãi mại khán lai cu toại ý\nTam thất thập, nhứt kiến trình tường",
+    "details": "Hào tài ở thế cứng cỏi lắm\nMua bán hàng dạo quẻ nầy tối\nMua bán coi kỹ được vừa ý\nTháng 3, tháng 7, 10, 11, khá lắm."
+  },
+  {
+    "id": "275",
+    "name": "CỔ (Sơn Phong)",
+    "description": "Lưỡng hào lai thạch tai sanh thế",
+    "meaning": "Lưỡng hào lai thạch tai sanh thế\nHòa sự tu tri ngộ quới nhơn\nDuy hướng đông nam kỳ khứ\nTài năng đăng vị đắc thiên kim",
+    "details": "Hai hào tài đều sanh thế\nViệc hòa này có lẽ gặp quới nhơn\nNhưng hướng đông nam có điềm tốt\nĐặng tiền của nhiều và lên chức"
+  },
+  {
+    "id": "276",
+    "name": "MÔNG (Sơn Thủy)",
+    "description": "Quan quỉ văn thơ lưỡng tự minh",
+    "meaning": "Quan quỉ văn thơ lưỡng tự minh\nTuy quân quan tước tất cao thăng\nTuy nhiên đương đạo đa vi trở\nQuản thủ xuân lai mộc thánh ân.",
+    "details": "Hào quan quỉ hào văn thơ đều tỏ rạng\nBiết ông chức lớn còn lên nữa\nBây giờ có trở ngại chút ít\nQua xuân thì ơn trên thiếu gì."
+  },
+  {
+    "id": "277",
+    "name": "CẤN",
+    "description": "Lục giáp chiếm chi bất toại tâm",
+    "meaning": "Lục giáp chiếm chi bất toại tâm\nHứa kỳ hương nguyện bảo nương thân\nChỉ đãi anh nhi ly mẫu phúc\nTự nhiên phước thọ vĩnh khương ninh.",
+    "details": "Chữa nghén, sanh đẻ quẻ nầy không vừa bụng\nMau mau đi trả lời vái mới yên\nCúng được lời vái con sanh liền\nTự nhiên phước được lâu dài."
+  },
+  {
+    "id": "278",
+    "name": "BÁC (Sơn Địa)",
+    "description": "Quái chiếm nạp giám vấn thần minh",
+    "meaning": "Quái chiếm nạp giám vấn thần minh\nPhước đức tỉnh cường hỉ khí lâm\nTruy thị nhãn tiền đa cách trở\nĐông tây ngộ quới đắc tiền trình",
+    "details": "Quẻ coi xin sở làm nghề văn\nVì sao phước đức mạnh có việc vui đến\nMặc dầu trước mắt có điều trắc trở\nHương đông hướng tây gặp quới nhơn đỡ đầu."
+  },
+  {
+    "id": "281",
+    "name": "THÁI (Địa Thiên)",
+    "description": "Quan quỉ thê tài lưỡng kiến kỳ",
+    "meaning": "Quan quỉ thê tài lưỡng kiến kỳ\nGiữ nhơn tú thải đắc tiện nghi\nLưỡng phiên tài lợi trì trì hữu\nMục hạ vu vi hiệp sự kỳ",
+    "details": "Xem quẻ thê tài lấy làm lạ\nHai lần vay hỏi được hết\nHai lần trước chậm chậm mới giùm\nCòn kỳ nầy việc ráp chưa xong"
+  },
+  {
+    "id": "282",
+    "name": "LÂM (Địa Trạch)",
+    "description": "Đổ tiền chiếm thử chỉ bình bình",
+    "meaning": "Đổ tiền chiếm thử chỉ bình bình\nThế ứng tương sanh sự nhữ thành\nLợi tức bất đa tài hứa ổn\nTư thất thập nhứt định giai âm.",
+    "details": "Quẻ coi cờ bạc vừa vừa\nThế ứng tương sanh được việc\nẤn ít mà vốn còn đủ\nTháng 4,7,10,11 thì khá."
+  },
+  {
+    "id": "283",
+    "name": "MINH DI (Địa Hỏa)",
+    "description": "Hồi hương chiếm thử vị vi nghi",
+    "meaning": "Hồi hương chiếm thử vị vi nghi\nHậu hữu truân chuyên đa thị phi\nThử an thân tâm hưu vọng động\nBất y số đoán hữu sai trì",
+    "details": "Hồi hương coi quẻ nầy không tốt lắm\nNgày sau có việc lận đận sảy ra vì thị phi\nỞ yên đừng rục rịch bận rộn gì hết\nKhông nghe sau có chuyện chịu lấy."
+  },
+  {
+    "id": "284",
+    "name": "PHỤC (Địa Lôi)",
+    "description": "Quân chiếm phong thủy chủ an ninh",
+    "meaning": "Quân chiếm phong thủy chủ an ninh\nTả hữu lai long tối hữu kỷ\nTài phước hưng long giai phát đạt\nNhơn ninh khương kiện lạc thăng bình",
+    "details": "Nhà ngươi chiếm mồ mả được tốt lắm\nTả hữu có mạch nước nên mỗ mát mẻ\nHào tài phước thạnh vượng đều phát đạt\nCon cháu mạnh khỏe vui vẻ."
+  },
+  {
+    "id": "285",
+    "name": "THĂNG (Địa Phong)",
+    "description": "Thế cao ứng hạ nhâm quân tài",
+    "meaning": "Thế cao ứng hạ nhâm quân tài\nKhai điểm chiếm chỉ định mỹ ai\nTý hợi hạ xuân đa lợi tức\nHà tu ưu lự xướng tâm hoài",
+    "details": "Mình hay người dốt tùy ý nhờ\nMở cửa tiệm gặp quẻ nầy tốt\nTháng Tý, Hợi mùa hạ xuân lời xối xả\nSao lai lo tính làm chi."
+  },
+  {
+    "id": "286",
+    "name": "SƯ (Địa Thủy)",
+    "description": "Chiếm vấn cầu tài thị xướng tâm",
+    "meaning": "Chiếm vấn cầu tài thị xướng tâm\nĐông tây lộ đạo chánh tương ứng\nTuy nhiên phí khước tâm cơ lục\nLợi ích chung tu đắc vạn kim",
+    "details": "Quẻ nầy cầu tài tốt lắm\nĐi ngay hướng đông, tây thì đúng lắm\nDẫu cho hao tiền tốn sức một lúc\nLời cả muôn khi rốt cuộc."
+  },
+  {
+    "id": "287",
+    "name": "KHIÊM (Địa Sơn)",
+    "description": "Phóng trướng ưng yến hồm tiền",
+    "meaning": "Phóng trướng ưng yến hồm tiền\nLưỡng tình huynh đệ hữu tắng hềm\nTử tôn tuy thị lai lâm thể\nChỉ khủng tương lai vị tất nhiên.",
+    "details": "Cho vay mới tính tiền chưa đưa đã sợ rồi\nHai hào huynh đệ đóng hào trùng nên ganh ghét\nDẫu hào tử tôn đóng hào thế tử tế mấy\nChỉnh e sau không đúng theo lời hứa."
+  },
+  {
+    "id": "288",
+    "name": "KHÔN",
+    "description": "Phạn mãi lục súc mã trư dương",
+    "meaning": "Phạn mãi lục súc mã trư dương\nThời vận lai thì bá sự xương\nThã đãi bắc phương tài thạnh vượng\nĐông tây nam thượng vị vi cường",
+    "details": "Muốn mua bán lục súc ngựa trâu dê\nThời vận gặp rồi trăm việc tốt\nĐi hướng bắc mua bán tốt\nChừa đông tây nam đừng tới."
+  },
+  {
+    "id": "311",
+    "name": "CÀN",
+    "description": "Giải nhơn chiếm thử bá vô minh",
+    "meaning": "Giải nhơn chiếm thử bá vô minh\nQuan quỉ văn thơ lưỡng tự minh\nĐương đạo quới nhơn ưng hữu trợ\nTiên tu lao lực hậu an ninh.",
+    "details": "Giải người chiếm quẻ nầy không sợ gì\nQuan quỉ văn thơ hai hào tỏ rạng\nĐi đương có quới nhơn giúp đỡ\nTrước cực nhọc sau yên vui."
+  },
+  {
+    "id": "312",
+    "name": "LÝ (Trạch Thiên)",
+    "description": "Tử tôn vị thế quái vị kiết",
+    "meaning": "Tử tôn vị thế quái vị kiết\nHiệp lõa chiếm chỉ đa ích lợi\nĐồng tâm hướng bạn tác sanh nhai\nHữu thủy hữu chung vô tổn thất.",
+    "details": "Hào tử tôn trì thế quẻ nầy tốt\nHùn hạp làm ăn nhiều việc ích lợi\nĐồng lòng hiệp bạn làm kế sinh nhai\nTrước sau có nhau không xích mích."
+  },
+  {
+    "id": "313",
+    "name": "ĐỒNG NHÂN (Thiên Hỏa)",
+    "description": "Quỉ hào trì thế tặc nhơn cường",
+    "meaning": "Quỉ hào trì thế tặc nhơn cường\nThế vật tây nam khống tự mạng\nTầm mịch khuyến quân tu cấp thực\nQuan phí tiền tài việc nan phòng",
+    "details": "Hào quan quỉ trì thế, đám trộm cướp này cứng cỏi\nMất vất về hướng tây nam lo lắng uổng công\nĐừng gấp rút và dỉ hơi tầm kiếm\nHao tốn tiền của ra như nước."
+  },
+  {
+    "id": "314",
+    "name": "VÔ VỌNG (Thiên Lôi)",
+    "description": "Thiên vô vọng, vấn hành nhơn",
+    "meaning": "Thiên vô vọng, vấn hành nhơn\nTài ứng sơ hào chủ đáo lâm\nGiao, tý, tị hợi tức khả vọng\nDự kỳ thìn, tý hữu gia âm",
+    "details": "Quẻ thiên lôi vô vọng, hỏi người đi đường\nHào tài ở tại hào sơ người đi đường\nNgày tý, tị, hợi mới có hy vọng\nNhư không về thì thìn, tý có tin nhắn."
+  },
+  {
+    "id": "315",
+    "name": "CẤU (Thiên Phong)",
+    "description": "Thủ nghệ cầu tài quái bất nghi",
+    "meaning": "Thủ nghệ cầu tài quái bất nghi\nỨng phùng quan quỉ, hữu ưu nghi\nGiao thu phương hứa toại tầm nguyện\nTam quí vô tài yếu kiển cơ",
+    "details": "Thợ thầy cầu tài quẻ không tốt\nHào ứng gặp quan quỉ có việc lo sợ\nQua mùa thu muốn làm gì mới được\nBa tháng đông nầy không tài, phải cẩn thận."
+  },
+  {
+    "id": "316",
+    "name": "TỤNG (Thiên Thủy)",
+    "description": "Gia trạch bình yên bất sự nghi",
+    "meaning": "Gia trạch bình yên bất sự nghi\nQuới nhơn đắc lực hữu phô tri\nTuy nhiên hữu khẩu đa tai hối\nTài lộc phong vinh bá sự y.",
+    "details": "Gia đạo bình yên không gì lạ\nCó quới nhơn người giúp đỡ\nDẫu con cháu có đau ốm chút đỉnh không sao\nTài một lộc hai cái nào cũng tốt."
+  },
+  {
+    "id": "317",
+    "name": "ĐỘN (Thiên Sơn)",
+    "description": "Quỉ thần trì thế ứng phùng xung",
+    "meaning": "Quỉ thần trì thế ứng phùng xung\nTựu tán vô thường sự bất đồng\nQuân vấn niên thọ ưng đương hứa\nPhước thọ tề mi lão lịnh công",
+    "details": "Hào quỉ thần (ông bà), (thần thánh) nhưng người không tốt (không hại)\nBà con, con cháu khi đến đông, khi về hết\nÔng hỏi tuổi tác mạnh khỏe, đoán tốt lắm\nHào phước thọ tốt, sống lâu như bành tổ"
+  },
+  {
+    "id": "318",
+    "name": "BỈ (Thiên Địa)",
+    "description": "Gia nhơn tẩu thoát định tu tầm",
+    "meaning": "Gia nhơn tẩu thoát định tu tầm\nTự hữu lân nhơn báo tin âm\nHợi, Mẹo, Mùi lâm phương hữu sát\nMục tiền bất kiếm mạc sanh sân",
+    "details": "Tôi tớ trốn ông đi kiếm phải không\nCó hàng xóm cho ông hay rồi\nNgày giờ hay tháng hợi, mẹo, mùi trổ mối\nTrước mắt không kiếm được đừng nóng giận."
+  },
+  {
+    "id": "321",
+    "name": "QUYẾT (Trạch Thiên)",
+    "description": "Đổ tiền vị tất toại quân tâm",
+    "meaning": "Đổ tiền vị tất toại quân tâm\nĐịnh phi tâm cơ bất thuận tình\nNội ngoại lưỡng hào vô ích lợi\nCách phòng thất thoát mạc hồ hành",
+    "details": "Cuộc chơi này không vừa ý ông\nLo tính sắp đặt uổng công không theo ý muốn\nBề trong bề ngoài hai phe không ích lợi gì\nPhải ngừa thất bại đừng làm càng."
+  },
+  {
+    "id": "322",
+    "name": "ĐOÀI",
+    "description": "Phạn mãi lục súc vấn tài nguyên",
+    "meaning": "Phạn mãi lục súc vấn tài nguyên\nThế ứng phùng xung sự bất nhiên\nTuy kiến dục thành hườn cách trở\nMãi thành chi hậu bất chân toàn",
+    "details": "Mua bán lục súc hỏi có lời không\nHào thế ứng gặp xung sự không lành\nTuy thấy việc thành cũng trục trặc\nBán hết rồi tiền bạc cũng không đủ."
+  },
+  {
+    "id": "323",
+    "name": "CÁCH (Trạch Hỏa)",
+    "description": "Quái chiếm khai điếm hứa quân khai",
+    "meaning": "Quái chiếm khai điếm hứa quân khai\nPhước đức tỉnh lâm quản tấn tài\nBổn thiển lợi đa giao việc hảo\nQuới nhơn lộc mai tư thiên lai",
+    "details": "Quẻ coi mở cửa tiệm hứa chắc được\nSao phước, đức hiện vô quẻ tài lợi vô nhiều\nVốn ít lời nhiều buôn bán khá\nQuới nhơn ủng hộ tài lợi xung túc như trời cho"
+  },
+  {
+    "id": "324",
+    "name": "TÙY (Trạch Lôi)",
+    "description": "Phóng trướng ưng tri sự hữu khuy",
+    "meaning": "Phóng trướng ưng tri sự hữu khuy\nBất như bất phóng đắc tiện nghi\nỨng cao thế hạ nhơn cường ngã\nPhàm sự tam tư yếu kiến cơ",
+    "details": "Cho vay hay bán chịu việc nầy có hại\nChi bằng việc nầy đừng làm khá hơn\nNgười quyền thế, mình yếu hèn, bị áp bức\nViệc gì phải trù nghĩ cẩn thận mới được."
+  },
+  {
+    "id": "325",
+    "name": "ĐẠI HÓA (Trạch Phong)",
+    "description": "Thế cao ứng hạ tối vì cường",
+    "meaning": "Thế cao ứng hạ tối vì cường\nPhong thủy chiếm chi đại kiết xương\nTả hữu hồ long giai ủng hộ\nMinh đường cao lảng ánh văn chương",
+    "details": "Hào thế cao, ứng thấp mình rất mạnh\nCoi mồ mã gặp quẻ nầy tốt\nHai bên có đường đi, có sông kinh mương tốt lắm\nTrước mặt cao rộng coi cuộc sáng tốt."
+  },
+  {
+    "id": "326",
+    "name": "KHỔN (Trạch Thủy)",
+    "description": "Tài hào thượng quái tối vi nghi",
+    "meaning": "Tài hào thượng quái tối vi nghi\nDục tá tiền tài bất tất nghi\nNhược tại thu đông đa bất kiết\nNhư phùng xuân, hạ lợi tương y.",
+    "details": "Hào tài hiện quẻ tốt quá\nHỏi mượn tiền bạc cứ hỏi đừng sợ\nNhư gặp mùa thu, đông thời không tốt\nGặp xuân hạ tốt lắm cho liền."
+  },
+  {
+    "id": "327",
+    "name": "HÀM (Trạch Sơn)",
+    "description": "Quân chiếm thử quái ứng cầu tài",
+    "meaning": "Quân chiếm thử quái ứng cầu tài\nThu, hạ lai lâm bất dụng sai\nNhược thị cửu lưu tinh nghệ thuật\nHứa quân tài vật lưỡng tương lai",
+    "details": "Nhà ngươi có quẻ cầu tài\nMùa thu, mùa hạ làm ăn không ra gì\nNếu bằng nghề làm thầy hay làm thợ\nGặp quẻ nầy được hết"
+  },
+  {
+    "id": "328",
+    "name": "TÙY (Trạch Địa)",
+    "description": "Quì hào trì thế yếu thương lương",
+    "meaning": "Quì hào trì thế yếu thương lương\nQuân vẫn hồi hương khả đích đương\nThu, đông cẩn thủ mạc vận động\nXuân mạc, Hạ lai bảo an ninh.",
+    "details": "Hào quan quỉ trì thế tính gì cũng đều đặng hết\nNhà ngươi hỏi về quê nhà được lắm\nMùa thu, đông phải dè dặt đừng đi đâu\nHết xuân hết hạ thì bình an"
   },
   {
     "id": "331",
-    "name": "HỎA THIÊN ĐẠI HỮU",
-    "description": "Ly trên Càn dưới",
-    "meaning": "Sở hữu lớn",
-    "details": "Giàu có, thịnh vượng, khiêm tốn, được trời giúp, tốt."
+    "name": "ĐẠI HỮU (Hỏa Thiên)",
+    "description": "Thị phi khẩu thiệt tốn nan đương",
+    "meaning": "Thị phi khẩu thiệt tốn nan đương\nQuan tụng hư kinh hữu nhứt trường\nThế khắc ứng hào tu khả thắng\nHườn tu cẩn ký miễn hình thương",
+    "details": "Tiếng thị phi rầy ra khó quá\nViệc nầy đến quan kinh hãi một lúc\nMình khắc người mình được kiện\nPhải dè dặt cẩn thận để khỏi lao tù."
   },
   {
     "id": "332",
-    "name": "HỎA TRẠCH KHUÊ",
-    "description": "Ly trên Đoài dưới",
-    "meaning": "Trái lìa",
-    "details": "Chia lìa, bất đồng, đối lập, nên tìm điểm chung trong dị biệt."
+    "name": "KHUÊ (Hỏa Trạch)",
+    "description": "Tảo niên sanh tử hữu hình thương",
+    "meaning": "Tảo niên sanh tử hữu hình thương\nMục hạ tu trì đương lộng chương\nQuái kiến lưỡng xung chung hữu hạp\nKỳ huê vãng cảnh thổ thu hương",
+    "details": "Cầu con tuổi còn trẻ có việc như thường\nĐương thời ở nhà có đứa con trai\nTrong quẻ 2 hào sung, 1 hào hạp (đẻ 3 nuôi 1)\nBông quí đến cảnh muộn có mùi hương (con muộn tốt)"
   },
   {
     "id": "333",
     "name": "LY",
-    "description": "Hỏa",
-    "meaning": "Lửa",
-    "details": "Sáng, đẹp, văn minh, trung nữ, mắt, tim, lệ thuộc, khô."
+    "description": "Thế ứng tương sanh vô ngận ngại",
+    "meaning": "Thế ứng tương sanh vô ngận ngại\nXuất hành chiếm thử chủ bình yên\nXuân kỳ lương kỵ bàn nhơn toàn\nThu mạc đông sơ ngộ quới duyên",
+    "details": "Hào thế và ứng tương sanh không ngại gì\nXuất hành gặp quẻ nầy được bình yên\nMùa xuân bị lối xóm tính hơn mình (giành giựt)\nCuối thu đầu mùa đông gặp mối hàng tốt."
   },
   {
     "id": "334",
-    "name": "HỎA LÔI PHỆ HẠP",
-    "description": "Ly trên Chấn dưới",
-    "meaning": "Cắn hợp",
-    "details": "Trừng phạt, hình pháp, vượt qua trở ngại, cần cứng rắn."
+    "name": "PHỆ HẠP (Hỏa Lôi)",
+    "description": "Mộng mị chỉ giang tác quỉ mê",
+    "meaning": "Mộng mị chỉ giang tác quỉ mê\nHứa đa tâm sự lụy tâm cơ\nBằng không tư kỷ tinh thần vượng\nTrực đáo xuân lai bá sự nghi",
+    "details": "Nằm chiêm bao thấy nhiều việc sợ lắm\nTại mình tính nhiều việc nên lụy nhiều\nBằng không nhờ ông bà phước mạng lớn mới khỏi\nQua đến mùa xuân làm gì mới được."
   },
   {
     "id": "335",
-    "name": "HỎA PHONG ĐỈNH",
-    "description": "Ly trên Tốn dưới",
-    "meaning": "Cái đỉnh",
-    "details": "Nuôi dưỡng, trọng dụng người tài, vững chắc, tốt."
+    "name": "ĐỈNH (Hỏa Phong)",
+    "description": "Nhập ngao cầu hôn sự khả vi",
+    "meaning": "Nhập ngao cầu hôn sự khả vi\nPhu thê ngư thủy lương tương y\nNgoại gia đắc thử thừa luông tuổ\nCử án tuề mi phước lộc toàn",
+    "details": "Cưới vợ ở theo quê vợ được\nVợ chồng như cá với nước 2 bên nương nhau\nĐàng gái gặp quẻ nầy được rể hiền\nĐàng trai gặp con dâu hiếu thảo."
   },
   {
     "id": "336",
-    "name": "HỎA THỦY VỊ TẾ",
-    "description": "Ly trên Khảm dưới",
-    "meaning": "Chưa xong",
-    "details": "Chưa hoàn thành, còn hy vọng, cần cẩn thận, không đúng vị trí."
+    "name": "VỊ TẾ (Hỏa Thủy)",
+    "description": "Trùng trùng tiếng bạc hảo môn trường",
+    "meaning": "Trùng trùng tiếng bạc hảo môn trường\nTầm quán chiếm chỉ đắc kiến xương\nThế ứng lưỡng hào giai tương hiệp\nCang tu tương tế hữu hà phong",
+    "details": "Người ta chỉ phố tốt nhiều chỗ\nDạy học tự gặp quẻ nầy tốt\nHai bên người mình hùn hiệp tốt\nĐối đãi với người nhỏ nhẹ có sao đâu."
   },
   {
     "id": "337",
-    "name": "HỎA SƠN LỮ",
-    "description": "Ly trên Cấn dưới",
-    "meaning": "Lữ khách",
-    "details": "Ở trọ, xa nhà, cô độc, không ổn định, cần khiêm tốn."
+    "name": "LỮ (Hỏa Sơn)",
+    "description": "Quái trung hứa nể bán thu thanh",
+    "meaning": "Quái trung hứa nể bán thu thanh\nThỏa đắc văng xương lưỡng tự hưng\nThủy thiên hạn đa nghi túc đậu\nHoà niên tất đãi vãng thân thành",
+    "details": "Quẻ nầy mùa thu được nửa mất nửa\nNhờ thời vận ông năm nay tốt\nMưa ít nắng nhiều đậu bắp tốt\nMạ mộng lúa thóc sau muộn mới khá."
   },
   {
     "id": "338",
-    "name": "HỎA ĐỊA TẤN",
-    "description": "Ly trên Khôn dưới",
-    "meaning": "Tiến lên",
-    "details": "Tiến bộ, phát triển, được ban thưởng, vua hiền, tốt."
+    "name": "TẤN (Hỏa Địa)",
+    "description": "Quân nhơn thủ ngư vấn bốc linh",
+    "meaning": "Quân nhơn thủ ngư vấn bốc linh\nThủy nội kinh vinh hữu tài nguyên\nCầu mưu thuận lợi hướn đông phương\nQuản giao tằng tằng bất thoát không.",
+    "details": "Ông coi về giang thủy lợi tốt xấu\nMuốn làm ăn dưới nước có tài lợi\nTính toán hướng đông có tài lợi\nChừa hướng đông ra, hướng nào cũng tay không."
+  },
+  {
+    "id": "341",
+    "name": "ĐẠI TRÁNG (Lôi Thiên)",
+    "description": "Thứ thiếp hân phùng thử quái hào",
+    "meaning": "Thứ thiếp hân phùng thử quái hào\nThê tài lâm thế tối vì cao\nPhu chi phụ lan hiệp mộng kiết\nChưng tư viễn khánh thỏa vinh hoa",
+    "details": "Cưới vợ sau mừng quẻ tốt\nHào thê tài hiện vô hào thế thì tốt lắm\nVợ chồng như cỏ chỉ, cỏ lan tốt\nSanh con đẻ cháu được giàu sang."
+  },
+  {
+    "id": "342",
+    "name": "QUI MUỘI (Lôi Trạch)",
+    "description": "Quân chiếm nạp giám khủng vô thành",
+    "meaning": "Quân chiếm nạp giám khủng vô thành\nTử động trùng trùng uổng phí tâm\nCánh kỵ văn thơ khán trùng phục\nTam tư cẩn thận đắc an ninh",
+    "details": "Xin sở làm về nghề văn e không thành\nHào tử tôn động trùng trùng lo tính uổng công\nLại bị đơn từ chất cả đống (người xin nhiều)\nPhải tính cẩn thận việc mới yên."
+  },
+  {
+    "id": "343",
+    "name": "PHONG (Lôi Hỏa)",
+    "description": "Khảm quái chi trung khả viên dung",
+    "meaning": "Khảm quái chi trung khả viên dung\nQuân vấn hòa sự khả năng thông\nChuyết phục phiến ngôn lợi cửu ngoạt\nChấp trung công đạo lưỡng vô dụng",
+    "details": "Trong quẻ khảm nầy có việc tròn\nNgươi muốn hỏi sự giải hòa được\nNửa câu nói làm cho hết kiện thưa ( lợi tháng 9)\nNói cho ngay thẳng đừng vị phe nào."
+  },
+  {
+    "id": "344",
+    "name": "CHẤN",
+    "description": "Lục hào lâm quái chiếm dựng dục",
+    "meaning": "Lục hào lâm quái chiếm dựng dục\nTài quỉ trùng trùng hữu hư kinh\nThập ngoạt vì vang dần ngọ lợi\nGiã tu tác phước bảo an khương",
+    "details": "Muốn coi về chửa nghén sanh đẻ\nHào tài hào quỉ rần rần có việc hư kinh\nTrong 10 tháng dần, ngọ hoặc ngày dần, ngọ lợi\nCòn mấy tháng kia phải làm lành mới khỏi."
+  },
+  {
+    "id": "345",
+    "name": "HẰNG (Lôi Phong)",
+    "description": "Tài hào thượng quái bất vi kỳ",
+    "meaning": "Tài hào thượng quái bất vi kỳ\nGiao việc chiếm chỉ thị khả y\nXuân hạ chỉ gian đại kiến lợi\nThu đông tổng yếu bất di nghi.",
+    "details": "Hào tài hiện lên quẻ hay lắm\nMua bán hàng dạo quẻ nầy tốt\nMùa xuân, mùa hạ lợi nhiều\nMùa thu, mùa đông vừa vừa không mấy tốt."
+  },
+  {
+    "id": "346",
+    "name": "GIẢI (Lôi Thủy)",
+    "description": "Văn thơ bất kiến tín nan thông",
+    "meaning": "Văn thơ bất kiến tín nan thông\nQuân vấn tầm nhơn thế ứng không\nNhơn tại đông, nam đắc bảo noản\nTrì trì phương hứa hữu tương phùng.",
+    "details": "Hào văn thơ không thấy tin tức khó thông\nÔng hỏi tầm người không thấy ai hết\nNgười ở phía đông, nam đặng ấm no\nChậm chậm rồi đây sẽ gặp nhau."
+  },
+  {
+    "id": "347",
+    "name": "TIỂU QUÁ (Lôi Sơn)",
+    "description": "Thăng thiên chỉ quái tối vi cao",
+    "meaning": "Thăng thiên chỉ quái tối vi cao\nQuan quỉ văn thơ lưỡng kiến giao\nSửu, mùi, thìn, tuất lai hảo tín\nPhương danh sang trước tại thanh tàn",
+    "details": "Lên chức gặp quẻ nầy tốt quá\nHào quan quỉ, văn thơ gặp nhau\nSửu, mùi, thìn, tuất đến tin tốt\nTên tuổi đem vô quyển sổ vàng."
+  },
+  {
+    "id": "348",
+    "name": "DỰ (Lôi Địa)",
+    "description": "Cầu hôn chiếm thử bất di nghi",
+    "meaning": "Cầu hôn chiếm thử bất di nghi\nTài lộc phùng xung sự bất tề\nDu khủng mai nhơn bất đắc lực\nHựu liên bàn nhơn ban thị phi",
+    "details": "Cưới gả gặp quẻ này không tốt\nHào tài lộc gặp xung việc không thành\nTại mai nhơn không được tin cậy\nTại lối xóm nói ra, nói vô."
+  },
+  {
+    "id": "351",
+    "name": "TIỂU SÚC (Phong Thiên)",
+    "description": "Lục hào yên tịnh tinh thần vượng",
+    "meaning": "Lục hào yên tịnh tinh thần vượng\nThảo bộc thiên dinh sự đích đương\nBất đắc đa nghi tu tác tốc\nTrì trì hữu khủng thượng trì trì.",
+    "details": "Sáu hào yên lặng tinh thần tốt\nMướn bạn thâu người việc rõ ràng\nĐừng đa nghi nên tính mau lẹ\nNếu chần chờ thì bê trễ nữa."
+  },
+  {
+    "id": "352",
+    "name": "TRUNG PHÙ (Phong Trạch)",
+    "description": "Tài hào lâm ứng phá văn thơ",
+    "meaning": "Tài hào lâm ứng phá văn thơ\nQuan quỉ hữu thị vì nghi\nKiêm tế vị năng quyên nạp lại\nLai xuân phương hứa toại tâm cơ",
+    "details": "Hào tài hiện người ta phá hào văn thơ\nHào quan quỉ lại trái ngược chưa có việc tốt\nNăm nay xin chỗ làm về phía võ không được\nSang năm đến mùa xuân mới được"
+  },
+  {
+    "id": "353",
+    "name": "GIA NHÂN (Phong Hỏa)",
+    "description": "Cáo trạng chiếm chi uổng lao tâm",
+    "meaning": "Cáo trạng chiếm chi uổng lao tâm\nDục cáo tu tri bất thuận tình\nTài phá văn thơ, quan quỉ phục\nBất như hưu tức miễn tai tinh",
+    "details": "Vô đơn gặp quẻ này uổng công\nMuốn kiện phải biết rõ đầu đuôi\nHào tài phá văn thơ, quan quỉ phụ\nChi bằng thôi nghỉ, bỏ đi tai hại"
+  },
+  {
+    "id": "354",
+    "name": "ÍCH (Phong Lôi)",
+    "description": "Cầu quan tối kỵ đệ huynh hưng",
+    "meaning": "Cầu quan tối kỵ đệ huynh hưng\nMục hạ ưng tri vị xứng tâm\nTài phá văn thơ, quan quỉ phục\nViệc giao đông quí thủy lâm vân",
+    "details": "Cầu quan rất kỳ hào đệ huynh động\nĐương thời chưa có gì vừa bụng\nBị lo tiền nên giấy tờ ém\nCuối mùa đông mới được nước mây."
+  },
+  {
+    "id": "355",
+    "name": "TỐN",
+    "description": "Thế cao ứng hạ hỉ vinh vinh",
+    "meaning": "Thế cao ứng hạ hỉ vinh vinh\nDục tấn nha môn tất xứng tâm\nDục tốn sanh tài trùng thử trưởng\nNa thời đắc tế hỉ gia đình",
+    "details": "Mình cao người thấp việc mừng tràn trề\nMuốn đến nha môn, xin đi lính được\nMuốn làm giàu mau lúc này được rồi\nTừ đây sắp tới bà con niềm nở"
+  },
+  {
+    "id": "356",
+    "name": "HOÁN (Phong Thủy)",
+    "description": "Đệ huynh trì thế hữu văn thơ",
+    "meaning": "Đệ huynh trì thế hữu văn thơ\nGia tín trùng trùng hỉ kiến chỉ\nHợi, tý, mùi giao gia tín chí\nBất tư sầu muộn tỉnh kinh nghi",
+    "details": "Hào đệ huynh trì thế lại có hào văn thơ\nThơ tín gởi luôn về hoài\nHợi, tý, mùi tới đây có thơ lại nữa\nĐừng lo buồn nghi ngại gì hết."
+  },
+  {
+    "id": "357",
+    "name": "TIỆM (Phong Sơn)",
+    "description": "Phước thần trì thế thủ điền trang",
+    "meaning": "Phước thần trì thế thủ điền trang\nChiếm mãi điền viên đại kiết xương\nỨng vị phùng tài đa ích lợi\nHỉ phùng trung chứng hảo thương lượng",
+    "details": "Hào phước thần ở thế ruộng vườn thạnh\nMua ruộng vườn tốt lắm\nHào ứng gặp hào tài nhiều lợi ích\nMừng gặp người ngay đem mối mua bán với mình."
+  },
+  {
+    "id": "358",
+    "name": "QUAN (Phong Địa)",
+    "description": "Văn thơ quan quỉ lưỡng phân minh",
+    "meaning": "Văn thơ quan quỉ lưỡng phân minh\nTrí hoá lai tri tất xứng tâm\nXuất nhập tài nguyên tam ngũ bội\nLộ hành bình đẳng bất thọ kinh",
+    "details": "Hào văn thơ quan quỉ tỏ rạng\nDự trữ hàng hóa chiếm quẻ nầy vừa bụng\nRa vô một vốn năm ba lời\nĐi đường bình yên không lo sợ"
+  },
+  {
+    "id": "361",
+    "name": "NHU (Thủy Thiên)",
+    "description": "Thiên qua nhi lang hà nhựt cường",
+    "meaning": "Thiên qua nhi lang hà nhựt cường\nTử tôn trì thế đô vô phòng\nYếu phùng thân, dậu ách hứa thối\nNhứt phước tiến phương tiên kiết xương",
+    "details": "Con cháu đau trái giống chừng nào mạnh\nHào tử tôn trì thế có sao đâu\nNếu gặp thân, dậu thì bịnh bớt\nUống được thuốc mạnh như thường."
+  },
+  {
+    "id": "362",
+    "name": "TIẾT (Thủy Trạch)",
+    "description": "Quân vẫn mưu sự đa tác nan",
+    "meaning": "Quân vẫn mưu sự đa tác nan\nNghĩa khí tương đầu phương khả tham\nHạ, thu nhi quí hưu đề khởi\nTrực đáo đông xuân phương khả toàn",
+    "details": "Người hỏi việc đó khó lắm\nGặp anh em cho thích mới tính được\nCuối hạ, cuối thu đừng đem việc đó ra nói\nĐến đông, xuân việc mới hoàn toàn."
+  },
+  {
+    "id": "363",
+    "name": "KÝ TẾ (Thủy Hỏa)",
+    "description": "Tật bịnh triền miên phụ mẫu thân",
+    "meaning": "Tật bịnh triền miên phụ mẫu thân\nQuỉ hào sanh ứng hỉ tinh thần\nCanh tân mậu kỷ tai tinh thối\nTác phước thần kỳ bảo an ninh",
+    "details": "Cha mẹ đau ốm dây dưa hoài\nHào quỉ sanh hào ứng có tinh thần\nNgày canh tân mầu kỷ bịnh mới bớt\nPhải cúng kiến vái van bịnh mới mạnh"
+  },
+  {
+    "id": "364",
+    "name": "TRUÂN (Thủy Lôi)",
+    "description": "Thử quái phân gia hữu thị phi",
+    "meaning": "Thử quái phân gia hữu thị phi\nKhởi tri thủ cựu đắc tiện nghi\nƯng cao thế hạ đa phiền não\nTạ kỷ nhẫn nại miền bỉ khi",
+    "details": "Quẻ chia gia tài có việc rầy rà\nHồi đó sao giờ để vậy tốt\nNgười có bề thế, mình nghèo làm ra thêm buồn\nTự mình nhịn nhục khỏi bị khi."
+  },
+  {
+    "id": "365",
+    "name": "TỈNH (Thủy Phong)",
+    "description": "Quân chiếm tật bịnh hữu hà phòng",
+    "meaning": "Quân chiếm tật bịnh hữu hà phòng\nKhinh trọng tinh thần tự kiến thương\nTác phước kỳ thần tam xác thối\nCanh thìn phương hứa kiến an khương",
+    "details": "Nhà ngươi coi đau ốm, không sao đâu\nBị người ta quở chấp, cúng vái đi\nCúng bái rồi bịnh sẽ lành mạnh\nTừ canh thìn sắp tới mới mạnh."
+  },
+  {
+    "id": "366",
+    "name": "KHẢM",
+    "description": "Quân lai vấn hội quái vô phòng",
+    "meaning": "Quân lai vấn hội quái vô phòng\nSự di tương đầu bất tu mang\nTái kỵ thổ sát lai khắc động\nDần, Thân, Tị, Hợi bá sự xương",
+    "details": "Ngươi đến hỏi nhóm việc quẻ không sao\nViệc chưa ra mối gì đừng lo\nKỵ vì sao thổ sát, khắc động\nDần, thân, tỵ, hợi trăm việc đều tốt."
+  },
+  {
+    "id": "367",
+    "name": "KIỂN (Thủy Sơn)",
+    "description": "Quái vấn di cư sự khả vi",
+    "meaning": "Quái vấn di cư sự khả vi\nỨng hào sanh thế phước thần tề\nMục hạ xâm ngôn hưu yếu thính\nDi cư chỉ hậu hữu y qui",
+    "details": "Quẻ hỏi dời chỗ ở, việc làm được\nHào ứng sanh thế phước thần giúp\nĐương thời có người nói ra vô, dèm xiển đừng nghe\nNgày dời chỗ có chỗ nương cậy về sau."
+  },
+  {
+    "id": "368",
+    "name": "TỶ (Thủy Địa)",
+    "description": "Thử quái đa hung bất thuận nghi",
+    "meaning": "Thử quái đa hung bất thuận nghi\nTu trị mãi ốc hữu sai trì\nAn tâm thủ cựu hựu khinh cử\nHồ vì thiết mạt nhá thị phi",
+    "details": "Quẻ nầy xấu nhiều tốt ít\nTình mua nhà có sai chạy chút\nYên lòng giữ nề nếp cũ đừng vội tính\nXin đừng làm rộn mà sanh chuyện rầy rà."
+  },
+  {
+    "id": "371",
+    "name": "ĐẠI SÚC (Sơn Thiên)",
+    "description": "Tài hào vị thế phá văn chương",
+    "meaning": "Tài hào vị thế phá văn chương\nQuan quỉ hưu sầu tổng bất như\nKhoa cử chiếm chi tuy vì ổn\nVinh mưu đoán hứa bộ vân thê",
+    "details": "Hào tài trì thế phá văn chương\nHào quan quỉ buồn bực lắm, không ra gì\nThi cử gặp quẻ nấy không được\nPhải tính toán, lo lót gì mới được."
+  },
+  {
+    "id": "372",
+    "name": "TỔN (Sơn Trạch)",
+    "description": "Độc thơ hựu hứa âm lâm thân",
+    "meaning": "Độc thơ hựu hứa âm lâm thân\nẤn thọ tương sanh đắc xứng tâm\nTuyển nhập cần cung mang tác vưởng\nNiên phùng thủy hỏa đắc dương danh",
+    "details": "Học hành nhờ đường công danh\nĐặng tước lộc tương sanh nên vừa lòng\nChọn lựa tên tuổi vô bản đậu\nGặp năm thủy, năm hỏa mới rạng danh."
+  },
+  {
+    "id": "373",
+    "name": "BÍ (Sơn Hỏa)",
+    "description": "Tài vật thượng quái tối vi kỳ",
+    "meaning": "Tài vật thượng quái tối vi kỳ\nDục khứ thủ thảo bất tất nghi\nTức tại mục hạ tu tác tốc\nTrì trì hựu khủng bất đắc tề",
+    "details": "Tiền của hiện vô quẻ rất lấy làm lạ\nMuốn tới đòi hỏi chưa chắc được\nĐi gấp gấp đòi bây giờ có\nNếu trì hưỡn lại đòi không được."
+  },
+  {
+    "id": "374",
+    "name": "DI (Sơn Lôi)",
+    "description": "Vinh khổ đắc thất giai do mạng",
+    "meaning": "Vinh khổ đắc thất giai do mạng\nThọ yểu tùng thông tống đại thiên\nDục bốc ngũ hành tiền tức sự\nVãng niên mạng vận thắng trung niên",
+    "details": "Sang hèn đặng mất là tại mạng vận\nSống lâu chết yểu bởi tại trời\nMuốn bói coi ngày sanh tháng đẻ vận mạng ra sao\nLúc trở về già tốt hơn thời trai tráng."
+  },
+  {
+    "id": "375",
+    "name": "CỔ (Sơn Phong)",
+    "description": "Y dược vô duyên tha mang y",
+    "meaning": "Y dược vô duyên tha mang y\nQuỉ lâm thế vị hữu đào khê\nYêm yêm tật bệnh trì trì đủ\nHữu vấn thần dược bất phò trì",
+    "details": "Tại không có duyên uống thuốc, đừng khi thầy\nHào quỉ lâm hào thế nên sảy ra trục trặc\nĐau ốm dây dưa trầm trầm, chậm mạnh\nĐừng nói ông tổ thuốc không phò hộ."
+  },
+  {
+    "id": "376",
+    "name": "MÔNG (Sơn Thủy)",
+    "description": "Học hành sĩ nghiệp vĩ thảng đường",
+    "meaning": "Học hành sĩ nghiệp vĩ thảng đường\nTuyển nhập đầu cung tánh thị hương\nTiển thi công đình cầu tiến bản\nVăn chương đoan đích xọa tình quan",
+    "details": "Đã thi vô trường lớn rồi\nTên tuổi đã đem vô số đậu rồi\nĐơn, giấy tờ đã được chấp thuận\nKhông biết ngày nào có giấy đòi."
+  },
+  {
+    "id": "377",
+    "name": "CẤN",
+    "description": "Vấn bốc thiên tình nan hứa tình",
+    "meaning": "Vấn bốc thiên tình nan hứa tình\nCanh tân mẹo ngọ cánh khuynh bồn\nCửu tình vẫn vũ nan cầu vũ\nCửu vũ vấn tình vi tất tình",
+    "details": "Hỏi trời tạnh khó nói là tạnh\nNgày canh, tân, mẹo ngọ như cầm tĩn đổ\nTạnh lâu hỏi mưa khó kiếm mưa\nMưa lâu hỏi tạnh chưa ắt tạnh."
+  },
+  {
+    "id": "378",
+    "name": "BÁC (Sơn Địa)",
+    "description": "Chiêu tế chiếm chi sự tối giai",
+    "meaning": "Chiêu tế chiếm chi sự tối giai\nThê tài tử lộc thiệt tham khoa\nTương lai đắc thủ thành gia kế\nSố bộc vi lai định bất sai",
+    "details": "Bắt rẻ gặp quẻ nầy tốt lắm\nHào thê tài, tử lộc thiệt đáng khen\nNgày sau được nên nhà cửa\nQuẻ này coi việc chưa tới không bao giờ sai"
+  },
+  {
+    "id": "381",
+    "name": "THÁI (Địa Thiên)",
+    "description": "Quái chiêm tố biện yếu văn thơ",
+    "meaning": "Quái chiêm tố biện yếu văn thơ\nDanh lợi chiếm chi bá sự nghi\nTả hữu quới nhơn đề bạc khứ\nĐương quan tố biện tiểu hi hi",
+    "details": "Quẻ chiếm hầu kiện lý đoán đó đúng\nVề đường công danh cũng được tốt\nNhờ có quới nhơn người chỉ bảo\nTrước mặt quan mình trả lời quan vui vẻ."
+  },
+  {
+    "id": "382",
+    "name": "LÂM (Địa Trạch)",
+    "description": "Quỉ hào trì thế dị vì lương",
+    "meaning": "Quỉ hào trì thế dị vì lương\nTổn thất xuân tâm bất đại cường\nHanh ngộ tử tôn lai khắc quỉ\nBình bình lợi ích giả bình thường",
+    "details": "Hào quỉ trì thế chưa nên làm\nTằm tơ lỗ lã chẳng đến đỗi hại to\nMay gặp hào tử tôn khắc hào quan quỉ\nSự lợi kiếm lại đặng vừa vừa."
+  },
+  {
+    "id": "383",
+    "name": "MINH DI (Địa Hỏa)",
+    "description": "Thâu giải tiền lương ngộ quới nhơn",
+    "meaning": "Thâu giải tiền lương ngộ quới nhơn\nTử tôn lâm ấn hỉ vinh vinh\nTrung đồ kinh khủng tuy nhiên hữu\nLộc mã phò trì bảo thái bình",
+    "details": "Thâu góp đem đong gặp người tốt\nHào tử tôn hiện vô hào ấn, vui mừng đầy đủ\nNhưng có việc kinh khủng dọc đường\nNhờ sao lộc mã ủng hộ được bình yên"
+  },
+  {
+    "id": "384",
+    "name": "PHỤC (Địa Lôi)",
+    "description": "Chiếm quái sanh ý sự bất thành",
+    "meaning": "Chiếm quái sanh ý sự bất thành\nTam phiền tứ phúc uống tinh thần\nTrực đãi tham thu đông nhựt đáo\nTùy tâm phương hứa tất nhiên thành",
+    "details": "Mua bán quẻ nầy chẳng thành\nBa nghiên hốn úp mệt nhọc uổng công\nChờ hết mùa thu qua đông\nChừng đó bụng tính sao được vậy."
+  },
+  {
+    "id": "385",
+    "name": "THĂNG (Địa Phong)",
+    "description": "Chiếm lãnh văn thơ hứa tiện hữu",
+    "meaning": "Chiếm lãnh văn thơ hứa tiện hữu\nNhựt kỳ ứng tại hợi, tý, sửu\nQuới nhơn đắc lực hỉ tương sanh\nQuản thủ văn thơ lai đáo thủ.",
+    "details": "Quẻ chiếm lãnh giấy tờ chắc được\nTới ngày hợi, tý, sửu thì có\nCó quới nhơn giúp sức sự vui mừng đó\nNên giấy tờ hầu phê tới ngày đó giao tới tay mình"
+  },
+  {
+    "id": "386",
+    "name": "SƯ (Địa Thủy)",
+    "description": "Thế khắc ứng hào chư sự nan",
+    "meaning": "Thế khắc ứng hào chư sự nan\nQuân chiếm kiến quới khổ tâm phiền\nTất giao hợi, mẹo, phương huề hiệp\nNgộ thử phương tri phóng tự mang",
+    "details": "Hào thế khắc hào ứng việc gì cũng khó\nNgươi muốn ra mắt quan lớn rất khổ tâm\nQua tới hợi, mẹo việc mới hoà hiệp\nChừng gặp quan nói đủ điều, mới biết thuở giờ làm bậy."
+  },
+  {
+    "id": "387",
+    "name": "KHIÊM (Địa Sơn)",
+    "description": "Quái chiếm thác hóa tối vi cao",
+    "meaning": "Quái chiếm thác hóa tối vi cao\nQuới khách chỉ trì kiết lợi chiêu\nYếu thác ưng kỳ Hợi, Tý nhựt\nBá mưu giai toại vĩnh vô lao",
+    "details": "Quẻ này sang xến hàng hóa rất hay\nKhách hàng gìn giữ đem lợi cho mình\nMuốn sang chờ đến ngày hợi, Tý\nTrăm việc gì cũng tính được hết"
+  },
+  {
+    "id": "388",
+    "name": "KHÔN",
+    "description": "Quái tượng chiếm lai tối vị cao",
+    "meaning": "Quái tượng chiếm lai tối vị cao\nKhởi tin phùng phùng chỉ lợi lục hào\nTuy thị nhãn tiền đa hao tán\nLâm môn tài hỉ hậu đa nhiên",
+    "details": "Quẻ này chiếm được rất hay\nKhởi công gặp quẻ này lợi lắm\nTuy trước mắt hao tổn nhiều tiền\nTừ rày sắp tới tiền của vạch cửa chung vô."
+  },
+  {
+    "id": "411",
+    "name": "CÀN",
+    "description": "Mãi ngưu, mãi mã tác canh thừa",
+    "meaning": "Mãi ngưu, mãi mã tác canh thừa\nThử quái chiếm chi hứa toại tâm\nThế ứng lưỡng sanh tài chậm vượng\nTư ngưu ly mã sự mi thành",
+    "details": "Mua trâu, mua ngựa đặng kéo cày\nChiếm được quẻ này ắt vừa lòng\nHào thế, ứng sanh, hào tài vượng\nTrâu hung, ngựa dữ mua cũng được."
+  },
+  {
+    "id": "412",
+    "name": "LÝ (Trạch Thiên)",
+    "description": "Quân vẫn hồi hương hứa toại tình",
+    "meaning": "Quân vẫn hồi hương hứa toại tình\nChỉ nhơn bạn lữ hữu hềm tăng\nXuất hữu quới nhơn đa trợ lực\nQuản giao ổn bộ đáo gia đình",
+    "details": "Người hỏi về thăm nhà, hứa chắc được\nChỉ có anh em bạn không vừa lòng chút\nNhờ quới nhơn giúp sức đi được\nVề đến xứ sở, gia đình bình yên."
+  },
+  {
+    "id": "413",
+    "name": "ĐỒNG NHÂN (Thiên Hỏa)",
+    "description": "Tổ tông phần mộ quỉ hào lâm",
+    "meaning": "Tổ tông phần mộ quỉ hào lâm\nHữu thủy vô phong ý bất minh\nTư hữu tài tinh bất tàn tựu\nNhơn minh khả hứa tài bình bình",
+    "details": "Mồ mả ông bà bị quỉ hào hiện\nCó nước không gió, nhiều việc không vừa ý\nDẫu có tiền của, vô cửa trước ra cửa sau\nNgười ta trong nhà vừa vừa, làm ăn đủ xài."
+  },
+  {
+    "id": "414",
+    "name": "VÔ VỌNG (Thiên Lôi)",
+    "description": "Vô vọng cầu tài chung hữu vọng",
+    "meaning": "Vô vọng cầu tài chung hữu vọng\nThế cao ứng hạ lưỡng trùng tài\nNhược phùng tam thất phập số nội\nTự nhiên phương hứa toại huân hoài.",
+    "details": "Quẻ vô vọng cầu tài rốt cuộc có hy vọng\nHào thế cao ứng thấp, 2 hào tài trùng\nNếu gặp trong số 3,7, số 10\nTự nhiên tính gì được nấy."
+  },
+  {
+    "id": "415",
+    "name": "CẤU (Thiên Phong)",
+    "description": "Cầu chiếm phóng trướng bất vi kỳ",
+    "meaning": "Cầu chiếm phóng trướng bất vi kỳ\nTam tư tái tự bất khả vi\nNhược thị xuân gian hườn hữu lợi\nHạ, thu, đông quí hữu thị phi",
+    "details": "Quẻ coi bán chịu, cho vay không có lạ gì\nTính tới lui gì chẳng nên làm\nNếu gặp mùa xuân có lợi chút\nĐến hạ, thu, đông có việc rầy rà."
+  },
+  {
+    "id": "416",
+    "name": "TỤNG (Thiên Thủy)",
+    "description": "Bốc chỉ chiếm chỉ hảo đổ tiền",
+    "meaning": "Bốc chỉ chiếm chỉ hảo đổ tiền\nỨng lai sanh thế bất tu sai\nĐông, tây định vị vô tất tiển\nThìn ngọ chỉ thời bạch thủ lợi.",
+    "details": "Quẻ coi về cờ bạc đá gà\nHào ứng sanh hào thế tốt lắm\nLựa cho được hướng đông, hướng tây mà ngồi\nNếu ngồi thìn, ngọ về tay không."
+  },
+  {
+    "id": "417",
+    "name": "ĐỘN (Thiên Sơn)",
+    "description": "Quan quỉ thê tài lưỡng kiến chi",
+    "meaning": "Quan quỉ thê tài lưỡng kiến chi\nVấn nhơn tá thủ đắc tương nghi\nTam phân tài khí khả ưng hứa\nMục hạ tương cần sự khả như",
+    "details": "Hào quan quỉ, thê tài đủ cặp\nKiếm người vay mượn có lẽ đặng\nViệc tiền bạc chắc chắn 3 phần chịu cho\nMuốn được việc gấp gấp bây giờ cũng được."
+  },
+  {
+    "id": "418",
+    "name": "BỈ (Thiên Địa)",
+    "description": "Quân vấn khai điếm sự khả vi",
+    "meaning": "Quân vấn khai điếm sự khả vi\nHào trung kinh dinh một thị phi\nTứ quí bất như xuân quí hảo\nToại tâm tài hỉ sự tương nghi",
+    "details": "Ngươi hỏi khai tiệm việc này được\nCứ việc sắp đặt tới không việc gì đổ bể đâu\nBốn mùa chẳng bằng cuối mùa xuân tốt lắm\nTài hỉ vừa bụng việc gì cũng nên."
+  },
+  {
+    "id": "421",
+    "name": "QUYẾT (Trạch Thiên)",
+    "description": "Quân vẫn xuân tầm ý nhược hà",
+    "meaning": "Quân vẫn xuân tầm ý nhược hà\nQuỉ hào lâm vị tốn thương đa\nThành tâm kỳ đảo bình bình lợi\nThiết mạc tham đa tánh tổn hòa.",
+    "details": "Nhà ngươi muốn hỏi về việc tằm tơ.\nHào quan quỉ thượng vô quẻ tốn hao nhiêu.\nVái van mới có lời chút đỉnh\nĐừng có tham nhiều mà trở lại lỗ."
+  },
+  {
+    "id": "422",
+    "name": "ĐOÀI",
+    "description": "Thế ứng tài hòa tối vi kiết",
+    "meaning": "Thế ứng tài hòa tối vi kiết\nKhởi tiệc chiếm chỉ đa ích lợi\nXuân thu nhị quí nhậm quân vi\nNhư phùng đông hạ bất như kiết",
+    "details": "Hào thế ứng tài hòa lấy làm tốt\nKhởi công chiếm được quẻ này nhiều việc ích lợi\nCuối xuân cuối thu tính gì được nấy\nGặp mùa đông, mùa hạ chẳng nên làm"
+  },
+  {
+    "id": "423",
+    "name": "CÁCH (Trạch Hỏa)",
+    "description": "Nhơn lai vấn bốc vi phê văn",
+    "meaning": "Nhơn lai vấn bốc vi phê văn\nQuan quỉ trùng trùng tức nhựt lâm\nLưỡng xứ quới nhơn đa đắc lợi\nY nhiên toại ý tiếu nhan khai.",
+    "details": "Người đến hỏi văn bằng hầu phê\nHào quan quỉ dồn dập không biết ngày nào giấy tờ lại\nCó hai vị ân nhân giúp đỡ\nTự nhiên vừa lòng, vuik cười hớn hở."
+  },
+  {
+    "id": "424",
+    "name": "TÙY (Trạch Lôi)",
+    "description": "Quái chiếm thoát hóa thậm vi cao",
+    "meaning": "Quái chiếm thoát hóa thậm vi cao\nQuan quỉ trùng trùng tiên kiến hào\nLưỡng quới nhơn lai trợ lực\nXuất môn giao việc lợi đa nhiêu",
+    "details": "Quẻ này sang xến hàng hóa rất là may\nHào quân quỉ dồn dập hiện vô quẻ\nCó hai người tới giúp sức\nRa cửa mua bán lợi vô nhiều"
+  },
+  {
+    "id": "425",
+    "name": "ĐẠI HÓA (Trạch Phong)",
+    "description": "Số chiếm sanh ý yếu kinh vinh",
+    "meaning": "Số chiếm sanh ý yếu kinh vinh\nThử quái chiếm chỉ đắc toại tâm\nMang lý đu nhân tẩm khoái lạc\nThắng quá tha niên thập bội kiêm",
+    "details": "Quẻ coi mua bán được tốt đa,\nĐược hài lòng vừa ý lắm mà,\nTrong khi bối rối xảy gặp vui vẻ\nSố lời hơn năm ngoái 10 phần."
+  },
+  {
+    "id": "426",
+    "name": "KHỔN (Trạch Thủy)",
+    "description": "Số trung tố biện bất tri tình",
+    "meaning": "Số trung tố biện bất tri tình\nAm xứ đầu minh sự bất minh\nĐãi đắc dẫn thân tị hợi nhựt\nVăn thơ phát động tiến tương sanh",
+    "details": "Quẻ nầy hầu kiện chưa thấu rõ sự tình\nViệc khuất lấp muốn nói rõ mà chưa rõ\nChờ đặng ngày Dần, Thân, Tỵ, Hợi\nEnquête phúc bẩm rồi thì thấy vui mừng."
+  },
+  {
+    "id": "427",
+    "name": "HÀM (Trạch Sơn)",
+    "description": "Kiến quới nhơn (chiếm) chi khước hữu duyên",
+    "meaning": "Kiến quới nhơn (chiếm) chi khước hữu duyên\nỨng lai sanh thế sự tương sanh\nTrùng trùng tiến bạt đa tài lợi\nTình ý tương đầu tiếu ngữ quyên.",
+    "details": "Muốn ra mắt quan quẻ này có duyên\nHào ứng sanh hào thế sự tương sanh\nNhiều người tiến cử mình nên nhiều tài lợi\nÔng quan với mình vui mừng nói gì cũng được."
+  },
+  {
+    "id": "428",
+    "name": "TÙY (Trạch Địa)",
+    "description": "Thâu giải tiền lương sự hữu kinh",
+    "meaning": "Thâu giải tiền lương sự hữu kinh\nHườn phòng tước giác hữu tương tranh\nNhư phùng đông quí bình bình hóa\nNhược toại xuân thời định hữu bình",
+    "details": "Việc thâu giải tiền lương có kinh khủng chút\nLại ngừa việc rầy rà soi bói giành giựt\nGặp cuối mùa đông việc vừa vừa qua khỏi\nCòn ở mùa xuân chắc có tù tội."
+  },
+  {
+    "id": "431",
+    "name": "ĐẠI HỮU (Hỏa Thiên)",
+    "description": "Số chiếm thử quái lưỡng văn thơ",
+    "meaning": "Số chiếm thử quái lưỡng văn thơ\nNạp lại chiếm chi giả giác trì\nKim tuế hào từ duy khiếm khuyết\nLại niên hoặc bả tánh danh đề",
+    "details": "Được quẻ này hai hào văn thơ\nXin làm việc võ quẻ này lẹ lắm\nTuy năm nay có trống một chỗ\nSang năm có động tên tuổi mình (được)"
+  },
+  {
+    "id": "432",
+    "name": "KHUÊ (Hỏa Trạch)",
+    "description": "Quân chiếm trú hóa thiển như tâm",
+    "meaning": "Quân chiếm trú hóa thiển như tâm\nThế vị phùng xung khủng bất thành\nTổng sự thành chi vô đại lợi\nBất như thủ kỷ miễn lao thần",
+    "details": "Hỏi dự trữ hàng hóa không được theo ý muốn\nHào thế bị xung e việc không thành\nDẫu việc thành cũng không lợi nhiều\nChi bằng giữ bổn phận cũ khỏi cực nhọc."
+  },
+  {
+    "id": "433",
+    "name": "LY",
+    "description": "Dục tấn nha môn cận quới nhơn",
+    "meaning": "Dục tấn nha môn cận quới nhơn\nCàn quan vô số lạc hân hân\nPhùng xung ngộ quỉ đa như ý\nVĩ hậu thành gia lợi ích thân",
+    "details": "Tình nguyện xin đi lính đến của quan\nTheo nhập ngũ hầu quan lớn vui mừng vô số\nGặp xung gặp quan muốn gì được nấy\nTừ đây về sau nên cửa nên nhà thân danh ích lợi"
+  },
+  {
+    "id": "434",
+    "name": "PHỆ HẠP (Hỏa Lôi)",
+    "description": "Trời điền chiếm thử quái vi kỳ",
+    "meaning": "Trời điền chiếm thử quái vi kỳ\nPhước đức tỉnh lâm thiểu thị phi\nPhi lương sai kinh đa lợi ích\nKhuyến quân tảo tự mạc trì trì",
+    "details": "Sắm ruộng chiếm quẻ nay lấy làm hay\nVì sao phước đức hiện vô quẻ ít rầy rà\nLúa ruộng không sai chạy có nhiều lợi\nKhuyên người sớm liệu đừng dụ dự"
+  },
+  {
+    "id": "435",
+    "name": "ĐỈNH (Hỏa Phong)",
+    "description": "Cầu quan chiếm thử quái vi kỳ",
+    "meaning": "Cầu quan chiếm thử quái vi kỳ\nQuan quỉ văn thơ lưỡng kiến chỉ\nMộc khước thảo đầu nhơn trợ lực\nHạ, Thu lưỡng qui toại tâm cơ",
+    "details": "Cầu quan được quẻ này hay lắm\nHào quan quỉ văn thơ đi đủ cặp\nNgười giúp mình, tên người đó trên đầu chữ thảo dưới có chữ mộc\nMùa hạ, mùa thu gặp việc vừa bụng"
+  },
+  {
+    "id": "436",
+    "name": "VỊ TẾ (Hỏa Thủy)",
+    "description": "Quái chiếm vị tế lưỡng trùng tài",
+    "meaning": "Quái chiếm vị tế lưỡng trùng tài\nTân khẩu thêm đinh việc mỹ tai\nBất luận chiêu nô tinh thảo bộc\nĐịnh tri nhựt hậu hữu hòa giai",
+    "details": "Quẻ vị tế có hai hào tài\nThêm miệng ăn, thêm nhơn số cũng tốt thay\nChẳng luận mướn tớ gái hay trai\nChắc chắn ngày sau có hoà hiệp (lấy đầy tớ, hoặc nó lấy chủ)"
+  },
+  {
+    "id": "437",
+    "name": "LỮ",
+    "description": "Gia tín thâm tàn đại hữu nghi",
+    "meaning": "Gia tín trì trì vị kiến lai\nYếu phùng Tý, Ngọ nhứt âm khai\nTrạch trung giai vô an ổn sự\nMiễn vọng trì træ nguyên tảo lai",
+    "details": "Thơ từ tin tức đều giấu hết\nBà con đồn nói này nói nọ không nhằm\nMùa Hạ, mùa Thu tới đây có tin chắc chắn\nBây giờ ai nói gì, làm thing đừng cãi."
+  },
+  {
+    "id": "438",
+    "name": "TẤN",
+    "description": "Quái chiếm từ tụng toại quân tâm",
+    "meaning": "Quái chiếm từ tụng toại quân tâm\nCáo trạng phùng quan bất ngật kinh\nBất tất ưu nghi đa tấn thối\nQuới nhơn đắc lực hữu phò trì",
+    "details": "Kiện thưa chiếm được quẻ này vừa bụng\nVô đơn gặp ông quan thương mình đừng sợ\nĐừng có nghi ngờ mà sẽ sụt\nCó quới nhơn, người giúp đỡ cho."
   },
   {
     "id": "441",
-    "name": "LÔI THIÊN ĐẠI TRÁNG",
-    "description": "Chấn trên Càn dưới",
-    "meaning": "Rất mạnh",
-    "details": "Thịnh đại, mạnh mẽ, không nên lạm dụng sức mạnh, cẩn thận."
+    "name": "ĐẠI TRÁNG",
+    "description": "Quan quỉ văn thơ lại ứng vi",
+    "meaning": "Quan quỉ văn thơ lại ứng vi\nĐọc thơ thành tựu thiệt vô nghi\nChiếm lai định hứa nghiệp đương tựu\nMộc hỏa chi niên chiếc quế chi",
+    "details": "Hào quan quỉ, văn thơ hiện vô hào hứng\nHọc hành giỏi tấn phát không sai\nQuẻ nầy chắc học đúng lẽ rồi\nNăm Dần, mẹo (mộc), tị, Ngọ (Hỏa) chắc đậu cao"
   },
   {
     "id": "442",
-    "name": "LÔI TRẠCH QUY MUỘI",
-    "description": "Chấn trên Đoài dưới",
-    "meaning": "Em gái về nhà chồng",
-    "details": "Không chính đáng, không bền lâu, xấu, ham muốn xác thịt."
+    "name": "QUI MUỘI",
+    "description": "Quái chiếm qui mụi vị tham khoa",
+    "meaning": "Quái chiếm qui mụi vị tham khoa\nDục chiếm chiêu tế hữu sân si\nNhược thị kim nhựt đồ dung vị\nCửu hậu phương trì hữu cán ta",
+    "details": "Gặp quẻ qui mụi đừng vội khen\nMuốn chiếm quẻ bắt rễ có việc so le\nNếu bằng nay muốn tính việc gọn\nSau rồi mới biết có việc hờn buồn."
   },
   {
     "id": "443",
-    "name": "LÔI HỎA PHONG",
-    "description": "Chấn trên Ly dưới",
-    "meaning": "Phong thịnh",
-    "details": "Lớn mạnh, sung túc, cần lo xa, không nên kiêu ngạo."
+    "name": "PHONG",
+    "description": "Y tai khắc bịnh, bịnh vô phòng",
+    "meaning": "Y tai khắc bịnh, bịnh vô phòng\nNhứt phục linh đơn tức tiện lương\nThỉ tính tiên truyền y quốc thủ\nDần Thân Tị Hợi bảo an khương.",
+    "details": "Thầy khắc bịnh không hề gì\nUống một ít thuốc thấy hay\nMới biết ông thầy nầy giỏi\nNgày hay tháng Dần, Thân, Tỵ, Hợi mạnh."
   },
   {
     "id": "444",
     "name": "CHẤN",
-    "description": "Lôi",
-    "meaning": "Sấm",
-    "details": "Động, phấn khởi, trưởng nam, chân, sợ hãi, giận dữ."
+    "description": "Nhơn gian chung nhựt vũ lâm ly",
+    "meaning": "Nhơn gian chung nhựt vũ lâm ly\nThiên đạo âm dương một định kỳ\nĐáo đế vũ đa tình nhựt thiểu\nThì phùng tam thất cửu khả trừ.",
+    "details": "Người hỏi tối ngày mưa dầm dề\nViệc âm dương trời sao biết được\nRốt cuộc ngày mưa nhiều tạnh ít\nGặp giờ 3, 7, 9 thì tạnh."
   },
   {
     "id": "445",
-    "name": "LÔI PHONG HẰNG",
-    "description": "Chấn trên Tốn dưới",
-    "meaning": "Lâu dài",
-    "details": "Bền vững, vợ chồng, đạo thường, kiên trì, tốt."
+    "name": "HẰNG",
+    "description": "Quân vấn cùng thông bất tất nghi",
+    "meaning": "Quân vấn cùng thông bất tất nghi\nTương lai tựu hóa khước hà như\nThập niên hảo vận tài hành khởi\nNhơn hanh gia phú bá sự vi",
+    "details": "Người hỏi vận mạng cùng hay khá\nTương lai tạo hóa có dành cho sẵn\nMười năm vận tốt, nay mới bắt đầu\nNhà giàu, người mạnh việc nào cũng tốt."
   },
   {
     "id": "446",
-    "name": "LÔI THỦY GIẢI",
-    "description": "Chấn trên Khảm dưới",
-    "meaning": "Cởi tháo",
-    "details": "Tan khó khăn, tha thứ, hành động nhanh, tốt."
+    "name": "GIẢI",
+    "description": "Thê tài trì thế khắc văn thơ",
+    "meaning": "Thê tài trì thế khắc văn thơ\nKhoa cử chiếm chi sự bất nghi\nTuy thị nhập trường vô cách trở\nChỉ như đương đạo hữu sơ ngu",
+    "details": "Hào thê tài trì thế khắc hào văn thơ\nThi khoá gặp quẻ nầy không được như ý\nTuy thi vô trường không gì trở ngại\nChớ có nhiều việc sơ sót cho mình lắm"
   },
   {
     "id": "447",
-    "name": "LÔI SƠN TIỂU QUÁ",
-    "description": "Chấn trên Cấn dưới",
-    "meaning": "Lỗi nhỏ",
-    "details": "Hơi quá, nên làm việc nhỏ, không nên làm việc lớn, khiêm tốn."
+    "name": "TIỂU HOÁ",
+    "description": "Thê tài trì thê tất siêu quần",
+    "meaning": "Thê tài trì thê tất siêu quần\nNhập học chiếm chi toại khước tâm\nHành viễn đăng cao từng thủ khởi\nTha niên hườn hứa bộ thinh vân",
+    "details": "Hào thê tài ở thế hay lắm\nNhập học gặp quẻ này tốt lắm\nĐi xa hay lên cao đây là bước đường đầu\nNăm sau chắc chắn thi đậu."
   },
   {
     "id": "448",
-    "name": "LÔI ĐỊA DỰ",
-    "description": "Chấn trên Khôn dưới",
-    "meaning": "Vui vẻ, dự bị",
-    "details": "Sẵn sàng, vui sướng, lập hầu, hành sư, cần phòng bị."
+    "name": "DỰ",
+    "description": "Thủ thảo thư tài lưỡng kiến chi",
+    "meaning": "Thủ thảo thư tài lưỡng kiến chi\nChỉ nghi cấp tốc bất nghi trì\nTam phân tài khí thời phương hứa\nThất phân tai khí thượng trì trì",
+    "details": "Đi đòi tiền bạc quẻ này tốt lắm\nPhải gấp gấp mới được không nên trễ\nBa phần tiền của hứa chắc được\nCòn 7 phần thì lần lựa."
+  },
+  {
+    "id": "451",
+    "name": "TIỂU SÚC",
+    "description": "Quân vẫn nạp giám bất như tình",
+    "meaning": "Quân vẫn nạp giám bất như tình\nQuan quỉ trùng trùng quái bất minh\nTài vượng sanh quan chung hữu vọng\nBất nghi cấp tốc (bức) khả điều đình",
+    "details": "Ngươi chiếm xin sở làm việc văn không được\nHào quan quỉ dồn dập quẻ không yên\nHào tài vượng sanh hào quan sau mới có hy vọng\nChẳng nên gấp rút phải điều đình"
+  },
+  {
+    "id": "452",
+    "name": "TRUNG PHÙ",
+    "description": "Cầu hôn chiếm thử thập phần nghi",
+    "meaning": "Cầu hôn chiếm thử thập phần nghi\nNhị tánh giao phù lưỡng đắc tri\nTài hỉ trùng trùng đa phước thọ\nTảo đương thành tựu mạc diên trì",
+    "details": "Cưới gả quẻ này 10 phần tốt\nHai họ có biết trước nhau rồi\nHào tài hỉ dồn dập nhiều phước thọ\nHãy tính sớm cho nên việc đừng để lâu."
+  },
+  {
+    "id": "453",
+    "name": "GIA NHƠN",
+    "description": "Giao việc chiếm chỉ thị khả vi",
+    "meaning": "Giao việc chiếm chỉ thị khả vi\nThành giao chi hậu hữu sai nghi\nLục hào vô quỉ chung tu tựu\nNhược tại xuân thời tánh khả kỳ",
+    "details": "Mua bán hàng dạo quẻ nầy nên việc\nGiá cả xong xuôi rồi còn nghi ngờ nhau\nSáu hào không hào quỉ sau có nên\nNếu còn trong mùa xuân thì việc nên lắm."
+  },
+  {
+    "id": "454",
+    "name": "ÍCH",
+    "description": "Giao hào quan quỉ hữu phân minh",
+    "meaning": "Giao hào quan quỉ hữu phân minh\nTài động sanh quan sự khả bằng\nĐương đạo hữu tình cần trợ lực\nĐông sơ thu để hữu thù ân",
+    "details": "Quẻ hào giao, hào quan quỉ rõ ràng\nHào tài động sanh hào quan, đủ văn bằng\nCó người thương mình nên giúp sức\nCuối thu đầu mùa Đông gặp ân riêng"
+  },
+  {
+    "id": "455",
+    "name": "TỐN",
+    "description": "Tử tôn vượng trướng trợ thê tài",
+    "meaning": "Tử tôn vượng trướng trợ thê tài\nTử mẫu phu thê lưỡng đắc giai\nDần, Tý tức hào âm tín chí\nBình an dựng dục hảo vô tai",
+    "details": "Hào tử tôn vượng tướng trợ hào thê tài\nMẹ con chồng vợ trọn hòa hiệp\nNgày hay giờ Dần, Tý tức có tin đến\nBình yên sanh đẻ mạnh không sao"
+  },
+  {
+    "id": "456",
+    "name": "HOÁN",
+    "description": "Thứ thiếp chiếm chỉ quái phục toàn",
+    "meaning": "Thứ thiếp chiếm chỉ quái phục toàn\nThê tài tử kiến tử tôn thương hại\nÁo xanh, áo vàng đừng tráo trở\nKhỏi mắc 16í xóm nói dở hay.",
+    "details": "Kiếm người chi cực khổ, vừa vừa thôi\nTin tức tuy thiệt không mấy chắc\nPhải ngừa người lối xóm tới gạt gẫm\nNgười ta nói gạt, mình kể chắc chắn lặn lội uổng công"
+  },
+  {
+    "id": "457",
+    "name": "TIỆM",
+    "description": "Tầm nhơn hà khổ bất truy tầm",
+    "meaning": "Tầm nhơn hà khổ bất truy tầm\nTiêu tức tuy chơn bất đắc chi\nChỉ khủng bằng nhơn lai tố quỉ\nHỉ khủng nguyên bị yếu hòa bình",
+    "details": "Muốn cầu huề đặng vừa bụng người\nHào thế hào ứng tương sanh việc nên được\nTrong bọn có một người bày điều ra nói gạt mình\nMừng gặp tiên bị cáo đều muốn huề hết"
+  },
+  {
+    "id": "461",
+    "name": "NHU",
+    "description": "Tử tôn trì thế tối vi nghi",
+    "meaning": "Tử tôn trì thế tối vi nghi\nHiệp lõa kinh dinh sự khả kỳ\nMục hạ tuy tuy vô đại lợi\nTrì trì tài hỉ tự tương nghi",
+    "details": "Hào tử tôn trì thế rất là tốt\nHùng hiệp làm ăn việc khá nên\nTrước mắt tuy không có đại lợi\nChậm chậm hào tài hào hỉ mới có khá"
+  },
+  {
+    "id": "462",
+    "name": "TIẾT",
+    "description": "Tẩu thất gia nhơn lai vấn bốc",
+    "meaning": "Tẩu thất gia nhơn lai vấn bốc\nSự đương tiết trở đa bất tác\nBan nhơn kiết uổng xuất gia môn\nToại nhứt truy tầm du khử trốc",
+    "details": "Người nhà đã trốn đến hỏi ta\nViệc nầy phải cho kín nhớ có nhiều khuất lấp\nNgười lối xóm xúi giục ra khỏi nhà\nMỗi người mỗi chỗ kiếm cho gắt mới bắt lại được."
+  },
+  {
+    "id": "463",
+    "name": "KÝ TẾ",
+    "description": "Quân chiếm thủ nghệ yến lao tâm",
+    "meaning": "Quân chiếm thủ nghệ yến lao tâm\nNhược đắc lao tâm sự khả thành\nĐông mạc Thu sơ đa hoạch lợi\nHạ xuân tài hỉ lược bình bình",
+    "details": "Ngươi chiếm về việc công nghệ phải chịu cực\nNếu bằng rán chịu cực việc mới nên\nĐầu mùa đông cuối mùa thu có lợi\nMùa hạ, xuân có vui đủ xài."
+  },
+  {
+    "id": "464",
+    "name": "CHUẨN",
+    "description": "Quân vẫn thọ niên khả cửu trường",
+    "meaning": "Quân vẫn thọ niên khả cửu trường\nNải thị nam sơn tòng trước hữu\nNhứt sanh tâm địa giai vô sai\nNhư tôn đối đối phước lộc trạch",
+    "details": "Người hỏi được sống bao lâu chăng\nÔng là bè bạn với cây tòng cây trước nam sơn\nMột đời ăn ở hiền chắc chắn\nCon cháu mỗi đứa mỗi cửa nhà riêng."
+  },
+  {
+    "id": "465",
+    "name": "TỈNH",
+    "description": "Quân lai chiếm bốc vấn hành nhơn",
+    "meaning": "Quân lai chiếm bốc vấn hành nhơn\nHuỳnh khuyển thanh loan thị tín âm\nThúc bá đệ huynh ưng Hợi Tý\nTử tôn bạn bộc tại dần thân",
+    "details": "Người đến hỏi coi người đi xa\nNgày Canh tuất, ất dậu mới có tin tức\nNhư chú bác anh em thì ngày Hợi, Tý\nCon cháu hay tôi tớ ở ngày Dần Thân."
+  },
+  {
+    "id": "466",
+    "name": "KHẢM",
+    "description": "Giải nhơn lược kỵ hữu hư kinh",
+    "meaning": "Giải nhơn lược kỵ hữu hư kinh\nHành đáo trung đồ yếu tiểu tâm\nXuân hạ chiếm chi vô đại hại\nThu Đông chiếm định hữu hình thương",
+    "details": "Giải nạp người hết sức sợ việc kinh khủng\nĐi nửa đường phải cẩn thận\nMùa xuân, mùa hạ không hại lớn\nMùa Thu, Đông gặp quẻ này ắt có tội."
+  },
+  {
+    "id": "467",
+    "name": "KIỂN",
+    "description": "Gia trạch bình bình thiểu thị phi",
+    "meaning": "Gia trạch bình bình thiểu thị phi\nPhóng tâm đáo để vật tương nghi\nPhước thần đắc lực hà tu bốc\nThu quí, đông sanh lợi hữu kỳ.",
+    "details": "Việc nhà bình thường ít rầy rà\nYên lòng đừng hồ nghi chi\nHào phước thần giúp đỡ coi bói làm gì\nCuối thu, qua mùa đông tài lợi thường."
+  },
+  {
+    "id": "468",
+    "name": "TỴ",
+    "description": "Thất vật chỉ nhơn uổng tự mang",
+    "meaning": "Thất vật chỉ nhơn uổng tự mang\nTặc nhơn thương quái mạc tu lương\nTài đương chiêu kiến hữu sanh oán\nTài khử nhơn an bá sự xương",
+    "details": "Người mất của rầu lo uổng công\nĐứa gian nó hiện vô quẻ, lo lường gì\nCủa nầy nó giao cho ngưởi lấy tiếc làm chi\nCủa nấy mất người nhà mới yên."
+  },
+  {
+    "id": "471",
+    "name": "ĐẠI SÚC",
+    "description": "Mưu sự chiếm chi đại kiết xương",
+    "meaning": "Mưu sự chiếm chi đại kiết xương\nQuỉ hào trì thế tiểu nhơn phòng\nThời phùng xuân hạ đa diên trệ\nĐịnh tại thu đông thời mãng nan.",
+    "details": "Mưu sự gặp quẻ này tốt lắm\nHào quan quỉ trì thế, phải ngừa đứa tiểu nhơn\nGặp mùa Xuân, Hạ nhiều việc lôi thôi dây dưa\nQua Thu Đông tính việc gì được nấy."
+  },
+  {
+    "id": "472",
+    "name": "TỔN",
+    "description": "Cửu tích thanh phù mãi ốc cư",
+    "meaning": "Cửu tích thanh phù mãi ốc cư\nTri quân chiếm trạch số di nghi\nThành gia lập nghiệp đa tài lợi\nVượng phát nhơn đinh bá thế cư.",
+    "details": "Tích trữ tiền bạc nay muốn mua nhà ở\nBiết người muốn coi nhà đó mua ở được hay không.\nCó sao đâu nên nhà cửa nhiều tài lợi\nLàm ăn khá mạnh giỏi ở đời đời."
+  },
+  {
+    "id": "473",
+    "name": "BÍ",
+    "description": "Bịnh phạm tinh thần nghi bảo chi",
+    "meaning": "Bịnh phạm tinh thần nghi bảo chi\nThương hàn thời nhiệt tổng nan kỳ\nBình an dược nghỉ đa đa phục\nToàn phục thần dược lưỡng phò tri.",
+    "details": "Bịnh đau mắt người quở phải vái van\nChứng thương hàn nóng nhiều lắm\nUống thuốc cho khá mới mạnh\nCúng kiến vái van uống thuốc mới mạnh"
+  },
+  {
+    "id": "474",
+    "name": "HI",
+    "description": "Dục vấn di cư sự khả vi",
+    "meaning": "Dục vấn di cư sự khả vi\nLục hào vô quỉ một sai trì\nThê tài trì thế tài tinh vượng\nDi hậu ưng tri lợi ích tùy",
+    "details": "Muốn hỏi nên dời chổ ở không\nSáu hào không có hào quỉ, không sao\nHào thê tài trì thế, hào tài vượng\nDời chổ ở rồi về sau thấy có lợi nhiều."
+  },
+  {
+    "id": "475",
+    "name": "CỔ",
+    "description": "Phân gia chiếm phùng thử quái hào",
+    "meaning": "Phân gia chiếm phùng thử quái hào\nQuỉ hào trì thế mạc đồ lao\nKinh dinh ta tiểu ưng thâu lợi\nNhược thị phân gia hữu họa chiêu.",
+    "details": "Chia gia tài mà gặp quẻ này\nHào quan quỉ trì thế đừng tính chi cho mệt\nMua bán lặt vặt kiếm chút lời nuôi sống\nNếu tính chia của ăn thì bị tai họa."
+  },
+  {
+    "id": "476",
+    "name": "MONG",
+    "description": "Quân lai vấn bốc chiếm thiên họa",
+    "meaning": "Quân lai vấn bốc chiếm thiên họa\nPhước đức tùy thân định bất sai\nTúng hữu phong ba vô lăng khởi\nPhúc tỉnh cũng chiếm hỉ lâm môn",
+    "details": "Người đến coi về việc trái giống\nPhước đức theo mình không hề gì\nDẫu có gió giông không nổi sóng\nCó vì sao phước chiếu, vui mừng nhau vô cửa."
+  },
+  {
+    "id": "477",
+    "name": "CẤN",
+    "description": "Hội sự lai chiếm bất dụng ưu",
+    "meaning": "Hội sự lai chiếm bất dụng ưu\nPhước thần cũng chiếu tất vô sầu\nNhựt phùng Tị Ngọ phương thành tựu\nMậu tuất dần thân khả ngộ đầu",
+    "details": "Muốn nhóm việc chiếm quẻ này đừng lo\nSao phước thần ủng hộ rầu buồn chi\nGặp ngày Tị Ngọ việc mới nên\nNgày Mậu Tuất, Dần, Thân việc mới rồi."
+  },
+  {
+    "id": "478",
+    "name": "BÁC",
+    "description": "Tử chiếm thân bịnh sự như hà",
+    "meaning": "Tử chiếm thân bịnh sự như hà\nBịnh đáo lâm nguy hưu phục sanh\nNhựt phùng Tị Ngọ toàn vũ hảo\nTùng thủ vô tai hoá hữu thu",
+    "details": "Con chiếm cha mẹ đau ra sao\nBịnh đau dầu sắp ngửa cũng sống lại\nQua ngày Tị, Ngọ thật mạnh\nTheo đây không tai nạn, mùa thu phải coi chừng."
+  },
+  {
+    "id": "481",
+    "name": "THÁI",
+    "description": "Bỉ cực chung tu hữu thái lai",
+    "meaning": "Bỉ cực chung tu hữu thái lai\nSố chiếm cầu tử toại tâm hoài\nLục hào vô phá chung tu hữu\nCầu thần tác hỉ sản quí thai",
+    "details": "Bỉ cực hết rồi đến thái lai\nCầu con vừa bụng được lắm đa\nSáu hào không phá được hết\nVái thần để sanh ra con tốt"
+  },
+  {
+    "id": "482",
+    "name": "LÂM",
+    "description": "Thủ ngư tu tri chí khí cao",
+    "meaning": "Thủ ngư tu tri chí khí cao\nDục hưởng trường siêng điếu cự ngao\nHạnh đắc phước thần trùng trùng quái\nĐông thành, Tây tựu lạc thao thao",
+    "details": "Muốn làm giang lợi tính toán hay lắm\nMuốn làm ăn việc lớn thì được\nMay đặng phước thần nhiều hiện vô quẻ\nHướng đông thành, hướng Tây đến vui mừng nhiều."
+  },
+  {
+    "id": "483",
+    "name": "MINH VI",
+    "description": "Ngao tế cầu hôn sự khả vi",
+    "meaning": "Ngao tế cầu hôn sự khả vi\nTài làm ứng vị hữu quí y\nChỉ hềm quái nội văn thơ chiếu\nHoa đắc đa vi, tử kiết hi",
+    "details": "Cưới gả bắt rể việc làm được\nHào tài hiện vô quẻ nên có chỗ dựa nương\nNgặt vì trong quẻ hào văn thơ động\nNhưng bông trổ nhiều đậu trái ít."
+  },
+  {
+    "id": "484",
+    "name": "PHỤC",
+    "description": "Chưởng điền nan hứaviệc thâu thành",
+    "meaning": "Chưởng điền nan hứaviệc thâu thành\nVũ thiểu tỉnh đa lưỡng bất quân\nTảo hòa bất như vãng hòa hảo\nTha thời phượng tín quái thông linh",
+    "details": "Làm ruộng không dám chắc trúng trọn\nMưa ít nắng nhiều hai cái không đều\nLúa sớm không bằng lúa mùa tốt\nSau này mới biết quẻ này nói hay."
+  },
+  {
+    "id": "485",
+    "name": "THĂNG",
+    "description": "Dạ mộng điêu liên bất tất ưu",
+    "meaning": "Dạ mộng điêu liên bất tất ưu\nChỉ nhơn đa lợi tại tâm đầu\nPhân phân nhơn sự nan đồng nguyện\nĐại đáo xuân lai thủy tại cầu",
+    "details": "Chiêm bao liền xì đừng rầu\nTại nhà ngươi quá tham nên mơ tưởng\nLăng xăng việc đời biết sao giống nhau được\nĐến mùa xuân tính mới được."
+  },
+  {
+    "id": "486",
+    "name": "SƯ",
+    "description": "Thị phi khẩu thiệt việc tu phòng",
+    "meaning": "Thị phi khẩu thiệt việc tu phòng\nPhá hào chung tu hữu nhựt trường\nPhàm sự hưu cường tu thối bộ\nNhiêu nhơn nhứt trước tối nhi lương.",
+    "details": "Phải quấy rầy rà phải giữ chừng\nHết tử tế rồi lôi đến quan\nPhàm việc gì chớ cứng cỏi phải nhường bước\nTha người một nước mới là hay"
+  },
+  {
+    "id": "487",
+    "name": "KHIÊM",
+    "description": "Phụ mẫu trùng trùng cử tiến đa",
+    "meaning": "Phụ mẫu trùng trùng cử tiến đa\nTri quân cầu quán vẫn như hà\nTử tôn trì thế đa tài lợi\nTân chủ tương đầu trị cẩm la.",
+    "details": "Hào phụ mẫu dồn dập nhiều người tiến cử\nNhà ngươi kiếm chỗ dạy tư hỏi nên không\nHào tử tôn trì thế nhiều tài lợi\nKhách chủ thích nhau như gấm hoa."
+  },
+  {
+    "id": "488",
+    "name": "KHÔN",
+    "description": "Thử quái quân lai vấn xuất hành",
+    "meaning": "Thử quái quân lai vấn xuất hành\nQuỉ hào trì thế hữu hư kinh\nĐồ nhiên bạc thiệp vô tài lợi\nBôn tẩu lao đao uổng phí tâm",
+    "details": "Nhà ngươi đến hỏi việc xuất hành\nCó quan quỉ trì thế ắt có việc hư kinh\nLặn lội uổng công không có một phần lợi\nTới lui nhọc nhằn tốn công uồng sức"
+  },
+  {
+    "id": "511",
+    "name": "CẦN",
+    "description": "Khởi tạo chiếm chi phước đứa nhiều",
+    "meaning": "Khởi tạo chiếm chi phước đứa nhiều\nBát thần càn, quái tối vi cao\nHưng gia lạc nghiệp tùng kiêm khởi\nPhú quí vinh hoa tại hậu chiêu",
+    "details": "Khởi công gặp quẻ này phước đức nhiều\nQuẻ bát thuần càn, lấy làm hay\nLập nghiệp nên nhà từ đây khởi đầu\nGiàu sang vinh huê từ đã về sau."
+  },
+  {
+    "id": "512",
+    "name": "LÝ",
+    "description": "Tử tôn trì thế hữu phò trì",
+    "meaning": "Tử tôn trì thế hữu phò trì\nVấn giải tiền lương vô thị phi\nKinh khủng hữu ta vô đại hại\nHườn quan đức ý hỉ hoan huy",
+    "details": "Hào tử tôn trì thế có người giúp đỡ\nHỏi việc giải tiền lương, không rầy rà\nCó việc kinh khủng một chút không hại\nViệc rồi có người khen ngợi, đem việc vui mừng về nhà."
+  },
+  {
+    "id": "513",
+    "name": "ĐỒNG NHƠN",
+    "description": "Quan quỉ văn thơ lưỡng tự giải",
+    "meaning": "Quan quỉ văn thơ lưỡng tự giải\nNhược vấn sanh ý bất tất sai\nQuới nhơn ưng hữu phò trì lực\nMục hạ hứa quân thất phần tài",
+    "details": "Hào quan quỉ, văn thơ 2 hào hoà hiệp\nHỏi về mua bán ắt không sai chạy\nCó sức của quới nhơn giúp đỡ\nĐương thời kể chắc ngươi 7 phần lợi"
+  },
+  {
+    "id": "514",
+    "name": "VÔ VỌNG",
+    "description": "Quái chiếm kiến quới thập phần toàn",
+    "meaning": "Quái chiếm kiến quới thập phần toàn\nXuất nhập cầu vinh quả hữu duyên\nNgư thủy tương phùng đa khước hiệp\nĐông thành Tây tựu ít tài nguyên",
+    "details": "Quẻ ra mắt quan lớn 10 phần hoàn toàn\nRa vào cầu sang ắt có duyên\nTình đối đãi như anh em quen biết cũ, niềm nở, vui vẻ\nĐông thành, Tây nên thêm nguồn tài."
+  },
+  {
+    "id": "515",
+    "name": "CẤU",
+    "description": "Văn thơ lâm ứng hỉ tương sanh",
+    "meaning": "Văn thơ lâm ứng hỉ tương sanh\nThoái hoá cầu tài tất xứng tâm\nMầu kỷ lai lâm phương khả toại\nNhư phúng dẫn mẹo thả điều đình",
+    "details": "Hào vã thơ hiện vô quẻ việc mừng lợi\nSang xến hàng hóa kiếm lời ắt vừa lòng\nChừng mậu kỷ sắp tới mới nên việc\nNhư gặp dẫn mẹo phải điều đình lại."
+  },
+  {
+    "id": "516",
+    "name": "TỤNG",
+    "description": "Thế ứng quỉ quái vị vi lượng",
+    "meaning": "Thế ứng quỉ quái vị vi lượng\nTầm sự lao đao bất đại cường\nHạnh đắc phước thần lai thượng quái\nThân thành nhứt bán khả bình thường.",
+    "details": "Hào thế hào ứng hiện vô quẻ chưa làm hay\nViệc tằm tơ cực nhọc không khá lắm\nMay đặng vì sao phước thần hiện vô quẻ\nThâu góp được phân nửa, tài lợi vừa vừa."
+  },
+  {
+    "id": "517",
+    "name": "ĐỘN",
+    "description": "Quái chiếm tờ biện bất như tình",
+    "meaning": "Quái chiếm tờ biện bất như tình\nMiễn cưỡng hành chỉ định hữu hình\nĐãi đắc thu lai khả phân phân\nMục kiên nhẫn nại mạc sân si",
+    "details": "Quẻ chiếm hầu kiện chẳng vừa lòng\nGắng gượng mà làm chớ có việc hình\nCho đến mùa Thu việc này mới xử xong\nBây giờ phải nhẫn nhịn, đừng rầy thêm"
+  },
+  {
+    "id": "518",
+    "name": "BỈ",
+    "description": "Văn thơ ứng thế ứng tương sanh",
+    "meaning": "Văn thơ ứng thế ứng tương sanh\nDục lãnh phê hồi khả xứng tâm\nMẫu kỷ canh tân phương nhập thủ\nNhư trì dần, mẹo thả điều đình",
+    "details": "Hào văn thơ hiện vô quẻ sanh hào ứng\nMuốn chờ lãnh giấy tờ ký tên, việc này vừa lòng\nNgày mậu, kỷ, canh, tân giấy tờ tới tay\nChậm trễ ngày dần, mẹo phải điều đình lo lót."
+  },
+  {
+    "id": "521",
+    "name": "QUYẾT",
+    "description": "Thủ ngư tỉnh thông khả lập thân",
+    "meaning": "Thủ ngư tỉnh thông khả lập thân\nĐiếu thoàn hố hải hiểm cao minh\nTự cường bất tức công phu diệu\nĐáo thủ tùy thân ích lợi tăng",
+    "details": "Nghề giang lợi rành rẽ dựng nên nhà\nLái rỗi, nhà dựa đều vang danh\nTự nên làm ra cơ nghiệp nhờ công phu sốt sắn\nTiền của vô ra như nước"
+  },
+  {
+    "id": "522",
+    "name": "ĐOÀI",
+    "description": "Thử quái ứng thế bất tùy hòa",
+    "meaning": "Thử quái ứng thế bất tùy hòa\nXuất hành hườn kỵ hữu sai ngoa\nThu đông chi hạ tài thuận lợi\nXuân, Hạ chỉ thời ưu lự đa",
+    "details": "Quẻ này hào thế ứng không hạp\nKỵ xuất hành có điều sai xót lầm lạc\nQua thu, đông mới có việc thuận lợi\nTrong mùa xuân, hạ có nhiều việc lo buồn."
+  },
+  {
+    "id": "523",
+    "name": "CÁCH",
+    "description": "Quan quỉ thê tài lưỡng sự châu",
+    "meaning": "Quan quỉ thê tài lưỡng sự châu\nMộng hồn điên đảo bất tu ưu\nTam tư cẩn thận vô phiền não\nCổ thủ thanh bần khả tự do.",
+    "details": "Hào quan quỉ thê tài 2 hào đụng nhau\nChiêm bao lộn xộn chẳng nên buồn\nTính làm phải suy nghĩ cho kỹ, đừng có tham sanh lo buồn\nNhớ giữ nghèo cho sạch thì được tự do."
+  },
+  {
+    "id": "524",
+    "name": "TUỲ",
+    "description": "Thế ứng thủ không vị vi lương",
+    "meaning": "Thế ứng thủ không vị vi lương\nQuân lai chiếm quán mạc không mang\nKhuyến quân hưu thỉnh bàn nhơn ngữ\nTrực đáo niên lai tái chủ trương.",
+    "details": "Hào thế ứng lâm không chưa làm hay\nNgười coi quẻ dạy học tư, đừng tính việc lông bông\nKhuyên người nên nghe người lân cận đó\nChờ đến sang năm sẽ tính làm"
+  },
+  {
+    "id": "525",
+    "name": "ĐẠI HÓA",
+    "description": "Trạch phong đại hóa lưỡng trùng tài",
+    "meaning": "Trạch phong đại hóa lưỡng trùng tài\nNhược vấn thâu thành thiệt mỹ tai\nHạn thiểu vũ đa hòa đạo ổn\nCao đê lưỡng xứ tịnh vô tai",
+    "details": "Quẻ trạch phong đại hoá 2 hào tài trùng\nNếu hỏi việc mùa màng, mùa thiệt trúng\nRuộng gò, và, sâu đều trúng hết."
+  },
+  {
+    "id": "526",
+    "name": "KHỔN",
+    "description": "Tử trì tử tảo mạng trung chiêu",
+    "meaning": "Tử trì tử tảo mạng trung chiêu\nThủ tự an tâm bất dụng tiêu\nMục hạ dục cầu nan toại ý\nHải trung cao thọ hữu tiên đào",
+    "details": "Có con sớm hay muộn là tại số mạng\nĐể cho yên lòng đừng nóng nảy\nBây giờ muốn có con cũng không nuôi được\nỞ rún biển có cây đào tiên."
+  },
+  {
+    "id": "527",
+    "name": "HÀM",
+    "description": "Thị phi tuy hữu bất vi hung",
+    "meaning": "Thị phi tuy hữu bất vi hung\nHữu thủy vô phong tổng thị không\nChỉ quản an tâm hưu quí cựu\nSự nhiên tiêu tán đắc hóa đồng",
+    "details": "Rầy rà tuy có nhưng không mấy xấu\nCó nước không gió rốt cuộc rồi cũng êm\nYên lòng làm ăn đừng lo sợ\nSự đó ắt hết, được hòa hết giận."
+  },
+  {
+    "id": "528",
+    "name": "TÚY",
+    "description": "Nhập nhuế chiếm chỉ hỉ khí nung",
+    "meaning": "Nhập nhuế chiếm chỉ hỉ khí nung\nTài phùng thê tử nhị tỉnh vinh\nTha niên quản giáo thành gia nghiệp\nThiếu phụ tề mi trực đáo chung",
+    "details": "Ở theo quê vợ quẻ này nhiều việc mừng\nHào tài lại có 2 hào vợ con 2 hào tỏ rạng\nNăm sau chắc chắn nên cửa nhà.\nVợ chồng trăm năm kết tóc đến già."
+  },
+  {
+    "id": "531",
+    "name": "ĐẠI HỮU",
+    "description": "Quỉ lâm thế vị đắc thê tài",
+    "meaning": "Quỉ lâm thế vị đắc thê tài\nNhược vấn cầu hôn sự vị giai\nTu đáo thu đông linh trước ý\nTự hữu hảo duyên tự tâm hoài",
+    "details": "Hào quỉ đóng hào thế khắc lại hào thê tài\nNếu hỏi cưới gả việc này chưa thành\nChờ đến mùa thu, đông chọn đám khác\nCó một đôi lứa tốt vừa ý lắm."
+  },
+  {
+    "id": "532",
+    "name": "KHUÊ",
+    "description": "Hòa sự chiếm chi bất kiết tường",
+    "meaning": "Hòa sự chiếm chi bất kiết tường\nĐệ huynh trì thế nan thương lượng\nPhương đông giao đắc toại tâm ý\nNhược tại Xuân, Thu hữu hình thương",
+    "details": "Việc cầu huề này thấy không tốt\nHào đệ huynh trì thế khó tính toán\nQua mùa đông mới được nhiều việc vừa bụng\nNếu còn trong mùa xuân, thu chắc có việc hình"
+  },
+  {
+    "id": "533",
+    "name": "LÝ",
+    "description": "Tử tôn trì thế tử tỉnh minh",
+    "meaning": "Tử tôn trì thế tử tỉnh minh\nDựng sản đa ưng hỉ khí sanh\nMẫu tử cư an vô túc lự\nSố trung bảo nhử đắc an ninh",
+    "details": "Hào tử tôn trì thế, sao tử tôn tỏ rạng.\nChửa nghén, sanh đẻ, nhiều việc vui mừng\nMẹ con đều mạnh giỏi, khỏi lo\nQuẻ này đoán chắc bình an mạnh giỏi."
+  },
+  {
+    "id": "534",
+    "name": "PHỆ HẠT",
+    "description": "Ứng lai sanh thế vấn tầm nhơn",
+    "meaning": "Ứng lai sanh thế vấn tầm nhơn\nTý, Sửu, Hợi, nhựt định giai âm\nBất tất ưu tâm không phí lực\nTrì trì tự đắc phản gia đình",
+    "details": "Hào ứng sanh hào thế, hỏi việc tìm người\nNgày Tý, Sửu, Hợi có tin lâm\nĐừng rầu lo, kiếm chi cho mệt\nChậm chậm đây nó cũng về nhà."
+  },
+  {
+    "id": "535",
+    "name": "ĐẢNH",
+    "description": "Quân vẫn thử quái vấn thăng thiên",
+    "meaning": "Quân vẫn thử quái vấn thăng thiên\nNhã nại văn thơ hào bất toàn\nĐông lịnh hỉ thần đa tru cán\nHạ thu hườn khủng hữu trì duyên",
+    "details": "Ông hỏi về việc lên chức phải không\nNgặt vì giấy tờ chưa đầy đủ\nQua mùa Đông có vị hỉ thần giúp đỡ\nMùa Hạ, mùa Thu xảy ra nhiều việc lôi thôi"
+  },
+  {
+    "id": "536",
+    "name": "VỊ TẾ",
+    "description": "Chiếm vị tế chi chung hữu tế",
+    "meaning": "Chiếm vị tế chi chung hữu tế\nQuân chiếm nạp giám vị vi kỳ\nTuy nhiên mục hạ nan tùy ý\nQuản giao Thu, Đông ưng khả kỳ.",
+    "details": "Quẻ vị tế rốt cuộc rồi có nên\nNgười hỏi xin sở làm nghề văn chưa được\nĐương thời nhiều việc gay go không toại ý\nQua Thu, Đông tính gì mới được."
+  },
+  {
+    "id": "537",
+    "name": "LŨ",
+    "description": "Thú thiếp nguyên tham nữ mạo tái",
+    "meaning": "Thú thiếp nguyên tham nữ mạo tái\nĐáo gia chỉ khủng bất hoà giai\nBất như bãi khứ trì trì thú\nTự hữu gia nhơn tống tử lai",
+    "details": "Cưới vợ sau là tại ông ham bóng sắc người đó\nĐem về nhà sợ sanh chuyện rầy to\nChi bằng thôi đi, chậm chậm rồi sẽ tính.\nCó người tử tế kêu gả mối khác."
+  },
+  {
+    "id": "538",
+    "name": "TẤN",
+    "description": "Giao việc chiếm chỉ đắc quái hào",
+    "meaning": "Giao việc chiếm chỉ đắc quái hào\nỨng lai sanh thế hứa thành giao\nNhược chiếm lợi nguyên thu quí vượng\nBá sự tương sanh phước lộc sương",
+    "details": "Mua bán hàng dạo gặp quẻ này\nHào ứng sanh hào thế, việc ắt thành\nNếu hỏi tài lợi qua cuối mùa thu mới có\nTrăm việc đều tốt, phước lộc nhiều."
+  },
+  {
+    "id": "541",
+    "name": "ĐẠI TRÁNG",
+    "description": "Mãi ốc chiếm chi sự khả y",
+    "meaning": "Mãi ốc chiếm chi sự khả y\nChỉ nghi tốc trới bất nghi trì\nXuân thu khủng bị bàn nhơn đoạt\nHạ quí chiếm chi tất định nghi",
+    "details": "Mua nhà quẻ này là khá được\nTính cho thật gấp đừng để trễ\nQua mùa Xuân, Thu bị người ta mua giành\nCuối mùa Hạ gặp quẻ này ắt mua xong"
+  },
+  {
+    "id": "543",
+    "name": "PHONG",
+    "description": "Ứng phúc thân gia hậu hữu châu",
+    "meaning": "Ứng phúc thân gia hậu hữu châu\nTự nhiên đắc lợi bất tu sầu\nPhước thần vượng tướng lâm môn hộ\nTài lộ thao thao vô oán vưu",
+    "details": "Chia gia tài trước tốn sau lấy lại\nTự nhiên có lợi không nên buồn\nVị phước thần vượng tướng đến cửa\nCủa tiền đầy dẫy không ai oán vận."
+  },
+  {
+    "id": "544",
+    "name": "CHẤN",
+    "description": "Phước thần bất tại sự nan thành",
+    "meaning": "Phước thần bất tại sự nan thành\nĐồng hợi bất nhõa hội hữu nhiên\nĐản thị mục tiền nan tựu cấp\nKhả giao đồng khí cộng tương liêng",
+    "details": "Sao phước thần chẳng tốt, việc khó nên\nNhóm chung đông người, không hiệp phe\nChỉnh thiệt trước mắt nhiều việc trở ngại\nPh ải vận động bạn đồng chí cho nhiều mới được."
+  },
+  {
+    "id": "545",
+    "name": "HẰNG",
+    "description": "Dục vấn di cư hứa xứng tâm",
+    "meaning": "Dục vấn di cư hứa xứng tâm\nBất di đương hữu sự phi sanh\nKiết tinh ưng tại đông nam vị\nGia nghiệp điền viên bá sự hanh",
+    "details": "Muốn hỏi đời chỗ ở chắc chắn được\nNếu chẳng dời, sao cũng sanh chuyện rầy rà\nHướng tốt ở về phía Đông, Nam\nLàm nên gia nghiệp ruộng vườn đều tốt."
+  },
+  {
+    "id": "546",
+    "name": "GIẢI",
+    "description": "Quái chiếm mưu sự thậm khê nhiêu",
+    "meaning": "Quái chiếm mưu sự thậm khê nhiêu\nNghĩa khí tương đầu phương khả tham\nNhược năng toại ý lâm môn hộ\nQuản giao tài lợi nhựt nhựt chiêu",
+    "details": "Muốn tính mưu việc gặp quẻ này bối rối\nLựa anh em vừa bụng sẽ tính việc tiền bạc\nBằng có người vừa bụng tới nhà mình\nTừ đây trở về sau tài lợi mới có."
+  },
+  {
+    "id": "547",
+    "name": "TIỂU QUÁ",
+    "description": "Quân chiếm tử hỉ khả kiết hung",
+    "meaning": "Quân chiếm tử hỉ khả kiết hung\nNải thị tại tỉnh lâm mạng cung\nPhi thần bảo hựu nan vi lực\nVu nghi cấp đảo kỳ thần cộng",
+    "details": "Ngươi chiếm hào tử tôn tốt hay xấu.\nĐứa bé này bị năm, cung mạng xấu,\nNếu không có quới nhơn bảo hộ, khó sắp tới,\nPhải cầu vái cúng kiến mới được."
+  },
+  {
+    "id": "548",
+    "name": "DỰ",
+    "description": "Quận chiếm tật bịnh sự vô phòng",
+    "meaning": "Quận chiếm tật bịnh sự vô phòng\nPhước đức thiên y bất thuận cường\nTái khứ cầu thần tỉnh tác phước\nTrì trì phương hứa đắc an khương.",
+    "details": "Hỏi việc đau ốm không hề gì\nBịnh chưa đầu thầy để chịu thuốc.\nPhải đi coi bói vái van cúng kiến đi\nChậm chậm ít lâu mới lành mạnh."
   },
   {
     "id": "551",
-    "name": "PHONG THIÊN TIỂU SÚC",
-    "description": "Tốn trên Càn dưới",
-    "meaning": "Ngăn nhỏ",
-    "details": "Ngưng tụ nhỏ, tích lũy ít, chờ thời, có mây chưa mưa."
+    "name": "TIỂU SÚC",
+    "description": "Chiêu tế chiếm chi uổng phí tâm",
+    "meaning": "Chiêu tế chiếm chi uổng phí tâm\nTử tôn thọ khắc vỉ vô tình\nNhược hườn ưng tuyển thừa luông tuế\nPhương hứa thành gia lập thái bình",
+    "details": "Bắt rể gặp quẻ này xấu lắm\nHào tử tôn bị khắc việc tính không ra gì\nThôi việc đó, chờ kiếm rể khác\nĐược vậy nhà cửa bình yên làm ăn."
   },
   {
     "id": "552",
-    "name": "PHONG TRẠCH TRUNG PHU",
-    "description": "Tốn trên Đoài dưới",
-    "meaning": "Tin ở trong",
-    "details": "Thành tín, tin tưởng, cảm hóa, vượt sông lớn, tốt."
+    "name": "TRUNG PHÙ",
+    "description": "Chiếm vấn thủ thảo sự toại tâm",
+    "meaning": "Chiếm vấn thủ thảo sự toại tâm\nTrùng kiêm tài vật tự nhiên tăng\nCầu mưu toại ý vô loạn trở\nThân, Thìn, Tuất nhựt kiến tường trình.",
+    "details": "Quẻ này coi có đòi nợ được\nTừ đây sắp tới của tiền thêm.\nMuốn tính gì được nấy không ai ngăn cản.\nNăm, tháng ngày Thân, Thìn, Tuất gặp nhiều việc tốt."
   },
   {
     "id": "553",
-    "name": "PHONG HỎA GIA NHÂN",
-    "description": "Tốn trên Ly dưới",
-    "meaning": "Người nhà",
-    "details": "Gia đình, phụ nữ chính đạo, trong nhà, tốt."
+    "name": "GIA NHƠN",
+    "description": "Mạng vận hà tu thuyết tế tường",
+    "meaning": "Mạng vận hà tu thuyết tế tường\nNhãn tiền tạo hóa vỉ thi thường\nTái năng thích đức hằng phương tiện\nTử tôn đa phước lộc miên trường",
+    "details": "Mạng vận sao hỏi cặn kẽ được\nTrước mắt coi trời đất xây vẫn hoài\nĐừng than phiền ráng làm lành, làm phải\nThì con cháu đông, làm ăn khá, của nhiều."
   },
   {
     "id": "554",
-    "name": "PHONG LÔI ÍCH",
-    "description": "Tốn trên Chấn dưới",
-    "meaning": "Thêm lên",
-    "details": "Lợi ích, tăng tiến, hy sinh trên để giúp dưới, tốt."
+    "name": "ÍCH",
+    "description": "Ứng lai sanh thế hỉ phi thường",
+    "meaning": "Ứng lai sanh thế hỉ phi thường\nNhập học chiếm chỉ định hữu công\nThượng hạ quới nhơn đa đắc lực\nQuản giao bạt tuyển nhận vẫn môn",
+    "details": "Hào ứng sanh hào thế nhiều việc vui mừng\nNhập học gặp quẻ này chắc thành công\nTrên dưới đều có người giúp đỡ\nĐoán chắc thế nào học cũng hay, nghề cũng giỏi."
   },
   {
     "id": "555",
-    "name": "TỐN",
-    "description": "Phong",
-    "meaning": "Gió",
-    "details": "Vào, thuận, trưởng nữ, đùi, không quyết đoán, lợi lộc."
+    "name": "TÔN",
+    "description": "Dục vấn thiên tình, thiên bất tình",
+    "meaning": "Dục vấn thiên tình, thiên bất tình\nĐông nam phương thượng hữu thanh vân\nNhược hườn vấn vũ Dần, Thân kiến\nVũ thỉu tình đa quái hữu linh",
+    "details": "Muốn hỏi trời tạnh, trời chẳng tạnh\nCục mây khói ở phía đông nam\nNếu hỏi mưa ngày hay giờ Dần, Thân mới thấy\nMưa ít nắng nhiều quẻ không sai."
   },
   {
     "id": "556",
-    "name": "PHONG THỦY HOÁN",
-    "description": "Tốn trên Khảm dưới",
-    "meaning": "Tan đi",
-    "details": "Ly tán, chia rẽ, cần tập hợp lại lòng người, tốt."
+    "name": "HOÁN",
+    "description": "Thế ứng trùng trùng huynh đệ tồn",
+    "meaning": "Thế ứng trùng trùng huynh đệ tồn\nTử tôn lâm ứng khả thi hành\nĐọc thơ chung vỉ công phu tăng\nHọc nghiệp tài cao tự hiển minh",
+    "details": "Hào thế ứng dồn dập thêm hào huynh đệ\nHào tử tôn đóng vô hào ứng tốt quá\nSức học đã tới bực cao đẳng rồi\nHọc rộng tài cao, tên tuổi tỏ rạng."
   },
   {
     "id": "557",
-    "name": "PHONG SƠN TIỆM",
-    "description": "Tốn trên Cấn dưới",
-    "meaning": "Tiến dần",
-    "details": "Tuần tự, từ từ, phụ nữ về nhà chồng, tốt."
+    "name": "TIỆM",
+    "description": "Tử tôn quan quỉ phá văn thơ",
+    "meaning": "Tử tôn quan quỉ phá văn thơ\nKhoa cử chiếm chi khủng bất như\nTý, Ngọ chi niên thì đắc lực\nKim nhựt hưu vấn quới cao đê",
+    "details": "Hào quan quỉ, tử tôn, văn thơ 3 hào phá hết\nKhoa cử quẻ này không tốt\nNăm Tý, Ngọ mới có người giúp\nBây giờ đừng hỏi đậu thấp hay cao."
   },
   {
     "id": "558",
-    "name": "PHONG ĐỊA QUAN",
-    "description": "Tốn trên Khôn dưới",
-    "meaning": "Xem xét",
-    "details": "Quan sát, xem xét, được dân chúng noi theo, ảnh hưởng."
+    "name": "QUAN",
+    "description": "Nghinh y hành thế lưỡng hoà đồng",
+    "meaning": "Nghinh y hành thế lưỡng hoà đồng\nNhu vị bình bình bình tiểu hung\nQuan ngả sanh sanh quân tử đạo\nTu tri bất dược tự hanh thông",
+    "details": "Rước thầy thuốc ông này được\nBịnh đau vừa vừa không có gì hung\nPhải đối đãi với thầy cho tử tế\nTốn hao ít, bịnh mạnh mau."
   },
   {
-    "id": "661",
-    "name": "THỦY THIÊN NHU",
-    "description": "Khảm trên Càn dưới",
-    "meaning": "Chờ đợi",
-    "details": "Chờ thời, không vội vàng, nguy hiểm phía trước, ăn uống."
+    "id": "561",
+    "name": "NHU",
+    "description": "Quân chiếm thử quái yến hồi hương",
+    "meaning": "Quân chiếm thử quái yến hồi hương\nTrình đồ thiền độ hữu tổn thương\nNhược tại Thu, Đông mạng vận động\nHạ Xuân nhị quí giả bình thường",
+    "details": "Người coi quẻ trở về quê hương\nĐường xa diệu viễn tổn hao nhiều\nNếu còn trong mùa Thu, Đông đừng rụt rịt\nCuối Hạ, Xuân mới bình yên để lên đường."
   },
   {
-    "id": "662",
-    "name": "THỦY TRẠCH TIẾT",
-    "description": "Khảm trên Đoài dưới",
-    "meaning": "Tiết chế",
-    "details": "Điều độ, chừng mực, không quá đáng, tốt."
+    "id": "562",
+    "name": "TIẾT",
+    "description": "Quái chiếm khai điếm bất tùy tâm",
+    "meaning": "Quái chiếm khai điếm bất tùy tâm\nMiễn cưỡng khai chi tất hữu kinh\nNhược thị bất khai thuyết mạc khiến\nTu tri tham luyến thiểu thâu thành",
+    "details": "Quẻ coi mở tiệm không vừa ý muốn\nNếu ráng mà làm có việc kinh tâm\nNếu không muốn thì đừng ai dục chi\nEp buộc nó chơi bời phóng túng hết vốn."
   },
   {
-    "id": "663",
-    "name": "THỦY HỎA KÝ TẾ",
-    "description": "Khảm trên Ly dưới",
-    "meaning": "Đã xong",
-    "details": "Hoàn thành, ổn định, cần giữ gìn, phòng ngừa suy thoái."
+    "id": "563",
+    "name": "KÝ TẾ",
+    "description": "Phóng trướng chiếm chi tất bất thâu",
+    "meaning": "Phóng trướng chiếm chi tất bất thâu\nTài hào quỉ biến chủ ưu sầu\nHuynh đệ lưỡng kiến tài vô vọng\nToán bốn hườn đầu mạc toại cầu",
+    "details": "Cho vay bán chịu quẻ này không đòi lại được\nHào tài biến ra quỉ chủ rầu buồn\nHào huynh đệ phát động tài lợi không hi vọng\nVốn sao y vậy, đòi không được, không lời."
   },
   {
-    "id": "664",
-    "name": "THỦY LÔI TRUÂN",
-    "description": "Khảm trên Chấn dưới",
-    "meaning": "Gian nan",
-    "details": "Khởi đầu khó khăn, cần kiên trì, không nên vội tiến."
+    "id": "564",
+    "name": "CHUẨN",
+    "description": "Quan quỉ thê tài lưỡng kiến chi",
+    "meaning": "Quan quỉ thê tài lưỡng kiến chi\nVấn nhơn tá thủ định tiện nghi\nCầu mưu toại ý vô loạn trở\nNhất nhận thi vi hỉ khả kỳ",
+    "details": "Hào quan quỉ thê tài thấy đủ cặp\nKiếm người vay mượn được lắm\nTính gì được nấy không ai gàn trở\nLàm đâu được đó đoán chắc nhiều việc mừng"
   },
   {
-    "id": "665",
-    "name": "THỦY PHONG TỈNH",
-    "description": "Khảm trên Tốn dưới",
-    "meaning": "Cái giếng",
-    "details": "Nuôi dưỡng, không thay đổi, công đức, dân làng hưởng lợi."
+    "id": "565",
+    "name": "TỈNH",
+    "description": "Cầu tài hỉ đắc quới nhơn cường",
+    "meaning": "Cầu tài hỉ đắc quới nhơn cường\nThế ứng tương sanh đại kiết xương\nĐản thị mục tiền phòng hữu trở\nTrì trì phương hướng toại tâm trường",
+    "details": "Cầu tài mừng đặng quới nhơn mạnh\nThế ứng được tương sanh tốt lắm\nĐương thời có việc trở ngại, chậm chậm mới tính được\nChậm chậm bèn được cho ý muốn"
   },
   {
-    "id": "666",
+    "id": "566",
     "name": "KHẢM",
-    "description": "Thủy",
-    "meaning": "Nước",
-    "details": "Hiểm trở, hãm, trung nam, tai, thận, lo lắng, bệnh tật."
+    "description": "Phạn mãi lúc súc vị vì hảo",
+    "meaning": "Phạn mãi lúc súc vị vì hảo\nThà hữu kinh dinh mạc vọng cang\nNhược vọng mãi thời khủng thất lợi\nHườn phòng tẩu thất bất châu toàn",
+    "details": "Mua bán loại súc vật không tốt\nMình có nghề làm ăn rồi, tính chỉ việc rối đó\nNếu làm lếu mua càn sao cũng thất bại\nCòn nỗi chúng bắt hết trơn trọn bầy."
   },
   {
-    "id": "667",
-    "name": "THỦY SƠN KIỂN",
-    "description": "Khảm trên Cấn dưới",
-    "meaning": "Nghiêng, khó",
-    "details": "Gian nan, trở ngại, nên dừng lại, tìm người giúp."
+    "id": "567",
+    "name": "KIỂN",
+    "description": "Đổ bác chiếm chi hứa xứng tâm",
+    "meaning": "Đổ bác chiếm chi hứa xứng tâm\nỨng lai sanh thế hỉ vinh vinh\nThì phùng Hợi, Tý tài tinh vượng\nNhứt trịch kim tiền đắc vạn văn",
+    "details": "Chơi cờ bạc quẻ này khá lắm\nHào ứng sanh hào thế việc này mừng đủ\nGặp giờ Hợi hay Tý hào tài vượng\nVốn 1 đồng lời vô 1 muôn."
   },
   {
-    "id": "668",
-    "name": "THỦY ĐỊA SƯ",
-    "description": "Khảm trên Khôn dưới",
-    "meaning": "Quân đội",
-    "details": "Chiến tranh, đám đông, cần người lãnh đạo có kinh nghiệm."
+    "id": "568",
+    "name": "TỶ",
+    "description": "Quân chiếm phong thủy sự phi phi",
+    "meaning": "Quân chiếm phong thủy sự phi phi\nTiền hữu không khu hậu hữu nguy\nThìn Tý càng long phương toàn mỹ\nKỳ di sơn hướng bất di nghi",
+    "details": "Coi về mồ mả việc này không tốt\nTrước có gò trống, sau có nền cũ\nNăm Thìn, Tý gặp càng long mới tốt\nMấy hướng khác xấu quá."
   },
   {
-    "id": "771",
-    "name": "SƠN THIÊN ĐẠI SÚC",
-    "description": "Cấn trên Càn dưới",
-    "meaning": "Ngăn lớn",
-    "details": "Tích lũy lớn, nuôi dưỡng hiền tài, tốt."
+    "id": "571",
+    "name": "ĐẠI SÚC",
+    "description": "Đào khứ gia nhơn tất bất tầm",
+    "meaning": "Đào khứ gia nhơn tất bất tầm\nTử tôn vị hiện uổng lao thần\nĐông, Tây phương chủ tương an lạc\nTế phỏng phong vong báo hảo âm",
+    "details": "Bạn bè nhà trốn đừng kiếm\nHào tử tôn chưa hiện mệt uổng công\nHướng Đông, Tây đứa trốn đương vui tươi\nCho người đi dò xét về nói cho nghe."
   },
   {
-    "id": "772",
-    "name": "SƠN TRẠCH TỔN",
-    "description": "Cấn trên Đoài dưới",
-    "meaning": "Bớt đi",
-    "details": "Hy sinh dưới để giúp trên, thành thật, tốt."
+    "id": "572",
+    "name": "TỔN",
+    "description": "Thất tài thất vật bất tu ưu",
+    "meaning": "Thất tài thất vật bất tu ưu\nLỏa tại đông, nam thủy tỉnh bàn\nTị, Hợi hữu nhơn truyền tiêu tức\nThân, Thìn, Tuất nhựt kiến chánh tường",
+    "details": "Mất của tiền chẳng nên rộn ràng\nGiấu ở phía Đông, Nam dựa bên mé nước\nNgày giờ Tị, Hợi có người tới thông tin\nNgày Thân, Thìn, Tuất thấy rõ ràng."
   },
   {
-    "id": "773",
-    "name": "SƠN HỎA BÍ",
-    "description": "Cấn trên Ly dưới",
-    "meaning": "Trang sức",
-    "details": "Trang trí, làm đẹp, văn minh, không thực chất, việc nhỏ thì tốt."
+    "id": "573",
+    "name": "BÍ",
+    "description": "Quân chiếm thử quái vẫn hành nhơn",
+    "meaning": "Quân chiếm thử quái vẫn hành nhơn\nNhóm tại tha phương vị chuyển thân\nBất qui lai thời vô lợi tuất\nHườn phòng đông thượng hữu hư kinh",
+    "details": "Quẻ coi người đi chừng nào về\nNgười đó ở xứ xa chưa tính về\nLàm ăn không khá nên không tính về\nQua tới mùa đông nó còn gặp việc lo sợ."
   },
   {
-    "id": "774",
-    "name": "SƠN LÔI DI",
-    "description": "Cấn trên Chấn dưới",
-    "meaning": "Nuôi nấng",
-    "details": "Dưỡng dục, cẩn thận lời nói và ăn uống, tự lực."
+    "id": "574",
+    "name": "HI",
+    "description": "Gia trạch bình an phước thọ trường",
+    "meaning": "Gia trạch bình an phước thọ trường\nQuỉ hào quan khắc tín vô phòng\nTam phân lợi tuất Thu Đông kiến\nXuân hạ chiếm chi cánh hỉ dương",
+    "details": "Gia đạo bình an phước lộc nhiều\nHào quan quỉ bị khắc, không hề gì\nMùa Thu Đông được 3 phần tài lợi\nMùa xuân, hạ chiếm thêm vui mừng nữa."
   },
   {
-    "id": "775",
-    "name": "SƠN PHONG CỔ",
-    "description": "Cấn trên Tốn dưới",
-    "meaning": "Việc xằng bậy",
-    "details": "Sửa chữa sai lầm, mục nát, cần can đảm và nỗ lực."
+    "id": "575",
+    "name": "CỔ",
+    "description": "Bình sanh lao lực dụng tâm cơ",
+    "meaning": "Bình sanh lao lực dụng tâm cơ\nTảo niên hình khắc khả tương kỳ\nLão cảnh phong y khả túc thực\nThọ niên bát thập nội khoa kỳ",
+    "details": "Từ nhỏ đến lớn làm ăn lao lực cực nhọc\nLúc tuổi trẻ nhiều việc gay go, cay đắng\nĐến về già ăn no, mặc ấm, no đủ\nTuổi được 80 trong cũng số lẻ, ngoài cũng số lẻ."
   },
   {
-    "id": "776",
-    "name": "SƠN THỦY MÔNG",
-    "description": "Cấn trên Khảm dưới",
-    "meaning": "Tối tăm, non",
-    "details": "Mờ mịt, cần khai sáng, giáo dục, không hỏi nhiều lần."
+    "id": "576",
+    "name": "MONG",
+    "description": "Tử tôn trì thế quái vì thân",
+    "meaning": "Tử tôn trì thế quái vì thân\nHiệp lõa chiếm chi bá sự hanh\nTài vượng nhơn hòa đa hỉ sắc\nQuản giao nhựt hạo hảo thâu thành",
+    "details": "Hào tử tôn trì thế quẻ này yên thân\nHùng hập làm ăn việc nào cũng tốt\nCủa vượng người hòa nhiều việc vui\nĐoán cho thế nào ngày sau cũng nên việc"
   },
   {
-    "id": "777",
+    "id": "577",
     "name": "CẤN",
-    "description": "Sơn",
-    "meaning": "Núi",
-    "details": "Ngừng, chỉ, thiếu nam, tay, lưng, tĩnh, không tiến."
+    "description": "Giải nhơn chiếm chỉ chữ hòa giai",
+    "meaning": "Giải nhơn chiếm chỉ chữ hòa giai\nTuy thị bôn bả khả phóng hoài\nChi khủng triền miên viễn tuế mạc\nGiao hườn tiền đắc quới nhơn lai",
+    "details": "Giai người quẻ này được hòa thuận\nTuy rằng lặn lội việc không sao\nChỉnh e dây dưa kéo dài năm tháng\nChừng giao rồi có quới nhơn về có bạn."
   },
   {
-    "id": "778",
-    "name": "SƠN ĐỊA BÁC",
-    "description": "Cấn trên Khôn dưới",
-    "meaning": "Lột, rụng",
-    "details": "Suy thoái, tiểu nhân mạnh, quân tử nên ẩn mình, không nên hành động."
+    "id": "578",
+    "name": "BÁC",
+    "description": "Tử tôn trì thế hóa vi xương",
+    "meaning": "Tử tôn trì thế hóa vi xương\nThủ nghệ cao thành khả phát vương\nTuy thị lao tâm tinh lao lực\nNhứt niên tứ quí lợi uông xương",
+    "details": "Tử tôn trì thế quẻ này tốt\nCông nghệ giỏi khéo làm ăn được\nDầu cho nhọc lòng cùng mệt sức\nMột năm 4 mùa tài lợi nhiều."
   },
   {
-    "id": "881",
-    "name": "ĐỊA THIÊN THÁI",
-    "description": "Khôn trên Càn dưới",
-    "meaning": "Thông thuận",
-    "details": "Hòa hợp, thông suốt, tiểu nhân đi, quân tử đến, tốt."
+    "id": "581",
+    "name": "THÁI",
+    "description": "Quân chiếm quí hoá xứng quân tâm",
+    "meaning": "Quân chiếm quí hoá xứng quân tâm\nQuan quỉ phò trì sự khả thành\nTrí hậu hườn giao đa lợi tức\nNha phi khẩu thiệt bất khả thing",
+    "details": "Vừa trữ hàng hóa, theo ý muốn thì được\nHào quan quỉ giúp đỡ việc khá nên\nVừa rồi từ đó thiếu gì tài lợi\nAi nói ra vô gì kệ bỏ lãng."
   },
   {
-    "id": "882",
-    "name": "ĐỊA TRẠCH LÂM",
-    "description": "Khôn trên Đoài dưới",
-    "meaning": "Tới, cai trị",
-    "details": "Giám sát, cai quản, lớn mạnh, tốt, nhưng cần lo xa."
+    "id": "582",
+    "name": "LÂM",
+    "description": "Cáo nhơn nan hứa toại tâm hoài",
+    "meaning": "Cáo nhơn nan hứa toại tâm hoài\nTham hiệp phùng quan sự bất giai\nNhược bằng kiến quan hữu hình khắc\nKhuyến quân hòa tức miễn ưu tai",
+    "details": "Người tín vô đơn kiện, việc không theo ý muốn\nVì tham, lôi kéo đến quan, việc không tốt\nNếu tới quan chắc có tội\nKhuyên người phá huề khỏi rầu lo."
   },
   {
-    "id": "883",
-    "name": "ĐỊA HỎA MINH DI",
-    "description": "Khôn trên Ly dưới",
-    "meaning": "Sáng bị thương",
-    "details": "Tối tăm, gian nan, bị hại, cần che giấu sự sáng suốt."
+    "id": "583",
+    "name": "MINH VI",
+    "description": "Cầu quan vị hứa toại tâm hoài",
+    "meaning": "Cầu quan vị hứa toại tâm hoài\nTham hiệp chi quan việc nan giai\nXuân, Hạ lưỡng quí vu khả thắng\nHườn đắc quới nhơn hữu thương tài",
+    "details": "Cầu quan chưa chắc vừa bụng ông\nGặp ông quan ham vui khó nói chuyện\nCuối Xuân, cuối Hạ có lẽ được việc\nPhải nhờ sức quới nhơn điều đình (lo tiền)"
   },
   {
-    "id": "884",
-    "name": "ĐỊA LÔI PHỤC",
-    "description": "Khôn trên Chấn dưới",
-    "meaning": "Trở lại",
-    "details": "Quay về, dương khí trở lại, tốt, chu kỳ mới bắt đầu."
+    "id": "584",
+    "name": "PHỤC",
+    "description": "Gia lương cách trở tín âm hi",
+    "meaning": "Gia lương cách trở tín âm hi\nNhãn vọng xuyên vi cảnh mạc vi\nMục hạ tu tri đương diện kiến\nXuân sơ,Hè mạt thị qui kỳ",
+    "details": "Xa cách quê nhà tin tức bặt\nMắt trông tin tức ngó lom lom không ngớt\nMuốn biết ngày nào chok gặp mặt\nĐầu xuân, cuối hạ là ngày về."
   },
   {
-    "id": "885",
-    "name": "ĐỊA PHONG THĂNG",
-    "description": "Khôn trên Tốn dưới",
-    "meaning": "Lên",
-    "details": "Tiến lên, thăng tiến, cần có người giúp đỡ, tốt."
+    "id": "585",
+    "name": "THĂNG",
+    "description": "Trời điền chiếm thử mạc ưu nghi",
+    "meaning": "Trời điền chiếm thử mạc ưu nghi\nQuản thủ điền trung lợi lộc phì\nHữu đắc bàn nhơn tranh mãi khứ\nTao đương thành tựu mạc kê tài trì",
+    "details": "Sắm ruộng gặp quẻ này đừng nghi ngờ\nTính chắc cho sở ruộng này lợi lộc nhiều\nĐừng để người khác mua rất uổng\nPhải giá cả xong cho sớm đừng để trễ."
   },
   {
-    "id": "886",
-    "name": "ĐỊA THỦY SƯ",
-    "description": "Khôn trên Khảm dưới",
-    "meaning": "Quân đội",
-    "details": "Trùng với 668, có thể có lỗi dữ liệu."
+    "id": "586",
+    "name": "SƯ",
+    "description": "Tài này phá ứng tử tương quan",
+    "meaning": "Tài này phá ứng tử tương quan\nNạp lại chiếm chi sự vi an\nQuân bất kiến cơ ưng trước não\nTrì trì phương hứa toại tâm hoài",
+    "details": "Hào tài phá hào ứng, hào tử tôn khắc hào quan\nTin sở làm việc dở quẻ chưa yên\nNhà ngươi không coi thời thế buộc lo cho mình\nChậm chậm mới được vừa lòng"
   },
   {
-    "id": "887",
-    "name": "ĐỊA SƠN KHIÊM",
-    "description": "Khôn trên Cấn dưới",
-    "meaning": "Khiêm tốn",
-    "details": "Nhún nhường, khiêm tốn, được lợi, tốt."
+    "id": "587",
+    "name": "KHIÊM",
+    "description": "Quân lai vấn bốc thảo gia nô",
+    "meaning": "Quân lai vấn bốc thảo gia nô\nVónh viễn miên trường hậu đại đa\nMục hạ nhân ngôn hưu vọng thính\nNhứt tâm biện giá mạc giao ngoa",
+    "details": "Ngươi coi quẻ mướn gia tướng\nBền chặt lâu đời, con cháu đông\nBây giờ nhiều tiếng ra vô đừng nghe lời\nMình tính giá cả xong xuôi cho rồi đi"
   },
   {
-    "id": "888",
+    "id": "588",
     "name": "KHÔN",
-    "description": "Địa",
-    "meaning": "Đất",
-    "details": "Nhu thuận, chứa đựng, mẹ, bụng, trâu, số đông, thụ động."
+    "description": "Quân tấn nha môn khủng bất giai",
+    "meaning": "Quân tấn nha môn khủng bất giai\nChỉ nghi thủ cựu tự vô tai\nNhược yểu vọng tưởng thằng đầu lợi\nĐịnh hữu hình thương phí tâm hoài",
+    "details": "Ngươi tình đến nha môn việc đó không nên\nGiữ nghề cũ không việc gì tai hại\nBằng tưởng đến chút lợi nhỏ mọn\nChắc có tội lệ uổng công tính."
   }
 ]
