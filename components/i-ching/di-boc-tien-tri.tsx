@@ -23,6 +23,7 @@ import {
   Lightbulb
 } from 'lucide-react';
 import { getPredictionById, hasPrediction, getPredictionStats, type DibocPrediction } from '@/lib/diboc-data';
+
 // Định nghĩa đầy đủ các chủ đề từ file text với 8 cung Bát Quái
 const TOPICS = {
   // Cung Càn
@@ -258,6 +259,15 @@ export function DiBocTienTri() {
       // Lấy dữ liệu tiên tri từ JSON
       const prediction = getPredictionById(hexagramNumber);
       const hasValidPrediction = prediction !== null;
+
+      console.log('Debug info:', {
+        selectedTopic,
+        finalNumber,
+        hexagramNumber,
+        hexagramName,
+        prediction,
+        hasValidPrediction
+      });
 
       const newResult: DiBocResult = {
         topic: topicName,
@@ -536,7 +546,8 @@ export function DiBocTienTri() {
             </div>
 
             <Separator className="bg-mystical-gold/20" />
-{/* Prediction Content */}
+
+            {/* Prediction Content */}
             {result.hasValidPrediction && result.prediction ? (
               <div className="space-y-4">
                 {/* Tên quẻ từ JSON */}
@@ -546,7 +557,7 @@ export function DiBocTienTri() {
                     <span>Tên Quẻ</span>
                   </h4>
                   <p className="text-mystical-dark-purple font-medium text-lg">
-                    {result.prediction.title}
+                    {result.prediction.name}
                   </p>
                 </div>
 
@@ -558,7 +569,7 @@ export function DiBocTienTri() {
                   </h4>
                   <ScrollArea className="max-h-32">
                     <p className="text-blue-800 leading-relaxed whitespace-pre-wrap">
-                      {result.prediction.original}
+                      {result.prediction.meaning}
                     </p>
                   </ScrollArea>
                 </div>
@@ -571,7 +582,7 @@ export function DiBocTienTri() {
                   </h4>
                   <ScrollArea className="max-h-40">
                     <p className="text-green-800 leading-relaxed whitespace-pre-wrap">
-                      {result.prediction.interpretation}
+                      {result.prediction.details}
                     </p>
                   </ScrollArea>
                 </div>
