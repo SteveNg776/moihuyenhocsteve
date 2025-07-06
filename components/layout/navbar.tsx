@@ -25,7 +25,7 @@ export function Navbar() {
               <span className="text-white font-bold text-sm">∞</span>
             </div>
             <span className="font-bold text-xl text-gray-800">
-              Huyền Học - Hidden Knowledge
+              Huyền Học
             </span>
           </Link>
 
