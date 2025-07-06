@@ -36,8 +36,7 @@ export default function IChing() {
             Kinh Dịch Oracle
           </h1>
           
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Tham khảo Kinh Dịch cổ đại của Trung Quốc để được hướng dẫn và trí tuệ. 
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto"> 
             Sử dụng phương pháp Dị Bốc Tiên Tri để khám phá những hiểu biết sâu sắc.
           </p>
         </div>
