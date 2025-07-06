@@ -27,7 +27,7 @@ export default function IChing() {
   const [changingLines, setChangingLines] = useState<number[]>([]);
   const [question, setQuestion] = useState('');
 
-  const handleCoinTossComplete = (lines: boolean[], changingLinesResult: number[]) => {
+  const handleCoinTossComplete = (lines: number[], changingLinesResult: number[]) => {
     const hexagram = getHexagramByLines(lines);
     if (hexagram) {
       setCurrentHexagram(hexagram);
