@@ -23,15 +23,6 @@ export default function IChing() {
   };
 
   return (
-    <div className="min-h-screen py-8 px-4 sm:px-6 lg:px-8">
-      <div className="container mx-auto max-w-6xl">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/20 border border-white/30 mb-6">
-            <BookOpen className="w-4 h-4 text-blue-600 mr-2" />
-            <span className="text-sm font-medium text-gray-700">Kinh dịch</span>
-          </div>
-          
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 mb-4">
             Kinh Dịch
           </h1>
