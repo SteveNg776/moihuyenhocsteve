@@ -104,8 +104,7 @@ export default function IChing() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-gray-600">
-                  <strong>Dị Bốc Tiên Tri</strong> hay gọi đầy đủ là <strong>Tiên thiên Diệt số - Dị Bốc Tiên Tri</strong> 
-                   là một cuốn sách cổ của tiên sinh Thiệu Khang Tiết ghi lại các chiêm nghiệm của quẻ Kinh Dịch 
+                  <strong>Dị Bốc Tiên Tri</strong> hay gọi đầy đủ là <strong>Tiên thiên Diệt số - Dị Bốc Tiên Tri</strong> là một cuốn sách cổ của tiên sinh Thiệu Khang Tiết ghi lại các chiêm nghiệm của quẻ Kinh Dịch 
                   đối với các sự việc cần hỏi.
                 </p>
                 <p className="text-gray-600">
