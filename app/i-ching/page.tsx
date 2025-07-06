@@ -43,21 +43,13 @@ export default function IChing() {
                 <CardTitle className="text-2xl text-blue-600 font-semibold">
                   Kinh Dịch: Công Cụ Minh Triết Của Người Việt
                 </CardTitle>
-                <CardDescription className="text-lg">
-                  Kinh Dịch, là công cụ và văn hoá quan trọng của người Việt
-                </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-gray-600">
-                  Kinh Dịch là một văn bản bói toán cổ đại của Trung Quốc có niên đại hơn 3.000 năm. 
-                  Nó bao gồm 64 quẻ, mỗi quẻ được tạo thành từ sáu vạch có thể là đứt (âm) hoặc liền (dương). 
-                  Những quẻ này đại diện cho các tình huống khác nhau trong cuộc sống và cung cấp hướng dẫn để hiểu về sự thay đổi và đưa ra quyết định.
+                  Kinh Dịch, một hệ thống triết học và dự đoán cổ xưa, từ lâu đã không chỉ là một di sản văn hóa phương Đông mà còn là một công cụ quan trọng, gắn bó sâu sắc với đời sống và tư duy của người Việt. Vượt qua ý nghĩa của một văn bản bói toán, người Việt đã tiếp thu và vận dụng Kinh Dịch như một kim chỉ nam để hiểu quy luật vận động của vũ trụ, sự biến đổi của vạn vật và từ đó đưa ra những quyết định sáng suốt trong cuộc sống.
                 </p>
                 <p className="text-gray-600">
-                  Oracle hoạt động bằng cách tạo ra một quẻ thông qua các phương pháp bói toán cổ đại, 
-                  sau đó được giải thích theo trí tuệ cổ đại có trong văn bản. 
-                  Mỗi quẻ có nhiều lớp ý nghĩa, bao gồm giải thích chung, 
-                  lời khuyên cụ thể cho các lĩnh vực khác nhau trong cuộc sống, và những hiểu biết bổ sung.
+                 Cốt lõi của Kinh Dịch là 64 quẻ, được tạo thành từ sự kết hợp của các hào Âm (vạch đứt) và Dương (vạch liền). Mỗi quẻ tượng trưng cho một tình huống, một giai đoạn trong cuộc sống, bao hàm những lớp lang ý nghĩa sâu sắc về thời thế, sự vật và con người. Thông qua việc lập quẻ và diễn giải, người Việt tìm thấy trong Kinh Dịch những lời khuyên, những dự báo và sự chỉ dẫn để hài hòa với tự nhiên, cải thiện các mối quan hệ, và định hướng cho tương lai.
                 </p>
               </CardContent>
             </Card>
