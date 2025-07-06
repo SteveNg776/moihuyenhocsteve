@@ -74,20 +74,23 @@ export default function IChing() {
                     Phương pháp bói toán cổ đại với 512 quẻ tiên tri. 
                     Sử dụng 8 cung Bát Quái để đưa ra lời tiên tri trực tiếp và chính xác.
                   </CardDescription>
-                  <div className="space-y-2 text-sm text-gray-600">
-                    <div className="flex items-center justify-center space-x-2">
-                      <div className="w-2 h-2 bg-mystical-gold rounded-full"></div>
-                      <span>512 quẻ tiên tri cổ đại</span>
-                    </div>
-                    <div className="flex items-center justify-center space-x-2">
-                      <div className="w-2 h-2 bg-mystical-gold rounded-full"></div>
-                      <span>Kết quả trực tiếp, rõ ràng</span>
-                    </div>
-                    <div className="flex items-center justify-center space-x-2">
-                      <div className="w-2 h-2 bg-mystical-gold rounded-full"></div>
-                      <span>64 lĩnh vực chuyên biệt</span>
-                    </div>
-                  </div>
+                  <div class="mt-6 flex justify-center">
+  <ul class="space-y-2 text-left text-gray-700">
+    <li class="flex items-center">
+      <!-- Đây là dấu chấm tròn màu vàng -->
+      <span class="h-2.5 w-2.5 bg-yellow-400 rounded-full mr-3 flex-shrink-0"></span>
+      <span>512 quẻ tiên tri cổ đại</span>
+    </li>
+    <li class="flex items-center">
+      <span class="h-2.5 w-2.5 bg-yellow-400 rounded-full mr-3 flex-shrink-0"></span>
+      <span>Kết quả trực tiếp, rõ ràng</span>
+    </li>
+    <li class="flex items-center">
+      <span class="h-2.5 w-2.5 bg-yellow-400 rounded-full mr-3 flex-shrink-0"></span>
+      <span>64 lĩnh vực chuyên biệt</span>
+    </li>
+  </ul>
+</div>
                 </CardContent>
               </Card>
             </div>
