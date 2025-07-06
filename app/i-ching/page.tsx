@@ -27,10 +27,11 @@ export default function IChing() {
       <div className="container mx-auto max-w-6xl">
         {/* Header */}
         <div className="text-center mb-12">
-          </div>
+          
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 mb-4">
             Kinh Dịch
-          </h1> 
+          </h1>
+          
           <p className="text-xl text-gray-600 max-w-3xl mx-auto"> 
             Sử dụng phương pháp Dị Bốc Tiên Tri để khám phá những hiểu biết sâu sắc.
           </p>
