@@ -41,7 +41,7 @@ export default function IChing() {
             <Card className="moonrise-card">
               <CardHeader>
                 <CardTitle className="text-2xl text-blue-600 font-semibold">
-                  Về Kinh Dịch
+                  Kinh Dịch: Công Cụ Minh Triết Của Người Việt
                 </CardTitle>
                 <CardDescription className="text-lg">
                   Kinh Dịch, là công cụ và văn hoá quan trọng của người Việt
