@@ -29,11 +29,11 @@ export default function IChing() {
         <div className="text-center mb-12">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/20 border border-white/30 mb-6">
             <BookOpen className="w-4 h-4 text-blue-600 mr-2" />
-            <span className="text-sm font-medium text-gray-700">Kinh Thay Đổi</span>
+            <span className="text-sm font-medium text-gray-700">Kinh dịch</span>
           </div>
           
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 mb-4">
-            Kinh Dịch Oracle
+            Kinh Dịch
           </h1>
           
           <p className="text-xl text-gray-600 max-w-3xl mx-auto"> 
@@ -51,12 +51,12 @@ export default function IChing() {
                   Về Kinh Dịch
                 </CardTitle>
                 <CardDescription className="text-lg">
-                  Kinh Thay Đổi, một trong những kinh điển cổ nhất của Trung Quốc
+                  Kinh Dịch, là công cụ và văn hoá quan trọng của người Việt
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-gray-600">
-                  Kinh Dịch (易經) là một văn bản bói toán cổ đại của Trung Quốc có niên đại hơn 3.000 năm. 
+                  Kinh Dịch là một văn bản bói toán cổ đại của Trung Quốc có niên đại hơn 3.000 năm. 
                   Nó bao gồm 64 quẻ, mỗi quẻ được tạo thành từ sáu vạch có thể là đứt (âm) hoặc liền (dương). 
                   Những quẻ này đại diện cho các tình huống khác nhau trong cuộc sống và cung cấp hướng dẫn để hiểu về sự thay đổi và đưa ra quyết định.
                 </p>
