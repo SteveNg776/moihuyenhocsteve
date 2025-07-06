@@ -42,7 +42,7 @@ export default function IChing() {
       ? [Math.floor(Math.random() * 6) + 1] 
       : [];
     
-    setCurrentHexagram(hexagram);
+    setCurrentHexagram(hexagram || null);
     setChangingLines(randomChangingLines);
     setViewMode('hexagram');
   };
