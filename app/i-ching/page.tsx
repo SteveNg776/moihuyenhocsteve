@@ -32,9 +32,6 @@ export default function IChing() {
             Kinh Dịch
           </h1>
           
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto"> 
-            Sử dụng phương pháp Dị Bốc Tiên Tri để khám phá những hiểu biết sâu sắc.
-          </p>
         </div>
 
         {/* Content */}
