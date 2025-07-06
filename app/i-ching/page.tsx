@@ -74,7 +74,7 @@ export default function IChing() {
                     Phương pháp bói toán cổ đại với 512 quẻ tiên tri. 
                     Sử dụng 8 cung Bát Quái để đưa ra lời tiên tri trực tiếp và chính xác.
                   </CardDescription>
-                  <div class="mt-6 flex justify-center">
+                 <div class="mt-6 flex justify-center">
   <ul class="space-y-2 text-left text-gray-700">
     <li class="flex items-center">
       <!-- Đây là dấu chấm tròn màu vàng -->
