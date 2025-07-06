@@ -14,7 +14,7 @@ export function Footer() {
                 <span className="text-white font-bold text-sm">∞</span>
               </div>
               <span className="font-bold text-xl text-gray-800">
-                Nghiên Cứu Huyền Bí
+                Huyền Học
               </span>
             </div>
             <p className="text-gray-600 mb-4 max-w-md">
