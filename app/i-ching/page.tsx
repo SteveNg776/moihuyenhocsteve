@@ -11,22 +11,15 @@ import {
   Sparkles
 } from 'lucide-react';
 import { Hexagram } from '@/lib/i-ching-data';
-import { HexagramDisplay } from '@/components/i-ching/hexagram-display';
 import { DiBocTienTri } from '@/components/i-ching/di-boc-tien-tri';
 
-type ViewMode = 'intro' | 'di-boc' | 'hexagram';
+type ViewMode = 'intro' | 'di-boc';
 
 export default function IChing() {
   const [viewMode, setViewMode] = useState<ViewMode>('intro');
-  const [currentHexagram, setCurrentHexagram] = useState<Hexagram | null>(null);
-  const [changingLines, setChangingLines] = useState<number[]>([]);
-  const [question, setQuestion] = useState('');
 
   const resetReading = () => {
     setViewMode('intro');
-    setCurrentHexagram(null);
-    setChangingLines([]);
-    setQuestion('');
   };
 
   return (
@@ -161,45 +154,6 @@ export default function IChing() {
               ← Quay Lại Giới Thiệu
             </Button>
             <DiBocTienTri />
-          </div>
-        )}
-
-        {viewMode === 'hexagram' && currentHexagram && (
-          <div className="space-y-6">
-            <div className="flex items-center justify-between">
-              <Button
-                onClick={resetReading}
-                variant="ghost"
-                className="hover:bg-blue-50"
-              >
-                ← Đọc Mới
-              </Button>
-              <div className="flex items-center space-x-2">
-                <Badge variant="secondary" className="bg-blue-50 text-blue-600 border-blue-200">
-                  Quẻ {currentHexagram.id}
-                </Badge>
-                {changingLines.length > 0 && (
-                  <Badge variant="outline" className="border-blue-300">
-                    {changingLines.length} Vạch Thay Đổi
-                  </Badge>
-                )}
-              </div>
-            </div>
-
-            {question && (
-              <Card className="bg-blue-50 border-blue-200">
-                <CardContent className="p-4">
-                  <p className="text-sm text-gray-600">
-                    <span className="font-semibold text-blue-600">Câu Hỏi Của Bạn:</span> {question}
-                  </p>
-                </CardContent>
-              </Card>
-            )}
-
-            <HexagramDisplay 
-              hexagram={currentHexagram} 
-              changedLines={changingLines}
-            />
           </div>
         )}
       </div>
