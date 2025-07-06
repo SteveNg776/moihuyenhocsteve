@@ -198,7 +198,7 @@ export default function IChing() {
 
             <HexagramDisplay 
               hexagram={currentHexagram} 
-              changingLines={changingLines}
+              changedLines={changingLines}
             />
           </div>
         )}
