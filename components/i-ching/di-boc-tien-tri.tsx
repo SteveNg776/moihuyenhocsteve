@@ -664,8 +664,8 @@ export function DiBocTienTri() {
             </div>
           </CardHeader>
           <CardContent className="space-y-6">
-            {/* Hexagram Info */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {/* Hexagram Info - Removed the "Tên Quái" div */}
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
               <div className="p-4 bg-mystical-gold/5 rounded-lg border border-mystical-gold/20">
                 <div className="flex items-center space-x-2 mb-2">
                   <Hash className="w-4 h-4 text-mystical-gold" />
@@ -673,16 +673,6 @@ export function DiBocTienTri() {
                 </div>
                 <div className="text-2xl font-bold text-mystical-dark-purple">
                   {result.hexagramNumber}
-                </div>
-              </div>
-              
-              <div className="p-4 bg-mystical-gold/5 rounded-lg border border-mystical-gold/20">
-                <div className="flex items-center space-x-2 mb-2">
-                  <BookOpen className="w-4 h-4 text-mystical-gold" />
-                  <span className="font-semibold text-mystical-gold">Tên Quái</span>
-                </div>
-                <div className="text-xl font-bold text-mystical-dark-purple">
-                  {result.hexagramName}
                 </div>
               </div>
             </div>
