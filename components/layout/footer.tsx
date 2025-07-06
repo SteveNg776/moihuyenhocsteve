@@ -58,7 +58,7 @@ export function Footer() {
             © 2025 Nghiên Cứu Huyền Bí. Tất cả quyền được bảo lưu.
           </p>
           <p className="text-gray-600 text-sm mt-2 md:mt-0">
-            "Sự đồng bộ là một món quà của thực tại dành cho ai thấy mà tin" - Carl Jung
+  "Sự đồng bộ là một món quà của thực tại dành cho ai thấy mà tin" <br /> Carl Jung
           </p>
         </div>
       </div>
