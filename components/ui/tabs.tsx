@@ -41,14 +41,10 @@ const TabsContent = React.forwardRef<
   React.ElementRef<typeof TabsPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof TabsPrimitive.Content>
 >(({ className, ...props }, ref) => (
-  // THAY ĐỔI: Thêm thuộc tính `forceMount` và class CSS để luôn render nhưng chỉ hiển thị tab đang hoạt động
   <TabsPrimitive.Content
     ref={ref}
-    forceMount
     className={cn(
       "mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
-      // Ẩn tab khi không hoạt động
-      "data-[state=inactive]:hidden",
       className
     )}
     {...props}
