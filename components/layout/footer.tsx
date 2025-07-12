@@ -37,7 +37,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/date-calculator" className="text-gray-600 hover:text-blue-600 transition-colors">
-                  Thần Số Học
+                  Tượng Số Học
                 </Link>
               </li>
               <li>
