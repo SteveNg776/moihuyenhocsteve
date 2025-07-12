@@ -142,56 +142,57 @@ export function NumberInput() {
           </CardContent>
         </Card>
 
-      {/* Results Section */}
-      {results.length > 0 && (
-        <Card className="moonrise-card">
-          <CardHeader>
-            <CardTitle className="flex items-center space-x-2 text-blue-600">
-              <Calendar className="w-5 h-5" />
-              <span>Kết Quả</span>
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {/* Solar Calendar Results */}
-                <div className="space-y-3">
-                  <h4 className="font-semibold text-blue-400 border-b border-blue-400/20 pb-2">
-                    {t('dateCalculator.solarResult')}
-                  </h4>
-                  {results.slice(0, 2).map((result, index) => (
-                    <div key={index} className="p-3 bg-blue-500/5 rounded-lg border border-blue-500/20">
-                      <div className="text-sm text-gray-600 mb-1">
-                        {result.description.split(':')[0]}:
+        {/* Results Section */}
+        {results.length > 0 && (
+          <Card className="moonrise-card">
+            <CardHeader>
+              <CardTitle className="flex items-center space-x-2 text-blue-600">
+                <Calendar className="w-5 h-5" />
+                <span>Kết Quả</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {/* Solar Calendar Results */}
+                  <div className="space-y-3">
+                    <h4 className="font-semibold text-blue-400 border-b border-blue-400/20 pb-2">
+                      {t('dateCalculator.solarResult')}
+                    </h4>
+                    {results.slice(0, 2).map((result, index) => (
+                      <div key={index} className="p-3 bg-blue-500/5 rounded-lg border border-blue-500/20">
+                        <div className="text-sm text-gray-600 mb-1">
+                          {result.description.split(':')[0]}:
+                        </div>
+                        <div className="font-semibold text-blue-400">
+                          {result.description.split(': ')[1]}
+                        </div>
                       </div>
-                      <div className="font-semibold text-blue-400">
-                        {result.description.split(': ')[1]}
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                    ))}
+                  </div>
 
-                {/* Lunar Calendar Results */}
-                <div className="space-y-3">
-                  <h4 className="font-semibold text-green-400 border-b border-green-400/20 pb-2">
-                    {t('dateCalculator.lunarResult')}
-                  </h4>
-                  {results.slice(2, 4).map((result, index) => (
-                    <div key={index} className="p-3 bg-green-500/5 rounded-lg border border-green-500/20">
-                      <div className="text-sm text-gray-600 mb-1">
-                        {result.description.split(':')[0]}:
+                  {/* Lunar Calendar Results */}
+                  <div className="space-y-3">
+                    <h4 className="font-semibold text-green-400 border-b border-green-400/20 pb-2">
+                      {t('dateCalculator.lunarResult')}
+                    </h4>
+                    {results.slice(2, 4).map((result, index) => (
+                      <div key={index} className="p-3 bg-green-500/5 rounded-lg border border-green-500/20">
+                        <div className="text-sm text-gray-600 mb-1">
+                          {result.description.split(':')[0]}:
+                        </div>
+                        <div className="font-semibold text-green-400">
+                          {result.description.split(': ')[1]}
+                        </div>
                       </div>
-                      <div className="font-semibold text-green-400">
-                        {result.description.split(': ')[1]}
-                      </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
-          </CardContent>
-        </Card>
-      )}
+            </CardContent>
+          </Card>
+        )}
+      </div>
     </div>
   );
 }
