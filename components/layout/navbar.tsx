@@ -9,7 +9,8 @@ import Image from 'next/image';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+ // THAY ĐỔI: Sử dụng một state để lưu tên của menu đang mở
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   const navigationItems = [
     { name: 'Trang Chủ', href: '/' },
@@ -18,7 +19,7 @@ export function Navbar() {
       href: '/i-ching',
       submenu: [
         { name: 'Dị Bốc Tiên Tri', href: '/i-ching' },
-        { name: '64 Quẻ Kinh Dịch', href: '/i-ching/hexagram-oracle' }
+        { name: 'Bốc Quẻ Kinh Dịch', href: '/i-ching/hexagram-oracle' }
       ]
     },
     { 
@@ -57,8 +58,9 @@ export function Navbar() {
                   {item.submenu ? (
                     <div
                       className="relative"
-                      onMouseEnter={() => setIsDropdownOpen(true)}
-                      onMouseLeave={() => setIsDropdownOpen(false)}
+                      // THAY ĐỔI: Cập nhật onMouseEnter và onMouseLeave
+                      onMouseEnter={() => setOpenDropdown(item.name)}
+                      onMouseLeave={() => setOpenDropdown(null)}
                     >
                       <Link
                         href={item.href}
@@ -69,9 +71,10 @@ export function Navbar() {
                         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 transition-all duration-300 group-hover:w-full"></span>
                       </Link>
                       
-                      {/* Dropdown Menu */}
+              {/* Dropdown Menu */}
+              {/* THAY ĐỔI: Điều kiện hiển thị dựa trên tên của menu */}
                       <div className={`absolute top-full left-0 mt-2 w-56 bg-white/95 backdrop-blur-lg border border-white/30 rounded-lg shadow-lg transition-all duration-200 ${
-                        isDropdownOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
+                        openDropdown === item.name ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
                       }`}>
                         <div className="py-2">
                           {item.submenu.map((subItem) => (
