@@ -37,7 +37,7 @@ export default function HomePage() {
           </h1>
           
           <p className="text-xl sm:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Trí tuệ phương Đông không khuyến khích phá vỡ quy luật, mà là thấu hiểu và nương theo dòng chảy của vũ trụ. "Chiếc hộp" là sự cứng nhắc của con người khi cố áp đặt ý chí lên vạn vật. Tư duy "Out of the box" theo tinh thần này chính là nghệ thuật "vô vi" – hành động mà không gắng gượng, tìm ra con đường ít kháng cự nhất. Đó là khi ta ngừng tư duy theo lối mòn và bắt đầu quan sát, lắng nghe để thấy được những giải pháp đã luôn tồn tại sẵn trong tự nhiên.
+            Vật Cùng Tắc Biến, Vật Cực Tất Phản
           </p>
         </div>
       </section>
