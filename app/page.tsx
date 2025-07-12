@@ -15,14 +15,14 @@ export default function HomePage() {
     {
       icon: BookOpen,
       title: 'Kinh Dịch',
-      description: 'Tham khảo Kinh Dịch cổ đại với trình tạo quẻ tương tác và giải thích toàn diện.',
+      description: 'Nghiên cứu trí tuệ của Phương Đông qua Kinh Dịch với trình tạo quẻ tương tác và giải thích toàn diện.',
       href: '/i-ching',
       color: 'text-blue-500'
     },
     {
       icon: CalendarDays,
-      title: 'Thần Số Học',
-      description: 'Công cụ lịch âm dương toàn diện để phân tích và chuyển đổi ngày tháng.',
+      title: 'Tượng Số Học',
+      description: 'Công cụ lịch vạn niên toàn diện để thuận theo tự nhiên.',
       href: '/date-calculator',
       color: 'text-green-500'
     }
