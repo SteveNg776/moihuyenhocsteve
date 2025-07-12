@@ -3,11 +3,13 @@
 import React from 'react';
 import { CalendarView } from '@/components/date-calculator/calendar-view';
 import { Calendar } from 'lucide-react';
+import { BackButton } from '@/components/layout/back-button';
 
 export default function CalendarViewPage() {
   return (
     <div className="py-8 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-6xl">
+        <BackButton href="/date-calculator" text="Quay lại Giới Thiệu Thần Số Học" />
         <div className="text-center mb-8">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 mb-4 flex items-center justify-center gap-3">
             <Calendar className="w-10 h-10 text-amber-500" />
