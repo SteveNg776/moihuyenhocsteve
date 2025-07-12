@@ -1,7 +1,6 @@
 "use client";
 
-import React from 'react';
-// THAY ĐỔI: Import thêm useState, useEffect, useRouter, và usePathname
+// SỬA LỖI: Gộp các import từ 'react' vào một dòng
 import React, { useState, useEffect } from 'react';
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
