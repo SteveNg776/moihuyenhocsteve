@@ -9,7 +9,6 @@ import Image from 'next/image';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
- // THAY ĐỔI: Sử dụng một state để lưu tên của menu đang mở
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
     const navigationItems = [
@@ -18,16 +17,15 @@ export function Navbar() {
       name: 'Kinh Dịch',
       href: '/i-ching',
       submenu: [
-        // THAY ĐỔI: Thêm query param `?tool=di-boc` để kích hoạt công cụ Dị Bốc
-        { name: 'Dị Bốc Tiên Tri', href: '/i-ching?tool=di-boc' },
-        { name: 'Kinh Dịch Quẻ', href: '/i-ching/hexagram-oracle' }
+        // THAY ĐỔI: Cập nhật đường dẫn href để trỏ đến trang chuyên dụng mới
+        { name: 'Dị Bốc Tiên Tri', href: '/i-ching/di-boc-tien-tri' },
+        { name: 'Kinh Dịch Bốc Quẻ', href: '/i-ching/hexagram-oracle' }
       ]
     },
     {
       name: 'Thần Số Học',
       href: '/date-calculator',
       submenu: [
-        // THAY ĐỔI: Thêm các query param tương ứng cho mỗi tab
         { name: 'Sổ Tay Ngày', href: '/date-calculator?tab=handbook' },
         { name: 'Tìm Ngày', href: '/date-calculator?tab=number-input' },
         { name: 'Lịch Vạn Niên', href: '/date-calculator?tab=calendar' }
@@ -52,7 +50,7 @@ export function Navbar() {
             </span>
           </Link>
 
-          {/* Desktop Navigation - Căn giữa và tạo hiệu ứng nổi bật */}
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center justify-center flex-1 mx-8">
             <div className="flex items-center space-x-12">
               {navigationItems.map((item) => (
@@ -60,7 +58,6 @@ export function Navbar() {
                   {item.submenu ? (
                     <div
                       className="relative"
-                      // THAY ĐỔI: Cập nhật onMouseEnter và onMouseLeave
                       onMouseEnter={() => setOpenDropdown(item.name)}
                       onMouseLeave={() => setOpenDropdown(null)}
                     >
@@ -73,8 +70,7 @@ export function Navbar() {
                         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 transition-all duration-300 group-hover:w-full"></span>
                       </Link>
                       
-              {/* Dropdown Menu */}
-              {/* THAY ĐỔI: Điều kiện hiển thị dựa trên tên của menu */}
+                      {/* Dropdown Menu */}
                       <div className={`absolute top-full left-0 mt-2 w-56 bg-white/95 backdrop-blur-lg border border-white/30 rounded-lg shadow-lg transition-all duration-200 ${
                         openDropdown === item.name ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
                       }`}>
