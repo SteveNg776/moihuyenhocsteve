@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle, SheetDescription } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { Menu } from 'lucide-react';
+import Image from 'next/image'; // <-- Thêm dòng import này
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,6 +13,7 @@ export function Navbar() {
   const navigationItems = [
     { name: 'Trang Chủ', href: '/' },
     { name: 'Kinh Dịch', href: '/i-ching' },
+    { name: 'Bốc Quẻ', href: '/i-ching/hexagram-oracle' },
     { name: 'Thần Số Học', href: '/date-calculator' },
   ];
 
@@ -21,11 +23,15 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm">∞</span>
-            </div>
+            {/* THAY THẾ Ở ĐÂY */}
+            <Image
+              src="/zen-logo.png" // Đường dẫn tới tệp trong thư mục public
+              alt="Huyền Học Logo"
+              width={32}
+              height={32}
+            />
             <span className="font-bold text-xl text-gray-800">
-              Nghiên Cứu Huyền Bí
+              Huyền Học
             </span>
           </Link>
 

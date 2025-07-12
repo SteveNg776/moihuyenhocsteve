@@ -1,0 +1,652 @@
+
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="yes" name="apple-touch-fullscreen">
+	<link rel="icon" href="https://dich.kabala.vn/icon.png" sizes="32x32">
+	<title>Bảng Tổng Hợp 64 Quẻ Kinh Dịch Chuyên Sâu | Đầy Đủ Nhất</title>
+	<meta name="description" content="Bảng Tổng Hợp 64 Quẻ Kinh Dịch Chuyên Sâu, đầy đủ nhất, bao gồm các hào, lục thân, địa chi, diễn giải. Chi tiết và đầy đủ nhất từ Kabala Dịch Học.">
+	<meta property="og:locale" content="vi_VN">
+	<meta name="robots" content="follow, index">
+	<meta property="og:image" content="https://sodep.dabala.vn/sodep_dabala.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+	<link href="https://dich.kabala.vn/css/style.css" rel="stylesheet">
+
+    <style>	
+		.tenQue{
+			background: rgb(0, 78, 19);
+			background: linear-gradient(90deg, #8BC34A 42%, rgb(255 255 255) 100%);
+			color: #fff;
+			font-weight: BOLD;
+			text-align:center;
+		}
+		table tr th {
+			background: rgb(0,78,19);
+			background: linear-gradient(90deg, rgb(94 136 46) 42%, rgb(207 255 126) 100%);
+			color:#fff;
+		}
+		.maQue {
+			background: #fff;
+			padding: 10px;
+			border-radius: 50%;
+			color: #8BC34A;
+			width: 45px;
+			margin: 15px auto;
+		}
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        th, td {
+			border: 1px solid #ddd;
+			padding: 8px;
+		}
+        th {
+            background-color: #f2f2f2;
+        }
+        .symbol span {
+			display: inline-block;
+			width: 100%;
+			color: #fff;
+			margin: 0 2px;
+			opacity: 0.3;
+			line-height: 150%;
+		}
+        .duong {
+            background-color: red;
+        }
+        .am {
+            background-color: gray;
+        }
+        .hinh-que {
+            width: 80px;
+            height: 20px;
+        }
+        .the {
+            color: red;
+            font-weight: bold;
+        }
+        .ung {
+            color: blue;
+            font-weight: bold;
+        }
+        /* Định nghĩa màu sắc ngũ hành cho địa chi */
+        .text-black { background-color: black; color: white !important;}
+        .text-green { background-color: green; }
+        .text-red { background-color: red; }
+        .text-brown { background-color: #FFC107; }
+        .text-white-black { color: black; background-color: white; }
+		
+		.quai-block {
+			background-color: #fff;
+			border-radius: 8px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			margin: 15px;
+			padding: 20px;
+			text-align: center;
+			transition: background-color 0.3s;
+		}
+
+		 /* Đổ màu nền theo ngũ hành */
+				.kim { background-color: #e8e8e8; } /* Càn, Đoài */
+				.hoa { background-color: #ffe0e0; } /* Ly */
+				.moc { background-color: #e0ffe0; } /* Chấn, Tốn */
+				.thuy { background-color: #e0f0ff; } /* Khảm */
+				.tho { background-color: #fff5e0; } /* Cấn, Khôn */
+
+		.quai-block img {
+			width: 70px;
+			height: 70px;
+			margin-bottom: 10px;
+		}
+
+		.quai-block h3 {
+			margin: 10px 0;
+			color: #333;
+			font-size: 1.2em;
+		}
+
+		.quai-block p {
+			margin: 0;
+			color: #555;
+			font-size: 0.9em;
+			line-height: 1.4;
+		}
+
+		.body-content div {
+			text-align: justify;
+		}
+		.body-content {
+			padding: 10px;
+		}
+		.imageKinhDich img {
+			width: 50%;
+			border-radius: 30px;
+		}
+
+		.imageKinhDich {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+		}
+
+		/* Đảm bảo tương thích với mobile */
+		@media (max-width: 768px) {
+			.imageKinhDich img {
+				width: 100%;
+			}
+
+			.imageKinhDich {
+				flex-direction: column;
+			}
+			.quai-block {
+				margin: 10px 5%;
+				padding: 15px;
+			}
+
+			.quai-block img {
+				width: 60px;
+				height: 60px;
+			}
+
+			.quai-block h3 {
+				font-size: 1.1em;
+			}
+
+			.quai-block p {
+				font-size: 0.85em;
+			}
+		}
+    </style>
+<script data-cfasync="false" nonce="0dacc31b-3f12-4dee-82ed-d548b84dc7ce">try{(function(w,d){!function(fv,fw,fx,fy){if(fv.zaraz)console.error("zaraz is loaded twice");else{fv[fx]=fv[fx]||{};fv[fx].executed=[];fv.zaraz={deferred:[],listeners:[]};fv.zaraz._v="5858";fv.zaraz._n="0dacc31b-3f12-4dee-82ed-d548b84dc7ce";fv.zaraz.q=[];fv.zaraz._f=function(fz){return async function(){var fA=Array.prototype.slice.call(arguments);fv.zaraz.q.push({m:fz,a:fA})}};for(const fB of["track","set","debug"])fv.zaraz[fB]=fv.zaraz._f(fB);fv.zaraz.init=()=>{var fC=fw.getElementsByTagName(fy)[0],fD=fw.createElement(fy),fE=fw.getElementsByTagName("title")[0];fE&&(fv[fx].t=fw.getElementsByTagName("title")[0].text);fv[fx].x=Math.random();fv[fx].w=fv.screen.width;fv[fx].h=fv.screen.height;fv[fx].j=fv.innerHeight;fv[fx].e=fv.innerWidth;fv[fx].l=fv.location.href;fv[fx].r=fw.referrer;fv[fx].k=fv.screen.colorDepth;fv[fx].n=fw.characterSet;fv[fx].o=(new Date).getTimezoneOffset();if(fv.dataLayer)for(const fF of Object.entries(Object.entries(dataLayer).reduce(((fG,fH)=>({...fG[1],...fH[1]})),{})))zaraz.set(fF[0],fF[1],{scope:"page"});fv[fx].q=[];for(;fv.zaraz.q.length;){const fI=fv.zaraz.q.shift();fv[fx].q.push(fI)}fD.defer=!0;for(const fJ of[localStorage,sessionStorage])Object.keys(fJ||{}).filter((fL=>fL.startsWith("_zaraz_"))).forEach((fK=>{try{fv[fx]["z_"+fK.slice(7)]=JSON.parse(fJ.getItem(fK))}catch{fv[fx]["z_"+fK.slice(7)]=fJ.getItem(fK)}}));fD.referrerPolicy="origin";fD.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(fv[fx])));fC.parentNode.insertBefore(fD,fC)};["complete","interactive"].includes(fw.readyState)?zaraz.init():fv.addEventListener("DOMContentLoaded",zaraz.init)}}(w,d,"zarazData","script");window.zaraz._p=async eC=>new Promise((eD=>{if(eC){eC.e&&eC.e.forEach((eE=>{try{const eF=d.querySelector("script[nonce]"),eG=eF?.nonce||eF?.getAttribute("nonce"),eH=d.createElement("script");eG&&(eH.nonce=eG);eH.innerHTML=eE;eH.onload=()=>{d.head.removeChild(eH)};d.head.appendChild(eH)}catch(eI){console.error(`Error executing script: ${eE}\n`,eI)}}));Promise.allSettled((eC.f||[]).map((eJ=>fetch(eJ[0],eJ[1]))))}eD()}));zaraz._p({"e":["(function(w,d){})(window,document)"]});})(window,document)}catch(e){throw fetch("/cdn-cgi/zaraz/t"),e;};</script></head>
+<body>
+<div class="header">
+<p class="text-center" style="text-align:justify;"><a href="https://dich.kabala.vn"><img src="https://tuvi.kabala.vn/images/logo.png" style="width:200px;"></a></p>
+
+
+<hr/>
+</div>
+<div class="content">	
+	<div class="body-content">
+    <h1>Bảng 64 Quẻ Dịch Chuyên Sâu</h1>
+	
+	<p>Bạn đang xem Bảng <a href="https://dich.kabala.vn/64-que-dich">Tổng Hợp 64 Quẻ Dịch</a> chuyên sâu từ Kabala, bao gồm dữ liệu về Lục Thân, hình thái Âm Dương, Địa Chi mỗi Hào, Ý nghĩa rút gọn của từng quẻ. Hoặc xem diễn giải <a href="https://dich.kabala.vn/kinh-dich/">64 Quẻ Kinh Dịch cơ bản</a>.</p>
+	
+<!-- TRANG CHỦ 64 quẻ dịch chuyên sâu --->
+<input type="text" id="searchBox" placeholder="Tìm kiếm quẻ..." onkeyup="highlightText()" style="margin-bottom: 10px; padding: 5px; width: 100%;"><table id="queDichTable" class="display" border="1" cellpadding="5" cellspacing="0"><tr>
+            <th>Tên quẻ</th>
+            <th>Âm Dương</th>
+            <th>Hình quẻ</th>
+            <th>Lục thân</th>
+            <th>Địa chi</th>
+          </tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-1">CÀN VI THIÊN</a><p class="maQue">1</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Phụ Mẫu - THẾ</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Phụ Mẫu - ỨNG</td><td class="text-brown">Thìn</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-green">Dần</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-black">Tý</td></tr><tr><td colspan="5">Càn là trời, là cha.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-2">KHÔN VI ĐỊA</a><p class="maQue">2</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Tử Tôn - THẾ</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Sửu</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Quan Quỷ - ỨNG</td><td class="text-green">Mão</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-red">Tỵ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Mùi</td></tr><tr><td colspan="5">Khôn là đất, là mẹ.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-3">THỦY LÔI TRUÂN</a><p class="maQue">3</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-black">Tý</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Quan Quỷ - ỨNG</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-brown">Thìn</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Tử Tôn - THẾ</td><td class="text-green">Dần</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-black">Tý</td></tr><tr><td colspan="5">Truân là tình trạng sơ sinh.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-4">SƠN THỦY MÔNG</a><p class="maQue">4</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-green">Dần</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-black">Tý</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Tử Tôn - THẾ</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-brown">Thìn</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Phụ Mẫu - ỨNG</td><td class="text-green">Dần</td></tr><tr><td colspan="5">Mông là trẻ thơ, tối tăm.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-5">THỦY THIÊN NHU</a><p class="maQue">5</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-black">Tý</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Tử Tôn - THẾ</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Thìn</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-green">Dần</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Thê Tài - ỨNG</td><td class="text-black">Tý</td></tr><tr><td colspan="5">Nhu là chờ đợi.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-6">THIÊN THỦY TỤNG</a><p class="maQue">6</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Huynh Đệ - THẾ</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-brown">Thìn</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Phụ Mẫu - ỨNG</td><td class="text-green">Mão</td></tr><tr><td colspan="5">Tụng là kiện tụng.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-7">ĐỊA THỦY SƯ</a><p class="maQue">7</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Phụ Mẫu - ỨNG</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-brown">Sửu</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Thê Tài - THẾ</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-brown">Thìn</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-green">Dần</td></tr><tr><td colspan="5">Sư là quân đội, quần chúng.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-8">THỦY ĐỊA TỶ</a><p class="maQue">8</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Thê Tài - ỨNG</td><td class="text-black">Tý</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Quan Quỷ - THẾ</td><td class="text-green">Mão</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-red">Tỵ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Mùi</td></tr><tr><td colspan="5">Tỷ là liên nhau, ngang nhau.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-9">PHONG THIÊN TIỂU SÚC</a><p class="maQue">9</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-green">Mão</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-red">Tỵ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Thê Tài - ỨNG</td><td class="text-brown">Mùi</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-brown">Thìn</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-green">Dần</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Phụ Mẫu - THẾ</td><td class="text-black">Tý</td></tr><tr><td colspan="5">Tiểu súc là hàm chứa, có nghĩa là nuôi dưỡng.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-10">THIÊN TRẠCH LÝ</a><p class="maQue">10</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Tử Tôn - THẾ</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Sửu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Quan Quỷ - ỨNG</td><td class="text-green">Mão</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-red">Tỵ</td></tr><tr><td colspan="5">Lý là xéo lên.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-11">ĐỊA THIÊN THÁI</a><p class="maQue">11</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Tử Tôn - ỨNG</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Sửu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Huynh Đệ - THẾ</td><td class="text-brown">Thìn</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-green">Dần</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-black">Tý</td></tr><tr><td colspan="5">Thái là hanh thông, trời đất giao nhau.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-12">THIÊN ĐỊA BĨ</a><p class="maQue">12</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Phụ Mẫu - ỨNG</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Thê Tài - THẾ</td><td class="text-green">Mão</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-red">Tỵ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-brown">Mùi</td></tr><tr><td colspan="5">Bĩ là sự bế tắc.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-13">THIÊN HỎA ĐỒNG NHÂN</a><p class="maQue">13</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Tử Tôn - ỨNG</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Quan Quỷ - THẾ</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-brown">Sửu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-green">Mão</td></tr><tr><td colspan="5">Đồng nhân là đồng lòng, cùng chí hướng với mình.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-14">HỎA THIÊN ĐẠI HỮU</a><p class="maQue">14</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Quan Quỷ - ỨNG</td><td class="text-red">Tỵ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-brown">Mùi</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Phụ Mẫu - THẾ</td><td class="text-brown">Thìn</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-green">Dần</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-black">Tý</td></tr><tr><td colspan="5">Đại hữu là sở hữu lớn lao.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-15">ĐỊA SƠN KHIÊM</a><p class="maQue">15</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Tử Tôn - THẾ</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-brown">Sửu</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Quan Quỷ - ỨNG</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-brown">Thìn</td></tr><tr><td colspan="5">Khiêm là khiêm tốn.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-16">LÔI ĐỊA DỰ</a><p class="maQue">16</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Tử Tôn - ỨNG</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-green">Mão</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-red">Tỵ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Thê Tài - THẾ</td><td class="text-brown">Mùi</td></tr><tr><td colspan="5">Dự là vui vẻ.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-17">TRẠCH LÔI TÙY</a><p class="maQue">17</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Thê Tài - ỨNG</td><td class="text-brown">Mùi</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Thê Tài - THẾ</td><td class="text-brown">Thìn</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-green">Dần</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-black">Tý</td></tr><tr><td colspan="5">Tùy là theo.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-18">SƠN PHONG CỐ</a><p class="maQue">18</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Huynh Đệ - ỨNG</td><td class="text-green">Dần</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-black">Tý</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Quan Quỷ - THẾ</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-brown">Sửu</td></tr><tr><td colspan="5">Cố là mê hoặc.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-19">ĐỊA TRẠCH LÂM</a><p class="maQue">19</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Thê Tài - ỨNG</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Sửu</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Sửu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Quan Quỷ - THẾ</td><td class="text-green">Mão</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-red">Tỵ</td></tr><tr><td colspan="5">Lâm là tiến sát đến nơi.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-20">PHONG ĐỊA QUÁN</a><p class="maQue">20</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-green">Mão</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-red">Tỵ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Phụ Mẫu - THẾ</td><td class="text-brown">Mùi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-green">Mão</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-red">Tỵ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Phụ Mẫu - ỨNG</td><td class="text-brown">Mùi</td></tr><tr><td colspan="5">Quán là ngắm trông.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-21">HỎA LÔI PHỆ HẠP</a><p class="maQue">21</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-red">Tỵ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Thê Tài - THẾ</td><td class="text-brown">Mùi</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-brown">Thìn</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Huynh Đệ - ỨNG</td><td class="text-green">Dần</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-black">Tý</td></tr><tr><td colspan="5">Phệ hạp là cắn mà hợp lại.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-22">SƠN HỎA BÍ</a><p class="maQue">22</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-green">Dần</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-black">Tý</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Huynh Đệ - THẾ</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Sửu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Quan Quỷ - ỨNG</td><td class="text-green">Mão</td></tr><tr><td colspan="5">Bí là trang sức.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-23">SƠN ĐỊA BÁC</a><p class="maQue">23</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-green">Dần</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Tử Tôn - THẾ</td><td class="text-black">Tý</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-green">Mão</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Quan Quỷ - ỨNG</td><td class="text-red">Tỵ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-brown">Mùi</td></tr><tr><td colspan="5">Bác là gọt, lột.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-24">ĐỊA LÔI PHỤC</a><p class="maQue">24</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Huynh Đệ - ỨNG</td><td class="text-brown">Sửu</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Thìn</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-green">Dần</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Thê Tài - THẾ</td><td class="text-black">Tý</td></tr><tr><td colspan="5">Phục là trở lại.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-25">THIÊN LÔI VÔ VỌNG</a><p class="maQue">25</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Tử Tôn - THẾ</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-brown">Thìn</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-green">Dần</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Phụ Mẫu - ỨNG</td><td class="text-black">Tý</td></tr><tr><td colspan="5">Vô vọng là thất vọng.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-26">SƠN THIÊN ĐẠI SÚC</a><p class="maQue">26</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-green">Dần</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Thê Tài - ỨNG</td><td class="text-black">Tý</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Thìn</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Quan Quỷ - THẾ</td><td class="text-green">Dần</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-black">Tý</td></tr><tr><td colspan="5">Đại súc là hàm chứa lớn.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-27">SƠN LÔI DI</a><p class="maQue">27</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-green">Dần</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-black">Tý</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Thê Tài - THẾ</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-brown">Thìn</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-green">Dần</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Phụ Mẫu - ỨNG</td><td class="text-black">Tý</td></tr><tr><td colspan="5">Di là nuôi dưỡng.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-28">TRẠCH PHONG ĐẠI QUÁ</a><p class="maQue">28</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-brown">Mùi</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Phụ Mẫu - THẾ</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Thê Tài - ỨNG</td><td class="text-brown">Sửu</td></tr><tr><td colspan="5">Đại quá là quá mức, lỗi lớn.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-29">KHẢM VI THỦY</a><p class="maQue">29</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Huynh Đệ - THẾ</td><td class="text-black">Tý</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Thê Tài - ỨNG</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-brown">Thìn</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-green">Dần</td></tr><tr><td colspan="5">Khảm là nước.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-30">LY VI HỎA</a><p class="maQue">30</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Huynh Đệ - THẾ</td><td class="text-red">Tỵ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-brown">Mùi</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Quan Quỷ - ỨNG</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-brown">Sửu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-green">Mão</td></tr><tr><td colspan="5">Ly là lửa.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-31">TRẠCH SƠN HÀM</a><p class="maQue">31</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Phụ Mẫu - ỨNG</td><td class="text-brown">Mùi</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Huynh Đệ - THẾ</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-brown">Thìn</td></tr><tr><td colspan="5">Hàm là giao cảm.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-32">LÔI PHONG HẰNG</a><p class="maQue">32</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Thê Tài - ỨNG</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Quan Quỷ - THẾ</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-brown">Sửu</td></tr><tr><td colspan="5">Hằng là thường hằng, vĩnh cửu.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-33">THIÊN SƠN ĐỘN</a><p class="maQue">33</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Huynh Đệ - ỨNG</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Quan Quỷ - THẾ</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-brown">Thìn</td></tr><tr><td colspan="5">Độn là trốn, lành ẩn.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-34">LÔI THIÊN ĐẠI TRÁNG</a><p class="maQue">34</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Phụ Mẫu - THẾ</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Thìn</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-green">Dần</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Thê Tài - ỨNG</td><td class="text-black">Tý</td></tr><tr><td colspan="5">Đại tráng là lớn mạnh.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-35">HỎA ĐỊA TẤN</a><p class="maQue">35</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-red">Tỵ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-brown">Mùi</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Huynh Đệ - THẾ</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-green">Mão</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-red">Tỵ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Phụ Mẫu - ỨNG</td><td class="text-brown">Mùi</td></tr><tr><td colspan="5">Tấn là tiến lên mạnh mẽ.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-36">ĐỊA HỎA MINH DI</a><p class="maQue">36</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Quan Quỷ - THẾ</td><td class="text-brown">Sửu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-brown">Sửu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Tử Tôn - ỨNG</td><td class="text-green">Mão</td></tr><tr><td colspan="5">Minh di là ánh sáng tối tăm.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-37">PHONG HỎA GIA NHÂN</a><p class="maQue">37</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-green">Mão</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-red">Tỵ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Thê Tài - ỨNG</td><td class="text-brown">Mùi</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Thê Tài - THẾ</td><td class="text-brown">Sửu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-green">Mão</td></tr><tr><td colspan="5">Gia nhân là người nhà.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-38">HỎA TRẠCH KHUÊ</a><p class="maQue">38</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-red">Tỵ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Mùi</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Tử Tôn - THẾ</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Sửu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-green">Mão</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Phụ Mẫu - ỨNG</td><td class="text-red">Tỵ</td></tr><tr><td colspan="5">Khuê là trái ngược.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-39">THỦY SƠN KIỂN</a><p class="maQue">39</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-black">Tý</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Huynh Đệ - THẾ</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Phụ Mẫu - ỨNG</td><td class="text-brown">Thìn</td></tr><tr><td colspan="5">Kiển là khó khăn, gian nan.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-40">LÔI THỦY GIẢI</a><p class="maQue">40</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Quan Quỷ - ỨNG</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Thê Tài - THẾ</td><td class="text-brown">Thìn</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-green">Dần</td></tr><tr><td colspan="5">Giải là cởi ra, giải tán.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-41">SƠN TRẠCH TỔN</a><p class="maQue">41</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Quan Quỷ - ỨNG</td><td class="text-green">Dần</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-black">Tý</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Huynh Đệ - THẾ</td><td class="text-brown">Sửu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-green">Mão</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-red">Tỵ</td></tr><tr><td colspan="5">Tổn là hao tổn.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-42">PHONG LÔI ÍCH</a><p class="maQue">42</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Huynh Đệ - ỨNG</td><td class="text-green">Mão</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-red">Tỵ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-brown">Mùi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Thê Tài - THẾ</td><td class="text-brown">Thìn</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-green">Dần</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-black">Tý</td></tr><tr><td colspan="5">Ích là thêm.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-43">TRẠCH THIÊN QUẢI</a><p class="maQue">43</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Mùi</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Tử Tôn - THẾ</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Thìn</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Quan Quỷ - ỨNG</td><td class="text-green">Dần</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-black">Tý</td></tr><tr><td colspan="5">Quải là vỡ lở.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-44">THIÊN PHONG CẤU</a><p class="maQue">44</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Quan Quỷ - ỨNG</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Phụ Mẫu - THẾ</td><td class="text-brown">Sửu</td></tr><tr><td colspan="5">Cấu là chia ra, tách rời.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-45">TRẠCH ĐỊA TỤY</a><p class="maQue">45</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-brown">Mùi</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Huynh Đệ - ỨNG</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-green">Mão</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Quan Quỷ - THẾ</td><td class="text-red">Tỵ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-brown">Mùi</td></tr><tr><td colspan="5">Tụy là tụ họp.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-46">ĐỊA PHONG THĂNG</a><p class="maQue">46</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Thê Tài - THẾ</td><td class="text-brown">Sửu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Thê Tài - ỨNG</td><td class="text-brown">Sửu</td></tr><tr><td colspan="5">Thăng là lên.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-47">TRẠCH THỦY KHỔN</a><p class="maQue">47</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-brown">Mùi</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Tử Tôn - ỨNG</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-brown">Thìn</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Thê Tài - THẾ</td><td class="text-green">Dần</td></tr><tr><td colspan="5">Khốn là khốn khó, khốn cùng.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-48">THỦY PHONG TỈNH</a><p class="maQue">48</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-black">Tý</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Thê Tài - THẾ</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Phụ Mẫu - ỨNG</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-brown">Sửu</td></tr><tr><td colspan="5">Tỉnh là cái giếng, chính thế, rành rọt.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-49">TRẠCH HỎA CÁCH</a><p class="maQue">49</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-brown">Mùi</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Huynh Đệ - THẾ</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-brown">Sửu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Tử Tôn - ỨNG</td><td class="text-green">Mão</td></tr><tr><td colspan="5">Cách là cải cách.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-50">HỎA PHONG ĐỈNH</a><p class="maQue">50</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-red">Tỵ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Tử Tôn - ỨNG</td><td class="text-brown">Mùi</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Quan Quỷ - THẾ</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-brown">Sửu</td></tr><tr><td colspan="5">Đỉnh là cái chuông, đại diện cho quyền lực.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-51">CHẤN VI LÔI</a><p class="maQue">51</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Thê Tài - THẾ</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Thê Tài - ỨNG</td><td class="text-brown">Thìn</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-green">Dần</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-black">Tý</td></tr><tr><td colspan="5">Chấn là sấm, khiếp sợ.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-52">CẤN VI SƠN</a><p class="maQue">52</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Quan Quỷ - THẾ</td><td class="text-green">Dần</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-black">Tý</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Tử Tôn - ỨNG</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Thìn</td></tr><tr><td colspan="5">Cấn là núi.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-53">PHONG SƠN TIỆM</a><p class="maQue">53</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Quan Quỷ - ỨNG</td><td class="text-green">Mão</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-red">Tỵ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Mùi</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Tử Tôn - THẾ</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Thìn</td></tr><tr><td colspan="5">Tiệm là từ từ.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-54">LÔI TRẠCH QUY MUỘI</a><p class="maQue">54</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Phụ Mẫu - ỨNG</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Phụ Mẫu - THẾ</td><td class="text-brown">Sửu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-green">Mão</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-red">Tỵ</td></tr><tr><td colspan="5">Quy muội là chỉ người con gái về nhà chồng.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-55">LÔI HỎA PHONG</a><p class="maQue">55</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Phụ Mẫu - THẾ</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Quan Quỷ - ỨNG</td><td class="text-brown">Sửu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-green">Mão</td></tr><tr><td colspan="5">Phong là thịnh giàu.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-56">HỎA SƠN LỮ</a><p class="maQue">56</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-red">Tỵ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-brown">Mùi</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Thê Tài - ỨNG</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Tử Tôn - THẾ</td><td class="text-brown">Thìn</td></tr><tr><td colspan="5">Lữ là lữ khách.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-57">TỐN VI PHONG</a><p class="maQue">57</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Huynh Đệ - THẾ</td><td class="text-green">Mão</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-red">Tỵ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-brown">Mùi</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Quan Quỷ - ỨNG</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-brown">Sửu</td></tr><tr><td colspan="5">Tốn là gió.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-58">ĐOÀI VI TRẠCH</a><p class="maQue">58</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Phụ Mẫu - THẾ</td><td class="text-brown">Mùi</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Phụ Mẫu - ỨNG</td><td class="text-brown">Sửu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-green">Mão</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-red">Tỵ</td></tr><tr><td colspan="5">Trạch là đầm nước.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-59">PHONG THỦY HOÁN</a><p class="maQue">59</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-green">Mão</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Huynh Đệ - THẾ</td><td class="text-red">Tỵ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-brown">Mùi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Tử Tôn - ỨNG</td><td class="text-brown">Thìn</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-green">Dần</td></tr><tr><td colspan="5">Hoán là tan biến.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-60">THỦY TRẠCH TIẾT</a><p class="maQue">60</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-black">Tý</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Phụ Mẫu - ỨNG</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-brown">Sửu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-green">Mão</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Thê Tài - THẾ</td><td class="text-red">Tỵ</td></tr><tr><td colspan="5">Tiết là đóng lại, tiết độ, chừng mực.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-61">PHONG TRẠCH TRUNG PHÙ</a><p class="maQue">61</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-green">Mão</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-red">Tỵ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Huynh Đệ - THẾ</td><td class="text-brown">Mùi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-brown">Sửu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-green">Mão</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Phụ Mẫu - ỨNG</td><td class="text-red">Tỵ</td></tr><tr><td colspan="5">Trung phù là có đức tin ở trong lòng.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-62">LÔI SƠN TIỂU QUÁ</a><p class="maQue">62</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Quan Quỷ - THẾ</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Huynh Đệ</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Phụ Mẫu - ỨNG</td><td class="text-brown">Thìn</td></tr><tr><td colspan="5">Tiểu quá là lỗi nhỏ.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-63">THỦY HỎA KÝ TẾ</a><p class="maQue">63</p></td><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Huynh Đệ - ỨNG</td><td class="text-black">Tý</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-brown">Tuất</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-white-black">Thân</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Huynh Đệ - THẾ</td><td class="text-black">Hợi</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Quan Quỷ</td><td class="text-brown">Sửu</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-green">Mão</td></tr><tr><td colspan="5">Ký tế là việc đã thành.</td></tr><tr><td class="tenQue" rowspan="6"><a href="https://dich.kabala.vn/que-64">HỎA THỦY VỊ TẾ</a><p class="maQue">64</p></td><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="ung">Huynh Đệ - ỨNG</td><td class="text-red">Tỵ</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-brown">Mùi</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Thê Tài</td><td class="text-white-black">Dậu</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="the">Huynh Đệ - THẾ</td><td class="text-red">Ngọ</td></tr></tr><tr><td class="symbol"><span class="duong">Dương</span></td><td><img src="/image/duong.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Tử Tôn</td><td class="text-brown">Thìn</td></tr></tr><tr><td class="symbol"><span class="am">Âm</span></td><td><img src="/image/am.png" alt="Hình quẻ" class="hinh-que"></td><td class="">Phụ Mẫu</td><td class="text-green">Dần</td></tr><tr><td colspan="5">Vị tế là chưa xong.</td></tr></table><hr/>
+<h2 class="font-bold text-xl my-6"><a href="https://dich.kabala.vn/64-que-dich">64 Quẻ Kinh Dịch</a> Chuyên Sâu bởi Kabala</h2>
+	
+	<style>
+/*css 64 quẻ dịch */
+
+/* CSS cơ bản cho bảng */
+.hexagrams {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hexagrams thead, .hexagrams tbody {
+    display: block;
+}
+
+.hexagrams tr {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.hexagrams th, .hexagrams td {
+    border: 1px solid rgba(0, 0, 0, .08);
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+    box-sizing: border-box;
+    flex-basis: 12.5%;
+    height:110px
+}
+
+.hexagrams thead tr {
+    background-color: #f5f5f5;
+}
+
+.hexagrams tbody tr:nth-child(2n) {
+    background-color: rgba(0, 0, 0, .01);
+}
+/* Media queries để điều chỉnh bảng trên các kích thước màn hình khác nhau */
+@media (max-width: 768px) {
+    .hexagrams th, .hexagrams td {
+        flex-basis: 25%;
+        height: 115px;
+    }
+
+    .hexagrams tr {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .hexagrams th {
+        background-color: #f5f5f5;
+        text-align: left;
+    }
+
+    .hexagrams td {
+        text-align: center;
+        position: relative;
+    }
+
+    .hexagrams td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+    }
+	table.hexagrams a {
+		font-size: 90%;
+	}
+}
+
+</style>
+<table class="hexagrams" width="100%">
+<tbody>
+<tr>
+<td><a href="https://dich.kabala.vn/que-1-thuan-can" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/01.png" alt="Quẻ Dịch 01" width="50" title="Quẻ Dịch 01 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-1-thuan-can" target="_blank">1-CÀN</a></p></td>
+<td><a href="https://dich.kabala.vn/que-2-thuan-khon" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/02.png" alt="Quẻ Dịch 02" width="50" title="Quẻ Dịch 01 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-2-thuan-khon" target="_blank">2-KHÔN</a></p></td>
+<td><a href="https://dich.kabala.vn/que-3-thuy-loi-truan" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/03.png" alt="Quẻ Dịch 03" width="50" title="Quẻ Dịch 03 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-3-thuy-loi-truan" target="_blank">3-TRUÂN</a></p></td>
+<td><a href="https://dich.kabala.vn/que-4-son-thuy-mong" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/04.png" alt="Quẻ Dịch 04" width="50" title="Quẻ Dịch 04 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-4-son-thuy-mong" target="_blank">4-MÔNG</a></p></td>
+<td><a href="https://dich.kabala.vn/que-5-thuy-thien-nhu" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/05.png" alt="Quẻ Dịch 05" width="50" title="Quẻ Dịch 05 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-5-thuy-thien-nhu" target="_blank">5-NHU</a></p></td>
+<td><a href="https://dich.kabala.vn/que-6-thien-thuy-tung" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/06.png" alt="Quẻ Dịch 06" width="50" title="Quẻ Dịch 06 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-6-thien-thuy-tung" target="_blank">6-TỤNG</a></p></td>
+<td><a href="https://dich.kabala.vn/que-7-dia-thuy-su" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/07.png" alt="Quẻ Dịch 07" width="50" title="Quẻ Dịch 07 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-7-dia-thuy-su" target="_blank">7-SƯ</a></p></td>
+<td><a href="https://dich.kabala.vn/que-8-thuy-dia-ty"><img decoding="async" src="https://sodep.dabala.vn/que/08.png" alt="Quẻ Dịch 08" width="50" title="Quẻ Dịch 08 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-8-thuy-dia-ty"> 8-TỶ</a></p></td>
+
+<td><a href="https://dich.kabala.vn/que-9-phong-thien-tieu-suc" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/09.png" alt="Quẻ Dịch 09" width="50" title="Quẻ Dịch 09 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-9-phong-thien-tieu-suc" target="_blank">9-T.SÚC</a></p></td>
+<td><a href="https://dich.kabala.vn/que-10-thien-trach-ly" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/10.png" alt="Quẻ Dịch 10" width="50" title="Quẻ Dịch 10 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-10-thien-trach-ly" target="_blank">10-LÝ</a></p></td>
+<td><a href="https://dich.kabala.vn/que-11-dia-thien-thai" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/11.png" alt="Quẻ Dịch 11" width="50" title="Quẻ Dịch 11 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-11-dia-thien-thai" target="_blank">11-THÁI</a></p></td>
+<td><a href="https://dich.kabala.vn/que-12-thien-dia-bi" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/12.png" alt="Quẻ Dịch 12" width="50" title="Quẻ Dịch 12 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-12-thien-dia-bi" target="_blank">12-BĨ</a></p></td>
+<td><a href="https://dich.kabala.vn/que-13-thien-hoa-dong-nhan" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/13.png" alt="Quẻ Dịch 13" width="50" title="Quẻ Dịch 13 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-13-thien-hoa-dong-nhan" target="_blank">13-Đ.NHÂN</a></p></td>
+<td><a href="https://dich.kabala.vn/que-14-hoa-thien-dai-huu" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/14.png" alt="Quẻ Dịch 14" width="50" title="Quẻ Dịch 14 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-14-hoa-thien-dai-huu" target="_blank">14-Đ.HỮU</a></p></td>
+<td><a href="https://dich.kabala.vn/que-15-dia-son-khiem" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/15.png" alt="Quẻ Dịch 15" width="50" title="Quẻ Dịch 15 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-15-dia-son-khiem" target="_blank">15-KHIÊM</a></p></td>
+<td><a href="https://dich.kabala.vn/que-16-loi-dia-du" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/16.png" alt="Quẻ Dịch 16" width="50" title="Quẻ Dịch 16 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-16-loi-dia-du" target="_blank">16-DỰ</a></p></td>
+
+<td><a href="https://dich.kabala.vn/que-17-trach-loi-tuy" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/17.png" alt="Quẻ Dịch 17" width="50" title="Quẻ Dịch 17 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-17-trach-loi-tuy" target="_blank">17-TÙY</a></p></td>
+<td><a href="https://dich.kabala.vn/que-18-son-phong-co" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/18.png" alt="Quẻ Dịch 18" width="50" title="Quẻ Dịch 18 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-18-son-phong-co" target="_blank">18-CỔ</a></p></td>
+<td><a href="https://dich.kabala.vn/que-19-dia-trach-lam" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/19.png" alt="Quẻ Dịch 19" width="50" title="Quẻ Dịch 19 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-19-dia-trach-lam" target="_blank">19-LÂM</a></p></td>
+<td><a href="https://dich.kabala.vn/que-20-phong-dia-quan" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/20.png" alt="Quẻ Dịch 20" width="50" title="Quẻ Dịch 20 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-20-phong-dia-quan" target="_blank">20 QUÁN</a></p></td>
+<td><a href="https://dich.kabala.vn/que-21-hoa-loi-phe-hap" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/21.png" alt="Quẻ Dịch 21" width="50" title="Quẻ Dịch 21 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-21-hoa-loi-phe-hap" target="_blank">21-P.HẠP</a></p></td>
+<td><a href="https://dich.kabala.vn/que-22-son-hoa-bi" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/22.png" alt="Quẻ Dịch 22" width="50" title="Quẻ Dịch 22 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-22-son-hoa-bi" target="_blank">22-BÍ</a></p></td>
+<td><a href="https://dich.kabala.vn/que-23-son-dia-bac" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/23.png" alt="Quẻ Dịch 23" width="50" title="Quẻ Dịch 23 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-23-son-dia-bac" target="_blank">23-BÁC</a></p></td>
+<td><a href="https://dich.kabala.vn/que-24-dia-loi-phuc" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/24.png" alt="Quẻ Dịch 24" width="50" title="Quẻ Dịch 24 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-24-dia-loi-phuc" target="_blank">24-PHỤC</a></p></td>
+
+<td><a href="https://dich.kabala.vn/que-25-thien-loi-vo-vong" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/25.png" alt="Quẻ Dịch 25" width="50" title="Quẻ Dịch 25 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-25-thien-loi-vo-vong" target="_blank">25-V.VỌNG</a></p></td>
+<td><a href="https://dich.kabala.vn/que-26-son-thien-dai-suc" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/26.png" alt="Quẻ Dịch 26" width="50" title="Quẻ Dịch 26 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-26-son-thien-dai-suc" target="_blank">26-Đ.SÚC</a></p></td>
+<td><a href="https://dich.kabala.vn/que-27-son-loi-di" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/27.png" alt="Quẻ Dịch 27" width="50" title="Quẻ Dịch 27 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-27-son-loi-di" target="_blank">27-DI</a></p></td>
+<td><a href="https://dich.kabala.vn/que-28-trach-phong-dai-qua" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/28.png" alt="Quẻ Dịch 28" width="50" title="Quẻ Dịch 28 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-28-trach-phong-dai-qua" target="_blank">28-Đ.QUÁ</a></p></td>
+<td><a href="https://dich.kabala.vn/que-29-thuan-kham" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/29.png" alt="Quẻ Dịch 29" width="50" title="Quẻ Dịch 29 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-29-thuan-kham" target="_blank">29-KHẢM</a></p></td>
+<td><a href="https://dich.kabala.vn/que-30-thuan-ly" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/30.png" alt="Quẻ Dịch 30" width="50" title="Quẻ Dịch 30 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-30-thuan-ly" target="_blank">30-LY</a></p></td>
+<td><a href="https://dich.kabala.vn/que-31-trach-son-ham" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/31.png" alt="Quẻ Dịch 31" width="50" title="Quẻ Dịch 31 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-31-trach-son-ham" target="_blank">31-HÀM</a></p></td>
+<td><a href="https://dich.kabala.vn/que-32-loi-phong-hang" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/32.png" alt="Quẻ Dịch 32" width="50" title="Quẻ Dịch 32 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-32-loi-phong-hang" target="_blank">32-HẰNG</a></p></td>
+
+<td><a href="https://dich.kabala.vn/que-33-thien-son-don" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/33.png" alt="Quẻ Dịch 33" width="50" title="Quẻ Dịch 33 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-33-thien-son-don" target="_blank">33-ĐỘN</a></p></td>
+<td><a href="https://dich.kabala.vn/que-34-loi-thien-dai-trang" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/34.png" alt="Quẻ Dịch 34" width="50" title="Quẻ Dịch 34 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-34-loi-thien-dai-trang" target="_blank">34-TRÁNG</a></p></td>
+<td><a href="https://dich.kabala.vn/que-35-hoa-dia-tan" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/35.png" alt="Quẻ Dịch 35" width="50" title="Quẻ Dịch 35 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-35-hoa-dia-tan" target="_blank">35-TẤN</a></p></td>
+<td><a href="https://dich.kabala.vn/que-36-dia-hoa-minh-di" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/36.png" alt="Quẻ Dịch 36" width="50" title="Quẻ Dịch 36 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-36-dia-hoa-minh-di" target="_blank">36-M.DI</a></p></td>
+<td><a href="https://dich.kabala.vn/que-37-phong-hoa-gia-nhan" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/37.png" alt="Quẻ Dịch 37" width="50" title="Quẻ Dịch 37 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-37-phong-hoa-gia-nhan" target="_blank">37-G.NHÂN</a></p></td>
+<td><a href="https://dich.kabala.vn/que-38-hoa-trach-khue" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/38.png" alt="Quẻ Dịch 38" width="50" title="Quẻ Dịch 38 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-38-hoa-trach-khue" target="_blank">38-KHUÊ</a></p></td>
+<td><a href="https://dich.kabala.vn/que-39-thuy-son-kien" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/39.png" alt="Quẻ Dịch 39" width="50" title="Quẻ Dịch 39 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-39-thuy-son-kien" target="_blank">39-KIỂN</a></p></td>
+<td><a href="https://dich.kabala.vn/que-40-loi-thuy-giai" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/40.png" alt="Quẻ Dịch 40" width="50" title="Quẻ Dịch 40 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-40-loi-thuy-giai" target="_blank">40-GIẢI</a></p></td>
+
+<td><a href="https://dich.kabala.vn/que-41-son-trach-ton" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/41.png" alt="Quẻ Dịch 41" width="50" title="Quẻ Dịch 41 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-41-son-trach-ton" target="_blank">41-TỔN</a></p></td>
+<td><a href="https://dich.kabala.vn/que-42-phong-loi-ich" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/42.png" alt="Quẻ Dịch 42" width="50" title="Quẻ Dịch 42 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-42-phong-loi-ich" target="_blank">42-ÍCH</a></p></td>
+<td><a href="https://dich.kabala.vn/que-43-trach-thien-quai" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/43.png" alt="Quẻ Dịch 43" width="50" title="Quẻ Dịch 43 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-43-trach-thien-quai" target="_blank">43-QUẢI</a></p></td>
+<td><a href="https://dich.kabala.vn/que-44-thien-phong-cau" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/44.png" alt="Quẻ Dịch 44" width="50" title="Quẻ Dịch 44 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-44-thien-phong-cau" target="_blank">44-CẤU</a></p></td>
+<td><a href="https://dich.kabala.vn/que-45-trach-dia-tuy" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/45.png" alt="Quẻ Dịch 45" width="50" title="Quẻ Dịch 45 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-45-trach-dia-tuy" target="_blank">45-TỤY</a></p></td>
+<td><a href="https://dich.kabala.vn/que-46-dia-phong-thang" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/46.png" alt="Quẻ Dịch 46" width="50" title="Quẻ Dịch 46 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-46-dia-phong-thang" target="_blank">46-THĂNG</a></p></td>
+<td><a href="https://dich.kabala.vn/que-47-trach-thuy-khon" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/47.png" alt="Quẻ Dịch 47" width="50" title="Quẻ Dịch 47 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-47-trach-thuy-khon" target="_blank">47-KHỐN</a></p></td>
+<td><a href="https://dich.kabala.vn/que-48-thuy-phong-tinh" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/48.png" alt="Quẻ Dịch 48" width="50" title="Quẻ Dịch 48 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-48-thuy-phong-tinh" target="_blank">48-TỈNH</a></p></td>
+
+<td><a href="https://dich.kabala.vn/que-49-trach-hoa-cach" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/49.png" alt="Quẻ Dịch 49" width="50" title="Quẻ Dịch 49 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-49-trach-hoa-cach" target="_blank">49-CÁCH</a></p></td>
+<td><a href="https://dich.kabala.vn/que-50-hoa-phong-dinh" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/50.png" alt="Quẻ Dịch 50" width="50" title="Quẻ Dịch 50 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-50-hoa-phong-dinh" target="_blank">50-ĐỈNH</a></p></td>
+<td><a href="https://dich.kabala.vn/que-51-thuan-chan" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/51.png" alt="Quẻ Dịch 51" width="50" title="Quẻ Dịch 51 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-51-thuan-chan" target="_blank">51-CHẤN</a></p></td>
+<td><a href="https://dich.kabala.vn/que-52-can-vi-son" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/52.png" alt="Quẻ Dịch 52" width="50" title="Quẻ Dịch 52 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-52-can-vi-son" target="_blank">52-CẤN</a></p></td>
+<td><a href="https://dich.kabala.vn/que-53-phong-son-tiem" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/53.png" alt="Quẻ Dịch 53" width="50" title="Quẻ Dịch 53 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-53-phong-son-tiem" target="_blank">53-TIỆM</a></p></td>
+<td><a href="https://dich.kabala.vn/que-54-loi-trach-quy-muoi" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/54.png" alt="Quẻ Dịch 54" width="50" title="Quẻ Dịch 54 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-54-loi-trach-quy-muoi" target="_blank">54-Q.MUỘI</a></p></td>
+<td><a href="https://dich.kabala.vn/que-55-loi-hoa-phong"><img decoding="async" src="https://sodep.dabala.vn/que/55.png" alt="Quẻ Dịch 55" width="50" title="Quẻ Dịch 55 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-55-loi-hoa-phong">55-PHONG</a></p></td>
+<td><a href="https://dich.kabala.vn/que-56-hoa-son-lu" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/56.png" alt="Quẻ Dịch 56" width="50" title="Quẻ Dịch 56 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-56-hoa-son-lu" target="_blank">56-LỮ</a></p></td>
+
+<td><a href="https://dich.kabala.vn/que-57-thuan-ton"><img decoding="async" src="https://sodep.dabala.vn/que/57.png" alt="Quẻ Dịch 57" width="50" title="Quẻ Dịch 57 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-57-thuan-ton"> 57-TỐN</a></p></td>
+<td><a href="https://dich.kabala.vn/que-58-thuan-doai" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/58.png" alt="Quẻ Dịch 58" width="50" title="Quẻ Dịch 58 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-58-thuan-doai" target="_blank">58-ĐOÀI</a></p></td>
+<td><a href="https://dich.kabala.vn/que-59-phong-thuy-hoan" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/59.png" alt="Quẻ Dịch 59" width="50" title="Quẻ Dịch 59 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-59-phong-thuy-hoan" target="_blank">59-HOÁN</a></p></td>
+<td><a href="https://dich.kabala.vn/que-60-thuy-trach-tiet" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/60.png" alt="Quẻ Dịch 60" width="50" title="Quẻ Dịch 60 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-60-thuy-trach-tiet" target="_blank">60-TIẾT</a></p></td>
+<td><a href="https://dich.kabala.vn/que-61-phong-trach-trung-phu" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/61.png" alt="Quẻ Dịch 61" width="50" title="Quẻ Dịch 61 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-61-phong-trach-trung-phu" target="_blank">61-TR.PHU</a></p></td>
+<td><a href="https://dich.kabala.vn/que-62-loi-son-tieu-qua" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/62.png" alt="Quẻ Dịch 62" width="50" title="Quẻ Dịch 62 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-62-loi-son-tieu-qua" target="_blank">62-T.QUÁ</a></p></td>
+<td><a href="https://dich.kabala.vn/que-63-thuy-hoa-ky-te" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/63.png" alt="Quẻ Dịch 63" width="50" title="Quẻ Dịch 63 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-63-thuy-hoa-ky-te" target="_blank">63-KÝ TẾ</a></p></td>
+<td><a href="https://dich.kabala.vn/que-64-hoa-thuy-vi-te" target="_blank"><img decoding="async" src="https://sodep.dabala.vn/que/64.png" alt="Quẻ Dịch 64" width="50" title="Quẻ Dịch 64 trong 64 Quẻ Kinh Dịch"></a><p></p>
+<p><a href="https://dich.kabala.vn/que-64-hoa-thuy-vi-te" target="_blank">64-VỊ TẾ</a></p></td>
+</tr>
+</tbody>
+</table>	
+	
+					<h2><br>Danh s&aacute;ch 8 quẻ B&aacute;t qu&aacute;i:</h2>
+			
+			<a href="https://dich.kabala.vn/batquai/can-1.html"><div class="quai-block kim">
+				<img src="https://dich.kabala.vn/batquai/can-sid-1.png" alt="Càn Quái">
+				<h3>Càn Quái</h3>
+				<p>Càn quái (乾), tượng trưng cho Thiên (天) - tức là Trời. Ngũ hành Kim, chủ hướng Tây Bắc. Trong gia đình ứng với Cha, biểu thị cho trạng thái Sáng tạo, tính chất Cứng, mạnh, khỏe</p>
+			</div></a>
+
+			<a href="https://dich.kabala.vn/batquai/doai-2.html"><div class="quai-block kim">
+				<img src="https://dich.kabala.vn/batquai/doai-sid-2.png" alt="Đoài Quái">
+				<h3>Đoài Quái</h3>
+				<p>Đoài quái (兌), tượng trưng cho Trạch (澤) - tức là Đầm. Ngũ hành Kim, chủ hướng Tây. Trong gia đình ứng với Thiếu nữ/Con gái út, biểu thị cho trạng thái Thanh bình, tính chất Dễ chịu</p>
+			</div></a>
+
+			<a href="https://dich.kabala.vn/batquai/ly-3.html"><div class="quai-block hoa">
+				<img src="https://dich.kabala.vn/batquai/ly-sid-3.png" alt="Ly Quái">
+				<h3>Ly Quái</h3>
+				<p>Ly quái (離), tượng trưng cho Hỏa (火) - tức là Hỏa. Ngũ hành Hỏa, chủ hướng Nam. Trong gia đình ứng với Thứ nữ/Con gái thứ, biểu thị cho trạng thái Bám lấy, sự rõ ràng, thích nghi, tính chất Soi sáng, sự phụ thuộc</p>
+			</div></a>
+
+			<a href="https://dich.kabala.vn/batquai/chan-4.html"><div class="quai-block moc">
+				<img src="https://dich.kabala.vn/batquai/chan-sid-4.png" alt="Chấn Quái">
+				<h3>Chấn Quái</h3>
+				<p>Chấn quái (震), tượng trưng cho Lôi (雷) - tức là Sấm. Ngũ hành Mộc, chủ hướng Đông. Trong gia đình ứng với Trưởng nam/Con trai đầu, biểu thị cho trạng thái Khởi đầu, tính chất Dịch chuyển có tác động</p>
+			</div></a>
+
+			<a href="https://dich.kabala.vn/batquai/ton-5.html"><div class="quai-block moc">
+				<img src="https://dich.kabala.vn/batquai/ton-sid-5.png" alt="Tốn Quái">
+				<h3>Tốn Quái</h3>
+				<p>Tốn quái (巽), tượng trưng cho Phong (風) - tức là Gió. Ngũ hành Mộc, chủ hướng Đông Nam. Trong gia đình ứng với Trưởng nữ/Con gái đầu, biểu thị cho trạng thái Sự len vào một cách dễ chịu, tính chất Thông suốt (hiểu rõ)</p>
+			</div></a>
+
+			<a href="https://dich.kabala.vn/batquai/kham-6.html"><div class="quai-block thuy">
+				<img src="https://dich.kabala.vn/batquai/kham-sid-6.png" alt="Khảm Quái">
+				<h3>Khảm Quái</h3>
+				<p>Khảm quái (坎), tượng trưng cho Thủy (水) - tức là Nước. Ngũ hành Thủy, chủ hướng Bắc. Trong gia đình ứng với Thứ nam/Con trai thứ, biểu thị cho trạng thái Đang chuyển động, tính chất Nguy hiểm</p>
+			</div></a>
+
+			<a href="https://dich.kabala.vn/batquai/can-7.html"><div class="quai-block tho">
+				<img src="https://dich.kabala.vn/batquai/can-sid-7.png" alt="Cấn Quái">
+				<h3>Cấn Quái</h3>
+				<p>Cấn quái (艮), tượng trưng cho Sơn (山) - tức là Núi. Ngũ hành Thổ, chủ hướng Đông Bắc. Trong gia đình ứng với Thiếu nam/Con trai út, biểu thị cho trạng thái Hoàn thành, tính chất Thư giãn, đứng vững</p>
+			</div></a>
+
+			<a href="https://dich.kabala.vn/batquai/khon-8.html"><div class="quai-block tho">
+				<img src="https://dich.kabala.vn/batquai/khon-sid-8.png" alt="Khôn Quái">
+				<h3>Khôn Quái</h3>
+				<p>Khôn quái (坤), tượng trưng cho Địa (地) - tức là Đất. Ngũ hành Thổ, chủ hướng Tây Nam. Trong gia đình ứng với Mẹ, biểu thị cho trạng thái Dễ tiếp thu, tính chất Hết lòng (tận tụy), dễ tính</p>
+			</div></a>
+	
+	<hr/>
+
+		
+	</div>
+	<p style="font-size: 13px; font-style:italic;
+    text-align: center;">Nhập từ khóa bạn cần tra cứu thông tin, mọi thông tin - kiến thức - dữ liệu của Kabala sẽ dành cho bạn!</p>
+	<div>
+	<form action="https://tracuu.kabala.vn/answer.php" method="GET">
+	<div class="input-group mb-3">
+	<input class="form-control" type="text" name="q" id="q" placeholder="Nhập câu hỏi/thông tin cần tra cứu..." required="">
+	<button type="submit" class="btn btn-success">Tìm kiếm</button>
+	</div>
+	</form>
+	</div>
+	<div class="row" style="margin:80px 0px;">
+	<p style="font-size:25px; font-style:italic; color: #ccc;text-align:center;">"Hãy để Kabala đồng hành cùng bạn trên Hành Trình Tâm Linh."</p>
+	</div>
+	<hr/>
+	
+</div>
+    <style>
+        /* Menu button styles */
+        .menu-button {
+            position: fixed;
+            top: 30px;
+            right: 10px;
+            font-size: 18px; /* Smaller icon */
+            cursor: pointer;
+            z-index: 1001;
+            background: #395441;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        /* Overlay styles */
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        /* Sidebar menu styles */
+        /* Cập nhật sidebar để cho phép cuộn nếu nội dung vượt quá chiều cao của thiết bị */
+		.sidebar {
+			position: fixed;
+			top: 0;
+			left: -100%;
+			height: 100%;
+			overflow-y: auto; /* Thêm thuộc tính này để cho phép cuộn dọc */
+			background: #fff;
+			z-index: 1001;
+			width: 20%;
+			max-width: 300px;
+			padding: 20px;
+			box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+			transition: left 0.3s;
+		}
+
+		/* Thêm thanh cuộn đẹp hơn trên các thiết bị */
+		.sidebar::-webkit-scrollbar {
+			width: 8px; /* Độ rộng của thanh cuộn */
+		}
+
+		.sidebar::-webkit-scrollbar-thumb {
+			background-color: #395441; /* Màu của thanh cuộn */
+			border-radius: 4px; /* Bo tròn góc */
+		}
+
+		.sidebar::-webkit-scrollbar-track {
+			background: #f1f1f1; /* Màu nền của thanh cuộn */
+		}
+
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+			margin: 10px 15px 10px 25px;
+			text-align: left;
+			border-bottom: 1px solid #f2f2f2;
+		}
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            display: block; /* Increase click area */
+            padding: 5px 0;
+        }
+
+        .sidebar.open {
+            left: 0;
+        }
+
+        #overlay.open {
+            display: block;
+            opacity: 1;
+        }
+
+        /* Logo styles */
+        .sidebar .logo {
+            display: block;
+            margin: 0 auto 20px;
+            width: 80%;
+            max-width: 200px;
+			border-radius: 20px;
+        }
+
+        /* Mobile responsive styles */
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 66.67%;
+            }
+        }
+    </style>
+    <!-- Menu Button -->
+    <div class="menu-button" onclick="toggleMenu()">
+        ☰
+    </div>
+	
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar" id="sidebar">
+        <a href="https://dich.kabala.vn/"><img src="https://tuvi.kabala.vn/images/logo.png" alt="Logo" class="logo"></a>
+        <ul>
+            <li><a href="https://dich.kabala.vn/que/">Rút Quẻ Dịch</a></li>
+            <li><a href="https://dich.kabala.vn/que-dich-kabala">Quẻ Dịch Kabala 🔥</a></li>
+            <li><a href="https://dich.kabala.vn/thoi-gian">Gieo quẻ thời gian</a></li>
+            <li><a href="https://dich.kabala.vn/hao-dong">Tìm Hào Động</a></li>
+            <li><a href="https://dich.kabala.vn/64-que-dich">64 Quẻ Dịch</a></li>
+            <li><a href="https://dich.kabala.vn/384-hao-tu">384 Hào Từ</a></li>
+            <li><a href="https://dich.kabala.vn/baitay/">Bói Bài Tây</a></li>
+            <li><a href="https://dich.kabala.vn/luchao/">Gieo Quẻ Lục Hào</a></li>
+            <li><a href="https://dich.kabala.vn/thuongde/">Đối Thoại Thượng Đế</a></li>
+            <li><a href="https://dich.kabala.vn/khong-minh/">Khổng Minh Thần Toán</a></li>
+            <li><a href="https://dich.kabala.vn/di-boc-tien-tri">Dị Bốc Tiên Tri</a></li>
+            <li><a target="_blank" href="https://kabala.vn/la-so-tu-vi/	">Lá Số Tử Vi →</a></li>		
+
+		
+        </ul>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('overlay');
+            sidebar.classList.toggle('open');
+            overlay.classList.toggle('open');
+        }
+    </script>
+<div id="kabala-intro" class="container"></div>
+<script src="https://tuvi.kabala.vn/js/kabala-text.js"></script>
+
+<!-- JavaScript cho chức năng tìm kiếm -->
+<script>
+function highlightText() {
+    var input = document.getElementById("searchBox").value.toLowerCase();
+    var table = document.getElementById("queDichTable");
+    var cells = table.getElementsByTagName("td");
+    var found = false;
+
+    // Đặt lại màu nền của các ô
+    for (var i = 0; i < cells.length; i++) {
+        cells[i].style.backgroundColor = "";
+    }
+
+    // Duyệt qua tất cả các ô để tìm nội dung khớp
+    for (var i = 0; i < cells.length; i++) {
+        var cellText = cells[i].textContent || cells[i].innerText;
+        if (cellText.toLowerCase().includes(input) && input !== "") {
+            cells[i].style.backgroundColor = "yellow"; // Đánh dấu ô khớp
+            if (!found) {
+                cells[i].scrollIntoView({ behavior: "smooth", block: "center" });
+                found = true; // Chỉ cuộn đến lần khớp đầu tiên
+            }
+        }
+    }
+}
+</script>
+
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"95dfa075fd20880d","version":"2025.6.2","r":1,"token":"4a03f17e0e554ed3afaa5b3b57ef17f8","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}' crossorigin="anonymous"></script>
+</body>
+<script data-cfasync="false" nonce="0dacc31b-3f12-4dee-82ed-d548b84dc7ce">try{(function(w,d){!function(fv,fw,fx,fy){if(fv.zaraz)console.error("zaraz is loaded twice");else{fv[fx]=fv[fx]||{};fv[fx].executed=[];fv.zaraz={deferred:[],listeners:[]};fv.zaraz._v="5858";fv.zaraz._n="0dacc31b-3f12-4dee-82ed-d548b84dc7ce";fv.zaraz.q=[];fv.zaraz._f=function(fz){return async function(){var fA=Array.prototype.slice.call(arguments);fv.zaraz.q.push({m:fz,a:fA})}};for(const fB of["track","set","debug"])fv.zaraz[fB]=fv.zaraz._f(fB);fv.zaraz.init=()=>{var fC=fw.getElementsByTagName(fy)[0],fD=fw.createElement(fy),fE=fw.getElementsByTagName("title")[0];fE&&(fv[fx].t=fw.getElementsByTagName("title")[0].text);fv[fx].x=Math.random();fv[fx].w=fv.screen.width;fv[fx].h=fv.screen.height;fv[fx].j=fv.innerHeight;fv[fx].e=fv.innerWidth;fv[fx].l=fv.location.href;fv[fx].r=fw.referrer;fv[fx].k=fv.screen.colorDepth;fv[fx].n=fw.characterSet;fv[fx].o=(new Date).getTimezoneOffset();if(fv.dataLayer)for(const fF of Object.entries(Object.entries(dataLayer).reduce(((fG,fH)=>({...fG[1],...fH[1]})),{})))zaraz.set(fF[0],fF[1],{scope:"page"});fv[fx].q=[];for(;fv.zaraz.q.length;){const fI=fv.zaraz.q.shift();fv[fx].q.push(fI)}fD.defer=!0;for(const fJ of[localStorage,sessionStorage])Object.keys(fJ||{}).filter((fL=>fL.startsWith("_zaraz_"))).forEach((fK=>{try{fv[fx]["z_"+fK.slice(7)]=JSON.parse(fJ.getItem(fK))}catch{fv[fx]["z_"+fK.slice(7)]=fJ.getItem(fK)}}));fD.referrerPolicy="origin";fD.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(fv[fx])));fC.parentNode.insertBefore(fD,fC)};["complete","interactive"].includes(fw.readyState)?zaraz.init():fv.addEventListener("DOMContentLoaded",zaraz.init)}}(w,d,"zarazData","script");window.zaraz._p=async eC=>new Promise((eD=>{if(eC){eC.e&&eC.e.forEach((eE=>{try{const eF=d.querySelector("script[nonce]"),eG=eF?.nonce||eF?.getAttribute("nonce"),eH=d.createElement("script");eG&&(eH.nonce=eG);eH.innerHTML=eE;eH.onload=()=>{d.head.removeChild(eH)};d.head.appendChild(eH)}catch(eI){console.error(`Error executing script: ${eE}\n`,eI)}}));Promise.allSettled((eC.f||[]).map((eJ=>fetch(eJ[0],eJ[1]))))}eD()}));zaraz._p({"e":["(function(w,d){})(window,document)"]});})(window,document)}catch(e){throw fetch("/cdn-cgi/zaraz/t"),e;};</script></html>

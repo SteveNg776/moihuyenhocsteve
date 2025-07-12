@@ -5,16 +5,16 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription } from '@/components/ui/alert';
-import { Calendar, CalendarDays, Clock, TrendingUp, Sparkles, Star, AlertCircle, CheckCircle, Sun, Moon, Leaf } from 'lucide-react';
+import { Calendar, CalendarDays, Clock, TrendingUp, Sparkles, Star, AlertCircle, Sun, Moon, Leaf } from 'lucide-react';
 import { useLanguage } from '@/contexts/language-context';
 import { getDateInfo, formatDate, validateSolarDate, type DateInfo } from '@/lib/lunar-calendar-utils';
 import { getCurrentSolarTerm, formatSolarTermPeriod, SEASON_COLORS, SEASON_NAMES, type SolarTermPeriod } from '@/lib/solar-terms-data';
+import { calculateMoonPhase, getMoonPhaseDescription, type MoonPhase } from '@/lib/moon-phase-utils';
 
 export function DateHandbook() {
   const { t } = useLanguage();
   const [currentDate, setCurrentDate] = useState(new Date());
   const [dateError, setDateError] = useState<string | null>(null);
-  const [conversionSuccess, setConversionSuccess] = useState<string | null>(null);
 
   const dateInfo: DateInfo = useMemo(() => {
     try {
@@ -65,11 +65,23 @@ export function DateHandbook() {
     }
   }, [currentDate]);
 
+  const moonPhase: MoonPhase = useMemo(() => {
+    try {
+      return calculateMoonPhase(currentDate);
+    } catch (error) {
+      console.error('Error calculating moon phase:', error);
+      return {
+        name: 'Không xác định',
+        illumination: 0,
+        phase: 'new',
+        emoji: '🌑'
+      };
+    }
+  }, [currentDate]);
+
   const handleTodayClick = () => {
     const today = new Date();
     setCurrentDate(today);
-    setConversionSuccess('Đã chuyển về ngày hôm nay.');
-    setTimeout(() => setConversionSuccess(null), 3000);
   };
 
   const handleDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -84,8 +96,6 @@ export function DateHandbook() {
       
       setCurrentDate(newDate);
       setDateError(null);
-      setConversionSuccess('Đã cập nhật thông tin ngày thành công.');
-      setTimeout(() => setConversionSuccess(null), 3000);
     } catch (error) {
       setDateError('Định dạng ngày không hợp lệ. Vui lòng chọn ngày từ lịch.');
     }
@@ -93,18 +103,11 @@ export function DateHandbook() {
 
   return (
     <div className="space-y-6">
-      {/* Error and Success Alerts */}
+      {/* Error Alert */}
       {dateError && (
         <Alert variant="destructive">
           <AlertCircle className="h-4 w-4" />
           <AlertDescription>{dateError}</AlertDescription>
-        </Alert>
-      )}
-      
-      {conversionSuccess && (
-        <Alert className="border-green-200 bg-green-50">
-          <CheckCircle className="h-4 w-4 text-green-600" />
-          <AlertDescription className="text-green-800">{conversionSuccess}</AlertDescription>
         </Alert>
       )}
 
@@ -292,17 +295,27 @@ export function DateHandbook() {
               </div>
             </div>
 
-            {/* Zodiac Information */}
-            <div className="p-4 bg-green-50 rounded-lg border border-green-200">
-              <h4 className="font-semibold text-green-700 mb-3">Cung Hoàng Đạo</h4>
+            {/* Moon Phase Information */}
+            <div className="p-4 bg-indigo-50 rounded-lg border border-indigo-200">
+              <h4 className="font-semibold text-indigo-700 mb-3 flex items-center space-x-2">
+                <Moon className="w-4 h-4" />
+                <span>Pha Mặt Trăng</span>
+              </h4>
               <div className="space-y-2 text-sm">
+                <div className="flex items-center justify-between">
+                  <span className="text-gray-600">Pha hiện tại:</span>
+                  <div className="flex items-center space-x-2">
+                    <span className="text-2xl">{moonPhase.emoji}</span>
+                    <span className="font-medium text-indigo-600">{moonPhase.name}</span>
+                  </div>
+                </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-600">Con giáp:</span>
-                  <span className="font-medium text-green-600">{dateInfo.zodiacAnimal}</span>
+                  <span className="text-gray-600">Độ sáng:</span>
+                  <span className="font-medium text-indigo-600">{moonPhase.illumination.toFixed(1)}%</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Cung:</span>
-                  <span className="font-medium text-green-600">{dateInfo.constellation}</span>
+                  <span className="font-medium text-indigo-600">{dateInfo.constellation}</span>
                 </div>
               </div>
             </div>
