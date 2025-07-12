@@ -47,7 +47,7 @@ export default function IChingPage() {
                   <ul className="space-y-2 text-left text-gray-700">
                     <li className="flex items-center">
                       <span className="h-2.5 w-2.5 bg-yellow-400 rounded-full mr-3 flex-shrink-0"></span>
-                      <span>512 quẻ tiên tri cổ đại</span>
+                      <span>512 quẻ tiên tri</span>
                     </li>
                     <li className="flex items-center">
                       <span className="h-2.5 w-2.5 bg-yellow-400 rounded-full mr-3 flex-shrink-0"></span>
