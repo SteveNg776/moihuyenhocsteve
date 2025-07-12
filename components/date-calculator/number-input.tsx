@@ -77,68 +77,70 @@ export function NumberInput() {
   };
 
   return (
-    <div className="space-y-6">
-      {/* Input Section */}
-      <Card className="moonrise-card">
-        <CardHeader>
-          <CardTitle className="flex items-center space-x-2 text-blue-600">
-            <Hash className="w-5 h-5" />
-            <span>{t('dateCalculator.numberInput')}</span>
-          </CardTitle>
-          <CardDescription>
-            {t('dateCalculator.numberInputDesc')}
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="space-y-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="space-y-2">
-              <Label htmlFor="year-input" className="text-blue-600">
-                {t('dateCalculator.enterYear')}
-              </Label>
-              <Select value={year.toString()} onValueChange={(value) => setYear(parseInt(value))}>
-                <SelectTrigger className="bg-white/50 border-white/20">
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent>
-                  {Array.from({ length: 21 }, (_, i) => {
-                    const yearOption = new Date().getFullYear() - 10 + i;
-                    return (
-                      <SelectItem key={yearOption} value={yearOption.toString()}>
-                        {yearOption}
-                      </SelectItem>
-                    );
-                  })}
-                </SelectContent>
-              </Select>
+    // THAY ĐỔI: Bọc toàn bộ component trong một div để giới hạn chiều rộng và canh giữa
+    <div className="max-w-3xl mx-auto">
+      <div className="space-y-6">
+        {/* Input Section */}
+        <Card className="moonrise-card">
+          <CardHeader>
+            <CardTitle className="flex items-center space-x-2 text-blue-600">
+              <Hash className="w-5 h-5" />
+              <span>{t('dateCalculator.numberInput')}</span>
+            </CardTitle>
+            <CardDescription>
+              {t('dateCalculator.numberInputDesc')}
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="space-y-2">
+                <Label htmlFor="year-input" className="text-blue-600">
+                  {t('dateCalculator.enterYear')}
+                </Label>
+                <Select value={year.toString()} onValueChange={(value) => setYear(parseInt(value))}>
+                  <SelectTrigger className="bg-white/50 border-white/20">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {Array.from({ length: 21 }, (_, i) => {
+                      const yearOption = new Date().getFullYear() - 10 + i;
+                      return (
+                        <SelectItem key={yearOption} value={yearOption.toString()}>
+                          {yearOption}
+                        </SelectItem>
+                      );
+                    })}
+                  </SelectContent>
+                </Select>
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="number-input" className="text-blue-600">
+                  {t('dateCalculator.enterNumber')}
+                </Label>
+                <Input
+                  id="number-input"
+                  type="number"
+                  min="1"
+                  max="366"
+                  value={number}
+                  onChange={(e) => setNumber(e.target.value)}
+                  placeholder="1-366"
+                  className="bg-white/50 border-white/20 focus:border-blue-500"
+                />
+              </div>
             </div>
 
-            <div className="space-y-2">
-              <Label htmlFor="number-input" className="text-blue-600">
-                {t('dateCalculator.enterNumber')}
-              </Label>
-              <Input
-                id="number-input"
-                type="number"
-                min="1"
-                max="366"
-                value={number}
-                onChange={(e) => setNumber(e.target.value)}
-                placeholder="1-366"
-                className="bg-white/50 border-white/20 focus:border-blue-500"
-              />
-            </div>
-          </div>
-
-          <Button
-            onClick={handleCalculate}
-            disabled={!number.trim() || !year}
-            className="moonrise-button w-full"
-          >
-            <Search className="w-4 h-4 mr-2" />
-            {t('dateCalculator.findDate')}
-          </Button>
-        </CardContent>
-      </Card>
+            <Button
+              onClick={handleCalculate}
+              disabled={!number.trim() || !year}
+              className="moonrise-button w-full"
+            >
+              <Search className="w-4 h-4 mr-2" />
+              {t('dateCalculator.findDate')}
+            </Button>
+          </CardContent>
+        </Card>
 
       {/* Results Section */}
       {results.length > 0 && (
