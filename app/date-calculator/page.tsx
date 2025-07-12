@@ -41,7 +41,7 @@ export default function DateCalculator() {
     router.push(`${pathname}?tab=${newTab}`);
   };
   return (
-    <div className="min-h-screen py-4 px-4 sm:px-6 lg:px-8">
+   <div className="py-4 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-6xl">
         {/* Compact Header - Above the fold optimization */}
         <div className="text-center mb-8">
