@@ -27,8 +27,8 @@ export function Navbar() {
       href: '/date-calculator',
       submenu: [
         { name: 'Sổ Tay Ngày', href: '/date-calculator' },
-        { name: 'Lịch Âm Dương', href: '/date-calculator?tab=calendar' },
-        { name: 'Tìm Kiếm Số', href: '/date-calculator?tab=number-input' }
+        { name: 'Tìm Ngày', href: '/date-calculator?tab=number-input' }
+        { name: 'Lịch Vạn Niên', href: '/date-calculator?tab=calendar' },
       ]
     },
   ];
