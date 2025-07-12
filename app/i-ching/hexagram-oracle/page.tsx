@@ -19,6 +19,18 @@ export default function HexagramOraclePage() {
 
         {/* Main Component */}
         <HexagramDivination />
+        {viewMode === 'di-boc' && (
+          <div className="space-y-6">
+            <Button
+              onClick={resetReading}
+              variant="ghost"
+              className="hover:bg-blue-50"
+            >
+              ← Quay Lại Giới Thiệu
+            </Button>
+            <DiBocTienTri />
+          </div>
+        )}
       </div>
     </div>
   );
