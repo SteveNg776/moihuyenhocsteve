@@ -23,7 +23,7 @@ export function Navbar() {
       ]
     },
     {
-      name: 'Thần Số Học',
+      name: 'Tượng Số',
       href: '/date-calculator',
       submenu: [
         { name: 'Sổ Tay Ngày', href: '/date-calculator?tab=handbook' },
