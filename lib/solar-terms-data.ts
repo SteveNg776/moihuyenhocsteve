@@ -6,7 +6,7 @@ export interface SolarTerm {
   season: 'spring' | 'summer' | 'autumn' | 'winter';
   order: number;
 }
-
+ 
 export const SOLAR_TERMS: SolarTerm[] = [
   { id: 1, name: 'Lập Xuân', chineseName: '立春', description: 'Bắt đầu mùa xuân', season: 'spring', order: 1 },
   { id: 2, name: 'Vũ Thủy', chineseName: '雨水', description: 'Mưa nước', season: 'spring', order: 2 },
