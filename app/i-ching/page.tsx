@@ -19,7 +19,7 @@ export default function IChingPage() {
             Kinh Dịch
           </h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Khám phá hai phương pháp luận giải Kinh Dịch: Dị Bốc Tiên Tri cho câu trả lời trực tiếp và 64 Quẻ Kinh Dịch để suy ngẫm sâu sắc.
+            Trải nghiệm sự toàn vẹn của Kinh Dịch qua hai phương pháp luận giải độc đáo. Sử dụng Dị Bốc Tiên Tri để nhận được những câu trả lời trực tiếp cho các vấn đề cấp bách, và dùng 64 Quẻ Kinh Dịch như một người thầy dẫn lối, giúp bạn suy ngẫm sâu sắc về những quyết định mang tính bước ngoặt trong đời.
           </p>
         </div>
 
@@ -79,7 +79,7 @@ export default function IChingPage() {
               </CardHeader>
               <CardContent className="flex-grow flex flex-col justify-between">
                 <CardDescription className="text-gray-600 mb-6 text-center">
-                  Đắm mình vào Kinh Dịch, kho tàng trí tuệ ngàn đời của phương Đông. Với hệ thống 64 quẻ kinh điển, mỗi quẻ là một lời chỉ dẫn sâu sắc, luận giải chi tiết mọi biến chuyển của vạn vật, giúp bạn thấu tỏ quy luật đất trời và tìm thấy sự minh triết trong từng quyết định
+                  Đắm mình vào Kinh Dịch, kho tàng trí tuệ ngàn đời của phương Đông. Với hệ thống 64 quẻ kinh điển, mỗi quẻ là một lời chỉ dẫn sâu sắc, luận giải chi tiết mọi biến chuyển của vạn vật, giúp bạn thấu tỏ quy luật đất trời và tìm thấy sự minh triết trong từng quyết định.
                 </CardDescription>
                 <div className="mt-6 flex justify-center">
                   <ul className="space-y-2 text-left text-gray-700">
