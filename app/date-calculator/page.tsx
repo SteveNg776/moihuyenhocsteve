@@ -47,11 +47,11 @@ export default function DateCalculator() {
         <div className="text-center mb-8">
           <div className="inline-flex items-center px-3 py-1.5 rounded-full bg-white/20 border border-white/30 mb-4">
             <CalendarDays className="w-4 h-4 text-blue-600 mr-2" />
-            <span className="text-sm font-medium text-gray-700">Lịch Âm & Dương</span>
+            <span className="text-sm font-medium text-gray-700">Số Học Ứng Dụng</span>
           </div>
           
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-3">
-            Thần Số Học
+            Tượng Số Học
           </h1>
           
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -69,7 +69,7 @@ export default function DateCalculator() {
             </TabsTrigger>
             <TabsTrigger value="number-input" className="flex items-center space-x-2 text-sm sm:text-base">
               <Hash className="w-4 h-4" />
-              <span className="hidden sm:inline">Nhập Số</span>
+              <span className="hidden sm:inline">Tìm Ngày</span>
               <span className="sm:hidden">Số</span>
             </TabsTrigger>
             <TabsTrigger value="calendar" className="flex items-center space-x-2 text-sm sm:text-base">
@@ -105,7 +105,7 @@ export default function DateCalculator() {
           <Card className="moonrise-card group hover:scale-105 transition-all duration-300 cursor-pointer">
             <CardContent className="p-4 text-center">
               <Hash className="w-6 h-6 text-purple-400 mx-auto mb-2" />
-              <h3 className="font-semibold text-gray-800 mb-1">Tìm Kiếm Số</h3>
+              <h3 className="font-semibold text-gray-800 mb-1">Tìm Ngày</h3>
               <p className="text-sm text-gray-600">Tìm ngày theo số thứ tự hoặc ngày còn lại</p>
             </CardContent>
           </Card>
