@@ -1,6 +1,8 @@
 "use client";
 
 import React from 'react';
+// THAY ĐỔI: Import thêm useSearchParams từ next/navigation
+import { useSearchParams } from 'next/navigation';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Badge } from '@/components/ui/badge';
@@ -15,6 +17,9 @@ import { NumberInput } from '@/components/date-calculator/number-input';
 import { CalendarView } from '@/components/date-calculator/calendar-view';
 
 export default function DateCalculator() {
+  // THAY ĐỔI: Lấy tham số 'tab' từ URL
+  const searchParams = useSearchParams();
+  const defaultTab = searchParams.get('tab') || 'handbook';
   return (
     <div className="min-h-screen py-4 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-6xl">
@@ -35,7 +40,7 @@ export default function DateCalculator() {
         </div>
 
         {/* Main Content - Prioritized above the fold */}
-        <Tabs defaultValue="handbook" className="w-full">
+        <Tabs defaultValue={defaultTab} className="w-full">
           <TabsList className="grid w-full grid-cols-3 mb-6 h-12">
             <TabsTrigger value="handbook" className="flex items-center space-x-2 text-sm sm:text-base">
               <BookOpen className="w-4 h-4" />
