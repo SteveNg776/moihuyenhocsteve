@@ -22,7 +22,7 @@ export default function HomePage() {
     {
       icon: CalendarDays,
       title: 'Tượng Số Học',
-      description: 'Công cụ lịch vạn niên toàn diện để thuận theo tự nhiên.',
+      description: 'Công cụ lịch vạn niên toàn diện để phân tích tượng số thuận theo tự nhiên.',
       href: '/date-calculator',
       color: 'text-green-500'
     }
