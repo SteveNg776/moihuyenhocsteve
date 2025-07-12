@@ -12,7 +12,7 @@ export function Footer() {
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="flex items-center space-x-2 mb-4">
               <Image
-                src="/zen-logo.png" // Đường dẫn tới tệp trong thư mục public
+                src="/zen-2.png" // Đường dẫn tới tệp trong thư mục public
                 alt="Huyền Học Logo"
                 width={32}
                 height={32}
