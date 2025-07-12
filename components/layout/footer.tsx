@@ -22,8 +22,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-gray-600 max-w-md">
-              Khám phá trí tuệ cổ đại và kiến thức bí truyền thông qua các công cụ tương tác và hướng dẫn toàn diện. 
-              Khám phá những bí ẩn của Kinh Dịch và Thần Số Học.
+              Khám phá trí tuệ Đông Phương thông qua các công cụ tương tác và hướng dẫn toàn diện. 
             </p>
           </div>
 
