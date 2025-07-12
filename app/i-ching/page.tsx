@@ -32,7 +32,7 @@ export default function IChingPage() {
                 <div className="flex items-center justify-between mb-4">
                   <Sparkles className="w-12 h-12 text-mystical-gold animate-float" />
                   <Badge variant="secondary" className="bg-mystical-gold/10 text-mystical-gold border-mystical-gold/30">
-                    Cổ Đại
+                    Trí Tuệ Đông Phương
                   </Badge>
                 </div>
                 <CardTitle className="text-2xl font-semibold text-gray-800 group-hover:text-mystical-gold transition-colors text-center">
@@ -70,7 +70,7 @@ export default function IChingPage() {
                 <div className="flex items-center justify-between mb-4">
                   <BookOpen className="w-12 h-12 text-blue-600 animate-float" />
                   <Badge variant="secondary" className="bg-blue-100 text-blue-700 border-blue-300">
-                    Kinh Điển
+                     Trí Tuệ Đông Phương
                   </Badge>
                 </div>
                 <CardTitle className="text-2xl font-semibold text-gray-800 group-hover:text-blue-600 transition-colors text-center">
