@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NPM_FLAGS = "--version" # This is a dummy flag to ensure pnpm is not used
+
+[functions]
+  included_files = ["node_modules/.pnpm/**"]
