@@ -37,7 +37,7 @@ export default function HomePage() {
           </h1>
           
           <p className="text-xl sm:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Vật Cùng Tắc Biến, Vật Cực Tất Phản
+            "Nhạc thiên tri mệnh, cố bất ưu"
           </p>
         </div>
       </section>
