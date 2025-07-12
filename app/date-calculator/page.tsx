@@ -1,96 +1,74 @@
 "use client";
 
-// SỬA LỖI: Gộp các import từ 'react' vào một dòng
-import React, { useState, useEffect } from 'react';
-import { useSearchParams, useRouter, usePathname } from 'next/navigation';
+import React from 'react';
+import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Badge } from '@/components/ui/badge';
 import { 
   Calendar, 
   Hash, 
-  CalendarDays,
   BookOpen
 } from 'lucide-react';
-import { DateHandbook } from '@/components/date-calculator/date-handbook';
-import { NumberInput } from '@/components/date-calculator/number-input';
-import { CalendarView } from '@/components/date-calculator/calendar-view';
 
-export default function DateCalculator() {
-  // THAY ĐỔI: Lấy tham số 'tab' từ URL
-  const searchParams = useSearchParams();
-  // THAY ĐỔI: Thêm useRouter và usePathname
-  const router = useRouter();
-  const pathname = usePathname();
-  const defaultTab = searchParams.get('tab') || 'handbook';
-  // THAY ĐỔI: Sử dụng useState để quản lý tab hiện tại
-  const [activeTab, setActiveTab] = useState(defaultTab);
-
-  // THAY ĐỔI: Sử dụng useEffect để cập nhật tab khi URL thay đổi
-  useEffect(() => {
-    const tabFromUrl = searchParams.get('tab') || 'handbook';
-    if (tabFromUrl !== activeTab) {
-      setActiveTab(tabFromUrl);
+export default function DateCalculatorLandingPage() {
+  const tools = [
+    {
+      title: 'Sổ Tay Ngày',
+      description: 'Phân tích chi tiết ngày được chọn với dữ liệu lịch âm, dương, can chi, và các thông tin liên quan.',
+      href: '/date-calculator/handbook',
+      icon: BookOpen,
+      color: 'text-blue-500'
+    },
+    {
+      title: 'Tìm Ngày',
+      description: 'Tìm một ngày cụ thể trong năm bằng cách nhập số thứ tự hoặc số ngày còn lại của năm đó.',
+      href: '/date-calculator/number-input',
+      icon: Hash,
+      color: 'text-purple-500'
+    },
+    {
+      title: 'Lịch Vạn Niên',
+      description: 'Duyệt lịch âm dương tương tác, xem thông tin chi tiết về ngày lễ, tiết khí và các sự kiện quan trọng.',
+      href: '/date-calculator/calendar',
+      icon: Calendar,
+      color: 'text-amber-500'
     }
-  }, [searchParams, activeTab]);
+  ];
 
-  // THAY ĐỔI: Thêm hàm xử lý khi thay đổi tab
-  const handleTabChange = (newTab: string) => {
-    setActiveTab(newTab);
-    // Cập nhật URL mà không cần tải lại trang
-    router.push(`${pathname}?tab=${newTab}`);
-  };
   return (
-   <div className="py-4 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen flex items-center justify-center py-8 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-6xl">
-        {/* Compact Header - Above the fold optimization */}
-        <div className="text-center mb-8">
-          <div className="inline-flex items-center px-3 py-1.5 rounded-full bg-white/20 border border-white/30 mb-4">
-            <CalendarDays className="w-4 h-4 text-blue-600 mr-2" />
-            <span className="text-sm font-medium text-gray-700">Số Học Ứng Dụng</span>
-          </div>
-          
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-3">
-            Tượng Số Học
+        <div className="text-center mb-12">
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 mb-4">
+            Công Cụ Thần Số Học
           </h1>
-          
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Công cụ lịch âm dương toàn diện với thông tin chi tiết về số học và ý nghĩa tâm linh.
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Khám phá các khía cạnh khác nhau của lịch pháp và số học qua các công cụ chuyên biệt của chúng tôi.
           </p>
         </div>
 
-         {/* THAY ĐỔI: Sử dụng `value` và `onValueChange` để kiểm soát component Tabs */}
-        <Tabs value={activeTab} onValueChange={handleTabChange} className="w-full">
-          <TabsList className="grid w-full grid-cols-3 mb-6 h-12">
-            <TabsTrigger value="handbook" className="flex items-center space-x-2 text-sm sm:text-base">
-              <BookOpen className="w-4 h-4" />
-              <span className="hidden sm:inline">Sổ Tay Ngày</span>
-              <span className="sm:hidden">Sổ Tay</span>
-            </TabsTrigger>
-            <TabsTrigger value="number-input" className="flex items-center space-x-2 text-sm sm:text-base">
-              <Hash className="w-4 h-4" />
-              <span className="hidden sm:inline">Tìm Ngày</span>
-              <span className="sm:hidden">Số</span>
-            </TabsTrigger>
-            <TabsTrigger value="calendar" className="flex items-center space-x-2 text-sm sm:text-base">
-              <Calendar className="w-4 h-4" />
-              <span className="hidden sm:inline">Xem Lịch</span>
-              <span className="sm:hidden">Lịch</span>
-            </TabsTrigger>
-          </TabsList>
-
-          <TabsContent value="handbook" className="space-y-6">
-            <DateHandbook />
-          </TabsContent>
-
-          <TabsContent value="number-input" className="space-y-6">
-            <NumberInput />
-          </TabsContent>
-
-          <TabsContent value="calendar" className="space-y-6">
-            <CalendarView />
-          </TabsContent>
-        </Tabs>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {tools.map((tool) => (
+            <Link key={tool.title} href={tool.href} passHref>
+              <Card className="moonrise-card group hover:scale-105 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                <CardHeader>
+                  <div className="flex items-center space-x-4 mb-4">
+                    <div className="p-3 bg-white/80 rounded-2xl">
+                      <tool.icon className={`w-8 h-8 ${tool.color}`} />
+                    </div>
+                    <CardTitle className="text-2xl font-bold text-gray-800 group-hover:text-blue-600 transition-colors">
+                      {tool.title}
+                    </CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <CardDescription className="text-gray-600 text-base leading-relaxed">
+                    {tool.description}
+                  </CardDescription>
+                </CardContent>
+              </Card>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
