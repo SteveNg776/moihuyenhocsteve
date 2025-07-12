@@ -10,7 +10,7 @@ export default function HexagramOraclePage() {
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 mb-4">
-             Kinh Dịch Quẻ
+            Kinh Dịch Quẻ
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Khám phá trí tuệ Đông Phương qua 64 quẻ Kinh Dịch
