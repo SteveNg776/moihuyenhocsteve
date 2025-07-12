@@ -116,7 +116,7 @@ export function HexagramDivination() {
             <span className="text-2xl font-mystical">Bốc Quẻ Kinh Dịch</span>
           </CardTitle>
           <CardDescription className="text-lg">
-            Khám phá trí tuệ cổ đại qua 64 quẻ Kinh Dịch
+            Đạo Của Người Đông Phương
           </CardDescription>
         </CardHeader>
         <CardContent>
