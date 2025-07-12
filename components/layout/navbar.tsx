@@ -20,7 +20,7 @@ export function Navbar() {
       submenu: [
         // THAY ĐỔI: Thêm query param `?tool=di-boc` để kích hoạt công cụ Dị Bốc
         { name: 'Dị Bốc Tiên Tri', href: '/i-ching?tool=di-boc' },
-        { name: '64 Quẻ Kinh Dịch', href: '/i-ching/hexagram-oracle' }
+        { name: 'Kinh Dịch Bốc Quẻ', href: '/i-ching/hexagram-oracle' }
       ]
     },
     {
@@ -29,8 +29,8 @@ export function Navbar() {
       submenu: [
         // THAY ĐỔI: Thêm các query param tương ứng cho mỗi tab
         { name: 'Sổ Tay Ngày', href: '/date-calculator?tab=handbook' },
-        { name: 'Lịch Âm Dương', href: '/date-calculator?tab=calendar' },
-        { name: 'Tìm Kiếm Số', href: '/date-calculator?tab=number-input' }
+        { name: 'Tìm Ngày', href: '/date-calculator?tab=number-input' },
+        { name: 'Lịch Vạn Niên', href: '/date-calculator?tab=calendar' }
       ]
     },
   ];
