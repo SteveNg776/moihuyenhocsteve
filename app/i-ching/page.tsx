@@ -41,7 +41,7 @@ export default function IChingPage() {
               </CardHeader>
               <CardContent className="flex-grow flex flex-col justify-between">
                 <CardDescription className="text-gray-600 mb-6 text-center">
-                 Bước vào thế giới của Dị Bốc Tiên Tri, nơi nghệ thuật tiên tri cổ đại đạt đến đỉnh cao. Khởi nguồn từ 8 cung Bát Quái, 512 quẻ thần diệu được luận giải để mang đến câu trả lời rõ ràng, sâu sắc và chuẩn xác nhất về những gì đang chờ đợi bạn.
+                 Khám phá Dị Bốc Tiên Tri, bí thuật ngàn năm giải mã tương lai qua 512 quẻ số mệnh. Dựa trên sự biến ảo vô tận của 8 cung Bát Quái, phương pháp này mang đến những lời tiên tri sâu sắc, soi tỏ mọi ngã rẽ cuộc đời với sự chính xác đáng kinh ngạc.
                 </CardDescription>
                 <div className="mt-6 flex justify-center">
                   <ul className="space-y-2 text-left text-gray-700">
