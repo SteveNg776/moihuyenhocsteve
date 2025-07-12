@@ -17,18 +17,18 @@ export function Navbar() {
       name: 'Kinh Dịch',
       href: '/i-ching',
       submenu: [
-        // THAY ĐỔI: Cập nhật đường dẫn href để trỏ đến trang chuyên dụng mới
         { name: 'Dị Bốc Tiên Tri', href: '/i-ching/di-boc-tien-tri' },
         { name: 'Kinh Dịch Bốc Quẻ', href: '/i-ching/hexagram-oracle' }
       ]
     },
     {
-      name: 'Tượng Số',
+      name: 'Tượng Số Học',
       href: '/date-calculator',
       submenu: [
-        { name: 'Sổ Tay Ngày', href: '/date-calculator?tab=handbook' },
-        { name: 'Tìm Ngày', href: '/date-calculator?tab=number-input' },
-        { name: 'Lịch Vạn Niên', href: '/date-calculator?tab=calendar' }
+        // THAY ĐỔI: Cập nhật các đường dẫn href
+        { name: 'Sổ Tay Ngày', href: '/date-calculator/handbook' },
+        { name: 'Tìm Ngày', href: '/date-calculator/number-input' },
+        { name: 'Lịch Vạn Niên', href: '/date-calculator/calendar' }
       ]
     },
   ];
