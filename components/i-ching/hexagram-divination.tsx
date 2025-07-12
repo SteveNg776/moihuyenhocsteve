@@ -78,28 +78,32 @@ export function HexagramDivination() {
     setManualNumber('');
   };
 
-  // Hàm render cấu trúc quẻ (6 hào)
+ // THAY ĐỔI: Cập nhật logic render để căn chỉnh các hào thẳng hàng
   const renderHexagramStructure = (structure: string) => {
     return (
       <div className="flex flex-col items-center space-y-1 p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg border border-blue-200">
         <div className="text-sm font-medium text-blue-700 mb-2">Cấu trúc 6 hào</div>
         {structure.split('').reverse().map((line, index) => (
-          <div key={index} className="flex items-center space-x-2">
-            <span className="text-xs text-gray-500 w-8">Hào {6-index}:</span>
-            <div className="flex space-x-1">
+          <div key={index} className="flex items-center w-full justify-center">
+            {/* Cột 1: Nhãn Hào */}
+            <span className="text-xs text-gray-500 w-12 text-right pr-2">Hào {6 - index}:</span>
+            
+            {/* Cột 2: Hình ảnh Hào */}
+            <div className="w-16 h-4 flex items-center justify-center">
               {line === '1' ? (
-                // Yang line (solid)
+                // Hào Dương (liền)
                 <div className="w-12 h-1 bg-blue-600 rounded"></div>
               ) : (
-                // Yin line (broken)
-                <>
-                  <div className="w-5 h-1 bg-blue-600 rounded"></div>
-                  <div className="w-1 h-1"></div>
-                  <div className="w-5 h-1 bg-blue-600 rounded"></div>
-                </>
+                // Hào Âm (đứt)
+                <div className="w-12 h-1 flex justify-between">
+                  <div className="w-[45%] h-full bg-blue-600 rounded"></div>
+                  <div className="w-[45%] h-full bg-blue-600 rounded"></div>
+                </div>
               )}
             </div>
-            <span className="text-xs text-gray-600">{line === '1' ? 'Dương' : 'Âm'}</span>
+            
+            {/* Cột 3: Nhãn Âm/Dương */}
+            <span className="text-xs text-gray-600 w-10 text-left pl-2">{line === '1' ? 'Dương' : 'Âm'}</span>
           </div>
         ))}
       </div>
