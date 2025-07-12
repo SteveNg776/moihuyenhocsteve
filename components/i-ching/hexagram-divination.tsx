@@ -113,7 +113,7 @@ export function HexagramDivination() {
         <CardHeader className="text-center">
           <CardTitle className="flex items-center justify-center space-x-2 text-mystical-gold">
             <Sparkles className="w-6 h-6" />
-            <span className="text-2xl font-mystical">Bốc Quẻ Kinh Dịch</span>
+            <span className="text-2xl font-mystical">Kinh Dịch</span>
           </CardTitle>
           <CardDescription className="text-lg">
             Đạo Của Người Đông Phương
