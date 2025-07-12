@@ -127,6 +127,46 @@ export default function IChing() {
               </CardContent>
             </Card>
           </div>
+
+          {/* New Hexagram Oracle Method */}
+          <div className="flex justify-center mt-8">
+            <Card className="moonrise-card group hover:scale-105 transition-all duration-300 cursor-pointer max-w-md"
+                  onClick={() => window.location.href = '/i-ching/hexagram-oracle'}>
+              <CardHeader>
+                <div className="flex items-center justify-between mb-4">
+                  <BookOpen className="w-12 h-12 text-blue-600 animate-float" />
+                  <Badge variant="secondary" className="bg-blue-100 text-blue-700 border-blue-300">
+                    Kinh Điển
+                  </Badge>
+                </div>
+                <CardTitle className="text-2xl font-semibold text-gray-800 group-hover:text-blue-600 transition-colors text-center">
+                  Bốc Quẻ Kinh Dịch
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-gray-600 mb-6 text-center">
+                  Phương pháp bốc quẻ truyền thống với 64 quẻ Kinh Dịch. 
+                  Khám phá trí tuệ cổ đại qua hệ thống quẻ hoàn chỉnh với giải thích chi tiết.
+                </CardDescription>
+               <div className="mt-6 flex justify-center">
+               <ul className="space-y-2 text-left text-gray-700">
+               <li className="flex items-center">
+                 <span className="h-2.5 w-2.5 bg-blue-400 rounded-full mr-3 flex-shrink-0"></span>
+                 <span>64 quẻ Kinh Dịch đầy đủ</span>
+                   </li>
+               <li className="flex items-center">
+               <span className="h-2.5 w-2.5 bg-blue-400 rounded-full mr-3 flex-shrink-0"></span>
+               <span>Giải thích 6 hào chi tiết</span>
+                   </li>
+               <li className="flex items-center">
+               <span className="h-2.5 w-2.5 bg-blue-400 rounded-full mr-3 flex-shrink-0"></span>
+               <span>Cấu trúc Âm Dương trực quan</span>
+                   </li>
+                 </ul>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         )}
 
         {viewMode === 'di-boc' && (

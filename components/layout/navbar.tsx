@@ -13,6 +13,7 @@ export function Navbar() {
   const navigationItems = [
     { name: 'Trang Chủ', href: '/' },
     { name: 'Kinh Dịch', href: '/i-ching' },
+    { name: 'Bốc Quẻ', href: '/i-ching/hexagram-oracle' },
     { name: 'Thần Số Học', href: '/date-calculator' },
   ];
 
