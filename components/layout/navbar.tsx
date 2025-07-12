@@ -21,7 +21,15 @@ export function Navbar() {
         { name: '64 Quẻ Kinh Dịch', href: '/i-ching/hexagram-oracle' }
       ]
     },
-    { name: 'Thần Số Học', href: '/date-calculator' },
+    { 
+      name: 'Thần Số Học', 
+      href: '/date-calculator',
+      submenu: [
+        { name: 'Sổ Tay Ngày', href: '/date-calculator' },
+        { name: 'Lịch Âm Dương', href: '/date-calculator?tab=calendar' },
+        { name: 'Tìm Kiếm Số', href: '/date-calculator?tab=number-input' }
+      ]
+    },
   ];
 
   return (
