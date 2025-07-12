@@ -11,19 +11,12 @@ export function Footer() {
           {/* Cột 1 & 2: Brand và Mô tả */}
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="flex items-center space-x-2 mb-4">
-              <Image
-                src="/zen-logo.png" // Đường dẫn tới tệp trong thư mục public
-                alt="Huyền Học Logo"
-                width={32}
-                height={32}
-              />
               <span className="font-bold text-xl text-gray-800">
                 Huyền Học
               </span>
             </Link>
             <p className="text-gray-600 max-w-md">
-              Khám phá trí tuệ cổ đại và kiến thức bí truyền thông qua các công cụ tương tác và hướng dẫn toàn diện. 
-              Khám phá những bí ẩn của Kinh Dịch và Thần Số Học.
+              Khám phá trí tuệ Đông Phương thông qua các công cụ tương tác và hướng dẫn toàn diện. 
             </p>
           </div>
 
@@ -38,7 +31,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/date-calculator" className="text-gray-600 hover:text-blue-600 transition-colors">
-                  Thần Số Học
+                  Tượng Số Học
                 </Link>
               </li>
               <li>

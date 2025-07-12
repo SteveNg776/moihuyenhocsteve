@@ -9,26 +9,26 @@ import Image from 'next/image';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
- // THAY ĐỔI: Sử dụng một state để lưu tên của menu đang mở
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
-  const navigationItems = [
+    const navigationItems = [
     { name: 'Trang Chủ', href: '/' },
-    { 
-      name: 'Kinh Dịch', 
+    {
+      name: 'Kinh Dịch',
       href: '/i-ching',
       submenu: [
-        { name: 'Dị Bốc Tiên Tri', href: '/i-ching' },
-        { name: 'Quẻ Kinh Dịch', href: '/i-ching/hexagram-oracle' }
+        { name: 'Dị Bốc Tiên Tri', href: '/i-ching/di-boc-tien-tri' },
+        { name: 'Kinh Dịch Bốc Quẻ', href: '/i-ching/hexagram-oracle' }
       ]
     },
-    { 
-      name: 'Thần Số Học', 
+    {
+      name: 'Tượng Số Học',
       href: '/date-calculator',
       submenu: [
-        { name: 'Sổ Tay Ngày', href: '/date-calculator' },
-        { name: 'Tìm Ngày', href: '/date-calculator?tab=number-input' },
-        { name: 'Lịch Vạn Niên', href: '/date-calculator?tab=calendar' },
+        // THAY ĐỔI: Cập nhật các đường dẫn href
+        { name: 'Sổ Tay Ngày', href: '/date-calculator/handbook' },
+        { name: 'Tìm Ngày', href: '/date-calculator/number-input' },
+        { name: 'Lịch Vạn Niên', href: '/date-calculator/calendar' }
       ]
     },
   ];
@@ -39,7 +39,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <Image
+            <Image 
               src="/zen-logo.png"
               alt="Huyền Học Logo"
               width={32}
@@ -50,7 +50,7 @@ export function Navbar() {
             </span>
           </Link>
 
-          {/* Desktop Navigation - Căn giữa và tạo hiệu ứng nổi bật */}
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center justify-center flex-1 mx-8">
             <div className="flex items-center space-x-12">
               {navigationItems.map((item) => (
@@ -58,7 +58,6 @@ export function Navbar() {
                   {item.submenu ? (
                     <div
                       className="relative"
-                      // THAY ĐỔI: Cập nhật onMouseEnter và onMouseLeave
                       onMouseEnter={() => setOpenDropdown(item.name)}
                       onMouseLeave={() => setOpenDropdown(null)}
                     >
@@ -71,8 +70,7 @@ export function Navbar() {
                         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 transition-all duration-300 group-hover:w-full"></span>
                       </Link>
                       
-              {/* Dropdown Menu */}
-              {/* THAY ĐỔI: Điều kiện hiển thị dựa trên tên của menu */}
+                      {/* Dropdown Menu */}
                       <div className={`absolute top-full left-0 mt-2 w-56 bg-white/95 backdrop-blur-lg border border-white/30 rounded-lg shadow-lg transition-all duration-200 ${
                         openDropdown === item.name ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
                       }`}>

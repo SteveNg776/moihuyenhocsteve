@@ -15,14 +15,14 @@ export default function HomePage() {
     {
       icon: BookOpen,
       title: 'Kinh Dịch',
-      description: 'Tham khảo Kinh Dịch cổ đại với trình tạo quẻ tương tác và giải thích toàn diện.',
+      description: 'Nghiên cứu trí tuệ của Phương Đông qua Kinh Dịch với trình tạo quẻ tương tác và giải thích toàn diện.',
       href: '/i-ching',
       color: 'text-blue-500'
     },
     {
       icon: CalendarDays,
-      title: 'Thần Số Học',
-      description: 'Công cụ lịch âm dương toàn diện để phân tích và chuyển đổi ngày tháng.',
+      title: 'Tượng Số Học',
+      description: 'Công cụ lịch vạn niên toàn diện để phân tích tượng số thuận theo tự nhiên.',
       href: '/date-calculator',
       color: 'text-green-500'
     }
@@ -33,11 +33,11 @@ export default function HomePage() {
       {/* Hero Section - Đã giảm khoảng đệm */}
       <section className="relative py-7 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto text-center max-w-4xl">
-  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-8 leading-tight">            Khám Phá Trí Tuệ Cổ Đại
+  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-8 leading-tight">            Trí Tuệ Đông Phương
           </h1>
           
           <p className="text-xl sm:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Khám Phá Kiến Thức "Out of the Box"
+            "Thời chỉ tắc chỉ, thời hành tắc hành"
           </p>
         </div>
       </section>
