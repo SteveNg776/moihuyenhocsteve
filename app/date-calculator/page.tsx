@@ -91,33 +91,6 @@ export default function DateCalculator() {
             <CalendarView />
           </TabsContent>
         </Tabs>
-
-        {/* Quick Access Cards - Streamlined and functional */}
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-          <Card className="moonrise-card group hover:scale-105 transition-all duration-300 cursor-pointer">
-            <CardContent className="p-4 text-center">
-              <BookOpen className="w-6 h-6 text-blue-400 mx-auto mb-2" />
-              <h3 className="font-semibold text-gray-800 mb-1">Phân Tích Ngày</h3>
-              <p className="text-sm text-gray-600">Thông tin chi tiết can chi, con giáp và ý nghĩa</p>
-            </CardContent>
-          </Card>
-
-          <Card className="moonrise-card group hover:scale-105 transition-all duration-300 cursor-pointer">
-            <CardContent className="p-4 text-center">
-              <Hash className="w-6 h-6 text-purple-400 mx-auto mb-2" />
-              <h3 className="font-semibold text-gray-800 mb-1">Tìm Ngày</h3>
-              <p className="text-sm text-gray-600">Tìm ngày theo số thứ tự hoặc ngày còn lại</p>
-            </CardContent>
-          </Card>
-
-          <Card className="moonrise-card group hover:scale-105 transition-all duration-300 cursor-pointer">
-            <CardContent className="p-4 text-center">
-              <Calendar className="w-6 h-6 text-amber-400 mx-auto mb-2" />
-              <h3 className="font-semibold text-gray-800 mb-1">Lịch Tương Tác</h3>
-              <p className="text-sm text-gray-600">Xem lịch âm dương với thông tin chi tiết</p>
-            </CardContent>
-          </Card>
-        </div>
       </div>
     </div>
   );
