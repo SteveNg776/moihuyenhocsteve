@@ -19,7 +19,7 @@ export default function IChingPage() {
             Kinh Dịch
           </h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Trải nghiệm sự toàn vẹn của Kinh Dịch qua hai phương pháp luận giải độc đáo. Sử dụng Dị Bốc Tiên Tri để nhận được những câu trả lời trực tiếp cho các vấn đề cấp bách, và dùng 64 Quẻ Kinh Dịch như một người thầy dẫn lối, giúp bạn suy ngẫm sâu sắc về những quyết định mang tính bước ngoặt trong đời.
+            Trải nghiệm sự toàn vẹn của Kinh Dịch qua hai phương pháp luận giải độc đáo.
           </p>
         </div>
 
