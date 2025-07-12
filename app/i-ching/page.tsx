@@ -1,6 +1,8 @@
 "use client";
 
-import React, { useState } from 'react';
+// THAY ĐỔI: Import thêm useSearchParams và useEffect
+import React, { useState, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -17,7 +19,17 @@ type ViewMode = 'intro' | 'di-boc';
 
 export default function IChing() {
   const [viewMode, setViewMode] = useState<ViewMode>('intro');
-
+  // THAY ĐỔI: Lấy tham số 'tool' từ URL
+  const searchParams = useSearchParams();
+  
+  // THAY ĐỔI: Sử dụng useEffect để cập nhật viewMode khi component được tải
+  useEffect(() => {
+    const tool = searchParams.get('tool');
+    if (tool === 'di-boc') {
+      setViewMode('di-boc');
+    }
+  }, [searchParams]);
+  
   const resetReading = () => {
     setViewMode('intro');
   };
