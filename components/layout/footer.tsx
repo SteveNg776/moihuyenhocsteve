@@ -11,12 +11,6 @@ export function Footer() {
           {/* Cột 1 & 2: Brand và Mô tả */}
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="flex items-center space-x-2 mb-4">
-              <Image
-                src="/zen-2.png" // Đường dẫn tới tệp trong thư mục public
-                alt="Huyền Học Logo"
-                width={32}
-                height={32}
-              />
               <span className="font-bold text-xl text-gray-800">
                 Huyền Học
               </span>
