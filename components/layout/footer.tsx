@@ -51,9 +51,6 @@ export function Footer() {
         <Separator className="my-8 bg-white/20" />
         
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-600 text-sm">
-            © 2025 Nghiên Cứu Huyền Bí. Tất cả quyền được bảo lưu.
-          </p>
           <p className="text-gray-600 text-sm mt-2 md:mt-0">
             "Sự đồng bộ là một món quà của thực tại dành cho ai thấy mà tin" <br /> Carl Jung
           </p>
