@@ -42,7 +42,7 @@ export default function DateCalculatorLandingPage() {
             Công Cụ Tượng Số Học
           </h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Khám phá các khía cạnh khác nhau của số học qua các công cụ chuyên biệt của chúng tôi.
+            Khám phá các khía cạnh khác nhau của số học qua các công cụ chuyên biệt.
           </p>
         </div>
 
