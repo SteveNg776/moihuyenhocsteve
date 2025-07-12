@@ -12,12 +12,13 @@ export function Navbar() {
  // THAY ĐỔI: Sử dụng một state để lưu tên của menu đang mở
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
-  const navigationItems = [
+    const navigationItems = [
     { name: 'Trang Chủ', href: '/' },
-    { 
-      name: 'Kinh Dịch', 
+    {
+      name: 'Kinh Dịch',
       href: '/i-ching',
-      // THAY ĐỔI: Thêm query param `?tool=di-boc` để kích hoạt công cụ Dị Bốc
+      submenu: [
+        // THAY ĐỔI: Thêm query param `?tool=di-boc` để kích hoạt công cụ Dị Bốc
         { name: 'Dị Bốc Tiên Tri', href: '/i-ching?tool=di-boc' },
         { name: '64 Quẻ Kinh Dịch', href: '/i-ching/hexagram-oracle' }
       ]
