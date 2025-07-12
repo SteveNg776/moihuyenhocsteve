@@ -79,7 +79,7 @@ export default function IChingPage() {
               </CardHeader>
               <CardContent className="flex-grow flex flex-col justify-between">
                 <CardDescription className="text-gray-600 mb-6 text-center">
-                  Phương pháp bốc quẻ truyền thống với 64 quẻ Kinh Dịch. Khám phá trí tuệ cổ đại qua hệ thống quẻ hoàn chỉnh với giải thích chi tiết.
+                  Đắm mình vào Kinh Dịch, kho tàng trí tuệ ngàn đời của phương Đông. Với hệ thống 64 quẻ kinh điển, mỗi quẻ là một lời chỉ dẫn sâu sắc, luận giải chi tiết mọi biến chuyển của vạn vật, giúp bạn thấu tỏ quy luật đất trời và tìm thấy sự minh triết trong từng quyết định
                 </CardDescription>
                 <div className="mt-6 flex justify-center">
                   <ul className="space-y-2 text-left text-gray-700">
