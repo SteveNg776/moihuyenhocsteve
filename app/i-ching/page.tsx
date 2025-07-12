@@ -38,26 +38,10 @@ export default function IChing() {
         {viewMode === 'intro' && (
           <>
             <div className="space-y-8">
-            {/* Introduction */}
-            <Card className="moonrise-card">
-              <CardHeader>
-                <CardTitle className="text-2xl text-blue-600 font-semibold">
-                  Kinh Dịch: Công Cụ Minh Triết Của Người Việt
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-gray-600">
-                  Kinh Dịch, một hệ thống triết học và dự đoán cổ xưa, từ lâu đã không chỉ là một di sản văn hóa phương Đông mà còn là một công cụ quan trọng, gắn bó sâu sắc với đời sống và tư duy của người Việt. Vượt qua ý nghĩa của một văn bản bói toán, người Việt đã tiếp thu và vận dụng Kinh Dịch như một kim chỉ nam để hiểu quy luật vận động của vũ trụ, sự biến đổi của vạn vật và từ đó đưa ra những quyết định sáng suốt trong cuộc sống.
-                </p>
-                <p className="text-gray-600">
-                 Cốt lõi của Kinh Dịch là 64 quẻ, được tạo thành từ sự kết hợp của các hào Âm (vạch đứt) và Dương (vạch liền). Mỗi quẻ tượng trưng cho một tình huống, một giai đoạn trong cuộc sống, bao hàm những lớp lang ý nghĩa sâu sắc về thời thế, sự vật và con người. Thông qua việc lập quẻ và diễn giải, người Việt tìm thấy trong Kinh Dịch những lời khuyên, những dự báo và sự chỉ dẫn để hài hòa với tự nhiên, cải thiện các mối quan hệ, và định hướng cho tương lai.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Main Consultation Method */}
-            <div className="flex justify-center">
-              <Card className="mystical-card group hover:scale-105 transition-all duration-300 cursor-pointer max-w-md"
+            {/* Two Main Methods Side by Side */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* Dị Bốc Tiên Tri */}
+              <Card className="mystical-card group hover:scale-105 transition-all duration-300 cursor-pointer"
                     onClick={() => setViewMode('di-boc')}>
                 <CardHeader>
                   <div className="flex items-center justify-between mb-4">
@@ -78,7 +62,6 @@ export default function IChing() {
                  <div className="mt-6 flex justify-center">
                  <ul className="space-y-2 text-left text-gray-700">
                  <li className="flex items-center">
-               {/* Đây là dấu chấm tròn màu vàng */}
                 <span className="h-2.5 w-2.5 bg-yellow-400 rounded-full mr-3 flex-shrink-0"></span>
                 <span>512 quẻ tiên tri cổ đại</span>
                     </li>
@@ -94,61 +77,26 @@ export default function IChing() {
                   </div>
                 </CardContent>
               </Card>
-            </div>
 
-            {/* About Dị Bốc Tiên Tri */}
-            <Card className="mystical-card">
-              <CardHeader>
-                <CardTitle className="text-xl text-mystical-gold font-semibold">
-                  Về Dị Bốc Tiên Tri
-                </CardTitle>
-                <CardDescription>
-                  Phương pháp bói toán trực tiếp và chính xác từ tiên sinh Thiệu Khang Tiết
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-gray-600">
-                <strong>Dị Bốc Tiên Tri</strong> hay gọi đầy đủ là <strong>Tiên thiên Diệt số - Dị Bốc Tiên Tri</strong> là một cuốn sách cổ của tiên sinh Thiệu Khang Tiết ghi lại các chiêm nghiệm của quẻ Kinh Dịch đối với các sự việc cần hỏi.
-                </p>
-                <p className="text-gray-600">
-                  Khác với việc luận giải quẻ dịch phức tạp và đòi hỏi nhiều thời gian nghiên cứu, 
-                  Dị Bốc Tiên Tri đưa ra kết quả trực tiếp, ngắn gọn nhất cho các sự việc cần chiêm bốc. 
-                  Phương pháp này "cầu ứng như thần, như hình với bóng", đáp ứng chính xác theo sự thắc mắc của người cầu bói.
-                </p>
-                <div className="bg-mystical-gold/5 p-4 rounded-lg border border-mystical-gold/20">
-                  <h4 className="font-semibold text-mystical-gold mb-2">Đặc điểm nổi bật:</h4>
-                  <ul className="text-sm text-gray-600 space-y-1">
-                    <li>• Trả lời trực tiếp, không úp mở hay mỉa mai</li>
-                    <li>• 64 chủ đề được phân chia theo 8 cung Bát Quái</li>
-                    <li>• Mỗi chủ đề có 8 quẻ tương ứng với 8 số từ 1-8</li>
-                    <li>• Tổng cộng 512 quẻ tiên tri chi tiết</li>
-                    <li>• Phù hợp cho mọi lĩnh vực trong cuộc sống</li>
-                  </ul>
-                </div>
-              </CardContent>
-            </Card>
-            </div>
-
-            {/* New Hexagram Oracle Method */}
-            <div className="flex justify-center mt-8">
-            <Card className="moonrise-card group hover:scale-105 transition-all duration-300 cursor-pointer max-w-md"
-                  onClick={() => window.location.href = '/i-ching/hexagram-oracle'}>
-              <CardHeader>
-                <div className="flex items-center justify-between mb-4">
-                  <BookOpen className="w-12 h-12 text-blue-600 animate-float" />
-                  <Badge variant="secondary" className="bg-blue-100 text-blue-700 border-blue-300">
-                    Kinh Điển
-                  </Badge>
-                </div>
-                <CardTitle className="text-2xl font-semibold text-gray-800 group-hover:text-blue-600 transition-colors text-center">
-                  Bốc Quẻ Kinh Dịch
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-gray-600 mb-6 text-center">
-                  Phương pháp bốc quẻ truyền thống với 64 quẻ Kinh Dịch. 
-                  Khám phá trí tuệ cổ đại qua hệ thống quẻ hoàn chỉnh với giải thích chi tiết.
-                </CardDescription>
+              {/* Bốc Quẻ Kinh Dịch */}
+              <Card className="moonrise-card group hover:scale-105 transition-all duration-300 cursor-pointer"
+                    onClick={() => window.location.href = '/i-ching/hexagram-oracle'}>
+                <CardHeader>
+                  <div className="flex items-center justify-between mb-4">
+                    <BookOpen className="w-12 h-12 text-blue-600 animate-float" />
+                    <Badge variant="secondary" className="bg-blue-100 text-blue-700 border-blue-300">
+                      Kinh Điển
+                    </Badge>
+                  </div>
+                  <CardTitle className="text-2xl font-semibold text-gray-800 group-hover:text-blue-600 transition-colors text-center">
+                    64 Quẻ Kinh Dịch
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-gray-600 mb-6 text-center">
+                    Phương pháp bốc quẻ truyền thống với 64 quẻ Kinh Dịch. 
+                    Khám phá trí tuệ cổ đại qua hệ thống quẻ hoàn chỉnh với giải thích chi tiết.
+                  </CardDescription>
                <div className="mt-6 flex justify-center">
                <ul className="space-y-2 text-left text-gray-700">
                <li className="flex items-center">
@@ -165,8 +113,9 @@ export default function IChing() {
                    </li>
                  </ul>
                 </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </div>
             </div>
           </>
         )}
