@@ -6,6 +6,7 @@ import { Footer } from '@/components/layout/footer';
 import { ThemeProvider } from '@/components/providers/theme-provider';
 import { LanguageProvider } from '@/contexts/language-context';
 import { Toaster } from '@/components/ui/sonner';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
