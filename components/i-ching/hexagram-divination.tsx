@@ -116,7 +116,7 @@ export function HexagramDivination() {
             <span className="text-2xl font-mystical">Kinh Dịch</span>
           </CardTitle>
           <CardDescription className="text-lg">
-            Đạo Của Người Đông Phương
+            Trí Tụe Của Người Đông Phương
           </CardDescription>
         </CardHeader>
         <CardContent>
