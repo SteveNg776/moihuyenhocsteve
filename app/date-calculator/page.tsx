@@ -39,10 +39,10 @@ export default function DateCalculatorLandingPage() {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 mb-4">
-            Công Cụ Thần Số Học
+            Công Cụ Tượng Số Học
           </h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Khám phá các khía cạnh khác nhau của lịch pháp và số học qua các công cụ chuyên biệt của chúng tôi.
+            Khám phá các khía cạnh khác nhau của số học qua các công cụ chuyên biệt của chúng tôi.
           </p>
         </div>
 
