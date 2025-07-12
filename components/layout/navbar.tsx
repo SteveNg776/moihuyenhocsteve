@@ -19,7 +19,7 @@ export function Navbar() {
       href: '/i-ching',
       submenu: [
         { name: 'Dị Bốc Tiên Tri', href: '/i-ching' },
-        { name: 'Bốc Quẻ Kinh Dịch', href: '/i-ching/hexagram-oracle' }
+        { name: 'Quẻ Kinh Dịch', href: '/i-ching/hexagram-oracle' }
       ]
     },
     { 
