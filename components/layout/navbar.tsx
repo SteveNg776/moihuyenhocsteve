@@ -20,7 +20,7 @@ export function Navbar() {
       submenu: [
         // THAY ĐỔI: Thêm query param `?tool=di-boc` để kích hoạt công cụ Dị Bốc
         { name: 'Dị Bốc Tiên Tri', href: '/i-ching?tool=di-boc' },
-        { name: 'Kinh Dịch Bốc Quẻ', href: '/i-ching/hexagram-oracle' }
+        { name: 'Kinh Dịch Quẻ', href: '/i-ching/hexagram-oracle' }
       ]
     },
     {
