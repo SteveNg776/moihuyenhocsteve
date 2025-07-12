@@ -40,7 +40,7 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Image 
-              src="/zen-logo.png"
+              src="/zen-2.png"
               alt="Huyền Học Logo"
               width={32}
               height={32}
