@@ -33,11 +33,11 @@ export default function HomePage() {
       {/* Hero Section - Đã giảm khoảng đệm */}
       <section className="relative py-7 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto text-center max-w-4xl">
-  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-8 leading-tight">            Khám Phá Trí Tuệ Cổ Đại
+  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-8 leading-tight">            Trí Tuệ Đông Phương
           </h1>
           
           <p className="text-xl sm:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Khám Phá Kiến Thức "Out of the Box"
+            Khai mở tiềm năng vô hạn với tư duy "Out of the Box" – nơi những ý tưởng táo bạo phá vỡ mọi giới hạn. Đây không chỉ là kiến thức, mà là một nghệ thuật giải quyết vấn đề bằng cách thách thức những quy tắc cũ và kiến tạo những giải pháp phi truyền thống, mang lại hiệu quả bất ngờ
           </p>
         </div>
       </section>
