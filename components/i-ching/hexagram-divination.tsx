@@ -122,7 +122,7 @@ export function HexagramDivination() {
         <CardContent>
           <div className="bg-mystical-gold/5 p-4 rounded-lg border border-mystical-gold/20">
             <p className="text-sm text-muted-foreground leading-relaxed">
-              <strong>Kinh Dịch</strong> là một trong những kinh điển cổ xưa nhất của Trung Hoa, 
+              <strong>Kinh Dịch</strong> là một trong những kinh điển cổ xưa nhất của đông phương học, 
               chứa đựng 64 quẻ tượng trưng cho các tình huống và biến đổi trong cuộc sống. 
               Mỗi quẻ bao gồm 6 hào (Âm hoặc Dương) và mang một thông điệp sâu sắc về vũ trụ và nhân sinh.
             </p>
