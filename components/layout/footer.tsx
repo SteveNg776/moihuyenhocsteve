@@ -1,18 +1,22 @@
 import React from 'react';
 import Link from 'next/link';
 import { Separator } from '@/components/ui/separator';
+import Image from 'next/image'; // <-- Thêm dòng import này
 
 export function Footer() {
   return (
     <footer className="bg-white/50 backdrop-blur-sm border-t border-white/20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Brand */}
-          <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm">∞</span>
-              </div>
+          {/* Logo */}
+          <Link href="/" className="flex items-center space-x-2">
+            {/* THAY THẾ Ở ĐÂY */}
+            <Image
+              src="/zen-logo.png" // Đường dẫn tới tệp trong thư mục public
+              alt="Huyền Học Logo"
+              width={32}
+              height={32}
+            />
               <span className="font-bold text-xl text-gray-800">
                 Huyền Học
               </span>
