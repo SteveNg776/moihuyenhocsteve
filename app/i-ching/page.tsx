@@ -36,7 +36,8 @@ export default function IChing() {
 
         {/* Content */}
         {viewMode === 'intro' && (
-          <div className="space-y-8">
+          <>
+            <div className="space-y-8">
             {/* Introduction */}
             <Card className="moonrise-card">
               <CardHeader>
@@ -126,10 +127,10 @@ export default function IChing() {
                 </div>
               </CardContent>
             </Card>
-          </div>
+            </div>
 
-          {/* New Hexagram Oracle Method */}
-          <div className="flex justify-center mt-8">
+            {/* New Hexagram Oracle Method */}
+            <div className="flex justify-center mt-8">
             <Card className="moonrise-card group hover:scale-105 transition-all duration-300 cursor-pointer max-w-md"
                   onClick={() => window.location.href = '/i-ching/hexagram-oracle'}>
               <CardHeader>
@@ -166,7 +167,8 @@ export default function IChing() {
                 </div>
               </CardContent>
             </Card>
-          </div>
+            </div>
+          </>
         )}
 
         {viewMode === 'di-boc' && (
