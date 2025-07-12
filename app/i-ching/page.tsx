@@ -51,7 +51,7 @@ export default function IChingPage() {
                     </li>
                     <li className="flex items-center">
                       <span className="h-2.5 w-2.5 bg-yellow-400 rounded-full mr-3 flex-shrink-0"></span>
-                      <span>Kết quả trực tiếp, rõ ràng</span>
+                      <span>Trả lời trực tiếp vấn đề</span>
                     </li>
                     <li className="flex items-center">
                       <span className="h-2.5 w-2.5 bg-yellow-400 rounded-full mr-3 flex-shrink-0"></span>
