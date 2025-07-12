@@ -41,7 +41,7 @@ export default function IChingPage() {
               </CardHeader>
               <CardContent className="flex-grow flex flex-col justify-between">
                 <CardDescription className="text-gray-600 mb-6 text-center">
-                  Phương pháp bói toán cổ đại với 512 quẻ tiên tri. Sử dụng 8 cung Bát Quái để đưa ra lời tiên tri trực tiếp và chính xác.
+                 Bước vào thế giới của Dị Bốc Tiên Tri, nơi nghệ thuật tiên tri cổ đại đạt đến đỉnh cao. Khởi nguồn từ 8 cung Bát Quái, 512 quẻ thần diệu được luận giải để mang đến câu trả lời rõ ràng, sâu sắc và chuẩn xác nhất về những gì đang chờ đợi bạn.
                 </CardDescription>
                 <div className="mt-6 flex justify-center">
                   <ul className="space-y-2 text-left text-gray-700">
