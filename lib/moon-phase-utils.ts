@@ -159,4 +159,4 @@ export function getNextMoonPhaseTransition(date: Date): { phase: string; date: D
       daysUntil: 0
     };
   }
-}
+} 
