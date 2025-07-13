@@ -133,7 +133,7 @@ export function DateHandbook() {
       {/* Parallel Calendar Display - Solar and Lunar */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Solar Calendar Card */}
-        <Card className="moonrise-card border-l-4 border-l-orange-400">
+        <Card className="moonrise-card">
           <CardHeader className="pb-4">
             <CardTitle className="flex items-center space-x-3 text-orange-600">
               <div className="p-2 bg-orange-100 rounded-full">
@@ -197,7 +197,7 @@ export function DateHandbook() {
         </Card>
 
         {/* Lunar Calendar Card */}
-        <Card className="moonrise-card border-l-4 border-l-blue-400">
+        <Card className="moonrise-card">
           <CardHeader className="pb-4">
             <CardTitle className="flex items-center space-x-3 text-blue-600">
               <div className="p-2 bg-blue-100 rounded-full">
