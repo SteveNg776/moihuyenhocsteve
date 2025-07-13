@@ -250,7 +250,7 @@ export function DateHandbook() {
             </div>
 
             {/* Lunar Progress Bar */}
-            <div className="space-y-10">
+            <div className="space-y-5">
               <div className="flex justify-between text-xs text-gray-600">
                 <span>Tiến độ năm âm lịch {dateInfo.lunarDateDetailed.year}</span>
                 <span>{dateInfo.lunarYearProgress}%</span>
