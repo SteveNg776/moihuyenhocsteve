@@ -17,7 +17,7 @@ export interface HexagramData {
 export const hexagram_data: { [key: number]: HexagramData } = {
   1: {
     number: 1,
-    name: "Càn",
+    name: "Càn vi thiên",
     symbol: "☰",
     structure: "111111",
     meaning: "Quẻ Càn tượng trưng cho sức mạnh sáng tạo, năng động và khởi đầu. Đây là quẻ của trời, của sự lãnh đạo và quyền lực tối cao.",
