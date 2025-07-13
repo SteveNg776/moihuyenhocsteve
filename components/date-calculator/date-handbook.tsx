@@ -255,9 +255,9 @@ export function DateHandbook() {
                 <span>Tiến độ năm âm lịch {dateInfo.lunarDateDetailed.year}</span>
                 <span>{dateInfo.lunarYearProgress}%</span>
               </div>
-              <div className="w-full bg-blue-100 rounded-full h-3">
+              <div className="w-full bg-blue-100 rounded-full h-2">
                 <div 
-                  className="bg-gradient-to-r from-blue-400 to-indigo-500 h-2 rounded-full transition-all duration-500"
+                  className="bg-gradient-to-r from-blue-400 to-indigo-500 h-10 rounded-full transition-all duration-500"
                   style={{ width: `${dateInfo.lunarYearProgress}%` }}
                 ></div>
               </div>
