@@ -185,10 +185,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   9: {
     number: 9,
-    name: "Tiểu Súc",
+    name: "Phong thiên tiểu súc",
     symbol: "☰☴",
     structure: "111011",
-    meaning: "Quẻ Tiểu Súc tượng trưng cho sự tích lũy nhỏ, như gió thổi mây nhẹ. Cần kiên nhẫn tích lũy từng chút một.",
+    meaning: "Chưa có gì rõ rệt, lòng người muốn lắm mong lắm nhưng vẫn còn giữ thái độ trông và chờ ví như kẻ lữ hành trú vào quán bên đường, nếu vắng thì tiếp tục đi, mưa thì dừng chân hẳn. Người chính trị ở trường hợp này dù có thực lực chăng nữa mà hành động chưa chắc đã thành. Quyết định lúc mây u ám chưa mưa là quyết định dậy non, cho nên cuộc khởi nghĩa 1923 của Hitler mới thất bại. Đảng Cộng sản Pháp lâm vào ngõ bí chẳng biết động thủ thế nào cho phải suốt thời kỳ hiệp ước Đức Nga thân thiện. Phật giáo đã ném ra vài chính  sách hòa bình khi mới chỉ được trông thấy vài đám mây hòa bình do C.I.A chiếu lên nên bị đại bại. Mật vân bất (vũ?) là chuyện thường hiện ra trên chính trị, bởi thế thái độ chính trị truyền thống của người Anh là wait and see thường là thái độ chính xác.",
     lines: [
       "Hào 1: Phục tự đạo, hà kỳ cữu - Trở về con đường, có gì lỗi",
       "Hào 2: Khiên phục, cát - Kéo về, cát lành",
@@ -206,10 +206,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   10: {
     number: 10,
-    name: "Lý",
+    name: "Thiên trạch lý",
     symbol: "☰☱",
     structure: "111011",
-    meaning: "Quẻ Lý tượng trưng cho việc đi đúng đường, cẩn thận trong hành động. Như đi trên đuôi hổ.",
+    meaning: "Lúc cực nguy nan sống chết treo bằng sợi tóc. Tài trí quyền biến được thử thách đến mức tối đa. Quyết định chậm là thua, quyết định sai là chết. Gia Cát Lượng sực bị đại quân Tư Mã Ý đến, biết có chạy ngay cũng chẳng thóat, liền mở toang cánh cửa thành ngồi ung dung gẩy đàn lừa quân Tư Mã Ý sợ có quân mai phục rút lui ra xa rồi Gia Cát mới chạy. Tào Tháo hết lương trong trận chiến Quan độ, nẩy ra ý táo bạo cướp đốt kho lương của Viên Thiệu ở Ô sào để giải nguy cho mình. Ra lấy được Bắc hà rồ, Chúa Tây sơn cũng nhận thấy cái người đáng quan tâm hơn hết ở đất Bắc là Nguyễn Hữu Chỉnh. Bởi Chỉnh là người trong bọn lại hay giảo quyệt nên Chúa Tây sơn vẫn phải giá ngự bằng đủ mọi cách. Trong lòng Chúa Tây Sơn nẩy ra ý, bỏ rơi Chỉnh để cho người Bắc hà giết để trừ sạch hậu họa. Chúa Tây Sơn mới mật sai các quan đều phải sắp sửa nai nịt để chờ hiệu lệnh. Nhưng ngòai mặt, Chúa Tây Sơn vẫn làm ra vẻ ung dung nhàn hạ cho Chỉnh khỏi ngờ vực. Canh hai đêm ấy, Chúa Tây Sơn sai người vào cáo biệt vua Lê rồi thần tốc rút đi. Gần sáng quân mật báo của Chỉnh về cho Chỉnh hay là Chúa Tây Sơn rút đi rồi. Chỉnh nghe tin đó trong lòng cực kỳ phân vân, tự biết mình thất thế, không dám ở lại, nhưng mà đi cũng khó, đường thuỷ không có thuyền, đường bộ không có quân, muốn trốn không có chỗ trốn, không biết nên đi đường nào. Trong lúc sống chết kinh khủng như vậy, Chỉnh còn nói đùa rằng: Ta đã đi chín châu bốn biển, đến lúc trở về xó bếp lại bị chuột chù cắn chân. Không sợ, không sợ, ta cứ ở đây xem sao. Bấy giờ thuộc hạ của Chỉnh mới hơi vững dạ. Chỉnh bèn mật sai mấy tên thủ túc ra bến Cơ Xá tìm thuyền. Sáng ra, kiếm được một chiếc thuyền buồm, họ liền về báo với Chỉnh. Chỉnh bèn đem cả mấy chục tên thuộc hạ cùng ra cửa Ô Tây long. Người ở kinh đô tứ phía kéo về đuổi bắt Chỉnh. Chỉnh tự vác gươm chống đánh và (mở?) đường xuống đò chạy theo quân của Nguyễn Huệ. Khi nghe tin Chỉnh theo kịp mình, Nguyễn Huệ giật mình nói: Thằng chết lại khéo tìm đường sống. Thật giống con quỷ dạ xoa rều rệu ám ảnh, cắt không thể đứt. Phần Chỉnh ở dưới thuyền, thủ hạ chỉ còn vỏn vẹn ba chục người không dám bỏ thuyền lên cạn. Người xứ Nghệ an thấy Chỉnh cùng đường, họ bàn nhau định ngày khởi công bắt Chỉnh. Chỉnh biết thế mới tính nước bài táo bạo là mưu cướp trận Nghệ an vì nếu không đánh trước thì cũng chết. Chỉnh bèn liều lên bờ thảo hịch mộ quân, và ra lệnh chậm một khắc thì chém. Ở làng ấy có vài người bướng bỉnh, nửa đêm Chỉnh đem toàn lực đến chém sạch những kẻ chống lại lệnh của mình. Những người khác sợ phải theo Chỉnh, chỉ nội trong mấy ngày Chỉnh đã mộ được ngàn quân. Cướp được Nghệ an rồi, Chỉnh sai người ra bắc xin vua Lê phong cho mình làm Trấn thủ Nghệ an để tạo danh nghĩa. Gặp lúc Bắc hà kiêu binh lại nổi loạn, Chỉnh liền đem quân ra bắc giúp vua Lê dẹp loạn. Từ đó quyền Chỉnh ngang với vua. Ngày 1 tháng 11-1963, ông Ngô Đình Diệm bị xô vào cái thế giẫm lên đuôi hổ. Hồi chuông điện thoại của người Mỹ yêu cầu ông từ chức và lên máy bay đi khỏi nước. Ông từ chối và bị giết chết vì quyết định sai đó. Trong khi những Trujillo, Péron cũng ở trong cái thế tương tự đã quyết định trái ngược hẳn với ông Ngô Đình Diệm đều thoát chết.",
     lines: [
       "Hào 1: Tố lý, vãng vô cữu - Đi giày đơn giản, đi không lỗi",
       "Hào 2: Lý đạo thản thản, u nhân trinh cát - Đi đường bằng phẳng",
@@ -227,10 +227,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   11: {
     number: 11,
-    name: "Thái",
+    name: "Địa thiên thái",
     symbol: "☷☰",
     structure: "000111",
-    meaning: "Quẻ Thái tượng trưng cho sự thịnh vượng, hòa hợp. Trời Đất giao thông, vạn vật sinh sôi.",
+    meaning: "Khoảng giáp thế kỷ thứ 20, Âu châu đã có hơn 30 năm cực thịnh, các nhà làm sử đặt tên thời kỳ này là belle époque. Xã hội yên bình, buôn bán phát đạt, chinh phục dễ dàng, như vậy kinh Dịch gọi là cảnh địa thiên thái. Thuận buồm xuôi gió nói lên cái lợi thế của người làm chính trị trong quãng thời gian nào đó, như Napoléon kể từ 1812 là bắt đầu hết thời kỳ địa thiên thái.",
     lines: [
       "Hào 1: Bạt mao như, dĩ kỳ hối - Nhổ cỏ tranh, cùng với loại",
       "Hào 2: Bao hoang, dụng phùng hà - Bao dung hoang dã, dùng qua sông",
@@ -248,10 +248,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   12: {
     number: 12,
-    name: "Phủ",
+    name: "Thiên địa bĩ",
     symbol: "☰☷",
     structure: "111000",
-    meaning: "Quẻ Phủ tượng trưng cho sự tắc nghẽn, khó khăn. Trời Đất không giao thông.",
+    meaning: "Ý kiến dân chúng ngược với chính phủ, việc làm của chính phủ không được dân chúng ủng hộ, như vị Tsar cuối cùng của dòng họ Romano vào những năm 1916, 1917. Mussolini lúc quân Đức Quốc xã tràn vào đất Ý, tổng thống Hoover (Hoa kỳ) trước khủng hoảng kinh tế trầm trọng năm 1929, như Trotsky trước vụ án Mạc tư khoa (Procès de Moscou). Soekarno sau vụ đảo chính của Cộng sản. Chính trị chỉ ra thóat ngõ bí với thái độ và hành động của tập đoàn Phạm Lãi, Văn Chủng và Việt Vương Câu Tiễn sau nhục nhã Cối kê là đoàn kết, nhịn nhục và cố gắng lấy lại sức mạnh. Nếu hành động giống Tôn thất Thuyết, Nguyễn văn Tường và vua Hàm Nghi thì chỉ càng đi sâu vào ngõ bí.",
     lines: [
       "Hào 1: Bạt mao như, dĩ kỳ hối - Nhổ cỏ tranh, cùng với loại",
       "Hào 2: Bao thừa, tiểu nhân cát - Bao dung chịu đựng, tiểu nhân cát",
@@ -269,10 +269,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   13: {
     number: 13,
-    name: "Đồng Nhân",
+    name: "Thiên hỏa đồng nhân",
     symbol: "☰☲",
     structure: "111101",
-    meaning: "Quẻ Đồng Nhân tượng trưng cho sự đoàn kết, hợp tác với mọi người. Lửa cháy dưới trời.",
+    meaning: "Lúa chiêm phải có sấm động mới vuợt tốt lên. Khi Franco tiến quân về Madrid, nói với các báo rằng: Tôi hiện có bốn đạo quân tiến đánh thủ đô, ấy là chưa kể đạo quân thứ năm đã nằm sẵn tại đó. Đạo quân thứ năm của Franco là hệ thống tăng lữ Thiên Chúa giáo, Giáo hòang Pie 12 chống lại chế độ Cộng sản. Ngòai ra Franco còn được phe Đức Quốc xã tận tình giúp đỡ. Hitler thả sức một mình không thể đủ khả năng lật đổ cộng hòa Weimar, nhưng quyết định của Von Hindenburg, Tổng thống Đức đã như chất đạm do sấm làm tỏa xuống bón cho lúa chiêm quốc xã. Kinh Dịch viết: Quân tử hòa nhi bất đồng. Thế thiên hỏa đồng nhân là thế mặc dầu có lực sẵn nhưng phải cần sự giúp đỡ bên ngòai, tuy nhiên đấy chỉ là chuyện mượn sức thôi, không thể bị hóa.",
     lines: [
       "Hào 1: Đồng nhân ư môn, vô cữu - Đoàn kết ở cửa, không lỗi",
       "Hào 2: Đồng nhân ư tông, lận - Đoàn kết trong họ, khó khăn",
@@ -290,10 +290,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   14: {
     number: 14,
-    name: "Đại Hữu",
+    name: "Hỏa thiên đại hữu",
     symbol: "☲☰",
     structure: "101111",
-    meaning: "Quẻ Đại Hữu tượng trưng cho sự giàu có lớn, thành công to lớn. Lửa cháy trên trời.",
+    meaning: "Thời cơ cực thuận tiện, lòng người, sức mạnh đều dư dụ như Bắc Bình Vương Nguyễn Huệ hai lần đem quân ra Bắc. Hãy tập trung vào mục đích và làm tới không để lỡ thời cơ. Nhưng hãy cẩn trọng vì mặt trời lên đỉnh trời là tới tuần đi xuống. Nếu không tiếp tục duy trì thì cán bộ sinh kiêu sa, lười biếng trong khi kẻ thù đang quyết chí tổ chức phá họai.",
     lines: [
       "Hào 1: Vô giao hại, phi cữu - Không giao thiệp với tệ hại",
       "Hào 2: Đại xa dĩ tải, hữu du vãng - Xe lớn để chở, có chỗ đi",
@@ -311,10 +311,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   15: {
     number: 15,
-    name: "Khiêm",
+    name: "Địa sơn khiêm",
     symbol: "☷☶",
     structure: "000001",
-    meaning: "Quẻ Khiêm tượng trưng cho sự khiêm tốn, nhún nhường. Núi ẩn dưới đất.",
+    meaning: "Lực thiệt mạnh mà thái độ rất khiêm hư để tranh thắng. Lấy bề cao của núi lớn mà đối với mức thấp của thung lũng. Ở địa vị lớn mà sử dụng kẻ dưới thì thái độ khiêm hư lúc nào cũng là thủ đọan đáng áp dụng nhất. Lối gào thét của Đức Quốc xã dọa nạt chỉ ăn được thời gian đầu, về sau bị thù ghét. Lối xâm nhập bằng chủ nghĩa, bằng mê hoặc, bằng ảo tưởng xã hội anh em nguy hiểm hơn. Tính kiêu hãnh khinh bạc của Trotsky nhổ nước bọt vào tay Staline khi Staline chìa tay ra chào Trotsky, tất nhiên phải thua tính tình nhẫn nhục, trầm lặng gan dạ của Staline.",
     lines: [
       "Hào 1: Khiêm khiêm quân tử - Khiêm tốn khiêm tốn quân tử",
       "Hào 2: Minh khiêm, trinh cát - Khiêm tốn sáng suốt, trinh cát",
@@ -332,10 +332,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   16: {
     number: 16,
-    name: "Dự",
+    name: "Lôi địa dự",
     symbol: "☳☷",
     structure: "100000",
-    meaning: "Quẻ Dự tượng trưng cho sự vui vẻ, hài lòng và chuẩn bị. Sấm vang trên đất.",
+    meaning: "Mùa xuân tuy sấm chưa động lớn nhưng lộc cây cỏ đã nẩy ra trong lòng đất, giấc ngủ triền miên của mùa đông sắp hết, đó là lúc đòi hỏi sự chuẩn bị trên mọi mặt, những điều dự đóan, dự ngôn suy tính rất cần thiết. Lúc vừa thắng giặc, mải vui với chiến thắng người ta thường tự cho mình là tài giỏi hơn người nên quên mọi nguy hiểm có thể đưa dẫn đến đại bại. Napoléon đánh dấn tới Moscou mà quên mất mùa đông của nước Nga. Lúc vừa thất trận, bàng hòang với thua thiệt, người ta thường không dám nghĩ đến khả năng thắng trong tương lai. Cả hai tình trạng thiếu chuẩn bị, thiếu dự tri đều nguy hại như nhau.",
     lines: [
       "Hào 1: Minh dự, hung - Khoe khoang vui vẻ, hung",
       "Hào 2: Giới ư thạch, bất chung nhật - Cứng như đá, không cần cả ngày",
@@ -353,7 +353,7 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   17: {
     number: 17,
-    name: "Tùy",
+    name: "Trạch lôi tùy",
     symbol: "☱☳",
     structure: "011100",
     meaning: "Quẻ Tùy tượng trưng cho sự theo đuổi, tuân theo. Hồ nước theo sấm động.",
