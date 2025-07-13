@@ -1277,10 +1277,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   61: {
     number: 61,
-    name: "Trung Phu",
+    name: "Phong trạch trung phù",
     symbol: "☴☱",
     structure: "011011",
-    meaning: "Quẻ Trung Phu tượng trưng cho lòng thành trung, tin cậy. Gió trên hồ.",
+    meaning: "Phù là móng. Trứng sắp nở nhờ móng của gà mẹ quào ra cho chóng vỡ vỏ. Chính trị đã đến lúc chín mùi, chỉ cần một cố gắng cuối cùng cho cục thế thay đổi hẳn. Bất cứ thái độ do dự nào cho phút chót đều có thể làm hư những kế họach trước. Napoléon ngày 18, Brumaire đã bị một phút do dự súyt làm hỏng việc, nếu Talleyrand và Fouché và (Lucien Bonaparte?) không xua quân vào áp đảo các nghị sỹ. Mussolini thấy tình hình đã thuận tiện liền lập tức đem tòan đảng tiến về La mã (La marche sur Rome). Tuy nhiên không nên quên rằng cái móng sắc kia cần phải xử dụng hết sức khéo léo, nếu vụng về tất vỡ cả trái trứng.",
     lines: [
       "Hào 1: Lự an, cát - Chuẩn bị yên, cát",
       "Hào 2: Minh hạc tại âm - Hạc kêu trong bóng",
@@ -1298,10 +1298,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   62: {
     number: 62,
-    name: "Tiểu Quá",
+    name: "Lôi sơn tiểu quá",
     symbol: "☳☶",
     structure: "100001",
-    meaning: "Quẻ Tiểu Quá tượng trưng cho việc vượt quá nhỏ, cẩn thận. Sấm trên núi.",
+    meaning: "Do những hiềm kỵ chồng chất nên nội bộ đảng phát sinh xung đột có thể trở thành thế phân liệt. Phân liệt nội bộ đưa dẫn đến nguy cơ Binh địch dòm ngòai ngõ.",
     lines: [
       "Hào 1: Phi điểu dĩ hung - Chim bay gặp hung",
       "Hào 2: Quá kỳ tổ, ngộ kỳ tỷ - Qua tổ mình, gặp bà mình",
@@ -1319,10 +1319,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   63: {
     number: 63,
-    name: "Ký Tế",
+    name: "thủy hoả ký tế",
     symbol: "☵☲",
     structure: "010101",
-    meaning: "Quẻ Ký Tế tượng trưng cho sự hoàn thành, đã qua khỏi. Nước trên lửa.",
+    meaning: "Vạn sự đã đầy đủ như ý muốn, từ nay về sau chỉ còn là công việc của chỉnh đốn sửa sang, và mở mang. Đinh Bộ Lĩnh diệt xong lọan sứ quân. Bình Định Vương dẹp xong quân Minh. Gia Long khôi phục cơ nghiệp nhà Nguyễn. Ngày nay thành công viên mãn chỉ có tính cách tương đối.",
     lines: [
       "Hào 1: Duệ kỳ luân, vô cữu - Kéo bánh xe, không lỗi",
       "Hào 2: Phụ tang kỳ mao - Phụ nữ mất khăn che",
@@ -1340,10 +1340,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   64: {
     number: 64,
-    name: "Vị Tế",
+    name: "Thủy hỏa vị tế",
     symbol: "☲☵",
     structure: "101010",
-    meaning: "Quẻ Vị Tế tượng trưng cho chưa hoàn thành, sắp đạt được. Lửa trên nước.",
+    meaning: "Kinh Dịch lấy quẻ Thủy hỏa vị tế để kết thúc là muốn nói chính trị, nhân sinh còn phải đi cuộc hành trình vô hạn, còn vô lượng số việc phải làm. Vị tế chỉ là chuyện nghỉ ngơi. Không được ngủ quên, vì sau giấc nghỉ ngơi ấy lại ập đến một hòan cảnh vị tế khác.",
     lines: [
       "Hào 1: Nhu kỳ vĩ, lận - Ướt đuôi, khó",
       "Hào 2: Duệ kỳ luân, trinh cát - Kéo bánh xe, trinh cát",
