@@ -626,10 +626,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   30: {
     number: 30,
-    name: "Ly",
+    name: "Ly vi hỏa",
     symbol: "☲☲",
     structure: "101101",
-    meaning: "Quẻ Ly tượng trưng cho lửa, ánh sáng và sự bám víu. Lửa cháy sáng rực.",
+    meaning: "Nắng đầu mùa hạ, đem ánh sáng diệp lục tố xuống cho cỏ cây xanh tốt. Khí thế của một lực lượng đang lên thay thế cho những gì đã lỗi thời như vị Hòang thái tử lên nối ngôi vua, lòng tràn ngập bao lý tưởng tốt đẹp hăng hái. Tuy nhiên phải coi chừng vì Ly là lửa, lửa rất cần nhưng nếu quá lạm sẽ thành hỏa tai. Ánh nắng đem nguồn sống cho cỏ cây, nhưng nếu nắng gắt sẽ làm sự sống héo hon. Vua Constantin của Hy lạp năm 1967 đã thất bại vì sự quá lạm gay gắt đó. Vương Mãng sụp đổ vì thi hành chính  sách quá mới mẻ mà lại quá vội vã.",
     lines: [
       "Hào 1: Lý chi bộ, kính chi vô cữu - Bước của ly, kính trọng không lỗi",
       "Hào 2: Hoàng ly, nguyên cát - Ly vàng, rất cát",
@@ -647,10 +647,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   31: {
     number: 31,
-    name: "Hàm",
+    name: "Trạch sơn hàm",
     symbol: "☱☶",
     structure: "011001",
-    meaning: "Quẻ Hàm tượng trưng cho sự cảm ứng, tương tác. Hồ nước trên núi.",
+    meaning: "Thời thế mới mẻ, lòng người quá rung động bồng bột. Đó là lúc mau mau chớp ngay nhân tâm chớ để lỡ cơ hội, cảm tình lúc ban sơ thật quan trọng, nên việc hay hay dở không là do vấn đề xử sự lúc đầu. Năm 1945, Nhật bản đầu hàng, phe Quốc gia đã bỏ cuộc chạy đua với Cộng sản để cướp lấy cái thế mới mẻ, gây thành cuộc chiến gian khổ kéo dài cả mấy chục năm.",
     lines: [
       "Hào 1: Hàm kỳ bác - Cảm ứng ngón chân cái",
       "Hào 2: Hàm kỳ phệ, hung - Cảm ứng bắp chân, hung",
@@ -668,10 +668,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   32: {
     number: 32,
-    name: "Hằng",
+    name: "Lôi phong hằng",
     symbol: "☳☴",
     structure: "100011",
-    meaning: "Quẻ Hằng tượng trưng cho sự bền vững, kiên trì. Sấm và gió kết hợp.",
+    meaning: "Churchill phê bình Hitler là anh chàng bắt cá vụng về, cậy sức nhẩy ùm xuống ao quấy rộn nước lên, rồi tay chộp con này tay bắt con khác rút cục mệt xác mà cá không bắt được hết. Nếu là tôi... lời Churchill, thì tôi sẽ từ từ tát cạn ao, ao khô cá nằm chềnh ềnh chỉ việc thò tay tóm từng chú bỏ vào rọ. Trong trận Thế chiến thứ Hai, Churchill đã đem thái độ trầm tĩnh của một người lão luyện tuổi tác để mà chống thái độ bột khí thiên tài của Hitler. Kết quả Churchill thắng. Dùng ít sức mà dành được thắng nhiều là lẽ thường của chính trị. Lôi phong hằng theo Dịch lý tìm được cái tĩnh trong sự động. Tâm vững như bàn thạch mà tung đòn ra đánh người. Tôn Tử nói: Trước hết phải lập được cái thế không bại rồi sau mới nói tới chuyện thắng.",
     lines: [
       "Hào 1: Tuân hằng, trinh hung - Đào sâu kiên trì, trinh hung",
       "Hào 2: Hối vong - Hối mất",
@@ -689,10 +689,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   33: {
     number: 33,
-    name: "Độn",
+    name: "Thiên sơn độn",
     symbol: "☰☶",
     structure: "111001",
-    meaning: "Quẻ Độn tượng trưng cho sự rút lui, ẩn náu. Núi dưới trời.",
+    meaning: "Vận khí suy thóai, không thể găng mà đương đầu, phải chạy để bảo tòan thân mạng. Năm 1907, tình hình mỗi ngày một nặng, tập đòan Bôn-sê-vích ở Phần lan bị bao vây, vòng vây mật vụ khép chặt dần. Trung ương đảng bộ họp gấp và chuyển cơ sở chạy sang một nước khác. Đêm di chuyển Lénine phải đi qua con sông đóng băng, bỗng một tảng băng sụt dưới chân ông, may mắn Lénine thóat nạn, quay lại nhìn dòng nước xóay, Lénine tự nghĩ nếu vừa rồi mà thụt chân xuống thì thật là một cái chết cực ngu xuẩn. Nguyễn Hòang thấy anh là Nguyễn Thông bị Trịnh Kiểm nghi ngờ giết đi, nên sợ có ngày Trịnh Kiểm tính đến chuyện ám hại cả mình, nên nhờ chị là bà Ngọc Bảo xin Trịnh Kiểm cho vào trấn phía Nam.",
     lines: [
       "Hào 1: Độn vĩ, lệ - Rút lui đuôi, nguy",
       "Hào 2: Chấp chi dụng hoàng ngưu chi cách - Giữ nó bằng da bò vàng",
@@ -710,10 +710,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   34: {
     number: 34,
-    name: "Đại Tráng",
+    name: "Lôi thiên đại tráng",
     symbol: "☳☰",
     structure: "100111",
-    meaning: "Quẻ Đại Tráng tượng trưng cho sức mạnh lớn, hùng mạnh. Sấm trên trời.",
+    meaning: "Thừa thắng nhuệ khí như con ngựa đua vừa nghe hiệu lệnh khởi hành. Nhưng mới vài vòng đã có nhiều con vì không biết dưỡng lực vì tưởng mình đủ sức, nên yếu dần, có nhiều con chạy bừa bãi nên vấp ngã. Vừa chiếm chính quyền Nga, Trotsky lên tiếng cổ vũ cho cuộc cách mạng đỏ trên tòan thế giới ngay tức khắc, trong khi Lénine và nhất là Staline chủ trương nước Nga trước đã, hãy cách mạng cho nước Nga thôi. Đường lối của Trotsky quả đã kém chính xác, kém thực tế không nhìn thấy rằng Nga sau 1917 chỉ là một người ốm lâu ngày mới khỏi. Nếu đường lối ấy mà áp dụng thì tất cả nước tư bản Âu châu đã quây quần tiêu diệt bằng được chính thể xã hội Nga để tự vệ.",
     lines: [
       "Hào 1: Tráng ư chỉ, chinh hung - Mạnh ở ngón chân, chinh hung",
       "Hào 2: Trinh cát - Trinh cát",
@@ -731,10 +731,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   35: {
     number: 35,
-    name: "Tấn",
+    name: "Hỏa địa tấn",
     symbol: "☲☷",
     structure: "101000",
-    meaning: "Quẻ Tấn tượng trưng cho sự tiến bộ, thăng tiến. Lửa trên đất như mặt trời mọc.",
+    meaning: "Nắng sớm đầy tia sáng hy vọng cho một ngày đẹp trời. Vạn sự khởi đầu nan, ánh nắng ban mai tượng trưng cho lực lượng chính trị mới xuất hiện nên cần động viên khí sức để gây ấn tượng cho mọi người. Tập đòan trẻ trung của J.F. Kennedy tiến quân vào tòa Bạch ốc năm 1960, các báo chí gọi là đợt sóng mới của Hoa kỳ đã làm cho không khí chính trị Hoa kỳ mát mẻ trở lại, phe bảo thủ cảm thấy lo sợ.",
     lines: [
       "Hào 1: Tấn như, tồi như - Tiến như, chậm như",
       "Hào 2: Tấn như, sầu như - Tiến như, buồn như",
@@ -752,10 +752,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   36: {
     number: 36,
-    name: "Minh Di",
+    name: "Địa hỏa minh di",
     symbol: "☷☲",
     structure: "000101",
-    meaning: "Quẻ Minh Di tượng trưng cho ánh sáng bị tổn thương, khó khăn. Lửa dưới đất.",
+    meaning: "Minh di, kinh Dịch giải là ánh sáng bị tiêu diệt. Trời đất tối hù, càng bước càng hụt. Tốt hơn là ẩn một nơi đợi trời sáng. Vầng thái dương rơi xuống đất ví như người chính trị tài ba, nhưng bị bao vây bởi nhiều kẻ thù ganh ghét, thế tất phải lẩn trốn cho mau không thì họa đến sau lưng.Vầng thái dương rơi xuống đất cũng ví như người chính trị trước đây đứng trên một cái thế chói lọi nào đó, nay thời cục biến chuyển cái thế ấy mất đi, như Laurenti Béria sau khi Staline qua đời. Béria bị bao vây và bị bắt giết mặc dầu Béria rất quỷ quyệt cũng đã tính trước nhiều nước cờ.",
     lines: [
       "Hào 1: Minh di ư phi, thùy kỳ dực - Ánh sáng bị thương khi bay",
       "Hào 2: Minh di, di ư tả cổ - Ánh sáng bị thương, thương ở đùi trái",
@@ -773,10 +773,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   37: {
     number: 37,
-    name: "Gia Nhân",
+    name: "Phong hỏa gia nhân",
     symbol: "☴☲",
     structure: "011101",
-    meaning: "Quẻ Gia Nhân tượng trưng cho gia đình, gia đạo. Gió thổi từ lửa.",
+    meaning: "Trở về nhà bên người vợ hiền với ngọn lửa bếp reo vui. Đây là một thế chính trị đã hết phát triển, nên phải cố thủ. Tôn Quyền ở Giang đông khi nối ngôi Tôn  Sách rút kinh nghiệm những quẫy động không ăn thua gì vì Giang Đông không đủ điều kiện như Trung Nguyên của nhà Ngụy, nên đành chỉ thu vén việc nhà củng cố đất Giang đông để nắm lấy một khu vực ngày nào mà thế chia ba chân vạc vẫn tồn tại. Ngọn lửa bếp của Tôn Quyền do tể tướng Tưởng Uyển chịu trách nhiệm.",
     lines: [
       "Hào 1: Nhàn hữu gia, hối vong - Ngăn chặn có gia, hối mất",
       "Hào 2: Vô du tùy, tại trung quỹ - Không đi theo, ở giữa nuôi",
@@ -794,10 +794,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   38: {
     number: 38,
-    name: "Khuê",
+    name: "Hỏa trạch khuê",
     symbol: "☲☱",
     structure: "101011",
-    meaning: "Quẻ Khuê tượng trưng cho sự đối lập, mâu thuẫn. Lửa và nước đối nghịch.",
+    meaning: "Nước với lửa xung đột nhau, xung đột bùng nổ, hết thỏa hiệp, hết hòa thuận. Sự chịu đựng nhau trong chính trị chỉ có tính cách tạm thời, đấu tranh mới là hiện tượng thường xuyên. Người chính trị không lúc nào được quên cảnh giác điều ấy, luôn luôn đề phòng và đóan biết trước lúc nào là lúc hết thời kỳ chịu đựng. Ba mươi năm làm việc chung với nhau cũng không đủ để ngăn Mao Trạch Đông quyết liệt tiêu diệt sinh mệnh và sự nghiệp chính trị của Lưu Thiếu Kỳ. Zinoviev, Kamenev và Staline đứng vào một trận tuyến lật đổ Trotsky. Kết cuộc Trotsky chỉ bị lưu đày, còn Zinoviev và Kamenev thì bị Staline thủ tiêu.",
     lines: [
       "Hào 1: Hối vong, táng mã vật trục - Hối mất, mất ngựa đừng đuổi",
       "Hào 2: Ngộ chủ ư hạng - Gặp chủ ở hẻm",
@@ -815,10 +815,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   39: {
     number: 39,
-    name: "Kiển",
+    name: "hủy sơn kiển",
     symbol: "☵☶",
     structure: "010001",
-    meaning: "Quẻ Kiển tượng trưng cho sự khó khăn, cản trở. Nước trước núi.",
+    meaning: "Kinh Dịch viết: Kiển! nan dã.Hiểm tai tiền Kiển hiểm nhi năng chỉ. Tri hĩ tai. Nghĩa là: Kiển! Lúc khó khăn nguy hiểm ở trước mặt. Thấy nguy mà dừng được. Thế mới gọi là biết. Chính quyền Kennedy, quyết liệt với việc Nga định biến Cuba thành căn cứ hỏa tiễn ngay trong lòng châu Mỹ, hạ tối hậu thư cho Nga. Khroutchev dịu ngay cấp tốc cho dời hỏa tiễn khỏi Cuba. Robert Kennedy trước khi ra tranh cử, ông có lẽ đã nghi hoặc sẽ bị giết như anh ông nhưng ông vẫn quyết định tranh. Kết quả ông quỵ bởi âm mưu sát hại. Thấy nguy hiểm vẫn dấn thân, đó là thái độ của người quân tử nghĩa hiệp nhưng không phải là thái độ chính trị tốt.",
     lines: [
       "Hào 1: Vãng kiển, lai dự - Đi khó, về khen",
       "Hào 2: Vương thần kiển kiển - Thần của vua khó khó",
@@ -836,10 +836,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   40: {
     number: 40,
-    name: "Giải",
+    name: "Lôi thủy giải",
     symbol: "☳☵",
     structure: "100010",
-    meaning: "Quẻ Giải tượng trưng cho sự giải thoát, tháo gỡ. Sấm trên nước.",
+    meaning: "Cái thế bị dồn cục qua rồi, nay sự trói buộc đã hết, phải cướp cho mau những chỗ tốt trong thế mới không thì có chán vạn kẻ khác tranh cướp mất. Cuối đời Đông Hán, vận động khăn vàng một thời gian tung hòanh rồi tàn lụi, quần hùng sợ nhau ra tranh cướp thế của nhà Hán. Cuối cùng Tào Tháo nhờ  sách lược đúng đắn đã cướp được vị thế ưu việt nhất. Khổng Minh khi gặp Lưu Bị đã phải nói: Bây giờ thiên thời ở trong tay Tào Tháo, địa lợi do Đông Ngô cai quản, sứ quân chỉ còn lại nhân hòa mà thôi.",
     lines: [
       "Hào 1: Vô cữu - Không lỗi",
       "Hào 2: Điền hoạch tam hồ - Ruồng bắt được ba cáo",
@@ -857,10 +857,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   41: {
     number: 41,
-    name: "Tổn",
+    name: "Sơn trạch tổn",
     symbol: "☶☱",
     structure: "001011",
-    meaning: "Quẻ Tổn tượng trưng cho sự giảm bớt, hy sinh. Núi trên hồ.",
+    meaning: "Tổn ở đây không phải là tổn thất, tổn hại, mà là cắt ra một khỏan tiền để đặt vốn vào công cuộc làm ăn tương lai. Biết tự hy sinh là kết quả của sự trông xa thấy rộng.Trần Anh Tôn tước bỏ bụng dạ hẹp hòi về uy tín đem Huyền Trân Công chúa gả cho vua Chiêm thành để lấy lễ vật hai châu Ô, châu Rí làm bàn đạp cho đời sau mở mang bờ cõi. Cập thời Vũ Tống Giang gặp ai cũng tự thu nhỏ cái tôi của mình lại để phát triển uy thế chính trị cho mình. Trương Lương đi dụ kẻ thất cơ lỡ vận Hàn Tín bằng thái độ khiêm cung dâng biếu Hàn Tín thanh kiếm báu.",
     lines: [
       "Hào 1: Dĩ sự tốc vãng, vô cữu - Đã việc mau đi, không lỗi",
       "Hào 2: Lợi trinh, chinh hung - Lợi trinh, chinh hung",
@@ -878,10 +878,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   42: {
     number: 42,
-    name: "Ích",
+    name: "Phong lôi ích",
     symbol: "☴☳",
     structure: "011100",
-    meaning: "Quẻ Ích tượng trưng cho sự có lợi, tăng thêm. Gió và sấm hỗ trợ nhau.",
+    meaning: "Tổ mà bị phá vỡ thì trứng tranh giành cái chi? Cái lợi trong chính trị, trước hết phải đặt nó vào thế chung, không thể nhìn điều lợi hại như người nhìn da con báo qua một cái ống, hoặc chỉ thấy tòan màu đen hoặc thấy tòan màu vàng. Sách Chiến quốc Sách chép: Trong trận Trường bình, Bình Đô Quân bảo vua Ngụy: - Sao đại vương không theo chính sách hợp tung để chống lại Tần? Vua Ngụy đáp: Vì Tần hứa cắt đất Viên ung cho ta.- Tôi cho rằng lời hứa đó là lời hão. - Tại sao vậy? - Tần và Triệu cầm cự nhau từ lâu ở Trường bình mà bất phân thắng bại, nếu thiên hạ liên hiệp với Tần thì Triệu mất, Tần sợ đại vương đổi lòng nên đem đất Viên ung ra làm mồi nhử. Tần thắng Triệu rồi, liệu đại vương có dám đòi cắt đất Viên ung không? - Không! - Tần mà không thắng Triệu thì đại vương có thể khiến cho Hàn (Tần?) cắt đất Viên ung cho đại vương không? - Không. - Vì thế tôi mới cho rằng chuyện cắt đất Viên ung là chuyện hão huyền. - Đúng.",
     lines: [
       "Hào 1: Lợi dụng vi đại tác - Lợi dùng làm việc lớn",
       "Hào 2: Hoặc ích chi thập bằng chi quy - Có thể lợi nó mười đôi",
@@ -899,10 +899,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   43: {
     number: 43,
-    name: "Quái",
+    name: "Trạch thiên quyết",
     symbol: "☱☰",
     structure: "011111",
-    meaning: "Quẻ Quái tượng trưng cho sự quyết đoán, cắt đứt. Hồ nước trên trời.",
+    meaning: "Truyện Liêu Trai, Bồ Tùng Linh kể rằng: Có một vị tú tài rất giỏi về thơ, thiên tài của hắn không được người đời biết thưởng thức, nên hắn giận dữ, động mở miệng là chửi bới. Một hôm bỗng dưng hắn uống hũ rượu lớn rồi thấy mình hóa thành con hổ. Hắn chạy lên rừng nằm gào dưới trăng than trách trạng huống cô đơn. Bạn bè thân thiết động lòng thương lên rừng thăm hỏi. Con hổ nhất định lánh mặt, chỉ nhắn lời nhờ bạn hữu hãy vì mình mà phổ biến thơ. Các bạn hỏi: Tại sao không ra chào hỏi nhau? Hổ đáp: Nếu tôi ra tôi sẽ ăn thịt các anh mất, vậy các anh muốn thấy mặt tôi thì các anh hãy lùi ra dăm trăm thước. Bạn hữu nghe lời hổ, ngoảnh lại nhìn quả nhiên thấy một con hổ buồn bã tịch mịch đang ngửa lên nhìn trăng mà gào thét.Con hổ ấy chính là một chính khách không thích ứng với tình thế trước mặt, cái tài khác lạ của con phượng trong bầy gà. Rõ ràng là con cá mắc cạn. Con hổ ấy chính là một nhà độc tài đã đến lúc điên cuồng.",
     lines: [
       "Hào 1: Tráng ư tiền chỉ, vãng bất thắng vi lận - Mạnh ở ngón chân trước",
       "Hào 2: Tích hiệu, mạc dạ hữu nhung - Kêu cảnh giác, đêm có binh",
