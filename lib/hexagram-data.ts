@@ -542,10 +542,11 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   26: {
     number: 26,
-    name: "Đại Súc",
+    name: "Sơn địa đại súc",
     symbol: "☶☰",
     structure: "001111",
-    meaning: "Quẻ Đại Súc tượng trưng cho sự tích lũy lớn, nuôi dưỡng. Núi giữ trời lại.",
+    meaning: "Trong Việt Nam sử lược, ông Trần Trọng Kim viết:
+"May lúc ấy có một đấng anh hùng nổi lên, kéo cờ nghĩa để chống với giặc Minh, trong 10 năm ấy lại được giang sơn cũ, và xây đắp lại nền độc lập cho nước Nam. Đấng anh hùng ấy, người ở làng Lam Sơn, huyện Thụy Nguyên, phủ Thiệu Hóa, tỉnh Thanh Hóa, họ Lê, tên là Lợi. Đã mấy đời làm nghề canh nông, nhà vẫn giàu có, lại hay giúp đỡ cho kẻ nghèo khó, cho nên mọi người đều phục, và những tôi tớ ước có hàng nghìn người... Ông giấu tiếng ở chốn sơn lâm, đón mời những kẻ hào kiệt, chiêu tập những kẻ lưu vong. Bất cứ nghiệp lớn nào trước khi nó thành tựu cũng đều phải qua một thời gian dưỡng trí tích lực. Trước khi mở một chiến dịch tất cần điều nghiên và chuẩn bị.",
     lines: [
       "Hào 1: Hữu lệ, lợi dĩ - Có nguy hiểm, lợi dừng lại",
       "Hào 2: Dư thuyết phụ - Xe bị bung nan hoa",
@@ -563,10 +564,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   27: {
     number: 27,
-    name: "Di",
+    name: "Sơn lôi dĩnh",
     symbol: "☶☳",
     structure: "001001",
-    meaning: "Quẻ Di tượng trưng cho việc nuôi dưỡng, chăm sóc. Sấm dưới núi như miệng nhai.",
+    meaning: "Kinh Dịch giảng Sơn lôi dĩnh rằng: Quan dĩnh tự cầu khẩu thực. Ý nói hãy đo miệng mà nuốt mồi. Lực lượng chính trị đã đủ để phát huy, nhưng coi chừng phải tính sức mà tung hòanh. Kinh Dịch lại giảng thêm: Hổ thị trầm trầm, kỳ dục trục trục, nghĩa là con hổ đăm đăm nhìn vào con mồi cái thèm cuồn cuộn nổi dậy. Ý nói đã đành nên lượng sức, nhưng cũng phải say mê tìm chiến thắng.",
     lines: [
       "Hào 1: Xá nhĩ linh quy, quan ngã đoạt di - Bỏ linh quy của ngươi",
       "Hào 2: Điên di, phất kinh ư khâu di - Nuôi dưỡng lộn ngược",
@@ -584,10 +585,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   28: {
     number: 28,
-    name: "Đại Quá",
+    name: "Trạch phong đại quá",
     symbol: "☱☴",
     structure: "011110",
-    meaning: "Quẻ Đại Quá tượng trưng cho sự vượt quá, thái quá. Hồ nước ngập cây.",
+    meaning: "Con trăn quấn được heo rừng. Con heo rừng lớn, trăn nuốt vào bụng chưa tiêu. Lúc ấy chính là lúc con trăn yếu nhất. Chung quanh chiến thắng là những nguy biến rình rập. Nhật vào Trung quốc thật dễ, nhưng chính Nhật đã sa lầy ở đó. Phe Brutus giết César rồi, nhưng không nắm vững tình hình, bị Marc Antoine dấy động dân chúng đánh đuổi, Brutus phải tự vẫn. Vương Dõan giết Đổng Trác rồi lên nắm chính quyền, trong vòng vài tháng chính quyền tan rã và bị Lý Thôi Quách Dĩ đâm chết.",
     lines: [
       "Hào 1: Tạ dĩ bạch mao, vô cữu - Lót bằng cỏ tranh trắng, không lỗi",
       "Hào 2: Khô dương sinh đễ - Cây dương khô mọc chồi",
@@ -605,10 +606,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   29: {
     number: 29,
-    name: "Khảm",
+    name: "Khảm vi thủy",
     symbol: "☵☵",
     structure: "010010",
-    meaning: "Quẻ Khảm tượng trưng cho nước, hiểm nguy và thử thách. Nước chảy liên tục.",
+    meaning: "Hoàn cảnh đen tối nhất cho người làm chính trị mênh mông sóng nước ngút trời. Đây là lúc mà người chính trị cần hơn lúc nào hết lòng gan dạ, nhẫn nại chiến đấu với sóng nước trùng trùng, lúc nào cũng giữ cho đầu nhô khỏi nước không bị chìm. Phải có thái độ ấy Mao Trạch Đông vá tập đòan của ông mới thực hiện được cuộc Vạn lý trường chinh gian khổ suốt từ miền Nam lên miền Bắc, từ Thụy kim tới Diên an. Ngũ Tử Tư trốn tránh vua Sở, chỉ một đêm lo nghĩ mà đầu đã bạc phơ. Gia Long trốn lủi trong rừng, đói quá phải đào củ chuối mà ăn.Hòan cảnh đen tối nhất cho người làm chính trị mênh mông sóng nước ngút trời. Đây là lúc mà người chính trị cần hơn lúc nào hết lòng gan dạ, nhẫn nại chiến đấu với sóng nước trùng trùng, lúc nào cũng giữ cho đầu nhô khỏi nước không bị chìm. Phải có thái độ ấy Mao Trạch Đông vá tập đòan của ông mới thực hiện được cuộc Vạn lý trường chinh gian khổ suốt từ miền Nam lên miền Bắc, từ Thụy kim tới Diên an. Ngũ Tử Tư trốn tránh vua Sở, chỉ một đêm lo nghĩ mà đầu đã bạc phơ. Gia Long trốn lủi trong rừng, đói quá phải đào củ chuối mà ăn.",
     lines: [
       "Hào 1: Tập khảm, nhập ư khảm hãm - Khảm chồng khảm, vào hố khảm",
       "Hào 2: Khảm hữu hiểm, cầu tiểu đắc - Khảm có hiểm, cầu nhỏ được",
