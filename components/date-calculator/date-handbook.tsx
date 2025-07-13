@@ -212,7 +212,7 @@ export function DateHandbook() {
           <CardContent className="space-y-4 flex flex-col flex-grow">
             {/* Main Lunar Date Display */}
             <div className="text-center p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-200">
-              <div className="text-2xl font-bold text-blue-700 mb-2">
+              <div className="text-xl font-bold text-blue-700 mb-2">
                 {dateInfo.lunarDate}
               </div>
               <div className="text-sm text-blue-600">
