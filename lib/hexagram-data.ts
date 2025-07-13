@@ -30,7 +30,7 @@ export const hexagram_data: { [key: number]: HexagramData } = {
       "Hào 6: Cang long hữu hối - Rồng kiêu ngạo sẽ có hối hận"
     ],
     keywords: ["Sáng tạo", "Lãnh đạo", "Khởi đầu", "Năng động", "Quyền lực"],
-    advice: "Thời điểm tốt để khởi sự, lãnh đạo và thể hiện bản thân. Hãy mạnh mẽ nhưng không kiêu ngạo.",
+    advice: "Quẻ Thuần Càn là quẻ Đại Cát, đặc biệt vui sướng. Người xem thấy quẻ này rất mừng, mọi việc như ý, không sợ họa hung.",
     upperTrigram: "Càn (Trời)",
     lowerTrigram: "Càn (Trời)",
     element: "Kim",
