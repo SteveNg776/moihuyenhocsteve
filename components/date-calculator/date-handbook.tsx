@@ -133,7 +133,7 @@ export function DateHandbook() {
       {/* Parallel Calendar Display - Solar and Lunar */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Solar Calendar Card */}
-        <Card className="moonrise-card">
+        <Card className="moonrise-card flex flex-col">
           <CardHeader className="pb-4">
             <CardTitle className="flex items-center space-x-3 text-orange-600">
               <div className="p-2 bg-orange-100 rounded-full">
@@ -145,7 +145,7 @@ export function DateHandbook() {
               </div>
             </CardTitle>
           </CardHeader>
-          <CardContent className="space-y-4">
+          <CardContent className="space-y-4 flex flex-col flex-grow">
             {/* Main Date Display */}
             <div className="text-center p-4 bg-gradient-to-br from-orange-50 to-yellow-50 rounded-xl border border-orange-200">
               <div className="text-3xl font-bold text-orange-700 mb-2">
@@ -181,7 +181,7 @@ export function DateHandbook() {
             </div>
 
             {/* Progress Bar */}
-            <div className="space-y-2">
+            <div className="space-y-2 mt-auto">
               <div className="flex justify-between text-xs text-gray-600">
                 <span>Tiến độ năm {currentDate.getFullYear()}</span>
                 <span>{dateInfo.yearProgress}%</span>
@@ -197,7 +197,7 @@ export function DateHandbook() {
         </Card>
 
         {/* Lunar Calendar Card */}
-        <Card className="moonrise-card">
+        <Card className="moonrise-card flex flex-col">
           <CardHeader className="pb-4">
             <CardTitle className="flex items-center space-x-3 text-blue-600">
               <div className="p-2 bg-blue-100 rounded-full">
@@ -209,7 +209,7 @@ export function DateHandbook() {
               </div>
             </CardTitle>
           </CardHeader>
-          <CardContent className="space-y-4">
+          <CardContent className="space-y-4 flex flex-col flex-grow">
             {/* Main Lunar Date Display */}
             <div className="text-center p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-200">
               <div className="text-lg font-bold text-blue-700 mb-2">
@@ -250,7 +250,7 @@ export function DateHandbook() {
             </div>
 
             {/* Lunar Progress Bar */}
-            <div className="space-y-5">
+            <div className="space-y-2 mt-auto">
               <div className="flex justify-between text-xs text-gray-600">
                 <span>Tiến độ năm âm lịch {dateInfo.lunarDateDetailed.year}</span>
                 <span>{dateInfo.lunarYearProgress}%</span>
