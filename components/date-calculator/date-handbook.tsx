@@ -215,7 +215,7 @@ export function DateHandbook() {
               <div className="text-2xl font-bold text-blue-700 mb-2">
                 {dateInfo.lunarDate}
               </div>
-              <div className="text-lg text-blue-600">
+              <div className="text-sm text-blue-600"> 
                 Tháng {dateInfo.lunarDateDetailed.monthName}
               </div>
               {dateInfo.lunarDateDetailed.isLeapMonth && (
