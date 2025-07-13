@@ -181,7 +181,7 @@ export function DateHandbook() {
             </div>
 
             {/* Progress Bar */}
-            <div className="space-y-2">
+            <div className="space-y-2 mt-auto">
               <div className="flex justify-between text-xs text-gray-600">
                 <span>Tiến độ năm {currentDate.getFullYear()}</span>
                 <span>{dateInfo.yearProgress}%</span>
