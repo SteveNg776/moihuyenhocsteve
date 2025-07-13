@@ -545,8 +545,7 @@ export const hexagram_data: { [key: number]: HexagramData } = {
     name: "Sơn địa đại súc",
     symbol: "☶☰",
     structure: "001111",
-    meaning: "Trong Việt Nam sử lược, ông Trần Trọng Kim viết:
-"May lúc ấy có một đấng anh hùng nổi lên, kéo cờ nghĩa để chống với giặc Minh, trong 10 năm ấy lại được giang sơn cũ, và xây đắp lại nền độc lập cho nước Nam. Đấng anh hùng ấy, người ở làng Lam Sơn, huyện Thụy Nguyên, phủ Thiệu Hóa, tỉnh Thanh Hóa, họ Lê, tên là Lợi. Đã mấy đời làm nghề canh nông, nhà vẫn giàu có, lại hay giúp đỡ cho kẻ nghèo khó, cho nên mọi người đều phục, và những tôi tớ ước có hàng nghìn người... Ông giấu tiếng ở chốn sơn lâm, đón mời những kẻ hào kiệt, chiêu tập những kẻ lưu vong. Bất cứ nghiệp lớn nào trước khi nó thành tựu cũng đều phải qua một thời gian dưỡng trí tích lực. Trước khi mở một chiến dịch tất cần điều nghiên và chuẩn bị.",
+    meaning: "Trong Việt Nam sử lược, ông Trần Trọng Kim viết: May lúc ấy có một đấng anh hùng nổi lên, kéo cờ nghĩa để chống với giặc Minh, trong 10 năm ấy lại được giang sơn cũ, và xây đắp lại nền độc lập cho nước Nam. Đấng anh hùng ấy, người ở làng Lam Sơn, huyện Thụy Nguyên, phủ Thiệu Hóa, tỉnh Thanh Hóa, họ Lê, tên là Lợi. Đã mấy đời làm nghề canh nông, nhà vẫn giàu có, lại hay giúp đỡ cho kẻ nghèo khó, cho nên mọi người đều phục, và những tôi tớ ước có hàng nghìn người... Ông giấu tiếng ở chốn sơn lâm, đón mời những kẻ hào kiệt, chiêu tập những kẻ lưu vong. Bất cứ nghiệp lớn nào trước khi nó thành tựu cũng đều phải qua một thời gian dưỡng trí tích lực. Trước khi mở một chiến dịch tất cần điều nghiên và chuẩn bị.",
     lines: [
       "Hào 1: Hữu lệ, lợi dĩ - Có nguy hiểm, lợi dừng lại",
       "Hào 2: Dư thuyết phụ - Xe bị bung nan hoa",
