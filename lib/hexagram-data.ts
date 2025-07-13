@@ -20,7 +20,7 @@ export const hexagram_data: { [key: number]: HexagramData } = {
     name: "Càn vi thiên",
     symbol: "☰",
     structure: "111111",
-    meaning: "Quẻ Càn tượng trưng cho sức mạnh sáng tạo, năng động và khởi đầu. Đây là quẻ của trời, của sự lãnh đạo và quyền lực tối cao.",
+    meaning: "Con rồng bay quá cao chỉ còn một nước là rơi xuống. Thiers bảo rằng:Làm chính trị không nên thành công quá mức. (En politique, il ne faut pastrop réussir). Ở ngôi cao chính là lúc con người chính trị lâm nguy nhất.Nếu không đủ khả năng tài trí thì chẳng khác nào con rồng non mà đãcuộn bay lên cao vượt sức của nó. Thất bại chua cay của Hitler chính là kết quả của những thắng lợi quá nhanh của ông. Như cây trứng cá lớn thật mau nên rễ không sâu, không thể chống lại với sức gió to. Kẻ thừa được thế chỉ biết mù quáng phát triển mà không củng cố tất có điều hối hận về sau. Mỗi thành công đều cần sự củng cố để vững vàng tiến lên thành công khác. Không biết củng cố thì sẽ lâm vào cái cảnh Kháng long hữu hối.",
     lines: [
       "Hào 1: Tiềm long, chớ dùng - Rồng ẩn dưới nước, chưa nên hành động",
       "Hào 2: Hiện long tại điền - Rồng xuất hiện trên đồng, có thể gặp bậc hiền",
