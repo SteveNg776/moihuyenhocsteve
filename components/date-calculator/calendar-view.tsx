@@ -157,42 +157,48 @@ export function CalendarView() {
 
       {/* Calendar Card */}
       <Card className="moonrise-card">
-        <CardHeader className="pb-3">
-          <div className="flex items-center justify-between">
-            <CardTitle className="flex items-center space-x-2 text-blue-600">
+        {/* THAY ĐỔI: Sử dụng flex-col cho mobile và flex-row cho desktop */}
+        <CardHeader className="pb-3 flex flex-col md:flex-row md:items-center md:justify-between">
+            <CardTitle className="flex items-center space-x-2 text-blue-600 mb-4 md:mb-0">
               <Calendar className="w-5 h-5" />
               <span className="text-xl font-bold">{monthNames[currentMonth]} - {currentYear}</span>
             </CardTitle>
             
-            <div className="flex items-center space-x-2">
-              <Select value={currentMonth.toString()} onValueChange={(value) => setCurrentMonth(parseInt(value))}>
-                <SelectTrigger className="w-28 bg-white/50 border-white/20">
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent>
-                  {monthNames.map((month, index) => (
-                    <SelectItem key={index} value={index.toString()}>
-                      {month}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-              
-              <Select value={currentYear.toString()} onValueChange={(value) => setCurrentYear(parseInt(value))}>
-                <SelectTrigger className="w-20 bg-white/50 border-white/20">
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent>
-                  {Array.from({ length: 21 }, (_, i) => {
-                    const year = new Date().getFullYear() - 10 + i;
-                    return (
-                      <SelectItem key={year} value={year.toString()}>
-                        {year}
+            {/* THAY ĐỔI: Bọc các nút điều khiển trong div để dễ dàng sắp xếp */}
+            <div className="flex items-center justify-between md:justify-end space-x-2">
+              {/* THAY ĐỔI: Thêm flex-grow cho Select để chiếm không gian */}
+              <div className="flex-grow md:flex-grow-0">
+                <Select value={currentMonth.toString()} onValueChange={(value) => setCurrentMonth(parseInt(value))}>
+                  <SelectTrigger className="w-full md:w-28 bg-white/50 border-white/20">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {monthNames.map((month, index) => (
+                      <SelectItem key={index} value={index.toString()}>
+                        {month}
                       </SelectItem>
-                    );
-                  })}
-                </SelectContent>
-              </Select>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+              
+              <div className="flex-grow md:flex-grow-0">
+                <Select value={currentYear.toString()} onValueChange={(value) => setCurrentYear(parseInt(value))}>
+                  <SelectTrigger className="w-full md:w-20 bg-white/50 border-white/20">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {Array.from({ length: 21 }, (_, i) => {
+                      const year = new Date().getFullYear() - 10 + i;
+                      return (
+                        <SelectItem key={year} value={year.toString()}>
+                          {year}
+                        </SelectItem>
+                      );
+                    })}
+                  </SelectContent>
+                </Select>
+              </div>
               
               <Button
                 variant="outline"
@@ -214,15 +220,15 @@ export function CalendarView() {
                 <ChevronRight className="w-4 h-4" />
               </Button>
             </div>
-          </div>
         </CardHeader>
         
         <CardContent className="pt-0">
           <div className="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm">
             {/* Day Headers */}
+            {/* THAY ĐỔI: Giảm padding cho mobile */}
             <div className="grid grid-cols-7 bg-green-600">
               {dayNames.map((day, index) => (
-                <div key={day} className={`text-center text-sm font-bold py-3 px-2 text-white border-r border-green-500 last:border-r-0 ${
+                <div key={day} className={`text-center text-sm font-bold py-2 px-1 md:py-3 md:px-2 text-white border-r border-green-500 last:border-r-0 ${
                   index === 6 ? 'text-red-200' : '' // Highlight Sunday
                 }`}>
                   {day}
@@ -249,8 +255,9 @@ export function CalendarView() {
                         <button
                           key={dayIndex}
                           onClick={() => handleDateSelect(date)}
+                          // THAY ĐỔI: Điều chỉnh chiều cao và padding
                           className={`
-                            relative min-h-[85px] p-2 text-left transition-all duration-200 hover:bg-blue-50 border-r border-gray-200 last:border-r-0
+                            relative min-h-[70px] md:min-h-[85px] p-1 md:p-2 text-left transition-all duration-200 hover:bg-blue-50 border-r border-gray-200 last:border-r-0
                             ${!isCurrentMonthDate ? 'bg-gray-50' : 'bg-white'}
                             ${isTodayDate ? 'bg-yellow-100' : ''}
                             ${isSelectedDate ? 'bg-blue-100' : ''}
@@ -261,7 +268,8 @@ export function CalendarView() {
                           <div className="flex flex-col h-full justify-between">
                             {/* Top section: Solar date */}
                             <div className="flex justify-between items-start">
-                              <div className={`text-lg font-bold ${
+                              {/* THAY ĐỔI: Điều chỉnh kích thước chữ */}
+                              <div className={`text-base md:text-lg font-bold ${
                                 !isCurrentMonthDate ? 'text-gray-400' : 
                                 isWeekendDate ? 'text-red-600' : 
                                 'text-gray-800'
@@ -380,7 +388,8 @@ export function CalendarView() {
       <Card className="moonrise-card">
         <CardContent className="p-4">
           <h4 className="font-semibold text-gray-700 mb-3">Chú Thích</h4>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+          {/* THAY ĐỔI: Sử dụng grid để bố cục linh hoạt hơn */}
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 text-sm">
             <div className="space-y-2">
               <h5 className="font-medium text-gray-600">Ngày đặc biệt</h5>
               <div className="flex items-center space-x-2">
@@ -409,7 +418,7 @@ export function CalendarView() {
               </div>
             </div>
             
-            <div className="space-y-2">
+            <div className="space-y-2 col-span-2 sm:col-span-1">
               <h5 className="font-medium text-gray-600">Ngày lễ</h5>
               <div className="flex items-center space-x-2">
                 <div className="w-4 h-4 border-2 border-red-500 rounded"></div>
