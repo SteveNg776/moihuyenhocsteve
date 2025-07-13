@@ -1,7 +1,7 @@
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
-  darkMode: ['class'],
+  darkMode: 'class',
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -50,6 +50,17 @@ const config: Config = {
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))',
         },
+        // Custom theme-aware colors
+        'theme-background': 'rgb(var(--theme-background))',
+        'theme-foreground': 'rgb(var(--theme-foreground))',
+        'theme-card': 'rgb(var(--theme-card))',
+        'theme-card-foreground': 'rgb(var(--theme-card-foreground))',
+        'theme-border': 'rgb(var(--theme-border))',
+        'theme-input': 'rgb(var(--theme-input))',
+        'theme-muted': 'rgb(var(--theme-muted))',
+        'theme-muted-foreground': 'rgb(var(--theme-muted-foreground))',
+        'theme-accent': 'rgb(var(--theme-accent))',
+        'theme-accent-foreground': 'rgb(var(--theme-accent-foreground))',
         moonrise: {
           start: '#DAE2F8',
           end: '#D6A4A4',
