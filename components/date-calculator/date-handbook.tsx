@@ -269,7 +269,7 @@ export function DateHandbook() {
       {/* Can Chi and Additional Information */}
       <Card className="moonrise-card">
         <CardHeader>
-          <CardTitle className="flex items-center space-x-2 text-purple-600">
+          <CardTitle className="p-4 bg-teal-50 rounded-lg border border-teal-200">
             <Star className="w-5 h-5" />
             <span>Thông Tin Bổ Sung</span>
           </CardTitle>
