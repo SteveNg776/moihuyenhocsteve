@@ -20,7 +20,7 @@ export const hexagram_data: { [key: number]: HexagramData } = {
     name: "Càn vi thiên",
     symbol: "☰",
     structure: "111111",
-    meaning: "Con rồng bay quá cao chỉ còn một nước là rơi xuống. Thiers bảo rằng: Làm chính trị không nên thành công quá mức. (En politique, il ne faut pastrop réussir). Ở ngôi cao chính là lúc con người chính trị lâm nguy nhất. Nếu không đủ khả năng tài trí thì chẳng khác nào con rồng non mà đãcuộn bay lên cao vượt sức của nó. Thất bại chua cay của Hitler chính là kết quả của những thắng lợi quá nhanh của ông. Như cây trứng cá lớn thật mau nên rễ không sâu, không thể chống lại với sức gió to. Kẻ thừa được thế chỉ biết mù quáng phát triển mà không củng cố tất có điều hối hận về sau. Mỗi thành công đều cần sự củng cố để vững vàng tiến lên thành công khác. Không biết củng cố thì sẽ lâm vào cái cảnh Kháng long hữu hối.",
+    meaning: "Con rồng bay quá cao chỉ còn một nước là rơi xuống. Thiers bảo rằng: Làm chính trị không nên thành công quá mức. (En politique, il ne faut pastrop réussir). Ở ngôi cao chính là lúc con người chính trị lâm nguy nhất. Nếu không đủ khả năng tài trí thì chẳng khác nào con rồng non mà đã cuộn bay lên cao vượt sức của nó. Thất bại chua cay của Hitler chính là kết quả của những thắng lợi quá nhanh của ông. Như cây trứng cá lớn thật mau nên rễ không sâu, không thể chống lại với sức gió to. Kẻ thừa được thế chỉ biết mù quáng phát triển mà không củng cố tất có điều hối hận về sau. Mỗi thành công đều cần sự củng cố để vững vàng tiến lên thành công khác. Không biết củng cố thì sẽ lâm vào cái cảnh Kháng long hữu hối.",
     lines: [
       "Hào 1: Tiềm long, chớ dùng - Rồng ẩn dưới nước, chưa nên hành động",
       "Hào 2: Hiện long tại điền - Rồng xuất hiện trên đồng, có thể gặp bậc hiền",
@@ -38,10 +38,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   2: {
     number: 2,
-    name: "Khôn",
+    name: "Khôn vi địa",
     symbol: "☷",
     structure: "000000",
-    meaning: "Quẻ Khôn tượng trưng cho đất, sự nuôi dưỡng, tiếp nhận và bao dung. Đây là quẻ của sự khiêm nhường và hỗ trợ.",
+    meaning: "Ngược với con rồng là con tẫn mã (ngựa cái) tượng trưng cho người chính trị đang ở vào cái thế cực khó chỉ có thể hết sức giữ gìn nhượng bộ mới khỏi nguy đến tính mạng. Lưu Bị ở với Viên Thiệu trong khi Quan Vân Trường ở với Tào Tháo. Quân Viên Tào đụng độ, Quan Vân Trường để trả ơn Tào đã giết hai tướng của phe họ Viên là Nhan Lương Văn Xú. Tin báo về, Viên Thiệu quay Lưu Bị, nếu Lưu Bị không có thái độ chính trị của con tẫn mã thì đã bị Viên Thiệu giết ngay. Thủ đoạn nhu thuận của Lưu Bị quả đã lên đến cao độ khi ông quỳ xuống trước Tôn phu nhân mà khóc vì trông thấy chung quanh động phòng có nhiều người cầm binh khí. Fouché có một thời kỳ khá lâu lẩn tránh Robespierre không dám ra mặt đương đầu. Fouché nhẫn nại chờ đợi giờ phút Robespierre bước hụt để xông tới hạ thủ.",
     lines: [
       "Hào 1: Lý sương, âm băng chí - Đạp lên sương giá, băng cứng sẽ đến",
       "Hào 2: Trực, phương, đại - Thẳng thắn, vuông vắn, lớn lao",
@@ -51,7 +51,7 @@ export const hexagram_data: { [key: number]: HexagramData } = {
       "Hào 6: Long chiến ư dã - Rồng chiến đấu ngoài đồng"
     ],
     keywords: ["Nuôi dưỡng", "Khiêm nhường", "Tiếp nhận", "Bao dung", "Hỗ trợ"],
-    advice: "Thời điểm để lắng nghe, học hỏi và hỗ trợ người khác. Sức mạnh nằm ở sự kiên nhẫn và bao dung.",
+    advice: "Tìm người thấy người, mất của tìm được, bệnh tật khỏi dần, mọi việc như ý.",
     upperTrigram: "Khôn (Đất)",
     lowerTrigram: "Khôn (Đất)",
     element: "Thổ",
@@ -59,10 +59,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   3: {
     number: 3,
-    name: "Thuần",
+    name: "Thủy lôi độn",
     symbol: "☳☵",
     structure: "100010",
-    meaning: "Quẻ Thuần tượng trưng cho sự khởi đầu khó khăn, như cây non mọc lên từ đất cứng. Cần kiên nhẫn và bền bỉ.",
+    meaning: "Trời sắp giông bão thì không khí uất kết. Chính trị sắp có biến chuyển lớn tất tình trạng ngột ngạt. Ở vào thế này tuy đầy hy vọng nhưng cũng tràn ngập nguy nan. Sa chân nhỡ bước một có thể gây nên thất bại lớn lao (Kinh Dịch gọi quẻ này là một trong bốn quẻ khó khăn nhất). Mầm non cây cối đang nẩy ra dưới làn tuyết phủ chỉ chờ tuyết tan là vươn lên. Cảnh này là cảnh đòi hỏi sự chuẩn bị chu đáo tu dưỡng khả năng, đợi thời cơ đến để gấp rút ra tay như Tư Mã Ý giả ốm chờ Tào Sảng đi săn vùng dậy chớp nhoáng đánh úp kinh đô Ngụy. Koutouzov chờ gió mùa đông thổi mà tấn công Nã Phá Luân. Lénine viết một lọat bài về kỹ thuật tổng khởi nghĩa cho cán bộ học tập.",
     lines: [
       "Hào 1: Bàn hoàn, lợi cư trinh - Chậm chạp quay quần, lợi ở yên để trinh",
       "Hào 2: Thuần như, bàn như - Khó khăn như, chậm chạp như",
@@ -72,7 +72,7 @@ export const hexagram_data: { [key: number]: HexagramData } = {
       "Hào 6: Thừa mã ban như, khấp huyết lệ như - Cưỡi ngựa chậm chạp, khóc lóc như"
     ],
     keywords: ["Khởi đầu", "Khó khăn", "Kiên nhẫn", "Bền bỉ", "Thử thách"],
-    advice: "Giai đoạn khởi đầu khó khăn. Cần kiên nhẫn, không nên vội vàng. Tìm kiếm sự hỗ trợ từ người có kinh nghiệm.",
+    advice: "Bệnh tật khó chữa khỏi, hôn nhân không hay, cãi nhau chuyện vặt, mọi việc rối mù.",
     upperTrigram: "Chấn (Sấm)",
     lowerTrigram: "Khảm (Nước)",
     element: "Mộc",
@@ -80,10 +80,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   4: {
     number: 4,
-    name: "Mông",
+    name: "Sơn thủy mông",
     symbol: "☶☵",
     structure: "001010",
-    meaning: "Quẻ Mông tượng trưng cho sự non nớt, cần học hỏi. Như đứa trẻ cần được giáo dục và hướng dẫn.",
+    meaning: "Lúc khởi thủy không có gì to lớn ngay. Phải học tập, phải khinh thường đấu tranh, đi từ nhỏ đến lớn, đi từ không đến có. Kiên nhẫn và bền chí là hai điều kiện cơ bản. Đảng Quốc xã khởi nghiệp với bảy người và đã có lần (1923) Hitler bị ăn cả tràng đạn rồi bị giam vào ngục mấy năm trường. Ở đấy ông nghiền ngẫm rồi viết ra cuốn Mein Kampf. Văn Vương vui vẻ vào nhà ngục ở Dữu lý để suy nghĩ cơ trời.",
     lines: [
       "Hào 1: Phát mông, lợi dụng hình nhân - Khai mông, lợi dùng hình phạt",
       "Hào 2: Bao mông cát - Bao dung sự non nớt thì cát",
@@ -93,7 +93,7 @@ export const hexagram_data: { [key: number]: HexagramData } = {
       "Hào 6: Kích mông, bất lợi vi khấu - Đánh đuổi sự non nớt"
     ],
     keywords: ["Học hỏi", "Non nớt", "Giáo dục", "Hướng dẫn", "Khiêm tốn"],
-    advice: "Thời điểm để học hỏi và tiếp thu kiến thức. Hãy khiêm tốn và tìm kiếm thầy tốt để hướng dẫn.",
+    advice: "Việc hôn nhân, việc góp vốn kinh doanh không thành. Mọi việc gian lao vất vả, phí công vô ích.",
     upperTrigram: "Cấn (Núi)",
     lowerTrigram: "Khảm (Nước)",
     element: "Thủy",
@@ -101,10 +101,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   5: {
     number: 5,
-    name: "Nhu",
+    name: "Thủy thiên nhu",
     symbol: "☰☵",
     structure: "111010",
-    meaning: "Quẻ Nhu tượng trưng cho sự chờ đợi, kiên nhẫn. Như mây trên trời chờ mưa xuống.",
+    meaning: "Có thực lực rồi, nhưng phải chờ đúng lúc để phát huy thực lực. Muốn qua sông thì hoặc phải tìm chỗ nông, hoặc phải đến nơi nước đóng thành băng, hoặc phải đợi sóng bớt dữ, hoặc phải chờ đò ngang. César chỉ có thể vượt Rubicon đúng ngày hôm ấy nghĩa là giữa lúc Rome cần có César. Đảng Bôn-sê-vích chắc chắn không thành công nếu không có khoảng thời gian đêm của chính phủ Kérensky. Cũng bởi lẽ này nên Khổng Minh mới thu xếp kế họach chờ mùa gió đông để thắng trận Xích Bích. Không đúng lúc là không xong. Năm 1960 Tổng thống Eisenhower quyết định sang thăm Nhật, hai chính phủ chính thức thông báo đi và đón. Chẳng còn cái gì ngăn trở cuộc viếng thăm này nữa. Rút cục vì cái thế Thủy thiên nhu mà không thực hiện được, lý do dân Nhật rầm rộ biểu tình phản đối.",
     lines: [
       "Hào 1: Nhu ư giao, lợi hằng - Chờ đợi ở ngoại ô, lợi kiên trì",
       "Hào 2: Nhu ư sa, tiểu hữu ngôn - Chờ đợi trên cát, có lời nói nhỏ",
@@ -114,7 +114,7 @@ export const hexagram_data: { [key: number]: HexagramData } = {
       "Hào 6: Nhập ư huyệt, hữu bất tốc chi khách tam nhân lai - Vào trong hố"
     ],
     keywords: ["Chờ đợi", "Kiên nhẫn", "Thời cơ", "Chuẩn bị", "Tin tưởng"],
-    advice: "Thời điểm cần kiên nhẫn chờ đợi. Hãy chuẩn bị kỹ lưỡng và tin tưởng thời cơ sẽ đến.",
+    advice: "Mưu việc tất thành, hôn nhân hòa hợp, cầu tài như ý, ước nguyện thỏa mãn.",
     upperTrigram: "Càn (Trời)",
     lowerTrigram: "Khảm (Nước)",
     element: "Thủy",
@@ -122,10 +122,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   6: {
     number: 6,
-    name: "Tụng",
+    name: "Thiên thủy tụng",
     symbol: "☵☰",
     structure: "010111",
-    meaning: "Quẻ Tụng tượng trưng cho tranh chấp, xung đột. Cần tìm cách hòa giải và tránh leo thang.",
+    meaning: "Va chạm vô ích là điều tối kỵ của chính trị. Lạn Tương Như mỗi lần trông thấy Liêm Pha liền bảo mã phu lùi xe vào ngõ hẻm, tự ẩn mình cho khuất mắt Liêm Pha, bởi Liêm Pha là võ tướng hiếu thắng, chạm vào cái hiếu thắng ấy chỉ có hại cho nước là mang đến sự chia rẽ nội bộ. Phải giảm bớt chủ trương cứng rắn để đạt thắng lợi. Thái độ chính trị cần chuyển biến luôn cho hợp với tình thế thực tiễn. Đại úy Rohm với lực lượng SS (SA?) quá trớn hoành hành nên đụng độ với phe quân nhân, thiếu sự ủng hộ của phe quân nhân thì đảng Quốc xã không thể nắm chính quyền đuợc. Do đó Hitler phải giết Rohm. Vua Charles đệ nhị của Anh quốc đã tạo thanh thế cho Cromwell chặt cổ mình vì lập trường ngoan cố hẹp hòi.",
     lines: [
       "Hào 1: Bất vĩnh sở sự, tiểu hữu ngôn - Không kéo dài việc, có lời nói nhỏ",
       "Hào 2: Bất khắc tụng, quy nhi dật chi - Không thắng được tranh tụng",
@@ -143,10 +143,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   7: {
     number: 7,
-    name: "Sư",
+    name: "Địa thủy sư",
     symbol: "☷☵",
     structure: "000010",
-    meaning: "Quẻ Sư tượng trưng cho quân đội, tổ chức và kỷ luật. Cần có lãnh đạo tài giỏi và kỷ luật nghiêm minh.",
+    meaning: "Cái thế không thể lùi được nữa, phải phát động chiến tranh, phải quyết liệt chỉ có một con đường duy nhất là chiến thắng. Đó là lúc cần bộ tham mưu sáng suốt, cần quân đội thiện chiến, cần những cán bộ tinh thông. Thiếu những điều kiện này làm cơ sở khai vận tất phải thất bại. Sở Bá Vương sức muôn người khôn địch đánh đâu thắng đấy, một sớm bỏ mất Phạm Tăng là sự nghiệp kể như sụp đổ. Lưu Bang, bác đình trưởng nhỏ bé, với bộ tham mưu Trương Lương, Tiêu Hà, với tài nguyên súy của Hàn Tín chỉ một trận Cai Hạ là cướp toàn thiên hạ. Napoléon chập chững bước vào chính trị, nếu không nhờ những vận dụng chính trị quỷ quyệt của Talleyrand và Fouché chắc hẳn Napoléon đã rơi đầu.",
     lines: [
       "Hào 1: Sư xuất dĩ luật - Quân đội xuất phát với kỷ luật",
       "Hào 2: Tại sư trung, cát vô cữu - Ở giữa quân đội, cát không lỗi",
@@ -164,10 +164,10 @@ export const hexagram_data: { [key: number]: HexagramData } = {
   },
   8: {
     number: 8,
-    name: "Tỷ",
+    name: "Thủy đại tỷ",
     symbol: "☵☷",
     structure: "010000",
-    meaning: "Quẻ Tỷ tượng trưng cho sự gần gũi, hợp tác và đoàn kết. Như nước thấm vào đất.",
+    meaning: "Khi nước tràn ngập vào ruộng thì lúa thi nhau mọc. Hoàn cảnh của xã hội sau thời gian xơ xác vì chiến tranh, mọi người vui vẻ thuận hòa để mừng rỡ vận hội mới. Nhưng coi chừng bên trong vẫn có những mầm mống đấu tranh gay gắt. Người chính trị đừng quên cuộc giải phóng nước Pháp chẳng đuợc mấy ngày hoan lạc liền đấy là những cuộc tranh giành. De Gaulle người anh hùng giải phóng phải rút về nhà viết hồi ký với lời hứa hai mươi năm sau. Làm thế nào để không thương tổn đại thế quốc gia dân tộc cũng không bị đứng sau người, đấy là điều tuyệt khó trong cái thế Thủy đại tỉ vậy.",
     lines: [
       "Hào 1: Hữu phu tỷ chi, vô cữu - Có lòng thành gần gũi, không lỗi",
       "Hào 2: Tỷ chi tự nội, trinh cát - Gần gũi từ trong, trinh cát",
