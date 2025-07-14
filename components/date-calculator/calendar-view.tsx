@@ -344,7 +344,7 @@ export function CalendarView() {
 
               {/* Holidays and Festivals */}
               {getDateFestivals(selectedDate).length > 0 && (
-                <div className="p-4 bg-gradient-to-r from-red-50 to-orange-50 rounded-lg border border-red-200"> 
+                <div className="p-4 bg-gradient-to-r from-red-50 to-orange-50 rounded-lg border border-red-200">  
                   <h4 className="font-semibold text-orange-700 mb-3">Ngày Lễ & Lễ Hội</h4>
                   <div className="space-y-3">
                     {getDateFestivals(selectedDate).map((holiday, index) => (
@@ -412,15 +412,15 @@ export function CalendarView() {
             <div className="space-y-2">
               <h5 className="font-medium text-gray-600">Ngày lễ</h5>
               <div className="flex items-center space-x-2">
-                <div className="w-4 h-4 border-2 border-orange-500 rounded"></div>
+                <div className="w-4 h-4 border-2 border-red-500 rounded"></div>
                 <span>Lễ chính thức</span>
               </div>
               <div className="flex items-center space-x-2">
-                <div className="w-4 h-4 border-2 border-orange-500 rounded"></div>
+                <div className="w-4 h-4 border-2 border-green-500 rounded"></div>
                 <span>Lễ truyền thống</span>
               </div>
               <div className="flex items-center space-x-2">
-                <div className="w-4 h-4 border-2 border-orange-500 rounded"></div>
+                <div className="w-4 h-4 border-2 border-blue-500 rounded"></div>
                 <span>Lễ quốc tế</span>
               </div>
             </div>
