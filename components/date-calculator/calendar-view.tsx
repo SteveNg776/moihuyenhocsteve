@@ -222,7 +222,7 @@ export function CalendarView() {
             {/* Day Headers */}
             <div className="grid grid-cols-7 bg-green-500">  
               {dayNames.map((day, index) => (
-                <div key={day} className={`text-center text-sm font-bold py-3 px-2 text-white border-r border-green-500 last:border-r-0 ${
+                <div key={day} className={`text-center text-sm font-bold py-3 px-2 text-white border-r border-green-800 last:border-r-0 ${
                   index === 6 ? 'text-red-200' : '' // Highlight Sunday
                 }`}>
                   {day}
