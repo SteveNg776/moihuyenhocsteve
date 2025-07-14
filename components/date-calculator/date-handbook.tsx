@@ -329,7 +329,7 @@ export function DateHandbook() {
               {currentSolarTerm ? (
                 <div className="space-y-2 text-sm">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="font-medium text-teal-600">{currentSolarTerm.solarTerm.name}</span>
+                    <span className="font-medium black-teal-600">{currentSolarTerm.solarTerm.name}</span>
                     <Badge 
                       variant="secondary" 
                       className={`text-xs ${SEASON_COLORS[currentSolarTerm.solarTerm.season]}`}
@@ -337,10 +337,10 @@ export function DateHandbook() {
                       {SEASON_NAMES[currentSolarTerm.solarTerm.season]}
                     </Badge>
                   </div>
-                  <div className="text-xs text-gray-600 mb-1">
+                  <div className="text-xs text-black-600 mb-1">
                     {currentSolarTerm.solarTerm.description}
                   </div>
-                  <div className="text-xs text-gray-500">
+                  <div className="text-xs text-black-500">
                     <strong>Thời gian:</strong><br />
                     {formatSolarTermPeriod(currentSolarTerm)}
                   </div>
