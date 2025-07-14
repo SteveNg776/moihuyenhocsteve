@@ -282,15 +282,15 @@ export function DateHandbook() {
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
                   <span className="text-gray-600">Năm:</span>
-                  <span className="font-medium text-purple-600">{dateInfo.canChi.year}</span>
+                  <span className="font-medium text-black-600">{dateInfo.canChi.year}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Tháng:</span>
-                  <span className="font-medium text-purple-600">{dateInfo.canChi.month}</span>
+                  <span className="font-medium text-black-600">{dateInfo.canChi.month}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Ngày:</span>
-                  <span className="font-medium text-purple-600">{dateInfo.canChi.day}</span>
+                  <span className="font-medium text-black-600">{dateInfo.canChi.day}</span>
                 </div>
               </div>
             </div>
