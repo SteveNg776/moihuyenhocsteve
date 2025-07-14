@@ -277,7 +277,7 @@ export function DateHandbook() {
         <CardContent>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {/* Can Chi Information */}
-            <div className="p-4 bg-teal-50 rounded-lg border border-teal-200">
+            <div className="p-4 bg-teal-50 rounded-lg border border-indigo-200">
               <h4 className="font-semibold text-blue-700 mb-3">Can Chi</h4>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
