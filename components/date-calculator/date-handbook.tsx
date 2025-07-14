@@ -322,7 +322,7 @@ export function DateHandbook() {
 
             {/* Solar Terms Information */}
             <div className="p-4 bg-teal-50 rounded-lg border border-teal-200">
-              <h4 className="font-semibold text-orange-700 mb-3 flex items-center space-x-2">
+              <h4 className="font-semibold text-blue-700 mb-3 flex items-center space-x-2">
                 <Leaf className="w-4 h-4" />
                 <span>Tiết Khí</span>
               </h4>
