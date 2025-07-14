@@ -263,7 +263,7 @@ export function CalendarView() {
                             <div className="flex justify-between items-start">
                               <div className={`text-lg font-bold ${
                                 !isCurrentMonthDate ? 'text-gray-400' : 
-                                isWeekendDate ? 'text-red-600' : 
+                                isWeekendDate ? 'text-orange-600' : 
                                 'text-gray-800'
                               }`}>
                                 {date.getDate()}
