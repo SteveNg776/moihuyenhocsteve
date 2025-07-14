@@ -306,16 +306,16 @@ export function DateHandbook() {
                   <span className="text-gray-600">Pha hiện tại:</span>
                   <div className="flex items-center space-x-2">
                     <span className="text-2xl">{moonPhase.emoji}</span>
-                    <span className="font-medium text-indigo-600">{moonPhase.name}</span>
+                    <span className="font-medium text-black-600">{moonPhase.name}</span>
                   </div>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Độ sáng:</span>
-                  <span className="font-medium text-indigo-600">{moonPhase.illumination.toFixed(1)}%</span>
+                  <span className="font-medium text-black-600">{moonPhase.illumination.toFixed(1)}%</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Cung:</span>
-                  <span className="font-medium text-indigo-600">{dateInfo.constellation}</span>
+                  <span className="font-medium text-black-600">{dateInfo.constellation}</span>
                 </div>
               </div>
             </div>
