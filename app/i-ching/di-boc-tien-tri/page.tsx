@@ -14,9 +14,6 @@ export default function DiBocTienTriPage() {
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 mb-4">
             Dị Bốc Tiên Tri
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Khám phá 512 quẻ tiên tri cổ đại của Thiệu Khang Tiết để nhận lời giải đáp trực tiếp.
-          </p>
         </div>
 
         {/* Main Component */}
