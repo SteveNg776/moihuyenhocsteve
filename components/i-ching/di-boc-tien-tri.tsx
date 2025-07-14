@@ -494,7 +494,7 @@ export function DiBocTienTri() {
                     }
                   }}
                   placeholder="Nhập để tìm kiếm chủ đề..."
-                  className="pl-10 pr-10 bg-white/50 border-mystical-gold/30 focus:border-mystical-gold"
+                  className="pl-10 pr-10 bg-white/50 border-black/30 focus:border-mystical-gold"
                 />
                 {searchQuery && (
                   <button
