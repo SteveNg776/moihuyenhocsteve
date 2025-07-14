@@ -510,7 +510,7 @@ export function DiBocTienTri() {
               {showResults && searchResults.length > 0 && (
                 <div 
                   ref={resultsRef}
-                  className="absolute top-full left-0 right-0 z-50 mt-1 bg-white border border-mystical-gold/30 rounded-lg shadow-lg max-h-60 overflow-y-auto"
+                  className="absolute top-full left-0 right-0 z-50 mt-1 bg-white border-black/30 rounded-lg shadow-lg max-h-60 overflow-y-auto"
                 >
                   {searchResults.map((result, index) => (
                     <button
@@ -529,7 +529,7 @@ export function DiBocTienTri() {
 
               {/* No results message */}
               {showResults && searchQuery && searchResults.length === 0 && (
-                <div className="absolute top-full left-0 right-0 z-50 mt-1 bg-white border border-mystical-gold/30 rounded-lg shadow-lg p-4 text-center text-gray-500">
+                <div className="absolute top-full left-0 right-0 z-50 mt-1 bg-white border border-black/30 rounded-lg shadow-lg p-4 text-center text-gray-500">
                   Không tìm thấy chủ đề phù hợp
                 </div>
               )}
