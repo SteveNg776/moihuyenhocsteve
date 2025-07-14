@@ -666,7 +666,7 @@ export function DiBocTienTri() {
           <CardContent className="space-y-6">
             {/* Hexagram Info - Removed the "Tên Quái" div */}
             <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
-              <div className="p-4 bg-mystical-gold/5 rounded-lg border border-mystical-gold/20">
+              <div className="p-4 bg-mystical-gold/5 rounded-lg border border-black/20">
                 <div className="flex items-center space-x-2 mb-2">
                   <Hash className="w-4 h-4 text-mystical-gold" />
                   <span className="font-semibold text-mystical-gold">Số Quẻ</span>
