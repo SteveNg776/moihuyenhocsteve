@@ -598,7 +598,7 @@ export function DiBocTienTri() {
                   value={manualNumber}
                   onChange={(e) => setManualNumber(e.target.value)}
                   placeholder="Nhập số từ 1-8"
-                  className="bg-white/50 border-mystical-gold/30 focus:border-mystical-gold"
+                  className="bg-white/50 border-black/30 focus:border-black"
                 />
               </div>
             )}
@@ -630,7 +630,7 @@ export function DiBocTienTri() {
                 onClick={handleReset}
                 variant="outline"
                 size="lg"
-                className="border-mystical-gold/30 hover:border-mystical-gold"
+                className="border-black/30 hover:border-black"
               >
                 Gieo Lại
               </Button>
@@ -641,7 +641,7 @@ export function DiBocTienTri() {
 
       {/* Results Display */}
       {result && (
-        <Card className="mystical-card border-mystical-gold/40">
+        <Card className="mystical-card border-black/40">
           <CardHeader>
             <div className="flex items-center justify-between">
               <CardTitle className="flex items-center space-x-2 text-mystical-gold">
@@ -652,7 +652,7 @@ export function DiBocTienTri() {
                 <Badge variant="secondary" className="bg-mystical-gold/10 text-mystical-gold">
                   {result.topic}
                 </Badge>
-                <Badge variant="outline" className="border-mystical-gold/30">
+                <Badge variant="outline" className="border-black/30">
                   Số {result.number}
                 </Badge>
                 {result.hasValidPrediction && (
