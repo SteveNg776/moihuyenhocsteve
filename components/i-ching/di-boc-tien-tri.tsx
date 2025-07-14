@@ -131,22 +131,22 @@ const TOPIC_GROUPS = {
   'Cung Tốn': {
     topics: ['sanhy', 'thachoa', 'khoitao', 'xuantam', 'vanbang', 'kienquoi', 'giailuong', 'totrang'],
     description: 'Về kinh doanh, công việc, giấy tờ và các giao dịch',
-    color: 'bg-teal-50 border-teal-200 text-teal-800'
+    color: 'bg-teal-50 border-teal-200 text-black-800'
   },
   'Cung Khảm': {
     topics: ['napgiam', 'thangthien', 'hoasu', 'giaoviec', 'honnhan', 'thuthiep', 'lucgiap', 'tamnhon'],
     description: 'Về công danh, hôn nhân, tìm kiếm và các mối quan hệ',
-    color: 'bg-teal-50 border-teal-200 text-teal-800'
+    color: 'bg-teal-50 border-teal-200 text-black-800'
   },
   'Cung Cấn': {
     topics: ['giatin', 'cauquan', 'trihoa', 'caotrang', 'noplai', 'diensan', 'thaoboc', 'canquan'],
     description: 'Về tin tức, quan lộ, tài sản và các vấn đề pháp lý',
-    color: 'bg-teal-50 border-teal-200 text-teal-800'
+    color: 'bg-teal-50 border-teal-200 text-black-800'
   },
   'Cung Khôn': {
     topics: ['giatrach', 'thonguon', 'tauthuat', 'thatvat', 'hieploa', 'hanhnhon', 'giaigiao', 'thunghe'],
     description: 'Về gia đạo, sức khỏe, mất mát và các nghề thủ công',
-    color: 'bg-teal-50 border-teal-200 text-teal-800'
+    color: 'bg-teal-50 border-teal-200 text-black-800'
   }
 };
 
