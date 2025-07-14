@@ -135,9 +135,9 @@ export function CalendarView() {
       if (holidays.some(h => h.type === type)) {
         switch (type) {
           case 'official': return 'ring-1 ring-orange-500';
-          case 'traditional': return 'ring-2 ring-green-500';
-          case 'international': return 'ring-2 ring-blue-500';
-          case 'cultural': return 'ring-2 ring-purple-500';
+          case 'traditional': return 'ring-1 ring-orange-500';
+          case 'international': return 'ring-1 ring-orange-500';
+          case 'cultural': return 'ring-1 ring-orange-500';
           default: return '';
         }
       }
