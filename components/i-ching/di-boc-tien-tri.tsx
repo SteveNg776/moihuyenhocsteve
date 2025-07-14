@@ -111,12 +111,12 @@ const TOPIC_GROUPS = {
   'Cung Càn': {
     topics: ['mangvan', 'doctho', 'tanhoc', 'khocu', 'tinhvu', 'thuthao', 'chieute', 'thinhy'],
     description: 'Về học tập, tri thức, sức khỏe và phát triển bản thân',
-    color: 'bg-blue-50 border-blue-200 text-blue-800'
+    color: 'bg-blue-50 border-blue-200 text-black-800'
   },
   'Cung Đoài': {
     topics: ['hoissu', 'muusu', 'maioc', 'dicu', 'phangia', 'thienhoa', 'phubenh', 'benhchung'],
     description: 'Về xã hội, gia đình, sức khỏe và các mối quan hệ',
-    color: 'bg-purple-50 border-purple-200 text-purple-800'
+    color: 'bg-blue-50 border-blue-200 text-black-800'
   },
   'Cung Ly': {
     topics: ['khaitiem', 'cautai', 'maisuc', 'phanquynh', 'hoihuong', 'tatai', 'phongtruong', 'dobac'],
