@@ -134,10 +134,10 @@ export function CalendarView() {
     for (const type of priorityOrder) {
       if (holidays.some(h => h.type === type)) {
         switch (type) {
-          case 'official': return 'ring-2 ring-red-500';
-          case 'traditional': return 'ring-2 ring-green-500';
-          case 'international': return 'ring-2 ring-blue-500';
-          case 'cultural': return 'ring-2 ring-purple-500';
+          case 'official': return 'ring-1 ring-orange-500';
+          case 'traditional': return 'ring-1 ring-orange-500';
+          case 'international': return 'ring-1 ring-orange-500';
+          case 'cultural': return 'ring-1 ring-orange-500';
           default: return '';
         }
       }
@@ -220,9 +220,9 @@ export function CalendarView() {
         <CardContent className="pt-0">
           <div className="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm">
             {/* Day Headers */}
-            <div className="grid grid-cols-7 bg-green-600">
+            <div className="grid grid-cols-7 bg-green-500">  
               {dayNames.map((day, index) => (
-                <div key={day} className={`text-center text-sm font-bold py-3 px-2 text-white border-r border-green-500 last:border-r-0 ${
+                <div key={day} className={`text-center text-sm font-bold py-3 px-2 text-white border-r border-black-500 last:border-r-0 ${
                   index === 6 ? 'text-red-200' : '' // Highlight Sunday
                 }`}>
                   {day}
@@ -344,8 +344,8 @@ export function CalendarView() {
 
               {/* Holidays and Festivals */}
               {getDateFestivals(selectedDate).length > 0 && (
-                <div className="p-4 bg-gradient-to-r from-red-50 to-orange-50 rounded-lg border border-red-200">
-                  <h4 className="font-semibold text-red-700 mb-3">Ngày Lễ & Lễ Hội</h4>
+                <div className="p-4 bg-gradient-to-r from-red-50 to-orange-50 rounded-lg border border-red-200">  
+                  <h4 className="font-semibold text-orange-700 mb-3">Ngày Lễ & Lễ Hội</h4>
                   <div className="space-y-3">
                     {getDateFestivals(selectedDate).map((holiday, index) => (
                       <div key={index} className="bg-white p-3 rounded-lg border border-red-100">
