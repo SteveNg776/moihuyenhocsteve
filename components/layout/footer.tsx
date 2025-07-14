@@ -50,8 +50,8 @@ export function Footer() {
 
         <Separator className="my-8 bg-white/20" />
         
-        <div className="flex flex-col md:flex-row justify-between items-center">
-            <p class="text-gray-600 text-center font-bold">
+         <div className="flex flex-col md:flex-row justify-center items-center">
+            <p className="text-sm text-center mt-2 md:mt-0 dark:text-gray-600 text-gray-500 dark:font-medium">
            "Sự đồng bộ là một món quà của thực tại dành cho ai thấy mà tin" <br /> Carl Jung
              </p>
         </div>
