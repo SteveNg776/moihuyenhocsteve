@@ -720,7 +720,7 @@ export function DiBocTienTri() {
                 </div>
               </div>
             ) : (
-              <div className="p-6 bg-gray-50 rounded-lg border border-gray-200 text-center">
+              <div className="p-6 bg-gray-50 rounded-lg border border-black-200 text-center">
                 <AlertCircle className="w-8 h-8 text-gray-400 mx-auto mb-3" />
                 <h4 className="font-semibold text-gray-600 mb-2">Không có dữ liệu tiên tri</h4>
                 <p className="text-gray-500 text-sm">
@@ -776,7 +776,7 @@ export function DiBocTienTri() {
               <h4 className="font-semibold text-mystical-gold mb-2">8 Cung Bát Quái</h4>
               <div className="grid grid-cols-4 gap-2 text-xs">
                 {Object.entries(BAGUA_NAMES).map(([num, name]) => (
-                  <div key={num} className="text-center p-2 bg-mystical-gold/5 rounded border border-mystical-gold/20">
+                  <div key={num} className="text-center p-2 bg-mystical-gold/5 rounded border border-black/20">
                     <div className="font-bold text-mystical-gold">{num}</div>
                     <div className="text-muted-foreground">{name}</div>
                   </div>
