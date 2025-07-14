@@ -416,11 +416,11 @@ export function CalendarView() {
                 <span>Lễ chính thức</span>
               </div>
               <div className="flex items-center space-x-2">
-                <div className="w-4 h-4 border-2 border-green-500 rounded"></div>
+                <div className="w-4 h-4 border-2 border-orange-500 rounded"></div>
                 <span>Lễ truyền thống</span>
               </div>
               <div className="flex items-center space-x-2">
-                <div className="w-4 h-4 border-2 border-blue-500 rounded"></div>
+                <div className="w-4 h-4 border-2 border-orange-500 rounded"></div>
                 <span>Lễ quốc tế</span>
               </div>
             </div>
