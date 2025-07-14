@@ -278,7 +278,7 @@ export function DateHandbook() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {/* Can Chi Information */}
             <div className="p-4 bg-teal-50 rounded-lg border border-teal-200">
-              <h4 className="font-semibold text-black-700 mb-3">Can Chi</h4>
+              <h4 className="font-semibold text-orange-700 mb-3">Can Chi</h4>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
                   <span className="text-gray-600">Năm:</span>
@@ -297,7 +297,7 @@ export function DateHandbook() {
 
             {/* Moon Phase Information */}
             <div className="p-4 bg-indigo-50 rounded-lg border border-indigo-200">
-              <h4 className="font-semibold text-black-700 mb-3 flex items-center space-x-2">
+              <h4 className="font-semibold text-orange-700 mb-3 flex items-center space-x-2">
                 <Moon className="w-4 h-4" />
                 <span>Pha Mặt Trăng</span>
               </h4>
@@ -322,7 +322,7 @@ export function DateHandbook() {
 
             {/* Solar Terms Information */}
             <div className="p-4 bg-teal-50 rounded-lg border border-teal-200">
-              <h4 className="font-semibold text-black-700 mb-3 flex items-center space-x-2">
+              <h4 className="font-semibold text-orange-700 mb-3 flex items-center space-x-2">
                 <Leaf className="w-4 h-4" />
                 <span>Tiết Khí</span>
               </h4>
