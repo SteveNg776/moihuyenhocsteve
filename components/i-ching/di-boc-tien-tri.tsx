@@ -537,7 +537,7 @@ export function DiBocTienTri() {
 
             {/* Selected topic display */}
             {selectedTopic && (
-              <div className="mt-2 p-3 bg-mystical-gold/5 rounded-lg border border-mystical-gold/20">
+              <div className="mt-2 p-3 bg-mystical-gold/5 rounded-lg border border-black/20">
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="w-4 h-4 text-green-600" />
                   <span className="text-sm font-medium text-mystical-gold">
