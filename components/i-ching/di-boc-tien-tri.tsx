@@ -428,7 +428,7 @@ export function DiBocTienTri() {
       {/* Header */}
       <Card className="mystical-card">
         <CardHeader className="text-center">
-          <CardTitle className="flex items-center justify-center space-x-2 text-mystical-gold">
+          <CardTitle className="flex items-center justify-center space-x-2 text-black">
             <Sparkles className="w-6 h-6" />
             <span className="text-2xl font-mystical">Dị Bốc Tiên Tri</span>
           </CardTitle>
@@ -437,7 +437,7 @@ export function DiBocTienTri() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-           <div className="bg-mystical-gold/5 p-4 rounded-lg border border-black">
+           <div className="bg-black/5 p-4 rounded-lg border border-black">
               <p className="text-sm text-black leading-relaxed">
               <strong>Dị Bốc Tiên Tri</strong> là một cuốn sách cổ của tiên sinh Thiệu Khang Tiết, 
               ghi lại các chiêm nghiệm của quẻ Kinh Dịch đối với các sự việc cần hỏi. 
@@ -456,7 +456,7 @@ export function DiBocTienTri() {
       {/* Main Form */}
       <Card className="mystical-card">
         <CardHeader>
-          <CardTitle className="flex items-center space-x-2 text-mystical-gold">
+          <CardTitle className="flex items-center space-x-2 text-black">
             <Dices className="w-5 h-5" />
             <span>Gieo Quẻ Tiên Tri</span>
           </CardTitle>
@@ -475,7 +475,7 @@ export function DiBocTienTri() {
 
           {/* Topic Search */}
           <div className="space-y-2">
-            <Label htmlFor="topic-search" className="text-mystical-gold font-medium">
+            <Label htmlFor="topic-search" className="text-black font-medium">
               Tìm kiếm chủ đề cần hỏi bói (64 lĩnh vực)
             </Label>
             <div className="relative">
@@ -494,7 +494,7 @@ export function DiBocTienTri() {
                     }
                   }}
                   placeholder="Nhập để tìm kiếm chủ đề..."
-                  className="pl-10 pr-10 bg-white/50 border-black/30 focus:border-mystical-gold"
+                  className="pl-10 pr-10 bg-white/50 border-black/30 focus:border-black"
                 />
                 {searchQuery && (
                   <button
@@ -516,8 +516,8 @@ export function DiBocTienTri() {
                     <button
                       key={result.key}
                       onClick={() => handleResultSelect(result)}
-                      className={`w-full text-left px-4 py-3 hover:bg-mystical-gold/10 transition-colors border-b border-gray-100 last:border-b-0 ${
-                        index === selectedIndex ? 'bg-mystical-gold/10' : ''
+                      className={`w-full text-left px-4 py-3 hover:bg-black/10 transition-colors border-b border-gray-100 last:border-b-0 ${
+                        index === selectedIndex ? 'bg-black/10' : ''
                       }`}
                     >
                       <div className="font-medium text-gray-800">{result.name}</div>
@@ -537,10 +537,10 @@ export function DiBocTienTri() {
 
             {/* Selected topic display */}
             {selectedTopic && (
-              <div className="mt-2 p-3 bg-mystical-gold/5 rounded-lg border border-black/20">
+              <div className="mt-2 p-3 bg-black/5 rounded-lg border border-black/20">
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="w-4 h-4 text-green-600" />
-                  <span className="text-sm font-medium text-mystical-gold">
+                  <span className="text-sm font-medium text-black">
                     Đã chọn: {TOPICS[selectedTopic as keyof typeof TOPICS]?.name}
                   </span>
                 </div>
@@ -550,7 +550,7 @@ export function DiBocTienTri() {
 
           {/* Number Method Selection */}
           <div className="space-y-4">
-            <Label className="text-mystical-gold font-medium">Chọn phương pháp lấy số</Label>
+            <Label className="text-black font-medium">Chọn phương pháp lấy số</Label>
             
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
@@ -561,7 +561,7 @@ export function DiBocTienTri() {
                   value="random"
                   checked={numberMethod === 'random'}
                   onChange={(e) => setNumberMethod(e.target.value as 'random')}
-                  className="text-mystical-gold focus:ring-mystical-gold"
+                  className="text-black focus:ring-black"
                 />
                 <Label htmlFor="random" className="cursor-pointer">
                   Số ngẫu nhiên (hệ thống sinh quẻ)
@@ -576,7 +576,7 @@ export function DiBocTienTri() {
                   value="manual"
                   checked={numberMethod === 'manual'}
                   onChange={(e) => setNumberMethod(e.target.value as 'manual')}
-                  className="text-mystical-gold focus:ring-mystical-gold"
+                  className="text-black focus:ring-black"
                 />
                 <Label htmlFor="manual" className="cursor-pointer">
                   Nhập số (từ 1 đến 8)
@@ -644,12 +644,12 @@ export function DiBocTienTri() {
         <Card className="mystical-card border-black/40">
           <CardHeader>
             <div className="flex items-center justify-between">
-              <CardTitle className="flex items-center space-x-2 text-mystical-gold">
+              <CardTitle className="flex items-center space-x-2 text-black">
                 <CheckCircle className="w-5 h-5" />
                 <span>Kết Quả Tiên Tri</span>
               </CardTitle>
               <div className="flex space-x-2">
-                <Badge variant="secondary" className="bg-mystical-gold/10 text-mystical-gold">
+                <Badge variant="secondary" className="bg-black/10 text-black">
                   {result.topic}
                 </Badge>
                 <Badge variant="outline" className="border-black/30">
@@ -666,10 +666,10 @@ export function DiBocTienTri() {
           <CardContent className="space-y-6">
             {/* Hexagram Info - Removed the "Tên Quái" div */}
             <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
-              <div className="p-4 bg-mystical-gold/5 rounded-lg border border-black/20">
+              <div className="p-4 bg-black/5 rounded-lg border border-black/20">
                 <div className="flex items-center space-x-2 mb-2">
-                  <Hash className="w-4 h-4 text-mystical-gold" />
-                  <span className="font-semibold text-mystical-gold">Số Quẻ</span>
+                  <Hash className="w-4 h-4 text-black" />
+                  <span className="font-semibold text-black">Số Quẻ</span>
                 </div>
                 <div className="text-2xl font-bold text-mystical-dark-purple">
                   {result.hexagramNumber}
@@ -677,14 +677,14 @@ export function DiBocTienTri() {
               </div>
             </div>
 
-            <Separator className="bg-mystical-gold/20" />
+            <Separator className="bg-black/20" />
 
             {/* Prediction Content */}
             {result.hasValidPrediction && result.prediction ? (
               <div className="space-y-4">
                 {/* Tên quẻ từ JSON */}
-                <div className="p-4 bg-gradient-to-br from-mystical-gold/5 to-yellow-50 rounded-lg border border-black/20">
-                  <h4 className="font-semibold text-mystical-gold mb-2 flex items-center space-x-2">
+                <div className="p-4 bg-gradient-to-br from-black/5 to-yellow-50 rounded-lg border border-black/20">
+                  <h4 className="font-semibold text-black mb-2 flex items-center space-x-2">
                     <Sparkles className="w-4 h-4" />
                     <span>Tên Quẻ</span>
                   </h4>
@@ -748,12 +748,12 @@ export function DiBocTienTri() {
       {/* Instructions */}
       <Card className="mystical-card">
         <CardHeader>
-          <CardTitle className="text-mystical-gold">Hướng Dẫn Sử Dụng</CardTitle>
+          <CardTitle className="text-black">Hướng Dẫn Sử Dụng</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <h4 className="font-semibold text-mystical-gold mb-2">Cách Thức Hoạt Động</h4>
+              <h4 className="font-semibold text-black mb-2">Cách Thức Hoạt Động</h4>
               <ul className="text-sm text-muted-foreground space-y-1">
                 <li>• Tìm kiếm chủ đề cần hỏi bói từ 64 lĩnh vực được phân chia theo 8 cung</li>
                 <li>• Lựa chọn số ngẫu nhiên hoặc tự nhập số từ 1-8</li>
@@ -763,7 +763,7 @@ export function DiBocTienTri() {
             </div>
 
             <div>
-              <h4 className="font-semibold text-mystical-gold mb-2">Tính Năng Tìm Kiếm</h4>
+              <h4 className="font-semibold text-black mb-2">Tính Năng Tìm Kiếm</h4>
               <ul className="text-sm text-muted-foreground space-y-1">
                 <li>• Gõ từ khóa để tìm kiếm chủ đề phù hợp</li>
                 <li>• Hỗ trợ tìm kiếm không phân biệt chữ hoa/thường</li>
@@ -773,11 +773,11 @@ export function DiBocTienTri() {
             </div>
 
             <div>
-              <h4 className="font-semibold text-mystical-gold mb-2">8 Cung Bát Quái</h4>
+              <h4 className="font-semibold text-black mb-2">8 Cung Bát Quái</h4>
               <div className="grid grid-cols-4 gap-2 text-xs">
                 {Object.entries(BAGUA_NAMES).map(([num, name]) => (
-                  <div key={num} className="text-center p-2 bg-mystical-gold/5 rounded border border-black/20">
-                    <div className="font-bold text-mystical-gold">{num}</div>
+                  <div key={num} className="text-center p-2 bg-black/5 rounded border border-black/20">
+                    <div className="font-bold text-black">{num}</div>
                     <div className="text-muted-foreground">{name}</div>
                   </div>
                 ))}
@@ -787,7 +787,7 @@ export function DiBocTienTri() {
 
           {/* Topic Groups Summary with Detailed Information */}
           <div className="mt-6">
-            <h4 className="font-semibold text-mystical-gold mb-4 text-lg">64 Chủ Đề Theo 8 Cung Chi Tiết</h4>
+            <h4 className="font-semibold text-black mb-4 text-lg">64 Chủ Đề Theo 8 Cung Chi Tiết</h4>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {Object.entries(TOPIC_GROUPS).map(([groupName, groupData]) => (
                 <div key={groupName} className={`p-4 rounded-lg border ${groupData.color}`}>
