@@ -322,14 +322,14 @@ export function DateHandbook() {
 
             {/* Solar Terms Information */}
             <div className="p-4 bg-teal-50 rounded-lg border border-teal-200">
-              <h4 className="font-semibold text-teal-700 mb-3 flex items-center space-x-2">
+              <h4 className="font-semibold text-black-700 mb-3 flex items-center space-x-2">
                 <Leaf className="w-4 h-4" />
                 <span>Tiết Khí</span>
               </h4>
               {currentSolarTerm ? (
                 <div className="space-y-2 text-sm">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="font-medium black-teal-600">{currentSolarTerm.solarTerm.name}</span>
+                    <span className="font-medium text-black-600">{currentSolarTerm.solarTerm.name}</span>
                     <Badge 
                       variant="secondary" 
                       className={`text-xs ${SEASON_COLORS[currentSolarTerm.solarTerm.season]}`}
