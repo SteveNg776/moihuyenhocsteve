@@ -412,7 +412,7 @@ export function CalendarView() {
             <div className="space-y-2">
               <h5 className="font-medium text-gray-600">Ngày lễ</h5>
               <div className="flex items-center space-x-2">
-                <div className="w-4 h-4 border-2 border-red-500 rounded"></div>
+                <div className="w-4 h-4 border-2 border-orange-500 rounded"></div>
                 <span>Lễ chính thức</span>
               </div>
               <div className="flex items-center space-x-2">
