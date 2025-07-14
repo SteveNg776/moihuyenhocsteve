@@ -51,9 +51,9 @@ export function Footer() {
         <Separator className="my-8 bg-white/20" />
         
         <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-600 text-sm mt-2 md:mt-0 text-center">
-               "Sự đồng bộ là một món quà của thực tại dành cho ai thấy mà tin" <br /> Carl Jung
-           </p>
+            <p class="text-gray-600 text-center font-bold">
+           "Sự đồng bộ là một món quà của thực tại dành cho ai thấy mà tin" <br /> Carl Jung
+             </p>
         </div>
       </div>
     </footer>
