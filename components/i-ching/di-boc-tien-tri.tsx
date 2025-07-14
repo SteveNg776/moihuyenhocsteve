@@ -683,7 +683,7 @@ export function DiBocTienTri() {
             {result.hasValidPrediction && result.prediction ? (
               <div className="space-y-4">
                 {/* Tên quẻ từ JSON */}
-                <div className="p-4 bg-gradient-to-br from-mystical-gold/5 to-yellow-50 rounded-lg border border-mystical-gold/20">
+                <div className="p-4 bg-gradient-to-br from-mystical-gold/5 to-yellow-50 rounded-lg border border-black/20">
                   <h4 className="font-semibold text-mystical-gold mb-2 flex items-center space-x-2">
                     <Sparkles className="w-4 h-4" />
                     <span>Tên Quẻ</span>
@@ -694,7 +694,7 @@ export function DiBocTienTri() {
                 </div>
 
                 {/* Lời quẻ gốc */}
-                <div className="p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg border border-blue-200">
+                <div className="p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg border border-black-200">
                   <h4 className="font-semibold text-blue-700 mb-3 flex items-center space-x-2">
                     <FileText className="w-4 h-4" />
                     <span>Lời Quẻ</span>
@@ -707,7 +707,7 @@ export function DiBocTienTri() {
                 </div>
 
                 {/* Dịch nghĩa */}
-                <div className="p-4 bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg border border-green-200">
+                <div className="p-4 bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg border border-black-200">
                   <h4 className="font-semibold text-green-700 mb-3 flex items-center space-x-2">
                     <Lightbulb className="w-4 h-4" />
                     <span>Dịch Nghĩa</span>
