@@ -297,7 +297,7 @@ export function DateHandbook() {
 
             {/* Moon Phase Information */}
             <div className="p-4 bg-indigo-50 rounded-lg border border-indigo-200">
-              <h4 className="font-semibold text-orange-700 mb-3 flex items-center space-x-2">
+              <h4 className="font-semibold text-blue-700 mb-3 flex items-center space-x-2">
                 <Moon className="w-4 h-4" />
                 <span>Pha Mặt Trăng</span>
               </h4>
