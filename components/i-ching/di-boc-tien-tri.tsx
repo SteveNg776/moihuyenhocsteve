@@ -121,12 +121,12 @@ const TOPIC_GROUPS = {
   'Cung Ly': {
     topics: ['khaitiem', 'cautai', 'maisuc', 'phanquynh', 'hoihuong', 'tatai', 'phongtruong', 'dobac'],
     description: 'Về tài chính, kinh doanh và các hoạt động thương mại',
-    color: 'bg-red-50 border-red-200 text-red-800'
+    color: 'bg-blue-50 border-blue-200 text-black-800'
   },
   'Cung Chấn': {
     topics: ['nhapnhai', 'cautu', 'xuathanh', 'tamquan', 'thuthau', 'thungu', 'damong', 'khauthiet'],
     description: 'Về hôn nhân, gia đình, di chuyển và các hoạt động nông nghiệp',
-    color: 'bg-green-50 border-green-200 text-green-800'
+    color: 'bg-blue-50 border-blue-200 text-black-800'
   },
   'Cung Tốn': {
     topics: ['sanhy', 'thachoa', 'khoitao', 'xuantam', 'vanbang', 'kienquoi', 'giailuong', 'totrang'],
@@ -136,17 +136,17 @@ const TOPIC_GROUPS = {
   'Cung Khảm': {
     topics: ['napgiam', 'thangthien', 'hoasu', 'giaoviec', 'honnhan', 'thuthiep', 'lucgiap', 'tamnhon'],
     description: 'Về công danh, hôn nhân, tìm kiếm và các mối quan hệ',
-    color: 'bg-indigo-50 border-indigo-200 text-indigo-800'
+    color: 'bg-teal-50 border-teal-200 text-teal-800'
   },
   'Cung Cấn': {
     topics: ['giatin', 'cauquan', 'trihoa', 'caotrang', 'noplai', 'diensan', 'thaoboc', 'canquan'],
     description: 'Về tin tức, quan lộ, tài sản và các vấn đề pháp lý',
-    color: 'bg-amber-50 border-amber-200 text-amber-800'
+    color: 'bg-teal-50 border-teal-200 text-teal-800'
   },
   'Cung Khôn': {
     topics: ['giatrach', 'thonguon', 'tauthuat', 'thatvat', 'hieploa', 'hanhnhon', 'giaigiao', 'thunghe'],
     description: 'Về gia đạo, sức khỏe, mất mát và các nghề thủ công',
-    color: 'bg-orange-50 border-orange-200 text-orange-800'
+    color: 'bg-teal-50 border-teal-200 text-teal-800'
   }
 };
 
