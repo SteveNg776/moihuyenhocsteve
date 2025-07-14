@@ -437,7 +437,7 @@ export function DiBocTienTri() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="bg-mystical-gold/5 p-4 rounded-lg border border-black/20">
+           <div className="bg-mystical-gold/5 p-4 rounded-lg border border-black">
             <p className="text-sm text-muted-foreground leading-relaxed">
               <strong>Dị Bốc Tiên Tri</strong> là một cuốn sách cổ của tiên sinh Thiệu Khang Tiết, 
               ghi lại các chiêm nghiệm của quẻ Kinh Dịch đối với các sự việc cần hỏi. 
