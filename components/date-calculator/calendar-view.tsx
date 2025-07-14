@@ -263,7 +263,7 @@ export function CalendarView() {
                             <div className="flex justify-between items-start">
                               <div className={`text-lg font-bold ${
                                 !isCurrentMonthDate ? 'text-gray-400' : 
-                                isWeekendDate ? 'text-orange-600' : 
+                                isWeekendDate ? 'text-red-600' : 
                                 'text-gray-800'
                               }`}>
                                 {date.getDate()}
@@ -344,7 +344,7 @@ export function CalendarView() {
 
               {/* Holidays and Festivals */}
               {getDateFestivals(selectedDate).length > 0 && (
-                <div className="p-4 bg-gradient-to-r from-red-50 to-orange-50 rounded-lg border border-red-200">
+                <div className="p-4 bg-gradient-to-r from-red-50 to-orange-50 rounded-lg border border-red-200"> 
                   <h4 className="font-semibold text-red-700 mb-3">Ngày Lễ & Lễ Hội</h4>
                   <div className="space-y-3">
                     {getDateFestivals(selectedDate).map((holiday, index) => (
